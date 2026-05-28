@@ -1,1 +1,46 @@
 aaa.txt
+
+================================================================
+  작업 요약 (2026-05-26 ~ 2026-05-28)
+================================================================
+
+[1] 일별 데이터 수집 자동화 (SQLite)
+  - 수집 대상: 증시 브리핑, 경제통계, 주택가격지수, 뉴스
+  - 수집 날짜: 2026-05-27, 2026-05-28
+  - 저장 DB: C:\1\news_economy.db (SQLite)
+  - 출력물: 각 항목별 CSV + XLSX 파일 생성
+
+[2] SQLite DB 구조
+  - 테이블 5개: news, market_briefing, economic_stats,
+                stock_watchlist, col_meta
+  - 공용 스크립트: make_xlsx.ps1 (CSV→XLSX 변환)
+
+[3] PostgreSQL 신규 설치 및 구성
+  - 버전: PostgreSQL 17.10 (winget 설치)
+  - 포트:  / 서비스: postgresql-x64-17
+  - 비밀번호: postgres / 
+  - DB 생성: news_economy (UTF8 인코딩)
+  - 테이블: SQLite와 동일한 5개 테이블 (PG 네이티브 타입 사용)
+
+[4] SQLite → PostgreSQL 초기 데이터 이관
+  - news: 25건, market_briefing: 2건, economic_stats: 43건
+  - 이관 방법: CSV 추출 후 psql \COPY 명령 사용
+
+[5] 이중 저장 자동화 스크립트 (pg_sync.ps1)
+  - 위치: C:\1\pg_sync.ps1
+  - 기능: SQLite 특정 날짜 데이터를 PostgreSQL로 자동 동기화
+  - 사용법: & C:\1\pg_sync.ps1 [-SyncDate "YYYY-MM-DD"]
+  - news: 중복 무시 / market_briefing·economic_stats: 덮어쓰기
+
+================================================================
+  현재 DB 데이터 현황 (2026-05-28 기준)
+================================================================
+
+  [SQLite]  news 25건 / market_briefing 2건 / economic_stats 43건
+  [PostgreSQL] news 25건 / market_briefing 2건 / economic_stats 43건
+
+================================================================
+
+
+
+
