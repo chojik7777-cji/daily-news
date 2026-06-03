@@ -10,6 +10,6 @@
     "tech": 6,
     "economy": 6
   },
-  "telegram_status": "failed: HTTP 403 Forbidden - Host not in allowlist (outbound network policy)",
+  "telegram_status": "pending: GitHub Actions 자동 처리",
   "git_push_status": "success"
 }
