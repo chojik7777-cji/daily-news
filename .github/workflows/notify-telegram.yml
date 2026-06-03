@@ -1,0 +1,59 @@
+name: 텔레그램 알림
+
+on:
+  push:
+    paths:
+      - 'news_*.html'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 텔레그램 알림 전송
+        run: |
+          python3 << 'EOF'
+          import json, os, glob, urllib.request, urllib.parse
+
+          news_files = sorted(glob.glob('news_*.html'))
+          today = news_files[-1].replace('news_','').replace('.html','') if news_files else 'N/A'
+
+          log_path = f'logs/log_{today}.json'
+          if os.path.exists(log_path):
+              with open(log_path) as f:
+                  log = json.load(f)
+              start    = log.get('start_time', 'N/A')
+              end      = log.get('end_time', 'N/A')
+              duration = log.get('duration_seconds', 'N/A')
+              c        = log.get('news_counts', {})
+          else:
+              start = end = duration = 'N/A'
+              c = {}
+
+          repo = os.environ.get('GITHUB_REPOSITORY', '')
+          msg = (
+              f"📰 오늘의 뉴스 수집 완료 ({today})\n\n"
+              f"⏰ 시작: {start}\n"
+              f"⏰ 종료: {end}\n"
+              f"⏱ 소요: {duration}초\n\n"
+              f"📊 수집 현황\n"
+              f"🇰🇷 국내: {c.get('domestic','N/A')}건\n"
+              f"🌍 국제: {c.get('world','N/A')}건\n"
+              f"💻 IT/기술: {c.get('tech','N/A')}건\n"
+              f"💰 경제/금융: {c.get('economy','N/A')}건\n\n"
+              f"🔗 전체 보기: https://github.com/{repo}"
+          )
+
+          token   = os.environ['TELEGRAM_BOT_TOKEN']
+          chat_id = os.environ['TELEGRAM_CHAT_ID']
+          data = urllib.parse.urlencode({'chat_id': chat_id, 'text': msg}).encode()
+          req = urllib.request.Request(
+              f'https://api.telegram.org/bot{token}/sendMessage', data=data
+          )
+          with urllib.request.urlopen(req) as resp:
+              print('전송 완료:', resp.read().decode())
+          EOF
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
