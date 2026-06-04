@@ -1,0 +1,14 @@
+{
+  "date": "2026-06-04",
+  "start_time": "2026-06-04 22:02:48 KST",
+  "end_time": "2026-06-04 22:05:30 KST",
+  "duration_seconds": 162,
+  "news_file": "news_2026-06-04.html",
+  "news_counts": {
+    "domestic": 6,
+    "world": 6,
+    "tech": 6,
+    "economy": 6
+  },
+  "git_push_status": "success"
+}
