@@ -3,354 +3,347 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2026-06-05 오늘의 주요 뉴스</title>
+  <title>오늘의 주요 뉴스 - 2026-06-05</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background-color: #1a1a2e;
-      color: #e0e0f0;
-      font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
       line-height: 1.7;
-      padding: 24px 16px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
+      min-height: 100vh;
     }
 
     header {
+      background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+      padding: 2.5rem 1.5rem;
       text-align: center;
-      margin-bottom: 40px;
-      padding-bottom: 24px;
-      border-bottom: 2px solid #2a2a4a;
+      border-bottom: 2px solid #e94560;
     }
 
-    header .date-label {
-      font-size: 0.9rem;
-      color: #8888cc;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
+    header .date-badge {
+      display: inline-block;
+      background: #e94560;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.85rem;
+      border-radius: 50px;
+      margin-bottom: 0.75rem;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      color: #ffffff;
       font-weight: 700;
-      color: #c8c8ff;
       letter-spacing: -0.01em;
+    }
+
+    header p.subtitle {
+      margin-top: 0.4rem;
+      color: #a0b4cc;
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+      display: grid;
+      gap: 2rem;
     }
 
     .section {
       background: #16213e;
-      border: 1px solid #2a2a5a;
       border-radius: 12px;
-      margin-bottom: 32px;
       overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
     }
 
     .section-header {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding: 16px 24px;
-      background: #0f3460;
+      gap: 0.6rem;
+      padding: 1rem 1.5rem;
     }
 
-    .section-icon { font-size: 1.3rem; }
+    .section-header .icon { font-size: 1.3rem; }
 
-    .section-title {
+    .section-header h2 {
       font-size: 1.1rem;
       font-weight: 700;
-      color: #a0c4ff;
+      color: #fff;
       letter-spacing: 0.02em;
     }
 
-    .news-list { padding: 8px 0; }
+    .section-header .count {
+      margin-left: auto;
+      background: rgba(255,255,255,0.12);
+      color: #cdd6e0;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: 50px;
+    }
+
+    /* Section accent colors */
+    .domestic  .section-header { background: linear-gradient(90deg, #1e3a5f, #163060); border-left: 4px solid #4fc3f7; }
+    .world     .section-header { background: linear-gradient(90deg, #1f2d3d, #162030); border-left: 4px solid #81c784; }
+    .tech      .section-header { background: linear-gradient(90deg, #2a1f3d, #1e1630); border-left: 4px solid #ce93d8; }
+    .economy   .section-header { background: linear-gradient(90deg, #2d2415, #221b10); border-left: 4px solid #ffb74d; }
+
+    .news-list { padding: 0.5rem 0 1rem; }
 
     .news-item {
-      padding: 16px 24px;
-      border-bottom: 1px solid #1e1e3e;
-      transition: background 0.15s;
+      padding: 0.85rem 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: background 0.18s;
     }
-
     .news-item:last-child { border-bottom: none; }
-    .news-item:hover { background: #1e2a4a; }
+    .news-item:hover { background: rgba(255,255,255,0.04); }
 
-    .news-title a {
+    .news-item a {
       font-size: 0.97rem;
       font-weight: 600;
-      color: #7ec8e3;
+      color: #d0e4f7;
       text-decoration: none;
+      display: block;
+      margin-bottom: 0.3rem;
+      line-height: 1.45;
     }
+    .news-item a:hover { color: #ffffff; text-decoration: underline; }
 
-    .news-title a:hover { color: #a8e6ff; text-decoration: underline; }
+    .domestic  .news-item a { color: #b3dff7; }
+    .world     .news-item a { color: #b9e8ba; }
+    .tech      .news-item a { color: #e0bfff; }
+    .economy   .news-item a { color: #ffe0b2; }
 
-    .news-summary {
-      margin-top: 6px;
-      font-size: 0.87rem;
-      color: #a0a0c0;
+    .news-item .summary {
+      font-size: 0.85rem;
+      color: #8899aa;
       line-height: 1.6;
     }
 
-    /* section accent colors */
-    .section--domestic .section-header { background: #1a3a2e; }
-    .section--domestic .section-title  { color: #7dffb3; }
-    .section--world .section-header    { background: #3a1a1a; }
-    .section--world .section-title     { color: #ff9f9f; }
-    .section--tech .section-header     { background: #0f2a4a; }
-    .section--tech .section-title      { color: #a0c4ff; }
-    .section--economy .section-header  { background: #3a2a0a; }
-    .section--economy .section-title   { color: #ffd580; }
-
     footer {
-      text-align: center;
-      margin-top: 40px;
-      padding-top: 20px;
+      background: #10101e;
       border-top: 1px solid #2a2a4a;
+      text-align: center;
+      padding: 1.25rem;
       font-size: 0.8rem;
-      color: #5555aa;
+      color: #556677;
     }
+    footer span { color: #7788aa; }
 
     @media (max-width: 600px) {
-      header h1 { font-size: 1.4rem; }
-      .news-item { padding: 14px 16px; }
-      .section-header { padding: 14px 16px; }
+      .news-item { padding: 0.75rem 1rem; }
+      .section-header { padding: 0.85rem 1rem; }
     }
   </style>
 </head>
 <body>
-<div class="container">
 
-  <header>
-    <p class="date-label">2026년 6월 5일 (금)</p>
-    <h1>오늘의 주요 뉴스</h1>
-  </header>
+<header>
+  <div class="date-badge">2026년 6월 5일 금요일</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p class="subtitle">국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
 
-  <!-- 국내 뉴스 -->
-  <section class="section section--domestic">
+<main>
+
+  <!-- ───────────────── 국내 뉴스 ───────────────── -->
+  <section class="section domestic">
     <div class="section-header">
-      <span class="section-icon">🇰🇷</span>
-      <span class="section-title">국내 뉴스</span>
+      <span class="icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+      <span class="count">5건</span>
     </div>
-    <div class="news-list">
+    <ul class="news-list">
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://news.sbs.co.kr/" target="_blank">젠슨 황 엔비디아 CEO 방한…PC방·T1 베이스캠프 깜짝 방문</a>
-        </div>
-        <p class="news-summary">젠슨 황 엔비디아 CEO가 5일 오후 김포공항을 통해 입국, 서울 마포구 T1 베이스캠프와 PC방을 방문해 페이커 이상혁 선수 등 게이머들과 만났다. 황 CEO는 "협력사·고객사에 감사를 전하러 왔다"고 밝히며 "한국에 많은 사업을 가져왔다"고 발언해 주목을 끌었다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.newspim.com/news/view/20260605000594" target="_blank">
+          이재명 대통령, 9~18일 유럽 순방 및 G7 정상회의 참석
+        </a>
+        <p class="summary">이재명 대통령이 6월 9일부터 18일까지 벨기에·EU·이탈리아·교황청을 순방하고, 프랑스 에비앙에서 열리는 G7 정상회의에 참석한다. 이번 순방은 한국의 글로벌 외교 위상 강화를 목표로 한다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.korea.kr/" target="_blank">이재명 대통령, G7 정상회의 참석 위해 9~18일 유럽 순방</a>
-        </div>
-        <p class="news-summary">이재명 대통령이 프랑스에서 열리는 G7(주요 7개국) 정상회의 참석을 위해 오는 9일부터 18일까지 유럽을 방문한다. 정상회의 계기에 주요국 정상들과의 양자 회담도 예정돼 있다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764654" target="_blank">
+          산업통상부, 미국과 화상 면담… "15% 관세 유지" 확인
+        </a>
+        <p class="summary">산업통상자원부 장관이 미국 상무부 장관과 화상 면담을 갖고, 기존 합의대로 15% 수준의 관세가 유지될 것이라고 밝혔다. 한미 무역 협상이 안정적 궤도에 있음을 재확인한 자리였다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://issue.daum.net/election/2026" target="_blank">6·3 지방선거 결과 — 오세훈 서울시장 5선 성공</a>
-        </div>
-        <p class="news-summary">6월 3일 치러진 전국 동시 지방선거에서 국민의힘 오세훈 후보가 49.08% 득표로 서울시장 5선에 성공했다. 더불어민주당 정원오 후보는 결과에 승복의 뜻을 밝혔다. 경기 평택에서는 유의동 국민의힘 후보가 당선됐다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.fnnews.com/news/202606051152299782" target="_blank">
+          컴퓨텍스 2026 폐막… 한국 반도체, 글로벌 AI 공급망 핵심으로 부상
+        </a>
+        <p class="summary">대만 타이베이에서 열린 컴퓨텍스 2026이 5일 폐막했다. 삼성전자와 SK하이닉스는 AI 메모리 분야의 핵심 공급자로 주목을 받았으며, 한국 반도체 기업의 글로벌 위상이 다시 한번 확인됐다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.khan.co.kr/" target="_blank">공정거래위원장, 지방선거 결과 SNS 공개 비판 논란</a>
-        </div>
-        <p class="news-summary">주병기 공정거래위원장이 6·3 지방선거 결과에 대해 SNS에 공개 비판 게시물을 올려 논란이 일고 있다. 위원장은 다른 사람의 페이스북에 "시민의 권리 행사가 돈의 질서와 일치한다는 사실이 참 씁쓸하다"는 답글을 달았다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://imnews.imbc.com/news/2026/politics/article/6827995_36911.html" target="_blank">
+          자동차 전조등 자동점등 의무화… 9월부터 전 차종 적용
+        </a>
+        <p class="summary">국토교통부가 자동차 및 자동차부품 성능 기준 개정안을 공포했다. 9월부터 모든 신규 차량에 전조등·후미등 자동 점등 기능이 의무화되어 야간 교통사고 예방 효과가 기대된다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://imnews.imbc.com/replay/2026/nwtoday/article/6826640_37012.html" target="_blank">원·달러 환율 1540원 돌파 — 2009년 이후 최고</a>
-        </div>
-        <p class="news-summary">원·달러 환율이 5일 중동발 지정학적 충격과 외국인 자금 이탈이 맞물리며 1540원을 넘어섰다. 이는 금융위기 당시인 2009년 3월 이후 가장 높은 수준으로, 정부와 한국은행의 잇따른 구두 개입에도 시장 흐름을 되돌리지 못하고 있다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764654" target="_blank">
+          5월 수출 동향 호조… 반도체·자동차 중심 수출 증가세 지속
+        </a>
+        <p class="summary">산업통상자원부가 발표한 5월 수출입 동향에 따르면 반도체와 자동차를 중심으로 수출이 전월 대비 증가세를 이어갔다. AI 수요 확대에 따른 메모리 반도체 수출이 특히 두드러졌다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764654" target="_blank">2026년 5월 수출입 동향 발표 — 수출 회복세 지속</a>
-        </div>
-        <p class="news-summary">정부가 5월 수출입 동향을 발표했다. 반도체·자동차·이차전지 등 주력 품목의 수출이 전년 동월 대비 증가세를 유지하며 회복 흐름을 이어갔다. 중동 긴장 고조에 따른 유가 상승은 에너지 수입 부담 요인으로 작용할 전망이다.</p>
-      </div>
-
-    </div>
+    </ul>
   </section>
 
-  <!-- 국제 뉴스 -->
-  <section class="section section--world">
+  <!-- ───────────────── 국제 뉴스 ───────────────── -->
+  <section class="section world">
     <div class="section-header">
-      <span class="section-icon">🌍</span>
-      <span class="section-title">국제 뉴스</span>
+      <span class="icon">🌍</span>
+      <h2>국제 뉴스</h2>
+      <span class="count">5건</span>
     </div>
-    <div class="news-list">
+    <ul class="news-list">
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.npr.org/sections/world/" target="_blank">우크라이나, 러시아 상트페테르부르크 석유 터미널 드론 공격</a>
-        </div>
-        <p class="news-summary">우크라이나 드론이 푸틴 대통령의 고향 상트페테르부르크 석유 터미널을 공격해 화재가 발생했다. 마침 상트페테르부르크에서 연례 경제 포럼이 열리는 가운데 발생한 공격으로 푸틴은 방공 능력 강화를 선언했다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.nbcnews.com/world/russia/st-petersburg-drone-attack-ukraine-putin-economic-forum-russia-war-rcna348214" target="_blank">
+          Ukraine drones strike St. Petersburg oil terminal — Putin's economic forum begins under smoke
+        </a>
+        <p class="summary">우크라이나가 러시아 상트페테르부르크의 석유 터미널을 드론으로 공격해 화재가 발생했다. 이번 공격은 푸틴 대통령의 연례 경제 포럼 개막 직전 이루어져, 크렘린에 큰 외교적 망신을 안겼다. 러시아 측은 드론 354대를 요격했다고 밝혔다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.world-today-journal.com/5-must-read-news-stories-you-missed-june-5-2026/" target="_blank">이란, 쿠웨이트·바레인 미사일 공격 — 쿠웨이트 공항 폐쇄</a>
-        </div>
-        <p class="news-summary">이란이 쿠웨이트와 바레인에 미사일·드론을 발사해 쿠웨이트 국제공항 여객 터미널이 크게 파손되고 1명이 사망했다. 미국은 이란 케쉬름 섬 군사 시설을 공습으로 대응해 중동 긴장이 급격히 고조됐다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.cnn.com/2026/06/03/europe/ukraine-drone-attack-russia-st-petersburg-intl-hnk" target="_blank">
+          Putin vows to strengthen Russian air defenses after deepest Ukrainian drone strikes
+        </a>
+        <p class="summary">블라디미르 푸틴 러시아 대통령은 우크라이나 드론이 러시아 깊숙이 침투한 것에 대응해 방공망을 대폭 강화하겠다고 선언했다. 최근 드론 공격은 러시아 영토 내 핵심 시설을 잇따라 타격하고 있다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.euronews.com/news/international" target="_blank">레바논 대통령 "이스라엘과 휴전 협정은 마지막 기회"</a>
-        </div>
-        <p class="news-summary">레바논의 조제프 아운 대통령이 4일 워싱턴 회담 후 발표된 이스라엘과의 휴전 이행 합의를 "포괄적 평화를 위한 마지막 기회"라고 강조했다. 유엔은 북아프리카 인도주의 위기 대응을 위해 1억 2000만 달러 규모의 긴급 지원을 발표했다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://abcnews.com/International/live-updates/iran-live-updates-irgc-claims-airbase-attack-after/?id=133475855" target="_blank">
+          IAEA chief: Iran nuclear framework talks moving forward, outcome uncertain
+        </a>
+        <p class="summary">국제원자력기구(IAEA) 사무총장 라파엘 그로시는 이란과의 핵 협상이 예비 틀 마련에 근접하고 있다고 밝혔으나, 최종 합의 여부는 여전히 불투명하다고 덧붙였다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.npr.org/sections/news" target="_blank">김정은, 우라늄 생산 시설 방문 — 핵탄두 연료 증산 시사</a>
-        </div>
-        <p class="news-summary">북한 김정은 국무위원장이 6월 3일 방문한 시설이 무기급 우라늄을 생산하는 플랜트일 가능성이 높다고 전문가들이 분석했다. 북한 관영 매체 사진을 통해 핵 능력 확대 의도를 공개적으로 과시한 것으로 해석된다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.aljazeera.com/" target="_blank">
+          Lebanon president: Israel ceasefire deal is "last chance" for comprehensive truce
+        </a>
+        <p class="summary">레바논 대통령 조셉 아운은 이스라엘과의 휴전 합의 이행이 포괄적 평화를 이끌어 낼 "마지막 기회"라고 강조했다. UNIFIL(유엔 레바논 평화유지군) 소속 평화유지군 1명이 박격포 공격으로 사망했다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.riotimesonline.com/global-economy-briefing-june-5-2026/" target="_blank">2026년 세계 경제 성장률 2.7% 전망 — 팬데믹 이전 평균 하회</a>
-        </div>
-        <p class="news-summary">UNCTAD는 2026년 세계 경제 성장률이 2.7%에 그쳐 2025년보다 낮고 팬데믹 이전 평균도 밑돌 것으로 전망했다. 투자 부진과 구조적 역풍이 원인으로, 인플레이션 완화와 통화 완화에도 회복 모멘텀은 제한적이다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.npr.org/sections/world/" target="_blank">
+          UN refugee agency launches $120M emergency response in North Africa
+        </a>
+        <p class="summary">유엔난민기구(UNHCR)가 북아프리카 지역 불안정으로 인한 피난민 지원을 위해 약 1억 2,000만 달러 규모의 긴급 지원 프로그램을 가동했다. 국제 기여국들의 긴급 출연금으로 재원이 마련됐다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.democracynow.org/2026/6/2/headlines" target="_blank">쿠쉬너 알바니아 해안 개발 프로젝트 반발 거세져</a>
-        </div>
-        <p class="news-summary">재러드 쿠쉬너와 연계된 알바니아 해안 개발 프로젝트에 환경 단체와 야권의 반대가 커지고 있다. 알바니아 정부는 "국가를 변혁시킬 사업"이라고 주장하나 생태계 파괴 우려가 잇따르고 있다.</p>
-      </div>
-
-    </div>
+    </ul>
   </section>
 
-  <!-- IT/기술 뉴스 -->
-  <section class="section section--tech">
+  <!-- ───────────────── IT/기술 뉴스 ───────────────── -->
+  <section class="section tech">
     <div class="section-header">
-      <span class="section-icon">💻</span>
-      <span class="section-title">IT / 기술 뉴스</span>
+      <span class="icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+      <span class="count">5건</span>
     </div>
-    <div class="news-list">
+    <ul class="news-list">
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.prnewswire.com/news-releases/computex-2026-opens-amid-surging-global-demand-for-ai-infrastructure-302788497.html" target="_blank">COMPUTEX 2026 개막 — 33개국 1500개 기업, AI 인프라 물결</a>
-        </div>
-        <p class="news-summary">타이베이에서 6월 2~5일 열린 COMPUTEX 2026에 33개국 1,500개 기업이 6,000개 부스로 참가했다. AI가 클라우드에서 현실 세계로 확장되는 전환기를 반영하며 로보틱스·자율주행·엣지 AI가 핵심 주제로 부상했다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.fnnews.com/news/202606051152299782" target="_blank">
+          컴퓨텍스 2026 폐막… AI 동맹 '합종연횡'의 현장
+        </a>
+        <p class="summary">5일 폐막한 컴퓨텍스 2026은 기존 PC·부품 전시를 넘어 AI 인프라 경쟁의 장으로 완전히 탈바꿈했다. 엔비디아를 축으로 대만 반도체·OEM 업체, 한국 메모리 기업들이 AI 생태계 동맹을 가속화했다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.aiapps.com/blog/ai-news-breakthroughs-launches-trends-must-read/" target="_blank">Anthropic, 역대 최대 650억 달러 투자 유치 — 기업 가치 9650억 달러</a>
-        </div>
-        <p class="news-summary">AI 스타트업 Anthropic이 아폴로 글로벌·블랙스톤 주도로 650억 달러 단일 투자 라운드를 완료했다. 기업 가치는 9,650억 달러에 달하며 역대 민간 AI 기업 최대 펀딩 기록을 경신했다. 조달 자금은 AI 인프라 구축에 투입될 예정이다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.insight.co.kr/news/556796" target="_blank">
+          삼성전자, HBM5 실물 모형 세계 최초 공개… 2나노 베이스다이 적용
+        </a>
+        <p class="summary">삼성전자가 컴퓨텍스 2026에서 8세대 고대역폭메모리(HBM5)의 실물 목업을 처음으로 공개했다. HBM5에는 업계 최초로 2나노 베이스다이와 열경로블록(HPB) 기술이 적용됐다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/" target="_blank">AI 모델 경쟁 가속 — GPT-5.5·Gemini 3.5·Claude Opus 4.8 벤치마크 갱신</a>
-        </div>
-        <p class="news-summary">OpenAI GPT-5.5 Instant, Google Gemini 3.5 Flash, Anthropic Claude Opus 4.8가 잇달아 공개돼 성능 벤치마크 기록을 경신하고 있다. Google Imagen 3 Nano·Pro도 6월부터 광범위하게 제공되며 AI 경쟁이 새 국면으로 진입했다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.etoday.co.kr/news/view/2590052" target="_blank">
+          젠슨 황 SK하이닉스 부스 방문… "HBM 더 많이 만들어줘" 서명 이벤트
+        </a>
+        <p class="summary">엔비디아 CEO 젠슨 황이 SK하이닉스 부스를 직접 찾아 HBM4E·소캠2(SOCAMM2) 제품에 친필 서명을 남겼다. 젠슨 황은 키노트에서 SK하이닉스를 HBM4 공급사로 공식 언급하며 파트너십을 강조했다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.hellot.net/" target="_blank">스마트공장·자동화산업전 AW 2026 개막 — 로보틱스·비전·물류 통합</a>
-        </div>
-        <p class="news-summary">제36회 스마트공장·자동화산업전(Automation World 2026)이 4일 개막해 자율성·지속가능성을 키워드로 내세웠다. 로보틱스·소프트웨어·물류·비전·제어 등 기술이 하나의 운영 체계로 융합되는 미래 공장 모습을 전시했다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.epnc.co.kr/news/articleView.html?idxno=400056" target="_blank">
+          2026년 글로벌 반도체 시장, 사상 첫 1조 달러 돌파 전망
+        </a>
+        <p class="summary">AI 수요 폭발로 2026년 전 세계 반도체 시장 매출이 연간 1조 달러(약 1,506조 원)를 처음으로 넘어설 것으로 예측된다. 메모리·AI가속기·첨단 패키징 분야가 성장을 이끌고 있다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.aitimes.com/" target="_blank">의료 AI 스타트업 프로메디우스, 215억원 시리즈 B 투자 유치</a>
-        </div>
-        <p class="news-summary">AI 기반 골다공증 위험 선별 솔루션을 개발하는 프로메디우스가 215억원 규모의 시리즈 B 투자 유치를 완료했다. X-ray 이미지를 분석해 골다공증 위험군을 선별하는 기술로 국내외 의료기관 확장을 추진한다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.sedaily.com/article/20051219" target="_blank">
+          삼성전자, HBM5에 2나노 첫 적용… SK하이닉스 "AI 팩토리로 증산 속도"
+        </a>
+        <p class="summary">삼성전자는 차세대 HBM5 양산에 2나노 공정을 최초 도입하고, SK하이닉스는 AI 팩토리 체제로 전환해 HBM 생산량을 대폭 늘리겠다고 밝혔다. 두 기업 모두 엔비디아 공급망 강화에 집중하고 있다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://techstartups.com/2026/06/03/top-tech-news-today-june-3-2026/" target="_blank">소프트뱅크, 프랑스 AI 인프라에 750억 유로 투자 약속</a>
-        </div>
-        <p class="news-summary">소프트뱅크가 프랑스에 5기가와트 규모의 AI 인프라 구축을 위해 750억 유로를 투자하기로 합의했다. 글로벌 AI 데이터센터 건설 경쟁이 심화되는 가운데 유럽의 디지털 주권 강화 전략과도 맞물린 투자다.</p>
-      </div>
-
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-1-2026" target="_blank">에이전틱 AI 시장, 2034년 최대 1990억 달러 성장 전망</a>
-        </div>
-        <p class="news-summary">글로벌 에이전틱 AI 시장이 2025년 70~80억 달러에서 2034년 1390~1990억 달러로 급성장할 것으로 전망됐다. 기업용 자율 에이전트 도입이 본격화되며 업무 자동화와 의사결정 지원 분야가 주요 성장 동력으로 꼽혔다.</p>
-      </div>
-
-    </div>
+    </ul>
   </section>
 
-  <!-- 경제/금융 뉴스 -->
-  <section class="section section--economy">
+  <!-- ───────────────── 경제/금융 뉴스 ───────────────── -->
+  <section class="section economy">
     <div class="section-header">
-      <span class="section-icon">💰</span>
-      <span class="section-title">경제 / 금융 뉴스</span>
+      <span class="icon">📈</span>
+      <h2>경제 / 금융 뉴스</h2>
+      <span class="count">5건</span>
     </div>
-    <div class="news-list">
+    <ul class="news-list">
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.bank-mall.co.kr/plus/blog/12673" target="_blank">원·달러 환율 1540원 돌파 — 중동 충격·외국인 자금 유출 겹쳐</a>
-        </div>
-        <p class="news-summary">원·달러 환율이 5일 1540원을 넘어 2009년 금융위기 이후 최고치를 기록했다. 중동 지정학 리스크 고조, 국제 유가 급등에 따른 달러 강세, 외국인 자금 이탈이 복합적으로 작용했다. 정부와 한국은행의 구두 개입에도 흐름이 꺾이지 않고 있다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.newsis.com/view/NISX20260601_0003651572" target="_blank">
+          코스피, 사상 첫 8800 돌파… 개장 1시간 46분만에 역사 쓰다
+        </a>
+        <p class="summary">코스피가 6월 1일 장중 8,816.50을 기록하며 사상 처음으로 8,800선을 돌파했다. 8,000 재탈환 이후 단 4거래일 만에 이룬 성과로, 글로벌 AI 붐과 반도체 수출 호조가 랠리를 이끌었다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.mt.co.kr/stock/2026/05/28/2026052717043413391" target="_blank">코스피 8,228 마감 — 2차전지·AI 기대감 속 단기 과열 경계</a>
-        </div>
-        <p class="news-summary">코스피는 전일 대비 181포인트(2.25%) 오른 8,228.70에 마감했다. 강한 유동성과 AI 투자 기대가 지수를 떠받쳤으나, 하락 종목이 상승 종목의 10배를 넘는 등 쏠림 현상이 나타나 단기 과열 주의가 요구된다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news/article-1966308" target="_blank">
+          삼성전자, 시가총액 2,000조 원 돌파… 국내 증시 단일 종목 사상 최초
+        </a>
+        <p class="summary">삼성전자의 시가총액이 한국 증시 역사상 처음으로 2,000조 원을 넘어섰다. AI·HBM 수요 급증과 주가 상승이 맞물리며 달성한 기록으로, 코스피 8,800 돌파를 견인한 주역으로 평가된다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.hankyung.com/" target="_blank">브렌트유 배럴당 100달러 임박 — 금리 인하 기대 약화</a>
-        </div>
-        <p class="news-summary">중동 긴장이 재점화되며 브렌트유가 배럴당 100달러에 근접했다. 유가 상승은 국내 물가 압력을 높여 한국은행의 금리 인하 기대를 약화시키고, 오히려 금리 인상 가능성을 키우는 요인으로 작용하고 있다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.bok.or.kr/portal/main/main.do" target="_blank">
+          한국은행, 기준금리 2.50% 동결… 중동발 물가·성장 불확실성 주시
+        </a>
+        <p class="summary">한국은행 금융통화위원회는 기준금리를 2.50%로 동결했다. 중동 분쟁으로 인한 물가 상승 압력과 수출 호조에 따른 성장세 확대가 동시에 관찰되는 가운데, 추이를 지켜보며 신중한 통화정책 기조를 유지하기로 했다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.cnbc.com/2026/05/29/stock-market-next-week-outlook-for-june-1-5-2026.html" target="_blank">다우존스 875포인트 급등 사상 최고치 — 헬스케어·금융주 순환매</a>
-        </div>
-        <p class="news-summary">미국 다우존스 산업평균지수가 875포인트 급등해 사상 최고 종가를 기록했다. Broadcom이 12.6% 하락하며 기술주 매물이 나온 가운데 투자자들이 헬스케어·금융주로 자금을 이동시키는 순환매가 지수 상승을 이끌었다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://biz.kebhana.com/cont/hanafx/file/2026FX.pdf" target="_blank">
+          원/달러 환율, 한미 금리차 축소로 점진적 하락 전망
+        </a>
+        <p class="summary">한미 기준금리 격차 축소, 국내 경기 회복 기대감 등으로 원/달러 환율이 하락 압력을 받을 것으로 예상된다. 다만 중동 지정학적 리스크와 구조적 저성장 우려로 급격한 원화 강세는 제한될 전망이다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.korea.kr/briefing/policyBriefingView.do?newsId=156761126" target="_blank">정부, 2026년 세계경제 전망 업데이트 발표 — 성장률 하향 조정</a>
-        </div>
-        <p class="news-summary">정부가 2026년 세계경제 전망을 업데이트해 성장률을 소폭 하향 조정했다. 중동 지정학 불안, 미국 기준금리 장기 고공 유지, 달러 강세 등이 글로벌 경기 회복의 하방 요인으로 지목됐다.</p>
-      </div>
+      <li class="news-item">
+        <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764654" target="_blank">
+          5월 수출 호조 지속… AI·반도체 수요가 수출 증가 견인
+        </a>
+        <p class="summary">2026년 5월 수출이 반도체와 자동차를 중심으로 증가세를 이어갔다. 특히 AI 서버용 메모리 수요 급증이 반도체 수출을 끌어올렸으며, 2026년 하반기에도 수출 호조가 지속될 것으로 전망된다.</p>
+      </li>
 
-      <div class="news-item">
-        <div class="news-title">
-          <a href="https://www.bok.or.kr/portal/main/main.do" target="_blank">한국은행, 고유가·환율 불안에 통화정책 방향 재검토</a>
-        </div>
-        <p class="news-summary">한국은행이 국제 유가 급등과 원·달러 환율 급등이 맞물리며 통화정책 방향을 재검토하고 있다. 3분기 금리 인하 시나리오가 사실상 무산됐다는 분석이 나오며, 연내 금리 동결 가능성이 높아지고 있다.</p>
-      </div>
-
-    </div>
+    </ul>
   </section>
 
-  <footer>
-    <p>생성 시각: 2026-06-05 &nbsp;|&nbsp; 자동 수집 뉴스 요약 &nbsp;|&nbsp; News Bot</p>
-  </footer>
+</main>
 
-</div>
+<footer>
+  <p>생성 시각: <span>2026-06-06 04:35 KST</span> &nbsp;|&nbsp; 자동 수집 뉴스 요약본 &nbsp;|&nbsp; 각 기사 원문은 제목 클릭 시 새 탭에서 열립니다.</p>
+</footer>
+
 </body>
 </html>
