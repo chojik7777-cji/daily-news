@@ -3,7 +3,7 @@ name: 텔레그램 알림
 on:
   push:
     paths:
-      - 'news_*.html'
+      - 'claude/news_*.html'
 
 jobs:
   notify:
@@ -16,10 +16,10 @@ jobs:
           python3 << 'EOF'
           import json, os, glob, urllib.request, urllib.parse
 
-          news_files = sorted(glob.glob('news_*.html'))
-          today = news_files[-1].replace('news_','').replace('.html','') if news_files else 'N/A'
+          news_files = sorted(glob.glob('claude/news_*.html'))
+          today = news_files[-1].replace('claude/news_','').replace('.html','') if news_files else 'N/A'
 
-          log_path = f'logs/log_{today}.json'
+          log_path = f'claude/logs/log_{today}.json'
           if os.path.exists(log_path):
               with open(log_path) as f:
                   log = json.load(f)
