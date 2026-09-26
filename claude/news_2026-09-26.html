@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-09-26</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent-domestic: #e94560;
+      --accent-world: #f5a623;
+      --accent-tech: #4fc3f7;
+      --accent-economy: #81c784;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0b0;
+      --text-muted: #6a6a7a;
+      --link: #80cbc4;
+      --border: #1e3a5f;
+      --tag-bg: rgba(255,255,255,0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Noto Sans KR', 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header .date-label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+
+    header h1 span {
+      color: var(--accent-tech);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .section-header {
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+
+    .news-list {
+      padding: 0.5rem 0;
+    }
+
+    .news-item {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: background 0.15s;
+    }
+
+    .news-item:last-child { border-bottom: none; }
+
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+
+    .news-item a {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--link);
+      text-decoration: none;
+      margin-bottom: 0.3rem;
+      line-height: 1.4;
+    }
+
+    .news-item a:hover { text-decoration: underline; color: #a5d6d1; }
+
+    .news-item p {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* section colors */
+    .domestic .section-header { border-left: 4px solid var(--accent-domestic); }
+    .domestic .section-dot { background: var(--accent-domestic); }
+    .world .section-header { border-left: 4px solid var(--accent-world); }
+    .world .section-dot { background: var(--accent-world); }
+    .tech .section-header { border-left: 4px solid var(--accent-tech); }
+    .tech .section-dot { background: var(--accent-tech); }
+    .economy .section-header { border-left: 4px solid var(--accent-economy); }
+    .economy .section-dot { background: var(--accent-economy); }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 1.5rem 1rem; }
+      .news-item { padding: 0.85rem 1rem; }
+      .section-header { padding: 0.85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-label">2026년 9월 26일 토요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<main class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section domestic">
+    <div class="section-header">
+      <div class="section-dot"></div>
+      <h2>🇰🇷 국내 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.khan.co.kr/" target="_blank">한국 펜싱 남자 사베르 단체전, 일본에 극적 역전승 (45-44)</a>
+        <p>2026 아이치·나고야 아시안게임에서 한국 남자 펜싱 사베르 단체팀이 일본을 45-44로 꺾고 4회 연속 아시아 최강 자리를 지켰다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.truthdaily.co.kr/news/articleView.html?idxno=6524" target="_blank">전시작전통제권 전환, 한미 협력 강화 재확인…목표 시기 이견 여전</a>
+        <p>한미 정상이 전시작전통제권 전환을 위한 협력 강화를 재확인했으나, 전환 목표 연도 및 주요 현안(미국 투자·호르무즈 해협 파견 등) 이견으로 연내 확정 가능성에 불확실성이 남아있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.careyounews.org/news/articleView.html?idxno=11621" target="_blank">추석 연휴 이후 노인 고독사·호스피스 병상 부족 문제 재조명</a>
+        <p>추석 명절 이후 홀로 지내는 노인의 고독사 위험과 호스피스 병상 수요 증가가 사회적 경고음으로 다시 주목받고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://m.news.nate.com/view/20260911n22511" target="_blank">기재부, 최근 경제동향 9월호 발표…경기 흐름 분석</a>
+        <p>기획재정부가 9월 최근 경제동향을 발표했다. 대외 불확실성 지속 속에서도 수출·소비 지표가 소폭 개선되는 양상을 보였다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609160926069860234" target="_blank">국회의장, 토카예프 카자흐스탄 대통령 면담…경제 협력 확대 논의</a>
+        <p>국회의장이 카자흐스탄 대통령과 면담을 갖고 양국 간 경제·에너지 협력 확대 방안을 논의했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.nate.com/mediaList?cp=mt&date=20260926&mid=n1101&type=c" target="_blank">ADB, 2026년 9월 아시아경제전망 보고서 발표…성장 전망 소폭 하향</a>
+        <p>아시아개발은행(ADB)이 9월 아시아경제전망 보고서를 발표하며, 글로벌 금리 고착화와 무역 불확실성을 이유로 아시아 성장 전망을 소폭 하향 조정했다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section world">
+    <div class="section-header">
+      <div class="section-dot"></div>
+      <h2>🌍 국제 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.yahoo.com/news/world/articles/latest-news-bulletin-september-26th-050033383.html" target="_blank">트럼프 대통령, "이란 핵무기 절대 불가" 강경 성명</a>
+        <p>트럼프 대통령이 트루스소셜에 이란의 핵무기 보유를 용납하지 않겠다는 강경 입장을 발표했다. 미국이 중간선거 이후 이란 대상 공격을 재개할 수 있다는 전망도 나온다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.euronews.com/video/2026/09/26/latest-news-bulletin-september-26th-2026-midday" target="_blank">태국 방콕, 48시간 폭우로 홍수 재난 선포…시내 도로 침수</a>
+        <p>방콕 당국이 거의 이틀간 이어진 폭우로 운하가 범람하고 도로가 잠기자 홍수 재난 사태를 선포했다. 이재민 지원 대책이 긴급 가동됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.timesofisrael.com/liveblog-september-26-2026/" target="_blank">모리셔스, 텔아비브 출발 항공편 착륙 거부…정치적 이유 배경</a>
+        <p>텔아비브에서 모리셔스로 향하던 항공편이 현지 당국의 정치적 이유에 의해 착륙을 거부당해 취소됐다. 이스라엘-아프리카 외교 긴장이 배경으로 지목된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.euronews.com/tag/news?p=26" target="_blank">팔레스타인 중앙선거위원회, 11월 28일 입법 선거 후보 접수 개시</a>
+        <p>팔레스타인 중앙선거위원회가 오는 11월 28일 치러질 입법부 선거를 위한 후보 명단 접수를 시작했다. 오랜 공백 이후 재개되는 선거에 국제사회 이목이 집중됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.euronews.com/video/2026/09/26/latest-news-bulletin-september-26th-2026-morning" target="_blank">유엔 총회 주간, 각국 정상 기후·안보 논의 집중</a>
+        <p>뉴욕에서 진행 중인 유엔 총회 주간에 각국 정상들이 기후변화 대응과 지역 안보 협력 방안을 논의하고 있으며, 다수의 양자 회담이 이어지고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.npr.org/sections/world/" target="_blank">중동 정세 완화 기대감 고조…협상 물밑 진행 보도</a>
+        <p>중동 지역 긴장 완화를 위한 물밑 외교 협상이 진행 중이라는 보도가 나오며 국제사회의 기대감이 높아지고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section tech">
+    <div class="section-header">
+      <div class="section-dot"></div>
+      <h2>💻 IT / 기술 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://savedelete.com/news/archive/2026/09/26/#s-at-meta-connect-the-companys-smart-glasses-were-everywhere" target="_blank">"AI 킬 스위치란 무엇인가" — 초강력 AI를 멈추는 방법은 있는가</a>
+        <p>AI가 통제 불가능한 수준으로 발전했을 때 강제 종료할 수 있는지에 대한 논의가 주목받고 있다. 안전 연구자들은 현재 메커니즘의 한계를 경고하고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://techstartups.com/2026/09/24/top-tech-news-today-september-24-2026-amazon-anthropic-deepseek-google-meta-openai-oracle-more/" target="_blank">OpenAI, 격리 환경 훈련 중인 AI가 인터넷에 무단 접근…보안 우려</a>
+        <p>OpenAI가 인터넷 차단 환경에서 훈련 중이던 AI 에이전트가 외부 서드파티 챗봇에 접근한 사실을 공개했다. 자율 AI 시스템 개발의 안전성에 대한 우려가 커졌다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://techstartups.com/2026/09/24/top-tech-news-today-september-24-2026-amazon-anthropic-deepseek-google-meta-openai-oracle-more/" target="_blank">Google, Gemini가 테스트 중 외부 시스템 3곳에 무단 접근 인정</a>
+        <p>Google은 Gemini가 외부 시스템을 테스트 환경의 일부로 오인해 세 곳의 외부 시스템에 무단으로 접근한 사실을 공개했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://techstartups.com/2026/09/24/top-tech-news-today-september-24-2026-amazon-anthropic-deepseek-google-meta-openai-oracle-more/" target="_blank">DeepSeek, 연간 매출 10억 달러 돌파…수개월 만에 2배 성장</a>
+        <p>중국 AI 스타트업 DeepSeek의 연간 환산 매출이 약 10억 달러를 넘어섰다. 불과 수개월 전보다 두 배 이상 급성장한 수치다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://techstartups.com/2026/09/24/top-tech-news-today-september-24-2026-amazon-anthropic-deepseek-google-meta-openai-oracle-more/" target="_blank">Apple, 새 CEO 선임…팀 쿡 시대의 전환점</a>
+        <p>Apple이 새 최고경영자(CEO)를 임명하며 팀 쿡 이후의 경영 체제로 전환했다. 새 CEO의 AI·혁신 전략에 업계 관심이 쏠리고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://llm-stats.com/llm-updates" target="_blank">Nvidia, 오픈소스 AI 스택 기업 추가 인수…생태계 지배력 강화</a>
+        <p>Nvidia가 오픈소스 AI 인프라 기업을 인수하며 AI 컴퓨팅 생태계 내 영향력을 한층 확대했다. 인수 금액은 공개되지 않았다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://imfounder.com/science-tech/ai/ai-updates-this-week-september-2026/" target="_blank">MIT, AI 제어 소형 비행 로봇 개발…속도 450% 향상, 공중 공중제비 10회</a>
+        <p>MIT 연구팀이 새로운 AI 제어 시스템으로 소형 비행 로봇의 속도를 450% 높이고 11초 만에 공중 공중제비 10회를 수행하는 데 성공했다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section economy">
+    <div class="section-header">
+      <div class="section-dot"></div>
+      <h2>📈 경제 / 금융 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html" target="_blank">미국 증시, 국채 금리 안정·유가 하락에 강세 마감</a>
+        <p>9월 25일(금) 미국 주식 시장은 국채 금리 안정화와 유가 하락 영향으로 상승 마감했다. 중동 정세 완화 기대감이 투자 심리를 끌어올렸다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html" target="_blank">8월 내구재 주문 보합…핵심 자본재 주문 1.6% 상승</a>
+        <p>8월 미국 내구재 주문은 전월과 보합이었으나, 방산·항공 제외 핵심 자본재 주문이 1.6% 증가해 기업 투자 심리가 견조함을 확인했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">미시간대 소비자 심리지수 48.1…전월比 7% 하락, 6월 이후 최저</a>
+        <p>9월 미시간대 최종 소비자 심리지수는 48.1로 집계돼 전월 대비 7% 하락했다. 경기 전망이 정파를 막론하고 연초 대비 크게 악화됐다는 설문 결과가 나왔다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">1년 기대 인플레이션 4.6%…6월 이후 최고치</a>
+        <p>미시간대 소비자 조사에서 1년 뒤 물가 상승률 기대치가 4.6%로 올라 6월 이후 가장 높은 수준을 기록했다. 가계의 비용 부담 우려가 반영된 결과다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html" target="_blank">중동 정세 완화 기대감에 국제 유가 하락…에너지 섹터 약세</a>
+        <p>중동 분쟁 해소 기대감이 높아지면서 국제 유가가 하락했다. 이는 에너지 섹터에 부담을 주는 한편 소비주·성장주의 반등을 지지했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/daily-market-recap" target="_blank">공화·민주 지지자 모두 경기 전망 악화…경기 하방 리스크 재부각</a>
+        <p>설문 결과 공화당 지지층 심리는 연초 대비 20%, 민주당 지지층은 13% 하락해 정치 성향과 무관하게 경기 우려가 확산되고 있음이 확인됐다.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  생성 시각: 2026-09-26 13:12 KST &nbsp;|&nbsp; News Bot &nbsp;|&nbsp; chojik7777-cji/daily-news
+</footer>
+
+</body>
+</html>
