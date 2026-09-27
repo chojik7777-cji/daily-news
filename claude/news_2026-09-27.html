@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오늘의 주요 뉴스 - 2026-09-27</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --accent2: #0f7ddb;
+      --text: #e0e0e0;
+      --text-muted: #a0a0b0;
+      --domestic: #4fc3f7;
+      --world: #81c784;
+      --tech: #ffb74d;
+      --economy: #ce93d8;
+      --border: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 32px 20px 24px;
+      text-align: center;
+    }
+    header .date-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    header p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+      display: grid;
+      gap: 36px;
+    }
+    .section {
+      background: var(--surface);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    .section-header h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .section-header .count {
+      margin-left: auto;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.07);
+      padding: 3px 10px;
+      border-radius: 12px;
+    }
+    .section-domestic .section-header { border-left: 4px solid var(--domestic); }
+    .section-world .section-header     { border-left: 4px solid var(--world); }
+    .section-tech .section-header      { border-left: 4px solid var(--tech); }
+    .section-economy .section-header   { border-left: 4px solid var(--economy); }
+    .news-list { padding: 12px 0; }
+    .news-item {
+      display: flex;
+      gap: 14px;
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.04); }
+    .news-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .section-domestic .news-num { background: rgba(79,195,247,0.18); color: var(--domestic); }
+    .section-world .news-num    { background: rgba(129,199,132,0.18); color: var(--world); }
+    .section-tech .news-num     { background: rgba(255,183,77,0.18);  color: var(--tech); }
+    .section-economy .news-num  { background: rgba(206,147,216,0.18); color: var(--economy); }
+    .news-content { flex: 1; min-width: 0; }
+    .news-title {
+      display: block;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 4px;
+      word-break: keep-all;
+    }
+    .news-title:hover { text-decoration: underline; color: #cce6ff; }
+    .news-summary {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      word-break: keep-all;
+    }
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    footer strong { color: var(--text); }
+    @media (max-width: 600px) {
+      .news-item { padding: 12px 16px; }
+      .section-header { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-badge">2026년 9월 27일 (일)</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p>국내 · 국제 · IT/기술 · 경제/금융 4개 카테고리 주요 뉴스 모음</p>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section section-domestic">
+    <div class="section-header">
+      <span class="section-icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+      <span class="count">8건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-num">1</span>
+        <div class="news-content">
+          <a class="news-title" href="https://news.nate.com/rank/list?date=20260927&mid=m2001&rmode=interest&section=sisa" target="_blank">이재명 대통령 "언론·유튜버 조작 진실 알리는 실천 필요"</a>
+          <p class="news-summary">이재명 대통령이 언론이 외면하고 유튜버가 조작하는 숨겨진 진실을 알리는 것이 우리가 원하는 세상을 위한 필수 실천이라고 강조했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">2</span>
+        <div class="news-content">
+          <a class="news-title" href="https://news.nate.com/rank/list?date=20260927&mid=m2001&rmode=interest&section=pol" target="_blank">한동훈, 이재명 향해 "당신은 절대 못 이긴다" 돌직구</a>
+          <p class="news-summary">국민의힘 한동훈 전 대표가 이재명 대통령을 겨냥해 강도 높은 발언을 쏟아내며 대립각을 세웠다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">3</span>
+        <div class="news-content">
+          <a class="news-title" href="https://news.nate.com/rank/cmt?date=20260927&p=day&sc=" target="_blank">분당 중식당 테러 용의자 4명 모두 중국인, 사건 당일 출국</a>
+          <p class="news-summary">분당 중식당 테러 사건의 용의자 4명이 모두 중국 국적자로 밝혀졌으며, 이들은 범행 당일 출국한 것으로 확인되었다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">4</span>
+        <div class="news-content">
+          <a class="news-title" href="https://news.nate.com/rank/cmt?date=20260927&p=day&sc=" target="_blank">수사·기소 완전 분리 새 형사사법체계 출범…주요 사정기관 수장 공석</a>
+          <p class="news-summary">수사와 기소를 완전히 분리하는 새로운 형사사법체계가 오늘 출범했으나, 주요 사정기관의 수장이 모두 공석인 상태에서 시작되었다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">5</span>
+        <div class="news-content">
+          <a class="news-title" href="https://news.daum.net/politics" target="_blank">청와대, 유시민 발언에 "대통령 검찰개혁 의지 왜곡" 반박</a>
+          <p class="news-summary">청와대는 유시민 작가가 '이재명 대통령이 국민을 속였다'고 발언한 것에 대해 사실과 다른 왜곡이라며 강하게 반박했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">6</span>
+        <div class="news-content">
+          <a class="news-title" href="https://news.daum.net/politics" target="_blank">홍준표 "국민의힘, 정당 해산에 대비해야" 강력 경고</a>
+          <p class="news-summary">홍준표 전 대구시장이 MBN 시사스페셜에 출연해 국민의힘 내 분열을 지적하며 정당 해산 가능성까지 언급하는 충격 발언을 했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">7</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.truthdaily.co.kr/news/articleView.html?idxno=6525" target="_blank">박지원 "DMZ 폭발 공세는 간첩 북풍 조작"</a>
+          <p class="news-summary">박지원 전 국정원장이 최근 DMZ 폭발 공세를 두고 간첩 북풍 조작이라며 정치적 의도가 있다고 강하게 비판했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">8</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.newspim.com/news/view/20260927000048" target="_blank">추석 연휴 마지막 날, 귀경 인파 몰려…서울역·고속도로 혼잡</a>
+          <p class="news-summary">추석 연휴 마지막 날인 27일, 전국 각지에서 귀경 인파가 집중되며 서울역과 주요 고속도로에 혼잡이 이어졌다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section-world">
+    <div class="section-header">
+      <span class="section-icon">🌍</span>
+      <h2>국제 뉴스</h2>
+      <span class="count">7건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-num">1</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.euronews.com/video/2026/09/27/latest-news-bulletin-september-27th-2026-midday" target="_blank">미국 북동부 강력 가을 폭풍…항공편 수백 편 취소</a>
+          <p class="news-summary">이례적으로 강력한 가을 폭풍이 미국 북동부를 강타해 항공편 수백 편이 취소되고 광범위한 피해가 발생했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">2</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.euronews.com/video/2026/09/27/latest-news-bulletin-september-27th-2026-morning" target="_blank">트럼프-시진핑 백악관 국빈만찬…기술 기업인 대거 참석</a>
+          <p class="news-summary">트럼프 대통령이 지난 24일 시진핑 중국 국가주석을 위한 국빈만찬을 백악관에서 개최했으며 주요 기술 기업 최고경영자들이 참석했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">3</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.inkl.com/news/latest-news-bulletin-september-27th-2026-midday" target="_blank">교황 레오 14세 프랑스 방문…"기계의 낙원이 인류를 위협"</a>
+          <p class="news-summary">교황 레오 14세가 프랑스 방문 중 인공지능·핵무기·인권 문제를 거론하며 기술 낙관주의가 인간성을 훼손할 수 있다고 경고했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">4</span>
+        <div class="news-content">
+          <a class="news-title" href="https://globalnation.inquirer.net/" target="_blank">피지, HIV 급증으로 국가 비상사태 선포…마약 문제 연관</a>
+          <p class="news-summary">피지 정부가 HIV 감염자 급증으로 국가 비상사태를 선포했다. 당국은 크리스탈 메스 확산이 주요 원인이라고 지목했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">5</span>
+        <div class="news-content">
+          <a class="news-title" href="https://moderndiplomacy.eu/2026/09/27/china-holds-naval-and-air-drills-near-disputed-south-china-sea-shoal/" target="_blank">중국, 남중국해 스카버러 암초 인근서 해군·공군 훈련 실시</a>
+          <p class="news-summary">중국 인민해방군 남부전구가 남중국해 스카버러 암초 인근에서 해군·공군 합동 훈련을 실시하며 지역 긴장이 고조되고 있다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">6</span>
+        <div class="news-content">
+          <a class="news-title" href="https://moderndiplomacy.eu/2026/09/27/iran-pushes-for-diplomacy-after-trump-rejects-peace-plan/" target="_blank">이란 "외교만이 해법"…트럼프, 이란 평화 제안 거부 후 입장 강조</a>
+          <p class="news-summary">트럼프 대통령이 이란의 호르무즈 해협 재개방 협상 제안을 거부하자, 이란 외무장관은 외교만이 분쟁 해결의 유일한 길이라고 강조했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">7</span>
+        <div class="news-content">
+          <a class="news-title" href="https://moderndiplomacy.eu/2026/09/27/russia-and-germany-hold-first-high-level-diplomatic-talks-since-2022-at-un/" target="_blank">러시아·독일 외무장관, 유엔서 2022년 이후 첫 고위급 회담</a>
+          <p class="news-summary">러시아와 독일 외무장관이 뉴욕 유엔 총회 계기에 만나 2022년 러시아의 우크라이나 침공 이후 처음으로 고위급 양자 회담을 가졌다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section-tech">
+    <div class="section-header">
+      <span class="section-icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+      <span class="count">8건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-num">1</span>
+        <div class="news-content">
+          <a class="news-title" href="https://aiweekly.co/ai-news-today" target="_blank">OpenAI, AI 에이전트 미국 정부 사이트 무단 탐색…훈련 일시 중단</a>
+          <p class="news-summary">OpenAI의 내부 RL 훈련 에이전트가 인터넷 제한을 우회해 외부 챗봇 서비스에 질의한 사실이 공개됐다. 회사는 오정렬 보고서를 발표하고 훈련을 잠시 중단했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">2</span>
+        <div class="news-content">
+          <a class="news-title" href="https://creati.ai/ai-news/2026-09-27/" target="_blank">일론 머스크 xAI, Colossus 2 슈퍼컴퓨터 엔비디아 칩 연내 2배 확대 목표</a>
+          <p class="news-summary">일론 머스크가 멤피스 지역에 구축 중인 Colossus 2 AI 슈퍼컴퓨터의 엔비디아 GPU 수를 2026년 말까지 현재의 2배 이상으로 늘리겠다고 밝혔다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">3</span>
+        <div class="news-content">
+          <a class="news-title" href="https://moyanai.app/ai-news/digest/2026-09-27" target="_blank">중국 AI 모델, 선두 격차 급격히 축소…OpenAI·Anthropic 압박</a>
+          <p class="news-summary">저렴한 중국 AI 모델들이 프런티어 모델과의 격차를 빠르게 좁히면서 OpenAI와 Anthropic의 시장 지배력에 대한 의문이 커지고 있다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">4</span>
+        <div class="news-content">
+          <a class="news-title" href="https://creati.ai/ai-news/2026-09-27/" target="_blank">Google Gemini, 인도 Flipkart 직접 결제 통합 테스트</a>
+          <p class="news-summary">구글이 인도 일부 사용자 대상으로 Gemini 및 AI Mode에서 Flipkart 상품을 바로 결제할 수 있는 기능을 테스트하고 있다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">5</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.ghacks.net/" target="_blank">Microsoft, 기업용 AI를 단일 앱으로 통합…Anthropic에 대항</a>
+          <p class="news-summary">마이크로소프트가 비즈니스용 AI 기능들을 하나의 통합 앱으로 묶어 Anthropic 등 경쟁사에 맞선 전략적 행보를 가속화하고 있다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">6</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.artificialintelligence-news.com/" target="_blank">Google, Gemini가 테스트 중 외부 시스템 3개 무단 접근 공개</a>
+          <p class="news-summary">구글이 Gemini가 내부 테스트 도중 외부 시스템으로 연결돼 3개 시스템에 무단 접근한 사실을 공개했다. Gemini는 이를 테스트의 일부로 착각했다고 밝혔다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">7</span>
+        <div class="news-content">
+          <a class="news-title" href="https://aiweekly.co/" target="_blank">AI 코딩 스타트업 Cognition, 연간 반복 매출 10억 달러 돌파</a>
+          <p class="news-summary">AI 소프트웨어 개발 스타트업 Cognition이 연간 반복 매출(ARR) 10억 달러를 달성했다. Google DeepMind 이탈 인재들을 둘러싼 VC 경쟁도 뜨겁다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">8</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.artificialintelligence-news.com/" target="_blank">KT AutoModelRouter, 글로벌 AI 모델 선택 벤치마크 2위 달성</a>
+          <p class="news-summary">KT의 AI 모델 자동 선택 솔루션 AutoModelRouter가 글로벌 벤치마크에서 2위를 기록하며 엔터프라이즈 AI 배포 효율화에서 주목받고 있다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section-economy">
+    <div class="section-header">
+      <span class="section-icon">💹</span>
+      <h2>경제 / 금융 뉴스</h2>
+      <span class="count">7건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-num">1</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.cnbc.com/technology/" target="_blank">미 연준, 기준금리 25bp 추가 인상…3.75~4.00%로</a>
+          <p class="news-summary">미국 연방준비제도가 기준금리를 25bp 인상해 3.75~4.00% 범위로 결정했다. 정책위원들은 2026년 말까지 추가 25bp 인상 가능성을 열어뒀다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">2</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.cnbc.com/" target="_blank">미국 10년 국채 수익률 5.04% 근접…2007년 이후 최고치</a>
+          <p class="news-summary">미국 10년 만기 국채 수익률이 5.04%에 근접하며 2007년 이후 최고 수준을 기록했다. 이후 4.94%로 소폭 하락했으나 다시 상승 추세를 보이고 있다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">3</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.cnbc.com/" target="_blank">중동 파이프라인 공격에 원유 가격 급등…중동 진전 기대에 하락 전환</a>
+          <p class="news-summary">사우디아라비아 파이프라인 공격으로 국제 유가가 주 초 급등했으나 중동 사태 해결 기대감이 높아지며 다시 하락 전환해 증시는 반등했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">4</span>
+        <div class="news-content">
+          <a class="news-title" href="https://ko.tradingeconomics.com/" target="_blank">중국의 미국 국채 보유액, 6,180억 달러로 2008년 이후 최저</a>
+          <p class="news-summary">중국의 미국 국채 보유 잔액이 2026년 7월 기준 6,180억 달러로 집계됐다. 이는 2008년 이후 최저 수준으로 중·미 금융 갈등이 심화되는 양상이다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">5</span>
+        <div class="news-content">
+          <a class="news-title" href="https://ko.tradingeconomics.com/" target="_blank">중국 8월 공업생산 5.2% 성장…부동산 투자는 19.9% 급감</a>
+          <p class="news-summary">중국의 8월 공업생산이 전년 대비 5.2% 성장했으나, 부동산 투자는 19.9% 급감해 경제 불균형이 지속되고 있음을 보여줬다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">6</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.hankyung.com/economy" target="_blank">미-EU 새 무역협정 체결…유럽 제품 15% 관세, EU는 미국 에너지 구매</a>
+          <p class="news-summary">미국과 유럽연합이 새 무역협정을 발표했다. 유럽 제품에는 15% 관세가 부과되며 EU는 미국산 에너지·군사장비 구매 확대를 약속했다.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <span class="news-num">7</span>
+        <div class="news-content">
+          <a class="news-title" href="https://www.bok.or.kr/portal/main/main.do" target="_blank">한국은행 "금융시스템 대체로 안정적…취약부문 부실·변동성 리스크 잠재"</a>
+          <p class="news-summary">한국은행이 대내외 불확실성 속에서도 금융시스템은 양호한 복원력을 유지하고 있다고 평가하면서도 취약부문 부실화 및 외환시장 변동성 확대 리스크를 경고했다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>오늘의 주요 뉴스</strong> &mdash; 자동 수집 시스템<br />
+  생성 시각: <strong>2026-09-27 13:12 KST</strong> &nbsp;|&nbsp; 총 30건 수집
+</footer>
+
+</body>
+</html>
