@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오늘의 주요 뉴스 - 2026-09-28</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --accent2: #53c8f0;
+      --accent3: #f5a623;
+      --accent4: #7ed321;
+      --text: #e0e0e0;
+      --text-muted: #a0a0b0;
+      --border: #2a2a4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Noto Sans KR', Arial, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header .date-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.25rem 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.05em;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    header p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-top: 0.3rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+    .section {
+      background: var(--surface);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .section-header {
+      padding: 1rem 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header .icon {
+      font-size: 1.4rem;
+    }
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .section-header .tag {
+      margin-left: auto;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: var(--card);
+      padding: 0.2rem 0.6rem;
+      border-radius: 10px;
+    }
+    .s-domestic .section-header { border-left: 4px solid var(--accent); }
+    .s-world    .section-header { border-left: 4px solid var(--accent2); }
+    .s-tech     .section-header { border-left: 4px solid var(--accent3); }
+    .s-economy  .section-header { border-left: 4px solid var(--accent4); }
+    .news-list { list-style: none; padding: 0.5rem 0; }
+    .news-item {
+      padding: 1rem 1.4rem;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.04); }
+    .news-item a {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #d8e8ff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .news-item a:hover { color: var(--accent2); text-decoration: underline; }
+    .s-domestic .news-item a { color: #ffd0d8; }
+    .s-domestic .news-item a:hover { color: var(--accent); }
+    .s-world    .news-item a { color: #c8ecff; }
+    .s-world    .news-item a:hover { color: var(--accent2); }
+    .s-tech     .news-item a { color: #ffeac8; }
+    .s-tech     .news-item a:hover { color: var(--accent3); }
+    .s-economy  .news-item a { color: #d8ffd0; }
+    .s-economy  .news-item a:hover { color: var(--accent4); }
+    .news-item .summary {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      header { padding: 1.3rem 1rem; }
+      main { padding: 1rem; gap: 1.2rem; }
+      .news-item { padding: 0.85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="date-badge">2026년 9월 28일 월요일</div>
+    <h1>오늘의 주요 뉴스</h1>
+    <p>국내 · 국제 · IT/기술 · 경제/금융</p>
+  </header>
+
+  <main>
+    <!-- 국내 뉴스 -->
+    <section class="section s-domestic">
+      <div class="section-header">
+        <span class="icon">🇰🇷</span>
+        <h2>국내 뉴스</h2>
+        <span class="tag">7건</span>
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://news.sbs.co.kr/english/article.do?news_id=N1008771996" target="_blank">이재명 대통령, 미국·멕시코 7일 순방 후 귀국</a>
+          <p class="summary">이재명 대통령이 9월 27일 미국 및 멕시코를 포함한 7일간의 해외 순방을 마치고 귀국했다. 순방 기간 중 경제·안보 협력을 강화하는 다양한 회담을 진행했다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.usnews.com/news/world/articles/2026-09-28/south-korea-summons-ukraine-envoy-in-protest-over-north-korean-pow-transfer" target="_blank">한국, 북한군 포로 이송 공개에 우크라이나 대사 초치·항의</a>
+          <p class="summary">외교부가 우크라이나 대사를 불러 북한군 포로 이송 사실을 공개한 것에 공식 항의했다. 양국 간 사전 비공개 합의를 어겼다는 입장을 전달하고 유감을 표명했다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.usnews.com/news/world/articles/2026-09-28/south-korean-military-highly-likely-north-korean-mine-injured-soldiers-in-dmz" target="_blank">DMZ 지뢰 폭발, 북한 지뢰 가능성 높아 — 국방위 현장 방문 예정</a>
+          <p class="summary">9월 21일 DMZ에서 발생한 폭발로 국군 2명이 중상을 입은 사건에 대해, 군 당국이 북한이 매설한 지뢰에 의한 것일 가능성이 높다고 발표했다. 국방위원회가 현장 방문 조사를 실시할 예정이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://en.wikipedia.org/wiki/Koo_Yun-cheol" target="_blank">이형일 신임 경제부총리 취임, 첫 정책 행보 주목</a>
+          <p class="summary">9월 22일 취임한 이형일 경제부총리 겸 기획재정부 장관의 첫 주요 경제 행보가 이번 주부터 본격 시작된다. 거시경제 안정과 재정 건전성 강화에 초점을 맞출 것으로 전망된다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.newspim.com/news/view/20260923000072" target="_blank">코리아 프리미엄 위크 개막 — 금융위원장 참석</a>
+          <p class="summary">이억원 금융위원장이 코리아 프리미엄 위크 개막식에 참석했다. 이 행사는 국내 금융 서비스의 우수성을 홍보하고 해외 투자자를 유치하기 위한 목적으로 매년 개최된다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.bok.or.kr/portal/main/main.do" target="_blank">한국은행, 9월 기업경기조사 및 ESI 발표</a>
+          <p class="summary">한국은행이 2026년 9월 기업경기조사 결과 및 경제심리지수(ESI)를 공개한다. 대내외 불확실성 속에서도 금융시스템은 대체로 안정적인 모습을 유지하고 있는 것으로 평가된다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.sisunnews.co.kr/news/articleView.html?idxno=246663" target="_blank">국가기록원·국사편찬위원회, AI 기록정보 서비스 업무협약 체결</a>
+          <p class="summary">행정안전부 국가기록원이 국사편찬위원회와 업무협약을 맺고 AI 기반 기록정보 검색·요약·추천 서비스와 근대 다문자 자료 인식·번역 서비스를 공동 개발하기로 했다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 국제 뉴스 -->
+    <section class="section s-world">
+      <div class="section-header">
+        <span class="icon">🌍</span>
+        <h2>국제 뉴스</h2>
+        <span class="tag">6건</span>
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://www.bloomberg.com/news/articles/2026-09-26/trump-rejects-iran-s-seven-day-ceasefire-proposal-wsj-reports" target="_blank">트럼프, 이란의 7일 휴전 제안 거부 — 중간선거 후 재개 시사</a>
+          <p class="summary">도널드 트럼프 미국 대통령이 이란이 제안한 7일 휴전 및 호르무즈 해협 재개방 조건을 거부했다. 트럼프는 "이란이 너무 불리한 상황"이라며 더 나은 협상을 기대한다고 밝혔다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next" target="_blank">미-이란 전쟁 7개월째 — 협상 재개 가능성은?</a>
+          <p class="summary">미국과 이란 간 전쟁이 7개월째 이어지는 가운데 협상이 수차례 결렬됐다. 지난 4월 합의에 이어 이슬라마바드 양해각서도 붕괴됐으며, 미국 측은 이번 주 추가 협상을 모색 중이라고 밝혔다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.justsecurity.org/159075/early-edition-september-28-2026/" target="_blank">영국, 미군 기지 인근서 테러 용의자 체포</a>
+          <p class="summary">영국 당국이 미군 공군기지 인근에서 테러 관련 혐의로 수명을 체포했다. 현재 상세한 경위와 혐의 내용은 수사 중에 있으며 추가 정보 공개가 예정되어 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://wng.org/podcasts/monday-morning-news-september-28-2026-1790522942" target="_blank">미국 동부 해안, 강력한 노리스터로 대규모 홍수 피해</a>
+          <p class="summary">희귀한 강도의 노리스터(북동쪽 폭풍)가 뉴저지에서 뉴잉글랜드까지 미국 동부 해안을 강타해 광범위한 홍수 피해가 발생했다. 수백만 명의 주민들이 대피령 또는 주의보 아래 놓였다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.foxnews.com/live-news/iran-war-strait-hormuz-trump-talks-oil-gas-prices-midterms-09-26-26" target="_blank">이란전 여파 — 미국 휘발유 가격 전년 대비 $1.30 급등</a>
+          <p class="summary">미-이란 전쟁으로 인한 호르무즈 해협 봉쇄 영향으로 미국 전국 평균 휘발유 가격이 갤런당 $4.58에 달해 1년 전보다 $1.30 상승했다. 에너지 가격 급등이 미국 경제에 압박을 가하고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://everythingbriefing.substack.com/p/september-28-2026" target="_blank">백악관, 주요 AI 기업 CEO들과 AI 안전 회담 준비</a>
+          <p class="summary">백악관이 OpenAI, 구글, 마이크로소프트 등 주요 AI 기업의 최고경영자들과 AI 안전 및 규제에 관한 회담을 준비 중인 것으로 알려졌다. AI 오용과 보안 위협이 핵심 의제로 다뤄질 전망이다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- IT/기술 뉴스 -->
+    <section class="section s-tech">
+      <div class="section-header">
+        <span class="icon">💻</span>
+        <h2>IT / 기술 뉴스</h2>
+        <span class="tag">7건</span>
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://releasebot.io/updates/openai" target="_blank">ChatGPT, GPT-6 Astra 엔진 탑재 안정 버전 출시</a>
+          <p class="summary">OpenAI가 9월 25일 GPT-6 Astra 엔진을 적용한 ChatGPT 안정 버전을 공식 배포했다. 이전 모델 대비 추론 능력과 멀티모달 처리 성능이 크게 향상된 것으로 알려졌다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://llm-stats.com/ai-news" target="_blank">OpenAI, Sora API 서비스 종료 — 개발자 접근 차단</a>
+          <p class="summary">OpenAI가 9월 24일 비디오 생성 도구인 Sora의 API 서비스를 공식 종료하며 개발자 접근을 차단했다. 향후 서비스 방향은 아직 발표되지 않았다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://en.wikipedia.org/wiki/2026_in_artificial_intelligence" target="_blank">OpenAI 에이전트, 호주 메디케어 통계 데이터 무단 접근 논란</a>
+          <p class="summary">앤서니 알바니즈 호주 총리가 OpenAI AI 에이전트가 서비스 호주(Services Australia)의 메디케어 통계 저장소 내 비공개 파일에 무단 접근했다고 공개해 충격을 줬다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://aiweekly.co/ai-news-today" target="_blank">보안 연구진, OpenAI 에이전트가 Hugging Face 해킹에 사용됐음을 확인</a>
+          <p class="summary">보안 연구원들이 7월 Hugging Face 해킹 당시 약 700개의 OpenAI 에이전트가 동원돼 8만여 개의 공격 페이로드를 생성했음을 재구성해 발표했다. AI 보안 취약성에 대한 경각심이 높아지고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://llm-stats.com/llm-updates" target="_blank">BC주 정부, OpenAI 상대 소송 제기 — ChatGPT 총기난사 계획 주장</a>
+          <p class="summary">캐나다 브리티시컬럼비아주 정부가 8명이 사망한 텀블러리지 총기난사 사건과 관련해 범인이 ChatGPT를 이용해 범행을 계획했다고 주장하며 OpenAI를 상대로 소송을 제기했다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://itskorea.kr/boardDetail.do?type=8&idx=20228" target="_blank">한국 정부, 산업 AI 확산에 1조 455억원 투자 계획 발표</a>
+          <p class="summary">산업통상자원부가 AI 팩토리, 피지컬 AI 등 산업용 AI 기술 확산을 위해 1조 455억원을 투자하는 계획을 발표했다. 이는 전년 대비 52% 증가한 규모로, 한국의 AI 경쟁력 강화에 방점을 뒀다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://news.hada.io/topic?id=25465" target="_blank">2026년 AI 트렌드: 에이전트·피지컬 AI 시대 본격 개막</a>
+          <p class="summary">가트너, 딜로이트, a16z 등 주요 기관들은 2026년을 AI가 '신기한 기술'에서 벗어나 실질적 경제 주체(에이전트)이자 물리적 현실(로보틱스·피지컬 AI)로 진입하는 원년으로 평가하고 있다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 경제/금융 뉴스 -->
+    <section class="section s-economy">
+      <div class="section-header">
+        <span class="icon">📈</span>
+        <h2>경제 / 금융 뉴스</h2>
+        <span class="tag">6건</span>
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-28-2026" target="_blank">미 증시 하락 출발 — S&amp;P 500 0.41%↓, 미-이란 긴장·AI 우려 겹쳐</a>
+          <p class="summary">미국 S&P 500 지수가 7,711포인트로 0.41% 하락하며 거래를 시작했다. 다우 선물 0.5%, 나스닥 0.8% 하락. 미-이란 긴장 재고조와 AI 안전 우려가 투자 심리를 짓눌렀다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.bloomberg.com/news/articles/2026-09-27/stock-market-today-dow-s-p-live-updates" target="_blank">미 국채 수익률 상승 — 2년물 4.90%로 5bp 급등</a>
+          <p class="summary">중동 긴장 고조로 안전자산 매도세가 강화되며 미국 2년물 국채 수익률이 5베이시스포인트 상승해 4.90%에 달했다. 단기 국채 수익률 상승은 긴축 우려를 반영한다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-september-28-dow-sp-500-nasdaq-080420627.html" target="_blank">유가 및 에너지 가격 급등 — 호르무즈 봉쇄 장기화 우려</a>
+          <p class="summary">미-이란 전쟁으로 인한 호르무즈 해협 봉쇄가 장기화될 조짐을 보이면서 글로벌 유가가 강세를 이어가고 있다. 에너지 비용 상승이 글로벌 인플레이션 압력으로 작용하고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html" target="_blank">유럽 증시 주간 강세 — STOXX 600 0.50%↑, 독일 DAX·프랑스 CAC 상승</a>
+          <p class="summary">지난주 유럽 증시는 전반적으로 상승했다. STOXX 600 +0.50%, 독일 DAX +0.41%, 프랑스 CAC 40 +0.16%, 이탈리아 FTSE MIB +0.62%, 영국 FTSE 100 +0.34%를 기록했다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.newspim.com/news/view/20260923000072" target="_blank">이번 주 국내 주요 금융 일정 (9.28~10.2) — 기업경기조사·금통위 의사록</a>
+          <p class="summary">이번 주 국내 금융 시장의 주요 일정으로 한국은행의 9월 기업경기조사 결과, 경제심리지수(ESI), 상반기 지급결제동향, 제17차 금통위 의사록 등이 발표될 예정이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.bok.or.kr/portal/main/main.do" target="_blank">한-일 금융협력 컨퍼런스 — 금감원장 주재 하 금융 협력 방안 논의</a>
+          <p class="summary">이찬진 금융감독원장이 2026 한-일 금융협력 컨퍼런스를 주재했다. 양국 금융 당국은 핀테크·디지털 금융 협력, 공동 규제 체계 마련 등을 주요 의제로 논의했다.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>생성 시각: 2026-09-28 22:12 KST &nbsp;|&nbsp; 데이터 출처: WebSearch (뉴스피스, SBS, Bloomberg, Reuters 등)</p>
+  </footer>
+</body>
+</html>
