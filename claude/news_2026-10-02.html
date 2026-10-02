@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-10-02</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-card: #0f3460;
+      --bg-card-hover: #1a4a7a;
+      --accent: #e94560;
+      --accent-domestic: #4fc3f7;
+      --accent-world: #81c784;
+      --accent-tech: #ce93d8;
+      --accent-economy: #ffb74d;
+      --text-primary: #e8eaf6;
+      --text-secondary: #b0bec5;
+      --text-muted: #78909c;
+      --border: #1e3a5f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);
+      padding: 2.5rem 1rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+    header .date-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+    header h1 span {
+      color: var(--accent);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 1.5rem;
+    }
+    .section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      padding: 1rem 1.4rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .section-header .icon { font-size: 1.3rem; }
+    .section-domestic .section-header { background: rgba(79,195,247,0.12); border-left: 4px solid var(--accent-domestic); color: var(--accent-domestic); }
+    .section-world .section-header    { background: rgba(129,199,132,0.12); border-left: 4px solid var(--accent-world);    color: var(--accent-world); }
+    .section-tech .section-header     { background: rgba(206,147,216,0.12); border-left: 4px solid var(--accent-tech);     color: var(--accent-tech); }
+    .section-economy .section-header  { background: rgba(255,183,77,0.12);  border-left: 4px solid var(--accent-economy);  color: var(--accent-economy); }
+    .news-list { padding: 0.5rem 0; }
+    .news-item {
+      padding: 0.9rem 1.4rem;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: var(--bg-card); }
+    .news-item a {
+      display: block;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      margin-bottom: 0.35rem;
+      line-height: 1.45;
+    }
+    .news-item a:hover { text-decoration: underline; color: #fff; }
+    .news-item .summary {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 1.5rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+    footer span { color: var(--accent); font-weight: 600; }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding: 1.8rem 1rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-badge">2026년 10월 2일 금요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<div class="container">
+  <div class="grid">
+
+    <!-- 국내 뉴스 -->
+    <div class="section section-domestic">
+      <div class="section-header">
+        <span class="icon">🇰🇷</span> 국내 뉴스
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <a href="https://www.24news.kr/news/articleView.html?idxno=309975" target="_blank">검찰청 폐지, 공소청·중수청 출범</a>
+          <p class="summary">1948년 개청한 검찰청이 78년 만에 역사 속으로 사라졌다. 기소 기능은 새로 설립된 공소청이, 부패·마약·사이버 등 중대범죄 수사는 중대범죄수사청(중수청)이 각각 맡게 됐다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06323846645608984" target="_blank">9월 수출 1,209억 달러… 사상 최대 기록</a>
+          <p class="summary">9월 수출이 전년 동월 대비 83.5% 급증하며 1,209억 달러를 기록, 월간 역대 최고치를 갈아치웠다. 반도체 수출만 603억 달러로 단일 품목 기준 처음으로 월 600억 달러를 돌파했다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06323846645608984" target="_blank">보조배터리 항공기 기내 반입 금지</a>
+          <p class="summary">에어서울 여객기 화재의 원인으로 지목된 것과 동일 모델 보조배터리에 대해 국내 항공사들이 기내 반입을 전면 금지했다. 항공 탑승 전 소지한 보조배터리 모델 확인이 필요하다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="http://www.sisunnews.co.kr/news/articleView.html?idxno=247002" target="_blank">제30회 노인의 날 안전 캠페인 실시</a>
+          <p class="summary">행정안전부가 10월 2일 제30회 노인의 날을 맞아 어르신 안전사고 예방과 일상 속 안전문화 확산을 위한 현장 캠페인을 전국에서 진행했다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.careyounews.org/news/articleView.html?idxno=11774" target="_blank">통합돌봄 핵심인재 500명 양성 추진</a>
+          <p class="summary">보건복지부는 지역사회 통합돌봄의 원활한 운영을 위해 현장 경험과 노하우를 공유할 핵심인재 500명을 양성하고, 신규 전담인력 역량 강화를 위한 지역 주도형 교육 체계를 마련한다고 밝혔다.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 국제 뉴스 -->
+    <div class="section section-world">
+      <div class="section-header">
+        <span class="icon">🌍</span> 국제 뉴스
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <a href="https://www.euronews.com/video/2026/10/02/latest-news-bulletin-october-2nd-2026-morning" target="_blank">우크라이나, 독자 개발 탄도미사일 공개… 푸틴 핵 경고 재확인</a>
+          <p class="summary">우크라이나가 자체 개발한 첫 번째 탄도미사일을 선보였다. 이에 러시아 푸틴 대통령은 칼리닌그라드에 대한 핵 경고를 재차 강조하며 긴장이 고조됐다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.10things.news/p/10-things-global-news-2nd-october-b5c" target="_blank">파키스탄-아프가니스탄 충돌 재개, 사우디-후티 교전도 격화</a>
+          <p class="summary">휴전이 붕괴되면서 파키스탄이 아프가니스탄을 공격했으며, 사우디아라비아와 예멘 후티 반군 간 전투도 다시 격화됐다. 중동·아프가니스탄 정세 불안이 계속되고 있다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.euronews.com/video/2026/10/02/latest-news-bulletin-october-2nd-2026-midday" target="_blank">에리트레아, 에티오피아와 외교 관계 단절 선언</a>
+          <p class="summary">에리트레아가 에티오피아와의 외교 관계를 공식 단절했다. 이번 결정으로 아프리카 동부 지역의 전략적 불안이 더욱 심화될 것으로 우려된다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.10things.news/p/10-things-global-news-2nd-october-b5c" target="_blank">미국, 이란 육상 운송 추가 제재… 이란, 핵 접근 허용 제안</a>
+          <p class="summary">미국이 이란의 육상 운송 부문에 대한 추가 제재를 발표한 가운데, 이란은 제재 완화를 조건으로 핵 시설에 대한 접근을 허용하겠다는 제안을 내놓았다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.euronews.com/video/2026/10/02/latest-news-bulletin-october-2nd-2026-morning" target="_blank">프랑스 고등학교 파업… 학교 시설·교사 급여 문제 항의</a>
+          <p class="summary">프랑스 전역의 고등학교에서 학생들이 열악한 학교 시설, 과밀 학급, 노후 건물, 낮은 교사 급여 등에 항의하며 새로운 파업에 나서 다수 학교가 문을 닫았다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.10things.news/p/10-things-global-news-2nd-october-b5c" target="_blank">아시아 인권 운동가 탄압 심화… 인권 단체 "억압 스왑 시장" 경고</a>
+          <p class="summary">인권 단체들이 아시아 권위주의 정권들이 국경을 넘어 반체제 인사와 활동가를 공동으로 탄압하는 이른바 '억압의 스왑 시장'이 형성되고 있다고 경고했다.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- IT/기술 뉴스 -->
+    <div class="section section-tech">
+      <div class="section-header">
+        <span class="icon">💻</span> IT / 기술 뉴스
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <a href="https://bloomberg.com/news/articles/2026-10-01/tsmc-mulls-multibillion-dollar-texas-campus-for-more-ai-chips" target="_blank">TSMC, 텍사스 AI 칩 생산 캠퍼스 추가 신설 검토</a>
+          <p class="summary">TSMC가 수백억 달러 규모의 텍사스 신규 캠퍼스 설립을 검토 중이다. 엔비디아·애플의 핵심 파트너인 TSMC는 AI 하드웨어에 대한 폭발적 수요에 대응하기 위해 해외 생산 거점을 적극 확대하고 있다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.edge-ai-vision.com/2026/04/key-trends-shaping-the-semiconductor-industry-in-2026/" target="_blank">AI 칩 시장, 엔비디아 독주에서 삼파전 구도로 전환</a>
+          <p class="summary">2026년이 AI 칩 시장의 분수령이 될 전망이다. 엔비디아 독주 체제에서 AMD, 인텔 등과의 삼파전 구조로 재편될 가능성이 높아지고 있으며, AI 칩은 전체 반도체 매출의 약 50%를 차지하고 있다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" target="_blank">IBM, "2026년 양자 컴퓨터가 최초로 고전 컴퓨터 능가"</a>
+          <p class="summary">IBM이 2026년을 양자 컴퓨터가 고전 컴퓨터를 처음으로 능가하는 해가 될 것이라고 공식 발표했다. 양자 우월성의 실용적 실증이 임박했다는 기대가 업계에 퍼지고 있다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://v.daum.net/v/HHzYCXrNCJ" target="_blank">스마트글래스, 2026년 틈새에서 주류 시장으로 도약</a>
+          <p class="summary">2026년이 스마트글래스의 주류 시장 진입 원년이 될 것으로 전망된다. 메타, 애플 등 주요 빅테크 기업들이 스마트글래스 라인업을 대폭 확장하면서 소비자 수요가 급증하고 있다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://foxbusiness.com/markets/october-could-be-a-huge-month-for-the-stock-market-heres-why" target="_blank">구글, 2026년 자본 지출 최대 2,050억 달러 전망</a>
+          <p class="summary">구글이 2026년 총 자본적 지출을 1,950억~2,050억 달러로 예상한다고 밝혔다. 비용의 대부분은 AI 인프라를 위한 데이터센터 확장, 네트워킹, 커스텀 실리콘 개발에 투입될 예정이다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.itbiznews.com/news/articleView.html?idxno=226920" target="_blank">아시아 데이터 센터 월드 2026, 차세대 AI 냉각 기술 공개</a>
+          <p class="summary">싱가포르 마리나 베이 샌즈에서 열린 데이터 센터 월드 아시아 2026에서 고밀도 AI 데이터 센터를 위한 전력-냉각 하이퍼컨버전스 아키텍처와 풀스택 냉각 솔루션이 선보였다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://m.boannews.com/html/detail.html?tab_type=1&idx=142954" target="_blank">닷핵 컨퍼런스 2026, AI 보안 실전 전략 집중 조명</a>
+          <p class="summary">닷핵 컨퍼런스 2026에서 AI를 활용한 사이버 보안 공격과 방어 전략이 집중 논의됐다. 생성형 AI의 악용 사례와 이에 대한 실전 방어 방안이 주요 의제로 다뤄졌다.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 경제/금융 뉴스 -->
+    <div class="section section-economy">
+      <div class="section-header">
+        <span class="icon">📈</span> 경제 / 금융 뉴스
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05890886645608984" target="_blank">브로드컴, AI 매출 가이던스 상향 기대에 개장 전 반등</a>
+          <p class="summary">브로드컴(AVGO)이 장기 AI 매출 가이던스에 대한 성장 기대감이 부각되며 개장 전 전일 대비 1.41% 오른 348.48달러를 기록했다. AI 인프라 투자 확대 수혜주로 주목받고 있다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06297606645608984" target="_blank">마이크론 호실적에 DA데이비슨, 목표주가 2,100달러로 상향</a>
+          <p class="summary">마이크론 테크놀로지(MU)가 분기 기대치를 상회하는 실적과 가이던스를 발표하자 DA데이비슨이 목표주가를 2,100달러로 올렸다. 펀더멘털 고점 우려도 해소됐다는 평가다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://kr.investing.com/news/stock-market-news/article-2114873" target="_blank">원/달러 환율, 강달러에 1,366원 터치 후 1,350.6원 마감</a>
+          <p class="summary">서울 외환시장에서 원/달러 환율이 글로벌 달러 강세에 장중 1,366원까지 치솟았다가 수출업체의 달러 매도 물량이 쏟아지며 오후 3시 30분 기준 1,350.6원으로 마감됐다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm" target="_blank">미 연준, 9월 기준금리 0.25%p 인상… 연 3.75~4.0%</a>
+          <p class="summary">미국 연방준비제도(Fed)가 9월 금리를 0.25%p 인상해 3.75~4.0% 범위로 높였다. 2026년 하반기 추가 인상 가능성을 열어두고 있으며, 인플레이션 억제를 지속할 방침이다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting" target="_blank">미국 CPI 인플레이션 3.61%… 에너지·관세 영향 지속</a>
+          <p class="summary">클리블랜드 연방준비은행 인플레이션 예측 기준 헤드라인 CPI가 연 3.61%, 근원 PCE는 3.10%를 기록했다. 중동 분쟁에 따른 에너지 비용 상승과 AI 빌드아웃 수요가 주요 원인으로 꼽힌다.</p>
+        </div>
+
+        <div class="news-item">
+          <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04936406645608984" target="_blank">STO써밋 2026 개최… "한국 STO 기초공사 끝, 시장 만들 차례"</a>
+          <p class="summary">서울 여의도 한국거래소에서 열린 STO써밋 2026에서 토큰증권(STO) 생태계 구축과 실제 시장 조성 전략이 논의됐다. 제도적 프레임워크 완성 이후 실질적 시장 성장이 본격화될 것으로 전망됐다.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  생성 시각: <span>2026-10-02 22:14 KST</span> &nbsp;|&nbsp; 자동 수집 뉴스 요약 &nbsp;|&nbsp; 국내 5건 &middot; 국제 6건 &middot; IT/기술 7건 &middot; 경제/금융 6건
+</footer>
+
+</body>
+</html>
