@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026년 10월 3일</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-card: #0f3460;
+      --accent: #e94560;
+      --accent-soft: #533483;
+      --text-primary: #eaeaea;
+      --text-secondary: #a8b2c1;
+      --text-muted: #6c757d;
+      --domestic: #4fc3f7;
+      --world: #a5d6a7;
+      --tech: #ce93d8;
+      --economy: #ffcc80;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--bg-secondary), var(--accent-soft));
+      padding: 40px 24px 30px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header .date-label {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    header h1 span { color: var(--accent); }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .badge-domestic { background: rgba(79,195,247,0.18); color: var(--domestic); border: 1px solid rgba(79,195,247,0.35); }
+    .badge-world    { background: rgba(165,214,167,0.18); color: var(--world);    border: 1px solid rgba(165,214,167,0.35); }
+    .badge-tech     { background: rgba(206,147,216,0.18); color: var(--tech);     border: 1px solid rgba(206,147,216,0.35); }
+    .badge-economy  { background: rgba(255,204,128,0.18); color: var(--economy);  border: 1px solid rgba(255,204,128,0.35); }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .news-list { display: flex; flex-direction: column; gap: 12px; }
+
+    .news-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .news-card:hover {
+      background: var(--bg-card);
+      border-color: rgba(255,255,255,0.15);
+    }
+
+    .news-card .news-title a {
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .news-card .news-title a:hover { text-decoration: underline; }
+
+    .section-domestic .news-card .news-title a { color: var(--domestic); }
+    .section-world    .news-card .news-title a { color: var(--world); }
+    .section-tech     .news-card .news-title a { color: var(--tech); }
+    .section-economy  .news-card .news-title a { color: var(--economy); }
+
+    .news-card .news-summary {
+      margin-top: 6px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-label">2026년 10월 3일 토요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section section-domestic">
+    <div class="section-header">
+      <span class="section-badge badge-domestic">국내</span>
+      <span class="section-title">국내 뉴스</span>
+    </div>
+    <div class="news-list">
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.dailyt.co.kr/newsView/dlt202610030007" target="_blank">국가 AI 안전 종합계획 수립 착수 … 12월까지 마스터플랜 완성</a></div>
+        <div class="news-summary">과학기술정보통신부가 산업계·전문가 25명과 함께 국가 AI 안전 종합계획을 수립한다고 밝혔다. 12월까지 마스터플랜을 완성할 계획이다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://news1.kr/politics/assembly/6309574" target="_blank">제30회 노인의 날 기념식 … 내년 노인 일자리 118만 개로 확대</a></div>
+        <div class="news-summary">이재명 대통령이 서울 롯데호텔에서 열린 제30회 노인의 날 기념식에 참석했다. 정부는 내년 노인 일자리를 118만 개로 늘릴 계획을 발표했다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.starnewskorea.com/music/2026/10/03/2026100307474237088" target="_blank">BTS 지민, 4년 연속 '가장 매력적인 아시아 셀럽' 1위</a></div>
+        <div class="news-summary">글로벌 K-팝 투표 사이트 킹초이스가 발표한 '2026 가장 매력적인 아시아 셀럽 100' 조사에서 BTS 지민이 4년 연속 1위를 차지했다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://en.wikipedia.org/wiki/2026_South_Korean_by-elections" target="_blank">2026년 한국 재보궐선거 주요 동향</a></div>
+        <div class="news-summary">2026년 재보궐선거를 앞두고 각 정당의 후보 공천 및 선거 전략이 주목받고 있다. 여야 모두 주요 선거구에서 치열한 경쟁을 벌이고 있다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.careyounews.org/news/articleView.html?idxno=11789" target="_blank">오늘의 시니어 트렌드 분석 — 고령사회 정책·돌봄 현안</a></div>
+        <div class="news-summary">초고령사회 진입을 앞두고 돌봄 서비스 확충과 시니어 디지털 활용 교육의 필요성이 다시 주목받고 있다.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section-world">
+    <div class="section-header">
+      <span class="section-badge badge-world">국제</span>
+      <span class="section-title">국제 뉴스</span>
+    </div>
+    <div class="news-list">
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.euronews.com/video/2026/10/03/latest-news-bulletin-october-3rd-2026-midday" target="_blank">플라이두바이 공동조종사 기장 도끼 공격 … 테러 행위 규정</a></div>
+        <div class="news-summary">플라이두바이 공동조종사가 기내에서 기장을 도끼로 공격하는 테러 행위가 발생했다. 해당 오만 국적 조종사는 극단주의 성향이 포착되어 오만 당국이 비행 금지 조치를 취했던 인물로 알려졌다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.aljazeera.com/" target="_blank">이스라엘, 가자시티 공습으로 최소 5명 사망</a></div>
+        <div class="news-summary">이스라엘군의 가자시티 공습으로 최소 5명이 사망했다. 서안지구에서는 이스라엘 정착민들의 팔레스타인 농민 공격도 보고됐다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.euronews.com/" target="_blank">러시아, 이틀 연속 키이우 드니프로 교량 공격</a></div>
+        <div class="news-summary">러시아가 이틀 연속으로 키이우 인근 드니프로강 교량을 공격했다. 우크라이나 주요 교통·물류 인프라를 겨냥한 집중 공세가 이어지고 있다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://insightsonindia.com/2026/10/03/upsc-current-affairs-3-october-2026" target="_blank">북한, 탄도미사일 발사 … 역내 긴장 고조</a></div>
+        <div class="news-summary">북한이 탄도미사일 1발 이상을 발사하며 한반도와 동아시아 긴장이 다시 높아지고 있다. 미국과 한국은 긴밀히 상황을 주시하고 있다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.euronews.com/" target="_blank">미국, 걸프만에 세 번째 항모전단 파견 … 2003년 이후 최대 규모</a></div>
+        <div class="news-summary">미국이 중동 긴장 고조에 대응해 걸프만에 세 번째 항공모함 전단을 파견했다. 이는 2003년 이라크 전쟁 이후 최대 규모의 군사력 집결이다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.euronews.com/" target="_blank">스페인 50개 도시 주거 시위 … 주택 가격 급등에 분노</a></div>
+        <div class="news-summary">스페인 마드리드 등 50개 이상 도시에서 주거비 급등에 항의하는 대규모 시위가 열렸다. 시위대는 임대료 규제 강화와 투기 억제 정책을 요구했다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.euronews.com/" target="_blank">중국, EU 반덤핑 조사 개시 … 무역 협상 앞두고 긴장 고조</a></div>
+        <div class="news-summary">중국이 유럽연합(EU) 제품에 대한 반덤핑 조사를 시작했다. 양측 무역 협상을 불과 며칠 앞두고 나온 조치로 협상 전망이 불투명해졌다.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section-tech">
+    <div class="section-header">
+      <span class="section-badge badge-tech">IT/기술</span>
+      <span class="section-title">IT / 기술 뉴스</span>
+    </div>
+    <div class="news-list">
+      <div class="news-card">
+        <div class="news-title"><a href="https://techcrunch.com/" target="_blank">애플, AI 앱의 광범위 데이터 접근 요청 경고 강화 … 프라이버시 조치</a></div>
+        <div class="news-summary">애플이 AI 앱이 맥(Mac)에 저장된 광범위한 정보에 접근을 요청할 때 사용자 경고를 더욱 눈에 띄게 표시할 계획이다. 메타의 AI 에이전트 '뮤즈'에 대한 프라이버시 우려가 촉발했다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://tech.yahoo.com/" target="_blank">아이폰 18 프로 맥스 AT&amp;T 네트워크 버그 공식 확인</a></div>
+        <div class="news-summary">애플이 아이폰 18 프로 맥스에서 AT&T 네트워크 연결에 영향을 미치는 버그를 공식적으로 인정했다. 소프트웨어 업데이트로 조속히 수정하겠다고 밝혔다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://techcrunch.com/" target="_blank">Spotify 전 세계 수만 명 서비스 장애 보고</a></div>
+        <div class="news-summary">전 세계 수만 명의 Spotify 사용자가 재생 오류와 로그인 장애를 경험했다. 다운디텍터(Downdetector)에는 오전 중 신고가 폭증했으며 Spotify 측은 원인을 조사 중이라고 밝혔다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://techcrunch.com/" target="_blank">테슬라 사이버캡, 오스틴 첫 달 후기 … 확대 전략 본격화</a></div>
+        <div class="news-summary">테슬라의 완전자율주행 택시 '사이버캡'이 오스틴에서 운영 첫 달을 마쳤다. 초기 기술적 난항이 있었음에도 테슬라는 다음 단계 확대 계획을 공개했다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.cnbc.com/technology/" target="_blank">월마트, 매장 전체에 디지털 선반 가격표 도입 가속화</a></div>
+        <div class="news-summary">월마트가 빛나는 디지털 선반 라벨을 확대 적용해 직원과 쇼핑객이 상품을 더 쉽게 찾을 수 있도록 했다. 가격 변경도 실시간으로 반영할 수 있어 운영 효율이 크게 높아질 것으로 기대된다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://en.wikipedia.org/wiki/2026_in_technology_and_computing" target="_blank">2026년 기술·컴퓨팅 주요 사건 — 연간 정리</a></div>
+        <div class="news-summary">2026년은 AI, 자율주행, 양자컴퓨팅 분야에서 역사적인 이정표가 잇따랐다. 연초부터 이어진 주요 사건들이 기술 산업 지형을 근본적으로 바꾸고 있다는 평가다.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section-economy">
+    <div class="section-header">
+      <span class="section-badge badge-economy">경제/금융</span>
+      <span class="section-title">경제 / 금융 뉴스</span>
+    </div>
+    <div class="news-list">
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.cnbc.com/" target="_blank">미국 9월 고용 29,000개 증가 … 예상치 크게 밑돌아</a></div>
+        <div class="news-summary">미국 9월 고용 보고서에서 일자리가 29,000개 증가하며 예상치(90,000개)를 크게 하회했다. 이전 두 달치 고용도 합산 6만 개 하향 수정됐다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.cnbc.com/" target="_blank">연준 10월 금리 인상 가능성 20%로 하락 … 채권·주식 동반 랠리</a></div>
+        <div class="news-summary">고용 지표 부진 발표 후 시장이 반영하는 10월 금리 인상 확률이 약 20%로 낮아졌다. 국채 가격과 주식이 동반 상승했으며 기술주·소형주가 상승을 이끌었다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.cnbc.com/world/" target="_blank">국제유가 약 4% 급락 … WTI $90·브렌트 $100 아래로</a></div>
+        <div class="news-summary">국제유가가 약 4% 하락하면서 WTI는 배럴당 90달러, 브렌트유는 100달러 아래로 내려왔다. 글로벌 수요 둔화 우려가 유가 하락을 이끌었다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.cnbc.com/" target="_blank">나이키 주가 5% 이상 급락 … 매출·이익 가이던스 실망</a></div>
+        <div class="news-summary">나이키가 예상을 하회하는 매출 및 이익 가이던스를 제시하며 주가가 5% 이상 떨어졌다. 소비 위축과 중국 사업 회복 지연이 주요 원인으로 지목됐다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://analyticsinsight.net/stocks/october-2026-stock-market-outlook-earnings-interest-rates-key-events-to-watch" target="_blank">인도 GDP 7.8% 성장에도 증시 9월 6% 하락 … 외국인 대규모 매도</a></div>
+        <div class="news-summary">인도 경제는 4~6월 7.8% 성장했지만 Nifty 지수는 9월 한 달 6.1% 하락했다. 외국인 투자자들이 27억 달러어치 주식을 순매도하며 루피화 약세와 고유가가 부담으로 작용했다.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title"><a href="https://www.cnbc.com/" target="_blank">S&amp;P 500 0.73% 상승 … 엔비디아 1.34% 오르며 AI주 강세</a></div>
+        <div class="news-summary">S&P 500 지수가 0.73% 올랐으며 엔비디아는 1.34% 상승했다. 금리 인상 우려가 완화되면서 AI 관련주와 기술주 중심으로 매수세가 유입됐다.</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  자동 수집 · 생성 시각: 2026-10-03 13:12 KST &nbsp;|&nbsp; News Bot
+</footer>
+
+</body>
+</html>
