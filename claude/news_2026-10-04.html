@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-10-04</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --accent2: #53d8fb;
+      --accent3: #f5a623;
+      --accent4: #7bed9f;
+      --text: #e0e0e0;
+      --text-muted: #a0a0b0;
+      --border: #2a2a4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.7;
+      padding: 0 16px;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460, #16213e);
+      border-bottom: 2px solid var(--accent);
+      padding: 32px 16px 24px;
+      text-align: center;
+      margin: 0 -16px 32px;
+    }
+    header .date-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(233,69,96,0.3);
+    }
+    header p {
+      margin-top: 6px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding-bottom: 48px;
+    }
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header .icon {
+      font-size: 1.4rem;
+    }
+    .section-header h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .section-header .count {
+      margin-left: auto;
+      background: var(--border);
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+    .section-domestic .section-header { background: rgba(233,69,96,0.08); border-color: rgba(233,69,96,0.3); }
+    .section-domestic .section-header h2 { color: #ff7096; }
+    .section-world .section-header { background: rgba(83,216,251,0.08); border-color: rgba(83,216,251,0.3); }
+    .section-world .section-header h2 { color: var(--accent2); }
+    .section-tech .section-header { background: rgba(123,237,159,0.08); border-color: rgba(123,237,159,0.3); }
+    .section-tech .section-header h2 { color: var(--accent4); }
+    .section-economy .section-header { background: rgba(245,166,35,0.08); border-color: rgba(245,166,35,0.3); }
+    .section-economy .section-header h2 { color: var(--accent3); }
+    .news-list { padding: 8px 0; }
+    .news-item {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+    .news-item a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.97rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .news-item a:hover { color: var(--accent2); text-decoration: underline; }
+    .news-item .summary {
+      color: var(--text-muted);
+      font-size: 0.87rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      margin-top: 8px;
+    }
+    @media (max-width: 600px) {
+      .section-header { padding: 14px 16px; }
+      .news-item { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="date-badge">2026년 10월 4일 (일)</div>
+  <h1>📰 오늘의 주요 뉴스</h1>
+  <p>국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <div class="section section-domestic">
+    <div class="section-header">
+      <span class="icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+      <span class="count">5건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://www.bigkinds.or.kr/" target="_blank">금융권 AI 해킹 공격으로 개인정보 수만 건 유출</a>
+        <div class="summary">시중은행뿐 아니라 저축은행·캐피털사까지 AI 기반 자동화 해킹 공격의 표적이 됐다. 동일 세력의 소행으로 추정되며, 개인정보 수만 건이 유출된 것으로 확인됐다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.news1.kr/politics/assembly/6309920" target="_blank">대법원장 국감 증인 출석 거부 논란…여야 갈등 격화</a>
+        <div class="summary">민주당 소속 서영교 법사위원장은 조희대 대법원장이 국정감사 증인 출석 거부 의향을 밝힌 것에 대해 강력히 비판했다. 사법부 독립과 국회 감시권을 두고 여야 간 갈등이 심화되고 있다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.khan.co.kr/" target="_blank">10·4 남북정상선언 19주년…이 대통령 "상호주의 한계 넘어야"</a>
+        <div class="summary">이재명 대통령은 10·4 남북정상선언 19주년을 맞아 노무현 전 대통령의 말씀을 인용하며 대북 정책에서 상호주의의 한계를 넘어야 한다고 강조했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.korea.kr/" target="_blank">이 대통령, 노인의 날 맞아 "일자리 118만 개로 확대" 약속</a>
+        <div class="summary">노인 일자리 신청자 125만 명 중 대기자가 19만 7천 명까지 급증한 가운데, 이재명 대통령이 노인의 날을 맞아 노인 일자리를 118만 개로 확대하겠다고 공약했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.korea.kr/" target="_blank">65세 이상 어르신 독감 예방접종 6일(화)부터 시작</a>
+        <div class="summary">질병관리청은 만 65세 이상 고령층을 대상으로 한 인플루엔자 무료 예방접종이 오는 10월 6일부터 전국 지정 의료기관에서 시작된다고 안내했다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 국제 뉴스 -->
+  <div class="section section-world">
+    <div class="section-header">
+      <span class="icon">🌍</span>
+      <h2>국제 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://english.dainikjagranmpcg.com/international/4-october-2026-world-events-important-days-and-major-global/article-35789" target="_blank">제20회 아시안게임 폐막…일본 아이치-나고야 성황리 마무리</a>
+        <div class="summary">일본 아이치-나고야에서 개최된 제20회 아시안 게임이 10월 4일 공식 폐막했다. 아시아 45개국이 참가한 이번 대회는 역대 최다 종목으로 진행됐다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.npr.org/sections/news" target="_blank">미군 해병대원, 일본 여성 살해·강도 혐의로 체포…일본 정부 공식 항의</a>
+        <div class="summary">주일미군 소속 해병대원이 일본 여성 안나 야기씨를 살해하고 금품을 빼앗은 혐의로 체포됐다. 일본 정부는 미국 측에 공식 항의서를 전달했으며 재발 방지를 촉구했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.washingtonpost.com/world/" target="_blank">브라질 대통령 선거 실시…결선투표 가능성 주목</a>
+        <div class="summary">브라질에서 10월 4일 대통령 선거가 치러졌다. 1차 투표에서 과반 득표 후보가 나오지 않을 경우 결선 투표가 진행될 예정이며, 전 세계 언론의 관심이 집중됐다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://english.dainikjagranmpcg.com/international/4-october-2026-world-events-important-days-and-major-global/article-35789" target="_blank">세계 우주 주간 2026 개막…10월 4~10일</a>
+        <div class="summary">유엔이 지정한 세계 우주 주간(World Space Week)이 10월 4일 개막해 10일까지 이어진다. 스푸트니크 1호 발사(1957) 기념일을 맞아 전 세계에서 다양한 우주 과학 행사가 열린다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.npr.org/sections/news" target="_blank">Fox News 기자 유족, 우크라이나 취재 중 사망 관련 방송사 상대 소송</a>
+        <div class="summary">우크라이나 전쟁을 취재하다 숨진 Fox News 기자 두 명의 유족이 방송사를 상대로 소송을 제기했다. "보도를 위해 직원 안전보다 특종을 우선시했다"고 주장했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.washingtonpost.com/world/" target="_blank">이스라엘, 하마스 핵심 지도자 가자 공습으로 제거…가자 주년 날 감행</a>
+        <div class="summary">이스라엘군이 10월 7일 하마스 테러 공격 3주년을 앞두고 가자지구에서 하마스 핵심 지도자를 겨냥한 정밀 공습을 감행했다고 발표했다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IT/기술 뉴스 -->
+  <div class="section section-tech">
+    <div class="section-header">
+      <span class="icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">MS CEO Satya Nadella "AI를 'Slop'이라 부르지 마라…새로운 균형점"</a>
+        <div class="summary">마이크로소프트 CEO 사티아 나델라가 소비자들에게 AI 생성 콘텐츠를 경멸적으로 'Slop(쓰레기)'이라 부르는 것을 중단하고 AI를 새로운 표준으로 받아들일 것을 촉구했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">Google, 차세대 AI 모델 공개…월가는 '개인 AI 에이전트' 돌파구 요구</a>
+        <div class="summary">구글이 최신 AI 모델을 공개했다. 그러나 월가 애널리스트들은 실생활에 활용 가능한 개인 AI 에이전트의 혁신적인 도약을 요구하는 분위기다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">SpaceX, Google AI 칩 우주 궤도에 발사…우주 기반 데이터센터 구상</a>
+        <div class="summary">SpaceX가 Google의 AI 전용 칩을 지구 궤도에 발사했다. 이는 우주 기반 데이터센터 구축을 향한 첫 걸음으로, 차세대 클라우드 인프라 경쟁이 우주로 확장되고 있음을 보여준다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://tech-insider.org/geforce-now-october-2026-games-witcher-3-gears-of-war/" target="_blank">NVIDIA GeForce NOW, 10월 게임 25종 추가…위처3 리마스터드·Gears of War: E-Day 포함</a>
+        <div class="summary">NVIDIA가 10월 GeForce NOW 클라우드 게이밍 라이브러리에 25개 신규 게임을 추가한다고 밝혔다. RTX 5080급 서버와 DLSS 4.5 기술이 적용된 위처3 리마스터드 등이 포함됐다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://en.wikipedia.org/wiki/GITEX_Vietnam" target="_blank">GITEX AI Vietnam 2026 하노이서 개막…아시아 AI 허브 경쟁 가속</a>
+        <div class="summary">세계 최대 규모의 기술 전시회 GITEX가 베트남 하노이에서 AI 특화 행사를 개최했다. 동남아시아 AI 산업 생태계 육성을 위한 각국 기업 및 스타트업 400여 곳이 참가했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">iPhone 18 Pro vs OPPO Find X9 Pro 비교 리뷰 화제</a>
+        <div class="summary">출시된 iPhone 18 Pro와 OPPO Find X9 Pro를 비교하는 리뷰가 IT 커뮤니티에서 주목받고 있다. 카메라 성능, AI 기능, 배터리 지속 시간 등에서 치열한 접전이 예상된다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 경제/금융 뉴스 -->
+  <div class="section section-economy">
+    <div class="section-header">
+      <span class="icon">📈</span>
+      <h2>경제 / 금융 뉴스</h2>
+      <span class="count">5건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://www.newsquawk.com/headlines/newsquawk-weekly-economic-calendar---4th-9th-october-2026" target="_blank">Amazon, 미국 데이터센터에 5년간 10억 달러 투자 발표</a>
+        <div class="summary">아마존이 미국 내 데이터센터 커뮤니티에 향후 5년간 총 10억 달러 투자 계획을 발표했다. AWS CEO는 AI 인프라 확장에서 미국이 경쟁국들에 뒤처지지 않도록 긴박감이 필요하다고 강조했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.newsquawk.com/headlines/newsquawk-weekly-economic-calendar---4th-9th-october-2026" target="_blank">마크롱, 4개월에 걸쳐 석유 비축량 최대 1억 배럴 방출 발표</a>
+        <div class="summary">프랑스 에마뉘엘 마크롱 대통령이 에너지 가격 안정을 위해 디젤 및 원유 비축량을 4개월에 걸쳐 최대 1억 배럴까지 방출하는 계획을 발표했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://global-view.com/newsquawk-week-ahead-in-focus-4-9th-october-2026" target="_blank">이번 주 글로벌 경제 이벤트 집중…FOMC 9월 의사록·ECB 의사록 발표</a>
+        <div class="summary">이번 주 글로벌 금융시장은 FOMC 9월 의사록(수요일)과 ECB 의사록 발표에 주목하고 있다. ADP 고용 데이터, 일본 소비자 신뢰지수 등 주요 경제 지표도 잇따라 공개될 예정이다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://internationalnewsandviews.com/kautilya-economic-conclave-2026-india-growth-resilience-risks-410116-2" target="_blank">인도 경제 콘클라베 2026 "성장세 강하나 글로벌 충격에 취약" 경고</a>
+        <div class="summary">Kautilya 경제 회의에서 전문가들은 인도가 세계 주요 경제국 중 가장 강한 성장세를 보이지만, 급격한 확장만으로는 다음 글로벌 충격으로부터 경제를 보호하기 어렵다고 경고했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.theasianbanker.com/mediafeed-news/details?rkey=20261003AE62535&filter=23792&pd=04+Oct+2026" target="_blank">금문고량주(金門高粱酒), 아시아에서 유럽·북미로 글로벌 확장 가속</a>
+        <div class="summary">대만 고량주 브랜드 금문고량주(Kinmen Kaoliang Liquor)가 아시아 시장을 넘어 유럽과 북미 시장으로의 글로벌 확장 전략을 공격적으로 추진하고 있다고 발표했다.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>생성 시각: 2026-10-04 22:11 KST &nbsp;|&nbsp; 자동 수집 시스템</p>
+</footer>
+</body>
+</html>
