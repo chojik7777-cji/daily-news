@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오늘의 주요 뉴스 - 2026년 10월 5일</title>
+  <style>
+    :root {
+      --bg-main: #1a1a2e;
+      --bg-card: #16213e;
+      --bg-section: #0f3460;
+      --accent1: #e94560;
+      --accent2: #53d8fb;
+      --accent3: #f5a623;
+      --accent4: #7ed321;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a8b8;
+      --text-link: #53d8fb;
+      --text-muted: #707888;
+      --border: #2a2a4a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+      line-height: 1.7;
+      padding: 16px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 16px 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 36px;
+    }
+
+    header .date-label {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    header h1 span {
+      color: var(--accent1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section {
+      background: var(--bg-card);
+      border-radius: 12px;
+      margin-bottom: 28px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header .icon {
+      font-size: 1.4rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .section-header .badge {
+      margin-left: auto;
+      font-size: 0.75rem;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .domestic .section-header { background: linear-gradient(90deg, #1a1a3e, #1e1e4a); }
+    .domestic .section-header h2 { color: var(--accent1); }
+    .domestic .section-header .badge { background: var(--accent1); color: #fff; }
+
+    .world .section-header { background: linear-gradient(90deg, #1a2a3e, #1a2e4a); }
+    .world .section-header h2 { color: var(--accent2); }
+    .world .section-header .badge { background: var(--accent2); color: #1a1a2e; }
+
+    .tech .section-header { background: linear-gradient(90deg, #1e1a3e, #221e4a); }
+    .tech .section-header h2 { color: var(--accent3); }
+    .tech .section-header .badge { background: var(--accent3); color: #1a1a2e; }
+
+    .economy .section-header { background: linear-gradient(90deg, #1a2e1a, #1e3a1e); }
+    .economy .section-header h2 { color: var(--accent4); }
+    .economy .section-header .badge { background: var(--accent4); color: #1a1a2e; }
+
+    .news-list {
+      padding: 8px 0;
+    }
+
+    .news-item {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-item:hover {
+      background: rgba(255,255,255,0.03);
+    }
+
+    .news-item a {
+      color: var(--text-link);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.97rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .news-item a:hover {
+      text-decoration: underline;
+      opacity: 0.9;
+    }
+
+    .news-item .summary {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    .news-index {
+      display: inline-block;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-right: 6px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .section-header { flex-wrap: wrap; }
+      .section-header .badge { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="date-label">2026년 10월 5일 월요일</div>
+    <h1>오늘의 <span>주요 뉴스</span></h1>
+  </header>
+
+  <!-- 국내 뉴스 -->
+  <section class="section domestic">
+    <div class="section-header">
+      <span class="icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+      <span class="badge">8건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://news.daum.net/economy" target="_blank">
+          <span class="news-index">01</span>이재명 대통령, 청년·중산층 공공 장기 임대주택 대량 공급 발표
+        </a>
+        <div class="summary">이재명 대통령이 "초과 세수를 활용해 청년과 중산층용 공공 장기 임대 주택을 조기에 대량 공급하겠다"고 밝혔습니다. 부총리 주재 경제현안간담회에서 주거·일자리·서민금융 3대 핵심 사회정책 추진방안을 논의했습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.aitimes.kr/" target="_blank">
+          <span class="news-index">02</span>금융권 대규모 해킹 사태 — 금감원·금보원 신한은행 등 현장 조사
+        </a>
+        <div class="summary">금융감독원과 금융보안원이 신한은행 등 피해 금융사를 대상으로 현장 조사를 이어가고 있습니다. AI 해킹 공격 방어를 위한 '망분리 완화' 논의도 가열되고 있습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.aitimes.kr/" target="_blank">
+          <span class="news-index">03</span>금융보안 방향 놓고 '망분리 완화' 속도 내야 한다는 주장 부상
+        </a>
+        <div class="summary">AI 해킹 공격에 AI 기술로 대응하기 위해 망분리 규제를 완화해야 한다는 주장이 금융권에서 제기되고 있습니다. 전문가들은 현행 규제가 최신 보안 기술 도입을 저해한다고 지적합니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://news.nate.com/rank/interest?sc=pho&p=day&date=20261005" target="_blank">
+          <span class="news-index">04</span>2026 여수세계섬박람회, 개막 이후 일일 최다 관람객 13만2000명 기록
+        </a>
+        <div class="summary">2026여수세계섬박람회 조직위원회가 지난 4일 13만2000명이 박람회장을 방문해 개막 이후 일일 최다 관람객 기록을 달성했다고 발표했습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.lawtimes.co.kr/news/articleView.html?idxno=227268" target="_blank">
+          <span class="news-index">05</span>국회, 광주 군공항 조기 이전 추진 정책토론회 개최
+        </a>
+        <div class="summary">오늘 국회에서 광주 군공항 조기 이전 추진을 주제로 한 정책토론회가 개최됐습니다. 지역 갈등 해소와 군사력 재편 관련 다양한 의견이 교환됐습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.news1.kr/politics/president/6310235" target="_blank">
+          <span class="news-index">06</span>경남 지역벤처펀드, 투자금 절반 이상이 수도권 기업에 집중
+        </a>
+        <div class="summary">경남 지역벤처펀드의 투자금 절반 이상이 수도권 기업에 투입돼, 지역 산업 육성이라는 설립 취지를 살리지 못하고 있다는 지적이 나왔습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://ko.tradingeconomics.com/south-korea/consumer-confidence/news/460074" target="_blank">
+          <span class="news-index">07</span>한국 소비자 신뢰도 7개월 최고치 돌파
+        </a>
+        <div class="summary">한국의 소비자 신뢰도가 7개월 만에 최고치를 기록했습니다. 내수 회복 기대감과 고용 개선 흐름이 소비 심리를 끌어올린 것으로 분석됩니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://news.nate.com/rank/pop?date=20261005&p=day&sc=pol" target="_blank">
+          <span class="news-index">08</span>노무현 전 대통령 시계 선물 논쟁 — 정치권 설전 지속
+        </a>
+        <div class="summary">노무현 전 대통령 관련 금품 수수 의혹을 둘러싸고 여야 간 설전이 계속되고 있습니다. 곽상언 의원과 한동훈 전 대표가 각각 입장을 밝히며 공방이 이어지고 있습니다.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section world">
+    <div class="section-header">
+      <span class="icon">🌏</span>
+      <h2>국제 뉴스</h2>
+      <span class="badge">7건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://everythingbriefing.substack.com/p/october-5-2026" target="_blank">
+          <span class="news-index">01</span>브라질 대선 1차 투표 — 플라비우 보우소나루 1위, 결선투표 10월 25일
+        </a>
+        <div class="summary">브라질 대선 1차 투표에서 플라비우 보우소나루 상원의원이 현직 룰라 대통령을 제치고 1위를 차지했습니다. 과반 득표자가 없어 10월 25일 결선투표가 예정됐습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://english.dainikjagranmpcg.com/top-stories/october-5-2026-top-india-and-world-news-headlines/article-36084" target="_blank">
+          <span class="news-index">02</span>노벨 의학상 — 뇌 신경세포 활동 조절 메커니즘 연구 3인 수상
+        </a>
+        <div class="summary">올해 노벨 생리의학상은 뇌가 개별 신경세포 활동을 켜고 끄는 메커니즘을 규명한 과학자 3명에게 돌아갔습니다. 뇌 질환 치료 연구에 새로운 이정표가 될 것으로 평가됩니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://wng.org/podcasts/the-world-and-everything-in-it-october-5-2026-1791147657" target="_blank">
+          <span class="news-index">03</span>FlyDubai 부기장 항공기 추락 시도 — 오만에서 극단주의로 비행 금지 이력
+        </a>
+        <div class="summary">FlyDubai 항공기 추락 시도를 시도한 29세 부기장 함맘 알-함마미가 오만에서 극단주의 사상을 이유로 비행 금지 전력이 있었던 것으로 드러났습니다. 항공보안 시스템에 대한 재검토 요구가 높아지고 있습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.ksat.com/news/world/2026/10/05/russia-hosts-a-taliban-delegation-others-for-consultations-on-afghanistan/" target="_blank">
+          <span class="news-index">04</span>러시아, 아프가니스탄 논의 위해 탈레반·중국·인도·파키스탄 등 초청
+        </a>
+        <div class="summary">러시아가 아프가니스탄 상황을 논의하기 위한 다국 협의를 주최했습니다. 탈레반 대표단과 함께 중국, 인도, 이란, 파키스탄 등이 참여해 지역 안보 현안을 논의했습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://english.dainikjagranmpcg.com/top-stories/october-5-2026-top-india-and-world-news-headlines/article-36084" target="_blank">
+          <span class="news-index">05</span>인도·파키스탄 국경 충돌 — 펀자브 지역 사건으로 외교 항의 교환
+        </a>
+        <div class="summary">인도와 파키스탄이 10월 2일 펀자브 접경 지역에서 발생한 사건으로 외교적 항의를 교환했습니다. 인도는 BSF가 사살한 두 명을 침투자로, 파키스탄은 비무장 민간인이라고 주장해 양측 입장이 엇갈리고 있습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://wng.org/podcasts/monday-morning-news-october-5-2026-1791147658" target="_blank">
+          <span class="news-index">06</span>스페인 총리, 주택난 압박에 조기 선거 선언
+        </a>
+        <div class="summary">스페인 총리가 심각한 주택 위기로 거세진 정치적 압박 속에 조기 총선을 선언했습니다. 임대료 급등과 주택 공급 부족이 주요 사회 현안으로 떠오른 가운데 내린 결정입니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://everythingbriefing.substack.com/p/october-5-2026" target="_blank">
+          <span class="news-index">07</span>버뮤다~보스턴 행방불명 의료 전용기 잔해 발견
+        </a>
+        <div class="summary">버뮤다에서 보스턴으로 향하던 의료 전용기가 실종된 후 수색 당국이 잔해를 발견했습니다. 탑승자 수 및 사고 원인에 대한 조사가 진행 중입니다.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section tech">
+    <div class="section-header">
+      <span class="icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+      <span class="badge">8건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://digitalapplied.com/blog/ai-model-releases-october-2026-tracker" target="_blank">
+          <span class="news-index">01</span>OpenAI, 차세대 모델 얼라인먼트 실패로 출시 전격 철회
+        </a>
+        <div class="summary">OpenAI가 출시 예정이었던 차세대 AI 모델을 얼라인먼트(가치 정렬) 실패 문제로 갑작스럽게 출시를 철회했습니다. Anthropic도 고급 AI의 위험성에 대해 이례적으로 강한 경고를 투자자들에게 발표했습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://techstartups.com/2026/10/02/top-tech-news-today-october-2-2026-amazon-cloudflare-google-microsoft-suno-tesla-more/" target="_blank">
+          <span class="news-index">02</span>Microsoft Copilot Wave 2 공개 — Excel AI 분석 통합 대폭 강화
+        </a>
+        <div class="summary">Microsoft가 Copilot Wave 2를 공개했습니다. 핵심 업데이트는 Excel과의 심층 통합으로, AI가 대규모 데이터를 자동 분석하고 차트 생성 및 Python 기반 복잡한 수식 작성까지 지원합니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://techstartups.com/2026/10/02/top-tech-news-today-october-2-2026-amazon-cloudflare-google-microsoft-suno-tesla-more/" target="_blank">
+          <span class="news-index">03</span>Nvidia, Blackwell AI 프로세서 본격 양산 — 수요 "폭발적"
+        </a>
+        <div class="summary">젠슨 황 Nvidia CEO가 차세대 'Blackwell' AI 프로세서가 본격 양산에 돌입했으며 수요가 "insane(엄청나다)"고 밝혔습니다. 데이터센터와 AI 인프라 투자 수요가 지속되고 있습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://techstartups.com/2026/10/02/top-tech-news-today-october-2-2026-amazon-cloudflare-google-microsoft-suno-tesla-more/" target="_blank">
+          <span class="news-index">04</span>Elon Musk의 xAI, 10만 GPU 슈퍼컴퓨터 '콜로서스' 멤피스서 가동
+        </a>
+        <div class="summary">Elon Musk의 AI 기업 xAI가 테네시주 멤피스에서 Nvidia H100 GPU 10만 개를 탑재한 슈퍼컴퓨터 '콜로서스(Colossus)'를 성공적으로 가동했습니다. AI 학습 인프라에서 새로운 규모의 시대를 열었다는 평가입니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.datatooza.com/article/202610052202217542cd1e70e7e3_80" target="_blank">
+          <span class="news-index">05</span>비다 글로벌, AI 에이전트 대상 '성과 기반 요금제' 도입
+        </a>
+        <div class="summary">AI 에이전트 운영 체제 기업 비다 글로벌이 성과 기반 요금제를 도입했습니다. 고객이 디지털 직원의 성공 기준을 직접 정의하고, 결과 달성 시에만 비용을 지불하는 새로운 방식입니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://github.com/shoji-miyoshi/test/issues/182" target="_blank">
+          <span class="news-index">06</span>AI 에이전트 리스크 가시화 툴 'Citadel Radar for Agents' 발표
+        </a>
+        <div class="summary">AI 에이전트의 위험을 실시간으로 시각화하고 제어하는 'Citadel Radar for Agents'가 공개됐습니다. AI 에이전트 도입 기업들의 거버넌스 및 위험 관리 수요를 겨냥한 솔루션입니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://techstartups.com/2026/10/02/top-tech-news-today-october-2-2026-amazon-cloudflare-google-microsoft-suno-tesla-more/" target="_blank">
+          <span class="news-index">07</span>Microsoft, 스트리밍 음성 인식 모델 MAI-Transcribe-2 출시 — 60개 언어 지원
+        </a>
+        <div class="summary">Microsoft AI가 첫 번째 스트리밍 음성 인식 모델 MAI-Transcribe-2-Streaming을 출시했습니다. 60개 언어 연속 감지 기능을 갖춘 두 가지 TTS 시스템도 함께 공개됐습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://k.sina.com.cn/article_7857201856_1d45362c001908pvae.html" target="_blank">
+          <span class="news-index">08</span>중국 생성형 AI 이용자 7억 명 돌파 — 보급률 50% 초과
+        </a>
+        <div class="summary">2026년 상반기 기준 중국의 생성형 AI 사용자 규모가 7억 명을 넘어 보급률 50%를 초과했습니다. AI 단편 콘텐츠 등 다양한 분야에서 AI 활용이 급속도로 확산되고 있습니다.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section economy">
+    <div class="section-header">
+      <span class="icon">📈</span>
+      <h2>경제 / 금융 뉴스</h2>
+      <span class="badge">6건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://m.finance.daum.net/domestic" target="_blank">
+          <span class="news-index">01</span>코스피 7,003.74 (+0.46%) 상승 마감 — 7,000선 유지
+        </a>
+        <div class="summary">코스피가 전일 대비 0.46% 오른 7,003.74로 마감했습니다. 코스닥도 0.11% 상승한 893.29를 기록하며 소폭 동반 강세를 보였습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://kr.investing.com/indices/kospi-historical-data" target="_blank">
+          <span class="news-index">02</span>달러/원 환율 1,344.20원 (-1.20%) — 원화 강세 전환
+        </a>
+        <div class="summary">달러 대비 원화 환율이 전일 대비 16.39원 하락한 1,344.20원을 기록했습니다. 미국 달러 약세와 국내 경기 회복 기대감이 원화 강세를 이끈 것으로 분석됩니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://markets.hankyung.com/" target="_blank">
+          <span class="news-index">03</span>삼성전자 자사주 소각 종료 — 100조원대 영업익으로 주가 극복 전망
+        </a>
+        <div class="summary">삼성전자의 자사주 매입·소각 프로그램이 종료되면서 주가 지지선 우려가 제기됐습니다. 그러나 100조원대 연간 영업이익 달성 기대감이 이를 만회할 수 있을지 시장의 관심이 집중됩니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://github.com/seotaiji0324/Daily_Finance_Briefing/issues/47" target="_blank">
+          <span class="news-index">04</span>OpenAI, 66억 달러 펀딩 완료 — 기업 가치 1,570억 달러 도달
+        </a>
+        <div class="summary">OpenAI가 66억 달러 규모의 펀딩 라운드를 마무리하고 기업 가치 1,570억 달러를 달성했습니다. Microsoft, Nvidia, SoftBank, Thrive Capital 등이 주요 투자자로 참여했습니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://ko.tradingeconomics.com/south-korea/interest-rate/news/495281" target="_blank">
+          <span class="news-index">05</span>한국은행 기준금리 결정 앞두고 시장 촉각 — 동결 전망 우세
+        </a>
+        <div class="summary">이번 주 예정된 한국은행 금융통화위원회에서 기준금리 동결이 유력한 것으로 시장이 전망하고 있습니다. 글로벌 불확실성과 내수 회복 흐름이 동시에 고려될 것으로 보입니다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://ecos.bok.or.kr/" target="_blank">
+          <span class="news-index">06</span>경남 지역벤처펀드 수도권 집중 투자 — 지역 균형 발전 취지 퇴색 우려
+        </a>
+        <div class="summary">경남 지역벤처펀드의 절반 이상이 수도권 기업에 투자된 것으로 나타나, 지역 경제 육성이라는 펀드 설립 취지가 제대로 실현되지 못하고 있다는 지적이 경제계에서 제기됩니다.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    생성 시각: 2026-10-05 22:11:51 KST &nbsp;|&nbsp; 자동 수집 뉴스 서비스 &nbsp;|&nbsp; 총 29건
+  </footer>
+</div>
+</body>
+</html>
