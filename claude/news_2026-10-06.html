@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-10-06</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --text: #e0e0e0;
+      --text-muted: #a0a0b8;
+      --domestic: #4fc3f7;
+      --world: #81c784;
+      --tech: #ffb74d;
+      --economy: #ce93d8;
+      --border: #2a2a4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 2px solid var(--accent);
+      padding: 28px 16px 20px;
+      text-align: center;
+    }
+    header .date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+    header h1 span { color: var(--accent); }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 640px) {
+      .container { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.4rem; }
+    }
+    .section {
+      background: var(--surface);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .section-header {
+      padding: 14px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-header .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .section.domestic .section-header { background: rgba(79,195,247,0.12); color: var(--domestic); }
+    .section.domestic .dot { background: var(--domestic); }
+    .section.world .section-header { background: rgba(129,199,132,0.12); color: var(--world); }
+    .section.world .dot { background: var(--world); }
+    .section.tech .section-header { background: rgba(255,183,77,0.12); color: var(--tech); }
+    .section.tech .dot { background: var(--tech); }
+    .section.economy .section-header { background: rgba(206,147,216,0.12); color: var(--economy); }
+    .section.economy .dot { background: var(--economy); }
+    ul.news-list { list-style: none; padding: 8px 0; }
+    ul.news-list li {
+      padding: 10px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    ul.news-list li:last-child { border-bottom: none; }
+    ul.news-list li a {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #d0d8f0;
+      text-decoration: none;
+      margin-bottom: 3px;
+      transition: color 0.2s;
+    }
+    ul.news-list li a:hover { color: #fff; text-decoration: underline; }
+    ul.news-list li .summary {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 16px 32px;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="date">2026년 10월 6일 화요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <div class="section domestic">
+    <div class="section-header"><span class="dot"></span>🇰🇷 국내 뉴스</div>
+    <ul class="news-list">
+      <li>
+        <a href="https://www.newspim.com/news/view/20261005000156" target="_blank">제43회 국무회의 개최 — 국정감사 일정 논의</a>
+        <div class="summary">대통령 주재로 2026년도 제43회 국무회의가 청와대 본관에서 열리고, 국정감사가 본격 진행됐다.</div>
+      </li>
+      <li>
+        <a href="https://m.news.nate.com/view/20261006n21666" target="_blank">손흥민, 우즈베키스탄전서 A매치 최다골 도전</a>
+        <div class="summary">10월 6일 오후 8시 용인미르스타디움에서 열린 우즈베키스탄전에서 59호골 달성 시 차범근을 넘어 한국 A매치 최다골 단독 1위 대기록 수립이 기대됐다.</div>
+      </li>
+      <li>
+        <a href="https://www.lawtimes.co.kr/news/articleView.html?idxno=227275" target="_blank">서울고등법원·서울중앙지법 주요 공판 진행</a>
+        <div class="summary">주요 형사사건 항소심 및 공판이 서울고등법원과 서울중앙지방법원에서 열렸다.</div>
+      </li>
+      <li>
+        <a href="https://www.careyounews.org/news/articleView.html?idxno=11809" target="_blank">지역 통합돌봄 전국 시행 5개월 — 서비스 연계율 최대 4배 격차</a>
+        <div class="summary">전국 시행 5개월을 맞은 지역 통합돌봄 제도의 서비스 연계 확정률이 지역별로 최대 4배 이상 벌어지는 것으로 드러났다.</div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/2026_South_Korean_by-elections" target="_blank">2026년 재·보궐선거 관련 동향</a>
+        <div class="summary">2026년 한국 재·보궐선거를 앞두고 각 정당의 공천 및 선거 전략 논의가 이어지고 있다.</div>
+      </li>
+      <li>
+        <a href="https://www.sisa-news.com/news/article.html?no=277059" target="_blank">대구 동구, 민선9기 조직개편 단행</a>
+        <div class="summary">대구 동구청이 민선 9기를 맞아 행정 효율성 제고를 위한 조직 개편을 단행했다.</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 국제 뉴스 -->
+  <div class="section world">
+    <div class="section-header"><span class="dot"></span>🌐 국제 뉴스</div>
+    <ul class="news-list">
+      <li>
+        <a href="https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis" target="_blank">예멘 정부군, 홍해 인근 전략 도시 후티로부터 탈환</a>
+        <div class="summary">예멘 정부군이 사우디 주도 연합군의 지원 아래 홍해 남쪽 입구 인근 주요 도시를 후티 반군으로부터 수복했다.</div>
+      </li>
+      <li>
+        <a href="https://www.justsecurity.org/159804/early-edition-october-6-2026/" target="_blank">미국, 중동에 세 번째 항공모함 전개 — 이란 추가 공격 검토</a>
+        <div class="summary">트럼프 대통령이 이란과의 전쟁 확대를 저울질하는 가운데, USS 시어도어 루스벨트 항모 전단이 중동 해역으로 출발했다. 7천명 이상의 수병과 해병대 2천명이 동승했다.</div>
+      </li>
+      <li>
+        <a href="https://www.justsecurity.org/159804/early-edition-october-6-2026/" target="_blank">미국, 영국 RAF 기지서 폭격기 이전 — 이란 드론 위협 대응</a>
+        <div class="summary">트럼프 대통령은 이란 혁명수비대가 주도하는 드론 공격 위협 정보에 따라 영국 RAF 페어포드 기지에 있던 전략폭격기를 다른 곳으로 이전했다고 밝혔다.</div>
+      </li>
+      <li>
+        <a href="https://wng.org/podcasts/the-world-and-everything-in-it-october-6-2026-1791216793" target="_blank">영국, 예루살렘 영사관 폐쇄 — 이스라엘 설득 실패</a>
+        <div class="summary">영국 국가안보보좌관이 이스라엘을 방문했으나 예루살렘 영국 영사관의 이번 주 폐쇄를 막는 데 실패했다.</div>
+      </li>
+      <li>
+        <a href="https://www.justsecurity.org/159804/early-edition-october-6-2026/" target="_blank">우크라이나, 드론 650대 러시아 공격 — 모스크바 지역 2명 사망</a>
+        <div class="summary">우크라이나가 650대 이상의 드론으로 러시아를 공격, 모스크바 지역에서 2명이 숨지고 9명이 다쳤다. 대부분의 드론은 러시아 방공망에 의해 격추됐다.</div>
+      </li>
+      <li>
+        <a href="https://www.10things.news/p/10-things-global-news-6th-october-20e" target="_blank">글로벌 10대 뉴스 요약 — 10월 6일</a>
+        <div class="summary">전 세계 주요 10가지 뉴스를 간추린 글로벌 뉴스 브리핑이 발행됐다. 중동 분쟁, 미국 정치, 유럽 안보 이슈가 주를 이뤘다.</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- IT/기술 뉴스 -->
+  <div class="section tech">
+    <div class="section-header"><span class="dot"></span>💻 IT/기술 뉴스</div>
+    <ul class="news-list">
+      <li>
+        <a href="https://innovationinthenews.substack.com/p/tech-tuesday-october-6-2026" target="_blank">트럼프, AI 차르 임명 — 'Super Intelligence Force' 출범</a>
+        <div class="summary">트럼프 대통령이 전 국가정보국장 Jay Clayton을 AI 차르로 임명하고, 정부 AI 정책을 총괄하는 '슈퍼 인텔리전스 포스'를 공식 출범시켰다.</div>
+      </li>
+      <li>
+        <a href="https://innovationinthenews.substack.com/p/tech-tuesday-october-6-2026" target="_blank">Nvidia, AI 에이전트 보안 플랫폼 공개 및 1500억 달러 자사주 매입 발표</a>
+        <div class="summary">Nvidia가 AI 에이전트를 통제하기 위한 전용 보안 플랫폼을 발표하고, 1500억 달러 규모의 대규모 자사주 매입 계획도 함께 공개했다.</div>
+      </li>
+      <li>
+        <a href="https://innovationinthenews.substack.com/p/tech-tuesday-october-6-2026" target="_blank">AI 에이전트, 파일 접근·앱 제어 기능 확장 — Apple·MS 권한 체계 재검토</a>
+        <div class="summary">AI 에이전트가 사용자를 대신해 파일을 다루고 앱을 제어하는 수준으로 발전하면서, Apple과 Microsoft가 운영체제의 민감 데이터 권한 관리 방식을 전면 재설계하고 있다.</div>
+      </li>
+      <li>
+        <a href="https://innovationinthenews.substack.com/p/tech-tuesday-october-6-2026" target="_blank">트럼프 행정부, 바이든 시대 AI 안전 협약 부활</a>
+        <div class="summary">트럼프 행정부가 주요 빅테크 기업들과 AI 리스크 모니터링 협약을 재체결했다. 자율 규제의 실효성에 대한 의문은 여전히 남아 있다.</div>
+      </li>
+      <li>
+        <a href="https://zonapk.org/tech/tech-news-2026" target="_blank">스마트폰 시장 10월 신제품 — Vivo V80·Motorola Edge 70 Neo·OPPO F35</a>
+        <div class="summary">10월 들어 Vivo, Motorola, OPPO 등 주요 제조사들이 신형 스마트폰을 잇따라 출시하며 연말 경쟁이 본격화됐다.</div>
+      </li>
+      <li>
+        <a href="https://insightsonindia.com/2026/10/06/upsc-current-affairs-6-october-2026" target="_blank">인도, 자체 슈퍼컴퓨터 40대 배포 — 68 페타플롭스 달성</a>
+        <div class="summary">인도 국가 슈퍼컴퓨팅 미션이 자체 개발 슈퍼컴퓨터 40대를 배포해 총 68 페타플롭스의 연산 능력을 확보하며 기술 자립을 강화했다.</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 경제/금융 뉴스 -->
+  <div class="section economy">
+    <div class="section-header"><span class="dot"></span>📈 경제/금융 뉴스</div>
+    <ul class="news-list">
+      <li>
+        <a href="https://www.newspim.com/news/view/20261002001221" target="_blank">청년미래적금 2차 가입신청 개시 — 금융위 혁신서비스 25건 지정</a>
+        <div class="summary">금융위원회가 청년미래적금 2차 가입신청을 개시하고, 개인간 중고거래 신용카드 안전결제 등 혁신금융서비스 25건을 신규 지정했다.</div>
+      </li>
+      <li>
+        <a href="https://www.bok.or.kr/portal/main/main.do" target="_blank">한국은행, 2026년 2/4분기 자금순환 잠정 발표</a>
+        <div class="summary">한국은행이 2026년 2분기 자금순환 잠정 통계를 발표했다. 가계 부채 흐름과 기업 자금 조달 현황에 시장의 관심이 집중됐다.</div>
+      </li>
+      <li>
+        <a href="https://mofe.go.kr/" target="_blank">재정경제부 장관, 국정감사 출석 — 하반기 경제 정책 방향 보고</a>
+        <div class="summary">이형일 부총리 겸 재정경제부 장관이 2026년 재정경제부 국정감사에 출석해 하반기 경제 운영 방향과 주요 재정 사안을 보고했다.</div>
+      </li>
+      <li>
+        <a href="https://www.blockmedia.co.kr/archives/1148320" target="_blank">달리오 "미국 부채 한계 접근 … 중·일 달러 국채 줄일 것"</a>
+        <div class="summary">레이 달리오 브리지워터 창업자가 미국이 부채 한계에 다가가고 있다고 경고하며, 중국과 일본이 미국 달러 표시 국채 보유를 줄일 것이라고 전망했다.</div>
+      </li>
+      <li>
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06012246645610296" target="_blank">존슨앤드존슨, 핵심 치료제 호조로 3Q 실적 기대 — 목표주가 상향</a>
+        <div class="summary">RBC 캐피털이 존슨앤드존슨의 핵심 치료제 판매 호조를 근거로 3분기 호실적을 예상하며 목표주가를 상향 조정했다.</div>
+      </li>
+      <li>
+        <a href="https://news.nate.com/view/20260105n33537" target="_blank">최태원 SK 회장, SK㈜ 지분 9440억 원 매각 — 재산분할 소송 자금 마련</a>
+        <div class="summary">최태원 SK그룹 회장이 노소영 관장과의 재산분할 소송에 필요한 자금을 마련하기 위해 SK㈜ 지분 약 9440억 원어치를 매각하기로 결정했다.</div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  생성 시각: 2026-10-06 22:11 KST &nbsp;|&nbsp; 자동 수집된 뉴스로, 원문 확인을 권장합니다.
+</footer>
+</body>
+</html>
