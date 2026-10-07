@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-07",
+  "start_time": "2026-10-07 22:11:53 KST",
+  "end_time": "2026-10-07 22:14:04 KST",
+  "duration_seconds": 130,
+  "news_file": "claude/news_2026-10-07.html",
+  "news_counts": {
+    "domestic": 6,
+    "world": 6,
+    "tech": 6,
+    "economy": 6
+  },
+  "git_push_status": "success"
+}
