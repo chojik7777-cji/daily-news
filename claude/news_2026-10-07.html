@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-10-07</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card-bg: #16213e;
+      --header-bg: #0f3460;
+      --accent: #e94560;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a8b8;
+      --border: #2a2a4a;
+      --tag-domestic: #1e6b7a;
+      --tag-world: #1e4a7a;
+      --tag-tech: #2d1e7a;
+      --tag-economy: #1e7a3a;
+      --link: #64b5f6;
+      --link-hover: #90caf9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--header-bg);
+      padding: 32px 16px 24px;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+    header .date-label {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    header h1 span {
+      color: var(--accent);
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 640px) {
+      .container { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.4rem; }
+    }
+    .section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 20px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .section-header.domestic { background: var(--tag-domestic); }
+    .section-header.world { background: var(--tag-world); }
+    .section-header.tech { background: var(--tag-tech); }
+    .section-header.economy { background: var(--tag-economy); }
+    .section-header .icon { font-size: 1.3rem; }
+    .news-list { padding: 12px 0; }
+    .news-item {
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item a {
+      color: var(--link);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .news-item a:hover { color: var(--link-hover); text-decoration: underline; }
+    .news-item .summary {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    footer span { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-label">2026년 10월 07일 수요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <div class="section">
+    <div class="section-header domestic">
+      <span class="icon">🇰🇷</span> 국내 뉴스
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05343126645610624" target="_blank">리사 수 AMD CEO, 삼성·SK하이닉스 연쇄 회동</a>
+        <div class="summary">AMD CEO 리사 수가 서울을 방문해 삼성전자 DS부문장 부회장 및 SK하이닉스 사장과 잇따라 회동. 한국 AI 반도체 생태계 협력 강화 논의.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://mofe.go.kr/" target="_blank">정부, 한국형 녹색대전환(K-GX) 전략 국민보고회 개최</a>
+        <div class="summary">정부가 대한상공회의소에서 'K-GX 전략 국민보고회'를 열고 정부 1,000조원 투자를 통한 녹색 대전환 전략 본격 가동을 선언했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://mofe.go.kr/" target="_blank">이형일 부총리, 경제6단체장 간담회 개최</a>
+        <div class="summary">이형일 부총리 겸 재정경제부 장관이 경제6단체 대표들과 기업혁신 지원 민관협의체 제6차 회의를 개최해 경제 현안을 논의했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.fntimes.com/html/view.php?ud=202610072031537886179ad43907_18" target="_blank">한국거래소, 시총 기준 미달 상폐 절차 유예 결정</a>
+        <div class="summary">법원의 제동으로 한국거래소가 시가총액 기준 미달 상장폐지 후속 절차를 유예한다고 밝혔다. 관리종목 지정은 현행대로 유지.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://news.nate.com/rank/interest?sc=all&p=day&date=20261007" target="_blank">중기부 장관, 온누리상품권 부정유통 의혹 조사 착수</a>
+        <div class="summary">이소영 중소벤처기업부 장관이 온누리상품권 부정유통 의혹 관련 국세청 등 관계기관과 협조해 조사에 나서겠다고 발표했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.cbci.co.kr/news/articleView.html?idxno=613066" target="_blank">하현승, 뉴욕 양키스 거절하고 KBO 선택</a>
+        <div class="summary">'유 퀴즈 온 더 블럭'에 출연한 야구 루키 하현승이 메이저리그 뉴욕 양키스의 제안을 거절하고 KBO 입단을 선택한 사연을 공개했다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 국제 뉴스 -->
+  <div class="section">
+    <div class="section-header world">
+      <span class="icon">🌍</span> 국제 뉴스
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://wng.org/podcasts/wednesday-morning-news-october-7-2026-1791319961" target="_blank">이스라엘, 10·7 테러 3주기 추모 행사</a>
+        <div class="summary">이스라엘이 하마스의 기습 공격 3주기를 맞아 전국적인 추모 행사를 열었다. 중동 긴장 고조 속 국제사회의 이목이 집중되고 있다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.wionews.com/world/live-blog-latest-india-world-news-today-live-updates-7-october-2026-breaking-news-headlines-jantar-mantar-iran-war-trump-russia-modi-1791346423122/amp" target="_blank">트럼프, 호르무즈 해협 통제 주장 재천명</a>
+        <div class="summary">미국 트럼프 대통령이 호르무즈 해협에서의 미국 해군의 역할을 강조하며 이란에 대한 사실상의 봉쇄 효과를 주장했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.wionews.com/world/live-blog-latest-india-world-news-today-live-updates-7-october-2026-breaking-news-headlines-jantar-mantar-iran-war-trump-russia-modi-1791346423122/amp" target="_blank">이란 위협에 미국, 영국 기지서 장거리 폭격기 철수</a>
+        <div class="summary">이란의 잠재적 위협에 대응해 미국이 영국 기지에 배치된 장거리 폭격기를 철수하는 조치를 취했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://wng.org/podcasts/wednesday-morning-news-october-7-2026-1791319961" target="_blank">노벨화학상, 카강·소아이 공동 수상</a>
+        <div class="summary">2026년 노벨 화학상이 비대칭 유기 합성에서 비선형 효과와 자기촉매 반응을 발견한 앙리 카강과 소아이 켄소에게 수여됐다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.wionews.com/world/live-blog-latest-india-world-news-today-live-updates-7-october-2026-breaking-news-headlines-jantar-mantar-iran-war-trump-russia-modi-1791346423122/amp" target="_blank">인도 모디 총리, 집권 25주년 기념일 맞아</a>
+        <div class="summary">나렌드라 모디 인도 총리가 25년 집권을 기념하는 날을 맞이했으며 각 주 총리 및 장관들의 축하가 이어졌다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://wng.org/podcasts/wednesday-morning-news-october-7-2026-1791319961" target="_blank">미국 서머타임 폐지 법안, 상원서 계류 중</a>
+        <div class="summary">미국 서머타임(일광절약제) 폐지 법안이 상원에 묶인 가운데 대부분의 미국인들이 11월 1일 시계를 한 시간 되돌려야 할 처지에 놓였다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IT/기술 뉴스 -->
+  <div class="section">
+    <div class="section-header tech">
+      <span class="icon">💻</span> IT / 기술 뉴스
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://aiweekly.co/ai-news-today" target="_blank">미스트랄 Large 4 출시 — 1조 파라미터 멀티모달 모델</a>
+        <div class="summary">미스트랄이 Large 4 프리뷰를 공개했다. 1조 파라미터 규모의 혼합전문가(MoE) 멀티모달 모델로 엔비디아 Grace Blackwell GPU 4,000대로 훈련됐다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://aiweekly.co/ai-news-today" target="_blank">GitHub openTPU, AI가 설계한 FPGA 추론 가속기 공개</a>
+        <div class="summary">GitHub openTPU 프로젝트가 AI 에이전트가 직접 설계한 FPGA 추론 가속기를 공개했다. Qwen3·LFM2.5 모델 추론 가능.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.gurufocus.com/news/9113201/marvell-technology-mrvl-sets-ambitious-90b-revenue-goal-by-2031-amid-mixed-valuation-signals" target="_blank">마벨 테크놀로지, 2031년 매출 900억 달러 목표 제시</a>
+        <div class="summary">마벨 테크놀로지가 2031 회계연도까지 최대 900억 달러 매출 목표를 발표했다. 2028년 가이던스도 200억 달러로 상향 조정.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05343126645610624" target="_blank">씨티그룹, AMD 목표가 상향 — CPU TAM 3,000억 달러 전망</a>
+        <div class="summary">씨티그룹이 AMD 목표주가를 상향 조정하고, 다수 AI 에이전트 출시를 반영해 2030년 CPU 전체주소가능시장(TAM)을 3,000억 달러로 높였다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://www.semiconductor-today.com/" target="_blank">나비타스·마이크로칩, AI 데이터센터용 800V 레퍼런스 디자인 협력</a>
+        <div class="summary">나비타스와 마이크로칩이 AI 데이터센터를 위한 800V 레퍼런스 디자인을 공동 개발했다. GaN 기술과 하드웨어 보안 결합.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news/article-2119054" target="_blank">리사 수의 '한국 AI 반도체 빅픽처' — 삼성·SK 연쇄 회동</a>
+        <div class="summary">AMD CEO 리사 수가 과기부 차관, 삼성전자, SK하이닉스를 잇달아 방문하며 한국 AI 반도체 생태계 협력 강화를 위한 구체적 논의를 진행했다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 경제/금융 뉴스 -->
+  <div class="section">
+    <div class="section-header economy">
+      <span class="icon">📈</span> 경제 / 금융 뉴스
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05592406645610624" target="_blank">스페이스X, 엔비디아 AI칩 구매에 400억 달러 조달 추진</a>
+        <div class="summary">스페이스X가 엔비디아 AI 칩 대량 구매를 위해 400억 달러 규모의 자금 조달을 추진 중이라고 보도됐다. 개장 전 주가 하락세.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05618646645610624" target="_blank">코인베이스, 현물 거래량 회복·점유율 확대 — BTIG 매수 유지</a>
+        <div class="summary">BTIG가 코인베이스의 현물 거래량 회복과 시장점유율 확대를 긍정 평가하며 투자의견 '매수'와 목표주가 240달러를 유지했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05779366645610624" target="_blank">휴마나, 메디케어 수익성 회복 기대 — 투자의견 상향</a>
+        <div class="summary">캔터 피츠제럴드가 미국 건강보험사 휴마나의 메디케어 사업 수익성 회복을 전망, 투자의견을 '중립'에서 '비중확대'로 상향했다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://mofe.go.kr/" target="_blank">재정경제부, 외국환거래법 시행령 일부개정령안 입법예고</a>
+        <div class="summary">재정경제부가 외국환거래법 시행령 일부개정령안을 입법예고했다. 외환 규제 완화 및 거래 편의성 향상이 주요 내용이다.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05566166645610624" target="_blank">마이크로소프트, 윈도우 노트북에 엔비디아 칩 탑재 추진</a>
+        <div class="summary">마이크로소프트가 윈도우 노트북에 엔비디아 칩을 탑재하는 방안을 추진 중이라고 보도됐다. 개장 전 엔비디아 주가 상승.</div>
+      </div>
+      <div class="news-item">
+        <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05736726645610624" target="_blank">애플, 앱스토어 매출 둔화에도 주가 개장 전 상승</a>
+        <div class="summary">애플의 앱스토어 매출 증가세 둔화 우려에도 개장 전 주가는 상승했다. 시장은 서비스 부문 전반의 실적에 주목하고 있다.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>생성 시각: <span>2026-10-07 22:11:53 KST</span> &nbsp;|&nbsp; 데이터 출처: WebSearch (뉴스 검색)</p>
+  <p style="margin-top:6px; color: #666;">© 2026 Daily News Bot — 자동 수집 뉴스 요약본입니다.</p>
+</footer>
+
+</body>
+</html>
