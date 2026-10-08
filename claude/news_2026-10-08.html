@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-10-08 오늘의 주요 뉴스</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --bg-card: #16213e;
+      --bg-section: #0f3460;
+      --accent-domestic: #e94560;
+      --accent-world: #f5a623;
+      --accent-tech: #4fc3f7;
+      --accent-economy: #66bb6a;
+      --text-primary: #e8e8f0;
+      --text-secondary: #a0a0c0;
+      --text-link: #90caf9;
+      --text-link-hover: #bbdefb;
+      --border: #2a2a4a;
+      --shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);
+      padding: 40px 20px 30px;
+      text-align: center;
+      border-bottom: 2px solid var(--border);
+    }
+    .header .date-badge {
+      display: inline-block;
+      background: rgba(233,69,96,0.2);
+      border: 1px solid var(--accent-domestic);
+      color: var(--accent-domestic);
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+    }
+    .header .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+    .section {
+      background: var(--bg-card);
+      border-radius: 12px;
+      margin-bottom: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .section-header {
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-header.domestic { background: linear-gradient(90deg, rgba(233,69,96,0.25) 0%, transparent 100%); border-left: 4px solid var(--accent-domestic); }
+    .section-header.world    { background: linear-gradient(90deg, rgba(245,166,35,0.25) 0%, transparent 100%); border-left: 4px solid var(--accent-world); }
+    .section-header.tech     { background: linear-gradient(90deg, rgba(79,195,247,0.25) 0%, transparent 100%); border-left: 4px solid var(--accent-tech); }
+    .section-header.economy  { background: linear-gradient(90deg, rgba(102,187,106,0.25) 0%, transparent 100%); border-left: 4px solid var(--accent-economy); }
+    .section-header .icon { font-size: 1.4rem; }
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .section-header.domestic h2 { color: var(--accent-domestic); }
+    .section-header.world    h2 { color: var(--accent-world); }
+    .section-header.tech     h2 { color: var(--accent-tech); }
+    .section-header.economy  h2 { color: var(--accent-economy); }
+    .section-header .count {
+      margin-left: auto;
+      background: rgba(255,255,255,0.08);
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+    .news-list { list-style: none; padding: 8px 0 16px; }
+    .news-item {
+      padding: 14px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+    .news-item a {
+      color: var(--text-link);
+      text-decoration: none;
+      font-size: 0.97rem;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .news-item a:hover { color: var(--text-link-hover); text-decoration: underline; }
+    .news-item .summary {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 24px 16px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      background: var(--bg-card);
+    }
+    .footer .generated-time { color: var(--accent-tech); font-weight: 500; }
+    @media (max-width: 600px) {
+      .news-item { padding: 12px 16px; }
+      .section-header { padding: 14px 16px; }
+      .container { padding: 20px 8px 40px; }
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div class="date-badge">2026년 10월 8일 목요일</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p class="subtitle">국내 · 국제 · IT/기술 · 경제/금융</p>
+</div>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <div class="section">
+    <div class="section-header domestic">
+      <span class="icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.samsung.com/sec/ir/news/ir-news/" target="_blank">삼성전자 3분기 잠정 실적 발표 — 매출 195조·영업이익 107조원</a>
+        <span class="summary">삼성전자가 2026년 3분기 잠정 실적을 발표했다. 연결 매출 약 195조 원(전년 동기 대비 +127%), 영업이익 약 107조 4천억 원을 기록하며 역대 최대 분기 실적을 경신했다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://news.sbs.co.kr/news/main.do" target="_blank">국회 국정감사 — 법무부·보건복지부 공방 계속</a>
+        <span class="summary">8일 국회 법제사법위원회 법무부 국감에서 여야 의원이 격렬히 충돌했다. 보건복지위원회 국감에서는 통합돌봄 인력·재정 확대 문제가 집중 논의됐다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://edaily.co.kr/" target="_blank">금융위, 스테이블코인 입법 최대한 조속 추진</a>
+        <span class="summary">금융위원회가 스테이블코인 관련 입법을 빠르게 진행하겠다고 밝혔다. 국정감사에서 단종레(단기 종목 거래 제한) 도입 경위를 둘러싼 공방도 이어졌다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.seoul.go.kr/" target="_blank">서울시, 잠수교 차량 전면 통제·한강 보행교 공사 착공</a>
+        <span class="summary">서울시는 10월 26일 0시부터 잠수교 차량 통행을 전면 통제하고 한강 보행 전용교 공사를 본격 시작한다고 발표했다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.hankyung.com/" target="_blank">코스피 2.6% 급락 — 외국인·기관 동반 매도에 6,600선</a>
+        <span class="summary">8일 국내 증시는 외국인과 기관의 동반 매도로 코스피가 2.6% 급락했다. 유가 상승과 중동 불안이 투자 심리를 짓눌렀다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.yonhapnewstv.co.kr/" target="_blank">트럼프, 한국에 알래스카 LNG 개발 참여 압박</a>
+        <span class="summary">트럼프 미국 대통령이 관세 인상 가능성을 거론하며 한국의 알래스카 LNG 개발 사업 참여를 강하게 압박하고 있다. 미국 의회에서도 같은 목소리가 나오고 있다.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 국제 뉴스 -->
+  <div class="section">
+    <div class="section-header world">
+      <span class="icon">🌍</span>
+      <h2>국제 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://wng.org/podcasts/thursday-morning-news-october-8-2026-1791412201" target="_blank">이스라엘, 10·7 공격 3주년 추모 — 텔아비브에 수만 명 집결</a>
+        <span class="summary">이스라엘이 2023년 하마스 기습 공격 3주년을 맞아 텔아비브에서 대규모 추모 행사를 열었다. 국가가 제창됐고 가자 상공에서는 공습이 이어졌다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008789707" target="_blank">후티 반군, 사우디 리야드 공항에 탄도미사일 공격</a>
+        <span class="summary">예멘 친이란 후티 반군이 사우디아라비아 수도 리야드의 킹 칼리드 국제공항에 탄도미사일을 발사했다. 파키스탄·튀르키예·시리아 등의 추가 파병 논의로 확산 우려가 커지고 있다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://freejobalert.com/articles/daily-current-affairs-08-october-2026-10457" target="_blank">러시아, 우크라이나 전역 공습 — 최소 28명 사망</a>
+        <span class="summary">러시아군이 우크라이나 주요 도시를 대규모 공습해 최소 28명이 사망했다고 우크라이나 내무부가 발표했다. 푸틴 생일 이튿날 감행된 공격으로 국제적 비난이 쏟아졌다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://allafrica.com/stories/202610080109.html" target="_blank">케냐 첫 에볼라 확진 — 콩고 여행객 사망, 접촉자 57명 추적 중</a>
+        <span class="summary">케냐에서 첫 에볼라 확진 사례가 보고됐다. 콩고민주공화국을 여행한 남성이 나이로비 병원에서 사망했으며, 당국은 접촉자 10명을 격리하고 57명을 추가 추적하고 있다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.nobelprize.org/" target="_blank">노벨 화학상 — Kagan·Soai, 비선형 효과·비대칭 촉매 공로로 수상</a>
+        <span class="summary">노벨 화학상이 Henri B. Kagan과 Kenso Soai에게 돌아갔다. 비선형 효과와 비대칭 유기합성 자기촉매 반응 발견에 대한 공로가 인정됐다. 평화상은 9일 발표 예정이다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://wng.org/podcasts/thursday-morning-news-october-8-2026-1791412201" target="_blank">UN, 세계 12대 인도주의 위기에 1억 6천만 달러 긴급 지원</a>
+        <span class="summary">유엔이 중앙긴급대응기금(CERF)에서 1억 6천만 달러를 배정해 세계 12개 최악의 인도주의 위기 지역을 지원하기로 했다.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- IT/기술 뉴스 -->
+  <div class="section">
+    <div class="section-header tech">
+      <span class="icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://aiweekly.co/ai-news-today/edition/2026-10-07" target="_blank">중국 AI 칩 스타트업 비렌(Biren), 5억 1,500만 달러 신규 투자 유치</a>
+        <span class="summary">상하이 AI 칩 스타트업 비렌이 홍콩 증시 상장 후 첫 대규모 유상증자로 약 5억 1,500만 달러를 조달했다. 주가는 6월 고점 대비 -50%지만 연초 대비 +70% 수준이다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://aiweekly.co/ai-news-today/edition/2026-10-07" target="_blank">구글 딥마인드 스핀오프 이소모픽랩스, 400억 달러 이상 가치로 투자 유치 협상</a>
+        <span class="summary">구글 딥마인드에서 분사한 신약 개발 AI 기업 이소모픽랩스가 최소 400억 달러 이상의 기업가치를 인정받아 자금 조달 협상을 진행 중이라고 블룸버그가 보도했다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://it-b.co.kr/news/articleView.html?idxno=90145" target="_blank">어플라이드머티어리얼즈-인텔, 차세대 반도체 제조 기술 협력 가속화</a>
+        <span class="summary">어플라이드머티어리얼즈와 인텔이 차세대 트랜지스터·배선·첨단 패키징 기술 공동 개발을 발표했다. 실리콘밸리 EPIC 센터와 오리건주 인텔 R&D 캠퍼스를 연계해 진행된다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://aiweekly.co/ai-news-today/edition/2026-10-05" target="_blank">OpenAI, AI 생성 수학 논문 722편을 GitHub에 공개</a>
+        <span class="summary">OpenAI가 AI 에이전트가 단일 프롬프트 한 번으로 작성한 수학 연구 논문 722편을 공개 GitHub 저장소에 게시했다. 사이언티픽 아메리카는 거의 모든 결과물이 단일 프롬프트에서 나왔다고 분석했다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://aiweekly.co/ai-news-today/edition/2026-10-06" target="_blank">DeepSeek, 텐센트·CATL에서 최소 120억 달러 투자 유치 — 홍콩 IPO 2027 Q1 목표</a>
+        <span class="summary">중국 AI 기업 DeepSeek이 텐센트와 CATL 주도로 최소 120억 달러 규모의 투자 유치를 마무리하고 있다. 홍콩 증시 IPO는 2027년 1분기를 목표로 준비 중이다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://supple.kr/news/cmuxjmpzg008vl8dk8wqyortl" target="_blank">현대엔지니어링, 8,700억 원 규모 인천 원창동 데이터센터 수주</a>
+        <span class="summary">현대엔지니어링이 인천 원창동에 50MW급 데이터센터를 건설하는 8,700억 원 규모의 신축 사업을 수주했다. 국내 AI 인프라 수요 확대를 반영한 대형 프로젝트다.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 경제/금융 뉴스 -->
+  <div class="section">
+    <div class="section-header economy">
+      <span class="icon">📈</span>
+      <h2>경제 / 금융 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.bloomberg.com/news/articles/2026-10-07/stock-market-today-dow-s-p-live-updates" target="_blank">중동 긴장·유가 급등에 글로벌 증시 하락 — MSCI 전 세계 지수 -0.2%</a>
+        <span class="summary">후티 반군의 사우디 공격 등 중동 불안이 유가를 끌어올리며 글로벌 증시에 스태그플레이션 우려를 자극했다. MSCI 전 세계 지수는 약 0.2% 하락 출발했다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.tickmill.com/blog/daily-market-outlook-october-8-2026" target="_blank">미국 증시 선물 하락 — 국채금리 상승·Fed 매파 신호에 위험자산 회피</a>
+        <span class="summary">S&P 500 선물이 하락했다. 10년물 미국 국채금리가 2002년 이후 최고 수준에 근접했으며, 연준 의사록이 금리 인하 여력 축소를 시사하면서 투자 심리가 위축됐다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-08-2026" target="_blank">금 선물 4,147달러·은 선물 58.96달러 — 안전자산·귀금속 혼조</a>
+        <span class="summary">금 선물이 소폭 오른 약 4,147.60달러를 기록한 반면, 은 선물은 2.2% 하락한 약 58.96달러를 나타냈다. S&P 500은 7,818.93, 다우는 51,521.28에서 출발했다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.worldbank.org/" target="_blank">세계은행, 인도 FY27 성장률 전망 7.1%로 상향 — 인도중앙은행 금리 인상 다음날</a>
+        <span class="summary">세계은행이 인도 2027 회계연도 경제성장률 전망을 7.1%로 상향 조정했다. 전날 인도중앙은행(RBI)의 기준금리 인상 발표 이후 나온 긍정적인 전망이다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://ko.tradingeconomics.com/" target="_blank">선진국 장기금리 동반 상승 — 일본 40년물 4%, 독일 10년물 3% 돌파</a>
+        <span class="summary">일본 40년물 국채금리가 4%를 넘어서고 독일 10년물도 15년 만에 처음으로 3%를 돌파했다. 재정 악화 우려와 에너지 가격 충격이 주된 배경이다.</span>
+      </li>
+      <li class="news-item">
+        <a href="https://www.korea.kr/news/policyNewsView.do?newsId=156761126" target="_blank">대외경제정책연구원 "2026년 세계경제, 중첩된 충격·좁아진 활로"</a>
+        <span class="summary">대외경제정책연구원(KIEP)이 2026년 세계경제 전망 업데이트를 발표했다. 에너지 가격 충격이 근원물가로 전이되면 연준의 추가 금리 인하 여력이 사실상 사라질 수 있다고 경고했다.</span>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>생성 시각: <span class="generated-time">2026-10-08 22:12:19 KST</span> &nbsp;|&nbsp; 자동 수집 뉴스 · News Bot</p>
+</div>
+</body>
+</html>
