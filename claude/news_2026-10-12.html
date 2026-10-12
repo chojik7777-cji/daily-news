@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026년 10월 12일</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-card: #0f3460;
+      --accent: #e94560;
+      --accent2: #533483;
+      --text-primary: #eaeaea;
+      --text-secondary: #a8a8b3;
+      --text-muted: #6c6c80;
+      --border: #1e2a45;
+      --domestic: #e94560;
+      --world: #533483;
+      --tech: #00b4d8;
+      --economy: #06d6a0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header .date-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.8rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .section-domestic .section-icon { background: rgba(233, 69, 96, 0.2); }
+    .section-world .section-icon { background: rgba(83, 52, 131, 0.3); }
+    .section-tech .section-icon { background: rgba(0, 180, 216, 0.2); }
+    .section-economy .section-icon { background: rgba(6, 214, 160, 0.2); }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .section-domestic .section-title { color: var(--domestic); }
+    .section-world .section-title { color: #a78bfa; }
+    .section-tech .section-title { color: var(--tech); }
+    .section-economy .section-title { color: var(--economy); }
+
+    .section-count {
+      margin-left: auto;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+    }
+
+    .news-grid {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .news-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .section-domestic .news-card:hover { border-color: var(--domestic); }
+    .section-world .news-card:hover { border-color: #a78bfa; }
+    .section-tech .news-card:hover { border-color: var(--tech); }
+    .section-economy .news-card:hover { border-color: var(--economy); }
+
+    .news-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .news-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+
+    .news-title a:hover {
+      text-decoration: underline;
+    }
+
+    .news-summary {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+
+    @media (min-width: 768px) {
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-badge">2026년 10월 12일 월요일</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p>국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section section-domestic">
+    <div class="section-header">
+      <div class="section-icon">🇰🇷</div>
+      <h2 class="section-title">국내 뉴스</h2>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008793061" target="_blank">북한, 동해상으로 탄도미사일 여러 발 발사…올해 11번째</a>
+        </div>
+        <p class="news-summary">북한이 동해상으로 탄도미사일 여러 발을 발사했다. 한미 연합훈련을 앞두고 감행된 올해 열한 번째 탄도미사일 발사로, 청와대는 긴급 안보상황점검회의를 열어 강력 규탄했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://24news.kr/news/articleView.html?idxno=310495" target="_blank">행안부, 중수청장 인선 비판 임은정 광주중수청장 감찰 지시</a>
+        </div>
+        <p class="news-summary">행정안전부 장관이 김지용 중수청장 후보자 인선을 공개 비판해 온 임은정 광주중수청장에 대한 감찰을 지시하면서 정치권과 법조계의 공방이 이어지고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://biz.sbs.co.kr/amp/article/20000331793" target="_blank">코스피, 반도체 훈풍에 7000선 턱밑…외국인 매수 전환</a>
+        </div>
+        <p class="news-summary">반도체 업종의 강세에 힘입어 코스피가 7000선 문턱까지 접근했다. 외국인이 매수로 전환하며 지수 상승을 이끌었다는 분석이 나온다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.daum.net/" target="_blank">인천 서해구, 출범 100일 만에 '재정 비상' 선언</a>
+        </div>
+        <p class="news-summary">신설 자치구인 인천 서해구가 출범 100일 만에 재정 비상 상태에 처했다. 구 관계자는 예상을 초과한 고정 지출과 부족한 세입 구조를 주요 원인으로 꼽았다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank">사우디 리야드 공항 공격에 미국 군사개입 가능성 시사</a>
+        </div>
+        <p class="news-summary">리야드 국제공항이 이틀 연속 공격을 받아 12명의 추가 사상자가 발생했다. 간접 지원 입장을 유지해 온 미국이 군사개입 가능성을 내비치면서 한국 정부도 상황을 예의주시하고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://dt.co.kr/article/12088563" target="_blank">원·달러 환율, 수출기업 달러 매도에 1333원대로 하락</a>
+        </div>
+        <p class="news-summary">수출기업의 달러 매도 물량이 집중되며 원달러 환율이 1333원대까지 내려 2년여 만의 최저 수준을 기록했다. 8월 경상수지 461억 달러 흑자도 원화 강세를 뒷받침했다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section-world">
+    <div class="section-header">
+      <div class="section-icon">🌍</div>
+      <h2 class="section-title">국제 뉴스</h2>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://globalnews.ca/video/12091297/russia-pounds-ukraine-killing-at-least-24-people/" target="_blank">러시아, 우크라이나 대규모 공습…최소 24명 사망</a>
+        </div>
+        <p class="news-summary">러시아가 우크라이나 전역에 대규모 공습을 감행해 최소 24명이 사망했다. 에너지 시설 휴전 선언 후 러시아가 발전소를 다시 타격하면서 국제사회의 비난이 고조되고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://abcnews.com/international" target="_blank">파나마 규모 7.7 지진 발생…피해 상황 집계 중</a>
+        </div>
+        <p class="news-summary">파나마에서 규모 7.7의 강진이 발생해 피해가 속출하고 있다. 당국은 긴급 구조대를 파견하고 피해 규모를 파악 중이며, 인근 국가에도 쓰나미 주의보가 발령됐다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.nbcnews.com/world" target="_blank">스페인 총리, 주택 위기 시위 확산 속 조기총선 선언</a>
+        </div>
+        <p class="news-summary">스페인 전역으로 번진 주택 위기 항의 시위 여파로 총리가 조기 총선을 선언했다. 급등한 임대료와 주거 불안에 수십만 명이 거리로 나오면서 정치적 압박이 극에 달했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.nbcnews.com/world" target="_blank">케냐, 사상 첫 에볼라 확진 사례 확인…WHO 긴급 대응</a>
+        </div>
+        <p class="news-summary">케냐 보건당국이 자국 내 첫 에볼라 확진 사례를 공식 확인했다. WHO는 즉각 긴급 팀을 파견하고 접촉자 추적 및 격리 조치에 나섰다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://abcnews.com/international" target="_blank">후티 반군, 사우디 리야드 공항 연속 타격…미국 개입 경고</a>
+        </div>
+        <p class="news-summary">예멘 후티 반군이 사우디 리야드 킹할리드 국제공항을 이틀 연속 공격했다. 사우디는 12명의 추가 사상자를 확인했고, 미국은 군사적 개입 가능성을 경고했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.nbcnews.com/world" target="_blank">프랑스 학생 시위 전국화…26만여 명 거리 행진</a>
+        </div>
+        <p class="news-summary">열악한 학교 환경에 반발한 프랑스 학생 시위가 전국으로 확산해 정부 추산 26만 6천여 명이 거리로 나왔다. 교육부 장관은 시위대의 요구를 검토하겠다고 밝혔다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section-tech">
+    <div class="section-header">
+      <div class="section-icon">💻</div>
+      <h2 class="section-title">IT / 기술 뉴스</h2>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036" target="_blank">Apple, iOS 27.2로 Siri AI 한국어 포함 5개 언어 확장</a>
+        </div>
+        <p class="news-summary">iOS 27.2 테스트 버전에서 Siri의 고급 AI 기능이 프랑스어·일본어·한국어·포르투갈어·스페인어로 확대될 예정이다. 글로벌 사용자층을 겨냥한 애플의 AI 현지화 전략이 본격화됐다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036" target="_blank">Google DeepMind, Gemini 4 후처리 단계 돌입…연내 공개 목표</a>
+        </div>
+        <p class="news-summary">구글 딥마인드가 차세대 AI 모델 Gemini 4의 후처리(post-training) 단계에 진입했다. 2026년 말 공개를 목표로 하고 있으며, GPT 계열과의 본격적인 성능 경쟁이 예고된다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.bloomberg.com/ai" target="_blank">Amazon, AI 스타트업 Decart 인수 협상 중…WSJ 보도</a>
+        </div>
+        <p class="news-summary">월스트리트저널(WSJ) 보도에 따르면 아마존이 AI 스타트업 Decart 인수를 위한 협상을 진행 중이다. 생성형 AI 기술 강화를 위한 아마존의 공격적인 인수 전략의 일환으로 풀이된다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.bloomberg.com/ai" target="_blank">NVIDIA, 오하이오 AI 팩토리 4.25GW 계획 공개…역대 최대 규모</a>
+        </div>
+        <p class="news-summary">엔비디아가 오하이오주에 4.25기가와트(GW) 규모의 AI 데이터센터 단지 건설 계획을 확정했다. 역대 최대 규모의 AI 인프라 투자로, 향후 AI 칩 수요 급증을 반영한 전략적 결정이다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://digg.com/ai/qyieg39r" target="_blank">Mistral, 1조 파라미터 'Le Chonk' 모델 공개…오픈소스 전환 예고</a>
+        </div>
+        <p class="news-summary">프랑스 AI 스타트업 Mistral이 1조 파라미터 규모의 대형 언어모델 'Le Chonk'를 공개했다. 오픈 가중치(open weights) 전환을 예고해 오픈소스 AI 생태계에 큰 변화를 가져올 전망이다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.marketingprofs.com/opinions/2026/55534/ai-update-august-14-2026-ai-news-and-views-from-the-past-week" target="_blank">미국, 각국에 중국 AI 기술 대신 미국 기술 선택 압박…디지털 주권 갈등 심화</a>
+        </div>
+        <p class="news-summary">미국이 동맹국 및 파트너 국가들에 중국 기술 생태계 대신 미국 AI·반도체 기술 채택을 요구하고 있다. 중국은 디지털 주권을 내세우며 반발하고 있어 글로벌 기술 패권 갈등이 격화되고 있다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section-economy">
+    <div class="section-header">
+      <div class="section-icon">📈</div>
+      <h2 class="section-title">경제 / 금융 뉴스</h2>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://biz.sbs.co.kr/amp/article/20000331793" target="_blank">코스피, 반도체 훈풍에 7000선 근접…장중 강세 지속</a>
+        </div>
+        <p class="news-summary">반도체 섹터의 강세를 중심으로 코스피가 7000선 턱밑까지 상승했다. 외국인·기관의 동반 매수와 삼성전자·SK하이닉스의 동반 강세가 지수를 견인했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://dt.co.kr/article/12088563" target="_blank">원달러 환율 1333원대…2년 만의 최저, 수출기업 달러 매도 집중</a>
+        </div>
+        <p class="news-summary">원달러 환율이 1333원까지 내려 2024년 이후 최저 수준을 기록했다. 6월 말 1549원에서 석 달 새 13.8% 하락했으며, 수출기업의 달러 매도와 경상수지 흑자 확대가 원인으로 분석된다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.daum.net/finance" target="_blank">9월 수출 사상 최대 기록…반도체·자동차 견인</a>
+        </div>
+        <p class="news-summary">9월 한국 수출이 사상 최대치를 경신했다. 반도체와 자동차 수출이 큰 폭으로 늘면서 전년 동기 대비 높은 증가율을 보였으며, 연간 수출 목표 초과 달성 전망도 나오고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://v.daum.net/v/20260812153640706" target="_blank">8월 경상수지 461억 달러 흑자…역대 두 번째 규모</a>
+        </div>
+        <p class="news-summary">한국은행이 발표한 8월 경상수지가 461억 1천만 달러 흑자로 역대 두 번째로 큰 규모를 기록했다. 상품수지 흑자 확대와 서비스수지 개선이 동시에 이뤄진 결과다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.technewsworld.com/section/technology/emerging-tech/artificial-intelligence" target="_blank">AI 데이터센터 수요 급증, 메모리 반도체 공급 타이트…소비자 가격 인상 우려</a>
+        </div>
+        <p class="news-summary">AI 데이터센터 수요 폭발로 메모리 반도체 공급이 빠듯해지면서 소비자용 기기 가격 인상 우려가 커지고 있다. HBM(고대역폭 메모리) 생산 비중 확대로 일반 D램 공급이 줄어들고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://kr.investing.com/news/economy" target="_blank">기업 AI 파일럿 프로젝트, 실제 도입 단계로 전환 부진…비용·인력 장벽</a>
+        </div>
+        <p class="news-summary">글로벌 기업들이 AI 파일럿 프로젝트를 실제 사업 전환으로 연결하는 데 어려움을 겪고 있다. 높은 도입 비용과 전문 인력 부족이 주요 장벽으로 꼽히며, 투자 효율성에 대한 재검토가 늘고 있다.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>생성 일시: 2026-10-12 22:11 KST &nbsp;|&nbsp; 자동 수집 뉴스 요약본 &nbsp;|&nbsp; 각 제목 클릭 시 원문 이동</p>
+</footer>
+
+</body>
+</html>
