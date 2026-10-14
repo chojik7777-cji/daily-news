@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026년 10월 14일</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-card: #0f3460;
+      --bg-card-hover: #1a4a7a;
+      --accent-domestic: #e94560;
+      --accent-world: #f5a623;
+      --accent-tech: #4ecdc4;
+      --accent-economy: #95e1d3;
+      --text-primary: #e0e0e0;
+      --text-secondary: #b0b0c0;
+      --text-muted: #808090;
+      --text-white: #ffffff;
+      --border-color: #2a2a4a;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 50%, #16213e 100%);
+      padding: 2.5rem 1rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid var(--border-color);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(233, 69, 96, 0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .header-date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .header-title {
+      font-size: clamp(1.6rem, 5vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text-white);
+      letter-spacing: -0.02em;
+    }
+
+    .header-title span {
+      color: var(--accent-domestic);
+    }
+
+    .header-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .category-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+    }
+
+    .category-nav a {
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: all 0.2s ease;
+      border: 1px solid;
+    }
+
+    .nav-domestic { color: var(--accent-domestic); border-color: var(--accent-domestic); }
+    .nav-domestic:hover { background: var(--accent-domestic); color: #fff; }
+    .nav-world { color: var(--accent-world); border-color: var(--accent-world); }
+    .nav-world:hover { background: var(--accent-world); color: #fff; }
+    .nav-tech { color: var(--accent-tech); border-color: var(--accent-tech); }
+    .nav-tech:hover { background: var(--accent-tech); color: #1a1a2e; }
+    .nav-economy { color: var(--accent-economy); border-color: var(--accent-economy); }
+    .nav-economy:hover { background: var(--accent-economy); color: #1a1a2e; }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .section-count {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-left: auto;
+      font-weight: 400;
+    }
+
+    .section-domestic .section-icon { background: rgba(233, 69, 96, 0.15); }
+    .section-domestic .section-header { border-bottom-color: rgba(233, 69, 96, 0.4); }
+    .section-domestic .section-title { color: var(--accent-domestic); }
+
+    .section-world .section-icon { background: rgba(245, 166, 35, 0.15); }
+    .section-world .section-header { border-bottom-color: rgba(245, 166, 35, 0.4); }
+    .section-world .section-title { color: var(--accent-world); }
+
+    .section-tech .section-icon { background: rgba(78, 205, 196, 0.15); }
+    .section-tech .section-header { border-bottom-color: rgba(78, 205, 196, 0.4); }
+    .section-tech .section-title { color: var(--accent-tech); }
+
+    .section-economy .section-icon { background: rgba(149, 225, 211, 0.15); }
+    .section-economy .section-header { border-bottom-color: rgba(149, 225, 211, 0.4); }
+    .section-economy .section-title { color: var(--accent-economy); }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .news-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .section-domestic .news-card:hover { border-color: rgba(233, 69, 96, 0.5); }
+    .section-world .news-card:hover { border-color: rgba(245, 166, 35, 0.5); }
+    .section-tech .news-card:hover { border-color: rgba(78, 205, 196, 0.5); }
+    .section-economy .news-card:hover { border-color: rgba(149, 225, 211, 0.5); }
+
+    .news-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+    }
+
+    .section-domestic .news-card::before { background: var(--accent-domestic); }
+    .section-world .news-card::before { background: var(--accent-world); }
+    .section-tech .news-card::before { background: var(--accent-tech); }
+    .section-economy .news-card::before { background: var(--accent-economy); }
+
+    .news-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-white);
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .news-title a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .news-title a:hover {
+      text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.4);
+    }
+
+    .news-summary {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+
+    footer span {
+      color: var(--accent-tech);
+    }
+
+    @media (max-width: 640px) {
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      .header-title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="header-date">Wednesday, October 14, 2026 · KST</p>
+  <h1 class="header-title">오늘의 <span>주요 뉴스</span></h1>
+  <p class="header-subtitle">국내 · 국제 · IT/기술 · 경제/금융 — 4개 카테고리 주요 뉴스</p>
+</header>
+
+<div class="container">
+
+  <nav class="category-nav">
+    <a class="nav-domestic" href="#domestic">🇰🇷 국내 뉴스</a>
+    <a class="nav-world" href="#world">🌐 국제 뉴스</a>
+    <a class="nav-tech" href="#tech">💻 IT/기술</a>
+    <a class="nav-economy" href="#economy">📈 경제/금융</a>
+  </nav>
+
+  <!-- 국내 뉴스 -->
+  <section id="domestic" class="section section-domestic">
+    <div class="section-header">
+      <div class="section-icon">🇰🇷</div>
+      <h2 class="section-title">국내 뉴스</h2>
+      <span class="section-count">7건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008797090" target="_blank">
+            초대 중수청장 후보 인사청문회… "검찰 관행 단절" 약속
+          </a>
+        </div>
+        <p class="news-summary">김지용 중수청장 후보자가 오늘 인사청문회에서 과거 검찰의 표적수사 관행과 단절하겠다고 밝혔다. 일부 여당 의원은 후보자의 배경을 문제 삼아 비판을 이어갔다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008797090" target="_blank">
+            인천 구월동 흉기 난동… 1명 심정지·7명 부상
+          </a>
+        </div>
+        <p class="news-summary">인천 구월동 복합건물에서 50대 남성이 흉기를 휘둘러 8명이 다쳤다. 이재명 대통령은 인천경찰청을 방문해 전자발찌 관리·감독 재점검을 지시하고 폭력 범죄에 대한 특단의 대책 마련을 주문했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008797090" target="_blank">
+            나주 부부 살해 사건… 피의자 박용수 신상 공개
+          </a>
+        </div>
+        <p class="news-summary">전남 나주에서 60대 부부를 결박해 살해한 혐의를 받는 52살 박용수의 신상정보가 공개됐다. 경찰은 사건 경위와 범행 동기를 조사 중이다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008797932" target="_blank">
+            국정감사 2주차… 국민연금 리밸런싱·교육재정교부금 공방
+          </a>
+        </div>
+        <p class="news-summary">국정감사 2주차인 14일, 국민연금 주식 리밸런싱 유예 결정을 둘러싼 공방이 이어졌다. 여야는 지방교육재정교부금 개편, 김민석 민주당 대표·한동훈 의원 자녀 논란도 집중적으로 다뤘다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008797090" target="_blank">
+            윤석열 선거법 항소심… 특검 "당선무효형 유지" 요청
+          </a>
+        </div>
+        <p class="news-summary">윤석열 전 대통령의 선거법 위반 항소심에서 특검이 1심의 당선무효형 유지를 요청했다. 이번 재판 결과에 따라 국민의힘의 397억 원 반환 여부가 결정된다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008797090" target="_blank">
+            IMF, 한국 성장률 3.3%로 상향… "반도체가 무역전쟁 상쇄"
+          </a>
+        </div>
+        <p class="news-summary">국제통화기금(IMF)이 올해 한국 경제성장률 전망을 3.3%로 상향 조정했다. 반도체 수출 호조가 미중 무역 갈등의 부정적 영향을 상당 부분 상쇄한 결과로 풀이됐다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008797090" target="_blank">
+            코스피 6,009포인트 마감… 전일 급락 후 반등
+          </a>
+        </div>
+        <p class="news-summary">코스피가 전일 5.46% 폭락 이후 0.44% 하락한 6,009에 마감했다. 삼성전자·SK하이닉스 등 반도체 대형주가 일부 회복하며 낙폭을 제한했고, AI 밸류에이션 우려와 중국 경쟁 심화가 시장 변동성의 주요 원인으로 꼽혔다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section id="world" class="section section-world">
+    <div class="section-header">
+      <div class="section-icon">🌐</div>
+      <h2 class="section-title">국제 뉴스</h2>
+      <span class="section-count">8건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.npr.org/sections/world/" target="_blank">
+            교황 레오 14세, 폐암 진단 공식 발표
+          </a>
+        </div>
+        <p class="news-summary">NPR 등 복수의 외신이 교황 레오 14세의 폐암 진단 소식을 보도했다. 바티칸은 교황의 건강 상태와 향후 일정에 대한 추가 발표를 예고했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.npr.org/sections/world/" target="_blank">
+            젤렌스키 NPR 인터뷰… 러시아 침공 5주년 앞두고 국제 지지 호소
+          </a>
+        </div>
+        <p class="news-summary">볼로디미르 젤렌스키 우크라이나 대통령이 NPR과 단독 인터뷰를 갖고 러시아의 전면 침공 5주년을 앞두고 국제사회의 지속적인 지원을 촉구했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.presstv.co.uk/Detail/2026/10/14/778266/Press-TV-s-news-headlines-" target="_blank">
+            이란 혁명수비대, "페르시아만·호르무즈 완전 장악" 주장
+          </a>
+        </div>
+        <p class="news-summary">이란 혁명수비대 해군이 페르시아만과 호르무즈 해협에 대한 완전한 통제권을 갖고 있다고 주장했다. 서방 국가들은 이 같은 발표가 역내 긴장을 고조시킨다고 비판했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.bnnbloomberg.ca/markets/2026/10/14/global-benchmarks-are-mixed-in-cautious-trading-after-us-stocks-edge-back-from-record/" target="_blank">
+            후티 반군, 예멘 공습 보고… 중동 긴장 고조
+          </a>
+        </div>
+        <p class="news-summary">예멘 후티 반군이 자국 내 공습 피해를 보고하며 사우디아라비아와의 무력 충돌이 격화되는 양상이다. 국제유가도 중동 불안을 반영해 상승세를 보였다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://sundayguardianlive.com/trending/school-assembly-news-headlines-today-14-october-top-national-business-news-sports-news-education-news-science-tech-news-weather-news-world-news-with-weather-updates-thought-of-the-day-305091/amp/" target="_blank">
+            노벨 경제학상, 로버트 E. 홀·마이클 우드포드 공동 수상
+          </a>
+        </div>
+        <p class="news-summary">2026년 노벨 경제학상이 거시경제학 및 통화정책 연구에 기여한 로버트 E. 홀과 마이클 우드포드에게 공동 수여됐다. 스웨덴 왕립과학원은 두 학자의 뉴케인지언 경제학에서의 공헌을 수상 이유로 밝혔다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://sundayguardianlive.com/trending/school-assembly-news-headlines-today-14-october-top-national-business-news-sports-news-education-news-science-tech-news-weather-news-world-news-with-weather-updates-thought-of-the-day-305091/amp/" target="_blank">
+            독일 메르츠 총리, EU 예산 대폭 삭감 압박
+          </a>
+        </div>
+        <p class="news-summary">프리드리히 메르츠 독일 총리가 목요일 열리는 EU 정상회의를 앞두고 EU 예산 삭감을 강력히 요구하고 있다. 독일·프랑스 등 주요국과의 이견으로 협상이 난항을 겪고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://sundayguardianlive.com/trending/school-assembly-news-headlines-today-14-october-top-national-business-news-sports-news-education-news-science-tech-news-weather-news-world-news-with-weather-updates-thought-of-the-day-305091/amp/" target="_blank">
+            일론 머스크, 미국 중간선거 최대 후원자… 총 3,660억 원 투입
+          </a>
+        </div>
+        <p class="news-summary">테슬라·스페이스X CEO 일론 머스크가 약 3,660억 원(약 2억 6,600만 달러)을 정치 자금으로 쏟아부으며 미국 중간선거 최대 후원자로 부상했다. 민주당은 이를 강하게 비판하고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://sundayguardianlive.com/trending/school-assembly-news-headlines-today-14-october-top-national-business-news-sports-news-education-news-science-tech-news-weather-news-world-news-with-weather-updates-thought-of-the-day-305091/amp/" target="_blank">
+            NASA 퍼시비어런스, 지구 밖 최장 거리 주행 기록 경신 (45.2km)
+          </a>
+        </div>
+        <p class="news-summary">NASA의 화성 탐사 로버 퍼시비어런스가 지구 외 행성에서 이동한 최장 거리 기록인 45.2km를 돌파했다. 이전 기록은 큐리오시티가 보유하고 있었으며, 이번 성과는 화성 지질 탐사의 새 이정표로 평가된다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section id="tech" class="section section-tech">
+    <div class="section-header">
+      <div class="section-icon">💻</div>
+      <h2 class="section-title">IT / 기술 뉴스</h2>
+      <span class="section-count">7건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://bloomberg.com/news/newsletters/2026-10-14/ai-robots-china-is-beating-the-us-to-5-trillion-market" target="_blank">
+            블룸버그 "중국, 5조 달러 인간형 로봇 시장서 미국 앞서고 있다"
+          </a>
+        </div>
+        <p class="news-summary">블룸버그 보도에 따르면 중국이 노동자 대체용 인간형 로봇 대량 생산에서 미국보다 우위에 있다. 미국 AI 연구소들이 프런티어 모델에서 앞선다고 해도 로봇 제조·공급망에서는 중국이 더 앞선 상황이다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-october-14-2026/" target="_blank">
+            구글 딥마인드·싱가포르 GovTech, 온디바이스 스캠 탐지 AI 개발
+          </a>
+        </div>
+        <p class="news-summary">구글 딥마인드와 싱가포르 GovTech가 Gemma 기반의 스캠 탐지 모델을 개발했다. 암호화된 대화를 서버로 전송하지 않고 스마트폰에서 직접 위험 대화를 감지해 경고한다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-october-14-2026/" target="_blank">
+            미국 상원, AI 사이버 위협 대응 기준 마련 촉구
+          </a>
+        </div>
+        <p class="news-summary">캔트웰·라운즈 상원의원이 백악관에 AI 표준 수립, 테스트 및 감사 체계 구축과 AI 기반 사이버 공격에 대응하는 방어적 AI 도입을 촉구하는 서한을 보냈다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.npr.org/sections/news/" target="_blank">
+            인도 공장 노동자, GoPro 착용해 로봇 훈련 데이터 수집
+          </a>
+        </div>
+        <p class="news-summary">NPR 보도에 따르면 인도의 공장 노동자들이 GoPro 카메라를 착용해 작업 동작을 촬영하고 있다. 이 데이터는 로봇이 인간의 작업을 대체할 수 있도록 훈련하는 데 쓰인다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://zdnet.co.kr/" target="_blank">
+            중국 CXMT, 4F² 구조 차세대 서버용 DDR5 메모리 연말 출시
+          </a>
+        </div>
+        <p class="news-summary">중국 메모리 제조사 CXMT가 4F² 아키텍처 기반의 차세대 서버용 DDR5 RDIMM을 올 연말 정식 출시할 계획이다. 이에 삼성전자·SK하이닉스 등 국내 메모리 업계의 긴장감이 높아지고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-october-14-2026/" target="_blank">
+            Oracle NetSuite, AI 우선 금융 플랫폼 'QuickStart' 출시
+          </a>
+        </div>
+        <p class="news-summary">Oracle NetSuite가 AI 기반의 새로운 금융 플랫폼 NetSuite QuickStart의 출시를 공식 발표했다. 기업 재무 자동화와 AI 분석을 통합한 이 솔루션은 중소기업을 주요 타깃으로 한다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://it-b.co.kr/news/articleView.html?idxno=90248" target="_blank">
+            팔로알토네트웍스 서울 행사… "AI 해킹 시대, 보안 재정비 필수"
+          </a>
+        </div>
+        <p class="news-summary">팔로알토네트웍스가 서울에서 '이그나이트 온 투어' 행사를 개최하고 AI 기반 공격에 대비한 사이버 보안 강화를 촉구했다. 제로 트러스트 아키텍처와 보안 운영 자동화의 중요성을 강조했다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section id="economy" class="section section-economy">
+    <div class="section-header">
+      <div class="section-icon">📈</div>
+      <h2 class="section-title">경제 / 금융 뉴스</h2>
+      <span class="section-count">8건</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html" target="_blank">
+            미국 9월 CPI 3.7%… 예상치 웃돌며 긴축 우려 재부각
+          </a>
+        </div>
+        <p class="news-summary">미국 9월 소비자물가지수(CPI)가 전년 대비 3.7% 상승해 시장 예상치(3.6%)를 소폭 상회했다. 연준의 추가 금리 인상 가능성이 다시 부각되며 증시에 하방 압력을 가했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.cp24.com/news/money/2026/10/14/global-benchmarks-are-mixed-in-cautious-trading-after-us-stocks-edge-back-from-record/" target="_blank">
+            글로벌 증시 혼조… 미국 은행 실적 주목
+          </a>
+        </div>
+        <p class="news-summary">JP모건, 골드만삭스, 씨티그룹, 웰스파고 등 미국 주요 은행의 3분기 실적이 발표됐다. 골드만삭스 순이익은 전년 대비 29% 증가한 52.9억 달러로 집계됐고, JP모건의 주식 거래 수익도 49% 급증했다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.bnnbloomberg.ca/markets/2026/10/14/global-benchmarks-are-mixed-in-cautious-trading-after-us-stocks-edge-back-from-record/" target="_blank">
+            코스피 6,009p 마감… 반도체 반등에도 변동성 지속
+          </a>
+        </div>
+        <p class="news-summary">한국 코스피가 전일 대비 0.44% 하락한 6,008.81에 마감했다. 지난 5거래일간 12% 이상 급락한 상황에서 반도체 대형주가 부분 회복했으나 AI 밸류에이션 우려는 여전하다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://hdfcsky.com/news/global-markets-today-october-14-2026-asian-shares-edge-higher-oil-near-107-indian-markets-set-for-muted-start" target="_blank">
+            브렌트유 $106.40 유지… 중동 긴장에 고유가 지속
+          </a>
+        </div>
+        <p class="news-summary">브렌트유 선물이 배럴당 106.40달러(+0.7%)로 거래됐다. 중동 지정학적 리스크와 OPEC+ 감산 기조가 맞물리며 국제유가는 고공 행진을 이어가고 있다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://www.stockopedia.com/content/daily-stock-market-report-wed-14th-oct-2026-agenda-1059010/" target="_blank">
+            ASML, 3분기 역대 최대 매출… 연간 전망 상향
+          </a>
+        </div>
+        <p class="news-summary">반도체 장비 업체 ASML이 3분기 사상 최대 매출을 기록하고 연간 전망을 상향 조정했다. AI 반도체 수요 급증에 따른 첨단 노광(EUV) 장비 주문이 호실적을 이끌었다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.daum.net/economy" target="_blank">
+            한국은행 10월 금통위, 기준금리 동결 전망
+          </a>
+        </div>
+        <p class="news-summary">한국은행이 이달 금융통화위원회에서 기준금리를 동결할 것으로 시장이 예상하고 있다. 고물가 우려와 경기 둔화 리스크 사이에서 '관망' 기조를 유지할 것이라는 분석이 지배적이다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html" target="_blank">
+            BlackRock, 3분기 실적 예상치 상회… 자산운용 규모 사상 최대
+          </a>
+        </div>
+        <p class="news-summary">세계 최대 자산운용사 BlackRock이 3분기 순이익과 매출 모두에서 시장 예상치를 웃도는 실적을 발표했다. 운용 자산(AUM)이 사상 최고치를 기록하며 강세를 이어갔다.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-title">
+          <a href="https://news.daum.net/economy" target="_blank">
+            금값 $4,145/온스 소폭 하락… 달러 강세에 차익 실현
+          </a>
+        </div>
+        <p class="news-summary">금 현물 가격이 온스당 4,145달러(-0.3%)로 소폭 하락했다. 예상을 웃돈 미국 CPI 발표 이후 달러화가 강세를 보이자 차익 실현 매물이 쏟아진 영향으로 분석된다.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>자동 수집 · 생성 시각: <span>2026-10-14 22:13 KST</span></p>
+  <p style="margin-top:0.4rem;">데이터 출처: SBS, NPR, Bloomberg, Yahoo Finance, ZDNet Korea 등 | 일부 뉴스는 요약·번역되었습니다.</p>
+</footer>
+
+</body>
+</html>
