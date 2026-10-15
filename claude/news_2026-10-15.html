@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026년 10월 15일</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --bg-card: #16213e;
+      --bg-section: #0f3460;
+      --accent-domestic: #e94560;
+      --accent-world: #f5a623;
+      --accent-tech: #00d4ff;
+      --accent-economy: #4ade80;
+      --text-primary: #e8e8f0;
+      --text-secondary: #a0a0b8;
+      --text-muted: #6b6b88;
+      --border: #2a2a4a;
+      --link-hover: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 0 16px 40px;
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 16px 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    header .date-badge {
+      display: inline-block;
+      background: var(--bg-section);
+      color: var(--accent-tech);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      border: 1px solid var(--accent-tech);
+    }
+
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section {
+      background: var(--bg-card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-icon {
+      font-size: 1.4rem;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .section-count {
+      margin-left: auto;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: var(--bg);
+      padding: 3px 10px;
+      border-radius: 10px;
+    }
+
+    .section--domestic .section-header { border-left: 4px solid var(--accent-domestic); }
+    .section--domestic .section-title { color: var(--accent-domestic); }
+
+    .section--world .section-header { border-left: 4px solid var(--accent-world); }
+    .section--world .section-title { color: var(--accent-world); }
+
+    .section--tech .section-header { border-left: 4px solid var(--accent-tech); }
+    .section--tech .section-title { color: var(--accent-tech); }
+
+    .section--economy .section-header { border-left: 4px solid var(--accent-economy); }
+    .section--economy .section-title { color: var(--accent-economy); }
+
+    .news-list { padding: 8px 0; }
+
+    .news-item {
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+
+    .news-title {
+      display: block;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      margin-bottom: 5px;
+      transition: color 0.15s;
+    }
+
+    .news-title:hover { color: var(--link-hover); text-decoration: underline; }
+
+    .news-summary {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 16px 16px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+      margin-top: 12px;
+    }
+
+    footer strong { color: var(--text-secondary); }
+
+    @media (max-width: 600px) {
+      .section-header { padding: 14px 16px; }
+      .news-item { padding: 12px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-badge">2026년 10월 15일 목요일</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p>국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section section--domestic">
+    <div class="section-header">
+      <span class="section-icon">🇰🇷</span>
+      <span class="section-title">국내 뉴스</span>
+      <span class="section-count">7건</span>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008799018" target="_blank" rel="noopener noreferrer">코스피·코스닥 매도 사이드카 잇따라 발동…AI 투자 수익성 논란에 증시 급락</a>
+        <p class="news-summary">AI 투자 수익성 논란이 재점화되며 국내 증시가 급락세를 보였다. 장 초반 코스피와 코스닥 모두 매도 사이드카가 발동됐으며, 코스피는 6000선 아래로 밀렸다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008798229" target="_blank" rel="noopener noreferrer">이재명 대통령, 임광현 국세청장을 신임 청와대 비서실장으로 임명</a>
+        <p class="news-summary">이재명 대통령이 임광현 국세청장을 신임 청와대 비서실장으로 임명했다. 임 신임 실장은 국세청장 재임 중 조세행정 개혁을 추진해온 인물로 평가받는다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener noreferrer">김지용 초대 중수청장 후보자 인사청문 보고서 여야 합의 채택 전망</a>
+        <p class="news-summary">김지용 초대 중수청장 후보자 인사청문 보고서가 여야 합의로 채택될 것으로 보인다. 다만 조국혁신당과 국민의힘의 강한 반대 의견이 보고서에 담길 예정이다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener noreferrer">강선우 '공천 대가 1억 수수' 1심 징역 2년 6개월·법정구속</a>
+        <p class="news-summary">공천 대가로 1억 원을 수수한 혐의를 받는 강선우 씨가 1심에서 징역 2년 6개월을 선고받고 법정구속됐다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008799018" target="_blank" rel="noopener noreferrer">인천 흉기 난동 피의자 최 씨, 구속영장 신청…신상공개 검토</a>
+        <p class="news-summary">인천에서 흉기 난동을 벌인 피의자 최 씨에 대해 경찰이 구속영장을 신청했다. 최 씨는 "관심을 받으려고 뉴스거리를 만들고 싶었다"고 진술한 것으로 알려졌다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008798229" target="_blank" rel="noopener noreferrer">미국 소비자물가 3.7% 상승…기준금리 추가 인상 우려 재부상</a>
+        <p class="news-summary">지난달 미국 소비자물가가 시장 예상을 웃도는 3.7% 상승률을 기록했다. 이에 따라 미 연준의 기준금리 추가 인상 가능성이 다시 부각되고 있다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008798229" target="_blank" rel="noopener noreferrer">트럼프, 한국 알래스카 LNG 투자 500억 달러 언급…무역 합의 성과 강조</a>
+        <p class="news-summary">트럼프 미국 대통령이 한국의 알래스카 LNG 개발에 대한 500억 달러 투자 약속을 언급하며 한미 무역 합의의 성과를 강조했다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section--world">
+    <div class="section-header">
+      <span class="section-icon">🌍</span>
+      <span class="section-title">국제 뉴스</span>
+      <span class="section-count">7건</span>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtdHZHZ0pMVWlnQVAB?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener noreferrer">[속보] 신압록강대교, 완공 12년 만에 공식 개통…북·중 밀착 가속</a>
+        <p class="news-summary">12년간 방치됐던 신압록강대교가 15일 공식 개통됐다. 북한과 중국 간 교통 인프라 연결이 본격화되며 북·중 경제협력 확대에 속도가 붙을 전망이다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtdHZHZ0pMVWlnQVAB?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener noreferrer">후티 "사우디 아람코·공항에 미사일·드론 공격…며칠간 계속"</a>
+        <p class="news-summary">예멘 후티 반군이 사우디아라비아 아람코 시설과 공항을 미사일·드론으로 공격했다고 밝혔다. 중동 지역 긴장이 고조되며 국제유가에도 영향을 미치고 있다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/latest-news" target="_blank" rel="noopener noreferrer">국제유가, IEA 공급 경고·중동 긴장에 상승…브렌트유 배럴당 106달러</a>
+        <p class="news-summary">IEA의 공급 감소 경고와 중동 지역 긴장 고조가 맞물리며 국제유가가 상승했다. 브렌트유는 배럴당 106달러를 기록했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtdHZHZ0pMVWlnQVAB?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener noreferrer">러시아, 우크라이나 발전소 재공격…젤렌스키 "에너지 휴전 위반"</a>
+        <p class="news-summary">러시아가 우크라이나 발전소를 재차 공격했다. 젤렌스키 대통령은 이를 에너지 휴전 위반이라고 강하게 비난하며 국제사회의 추가 지원을 촉구했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/stock-market-news" target="_blank" rel="noopener noreferrer">뉴욕증시, CPI 충격·AI주 약세에 하락 마감…나스닥 1.88% 급락</a>
+        <p class="news-summary">뉴욕증시가 예상을 상회하는 소비자물가지수(CPI)와 AI 관련 기술주 매도세에 하락했다. 나스닥은 1.88% 급락 마감하며 투자 심리가 위축됐다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtdHZHZ0pMVWlnQVAB?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener noreferrer">북한, 러시아 파견 기술자 통해 드론 생산 기지 복제 추진 가능성</a>
+        <p class="news-summary">북한이 러시아에 파견한 기술자들을 통해 러시아제 군사 드론 생산 기지를 자국에 복제할 가능성이 제기됐다. 북한 무기 고도화 우려가 커지고 있다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.daum.net/world" target="_blank" rel="noopener noreferrer">EU 정상회의, 중국 무역 불균형·장기 예산 문제 집중 논의</a>
+        <p class="news-summary">EU 정상회의에서 중국과의 무역 불균형 문제와 EU 장기 예산 분담 문제가 주요 의제로 다뤄졌다. 독일 주의회 선거 결과도 메르츠 총리 입지에 영향을 미칠 전망이다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section--tech">
+    <div class="section-header">
+      <span class="section-icon">💻</span>
+      <span class="section-title">IT / 기술 뉴스</span>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a class="news-title" href="https://m.news.nate.com/view/20261015n23508" target="_blank" rel="noopener noreferrer">BS한양, 현장 기술 특화 AI 'B-ON' 개발…품질·안전 경쟁력 향상</a>
+        <p class="news-summary">BS한양이 현장 기술 자료를 통합 관리하는 AI 시스템 'B-ON'을 개발했다. 분산된 기술자료를 일원화해 기술 정보 검색 시간을 단축하고 신규 직원 교육에 활용할 계획이다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://m.news.nate.com/view/20261014n41105" target="_blank" rel="noopener noreferrer">삼성·SK하이닉스, 차세대 AI 반도체 총출동…'SEDEX 2026' 코엑스 개막</a>
+        <p class="news-summary">서울 삼성동 코엑스에서 열린 반도체대전 'SEDEX 2026'에서 삼성전자와 SK하이닉스가 최신 AI 반도체 기술과 제품을 공개했다. 전시회는 16일까지 진행된다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://www.itfind.or.kr/trend/todayNews.do" target="_blank" rel="noopener noreferrer">넷앱, 기업용 AI 스토리지 솔루션 '노버스' 공개…데이터 관리 혁신 예고</a>
+        <p class="news-summary">스토리지 전문기업 넷앱이 AI 워크로드에 최적화된 차세대 스토리지 솔루션 '노버스'를 공개했다. AI 모델 학습·추론 환경에서 고속 데이터 처리를 지원한다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://www.aitimes.com/" target="_blank" rel="noopener noreferrer">미즈호 은행, 직원 5만 명 대상 AI 개발직 전환 착수…내달 시작</a>
+        <p class="news-summary">일본 미즈호 금융그룹이 산하 은행·증권사 직원 5만 명을 대상으로 AI 개발 직무 전환을 다음 달부터 시작한다고 밝혔다. 금융 산업 내 AI 인력 재편이 본격화되고 있다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.daum.net/it-tech" target="_blank" rel="noopener noreferrer">삼성·애플, AI 폴더블폰 경쟁 치열…하반기 신제품 출시 임박</a>
+        <p class="news-summary">삼성전자와 애플이 AI 기능을 탑재한 폴더블 스마트폰 시장 선점을 두고 치열한 경쟁을 벌이고 있다. 양사 모두 하반기 신제품 출시를 앞두고 있어 시장의 관심이 집중되고 있다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.daum.net/ai-tech" target="_blank" rel="noopener noreferrer">카카오, 카카오톡 AI 비서 '카나나' 고도화 박차…대화 맥락 이해 강화</a>
+        <p class="news-summary">카카오가 카카오톡 내장 AI 비서 '카나나'의 성능 고도화에 속도를 내고 있다. 대화 맥락 이해 능력과 멀티모달 처리 기능이 크게 향상됐다는 평가다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section--economy">
+    <div class="section-header">
+      <span class="section-icon">📈</span>
+      <span class="section-title">경제 / 금융 뉴스</span>
+      <span class="section-count">7건</span>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a class="news-title" href="https://fnnews.com/news/202610151546306221" target="_blank" rel="noopener noreferrer">7일 만에 1200조 날아갔다…국내 증시 급락에 투자자 패닉</a>
+        <p class="news-summary">최근 7일 동안 국내 증시에서 1200조 원 이상의 시가총액이 증발했다. 증권가에서는 글로벌 환경 악화로 높은 변동성이 당분간 지속될 것이라는 우려가 나온다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.daum.net/stock" target="_blank" rel="noopener noreferrer">코스피·코스닥, 서킷브레이커 발동…코스닥 8.01% 폭락 757.88</a>
+        <p class="news-summary">국내 증시가 장중 급락하면서 코스피·코스닥 양 시장에 서킷브레이커가 발동됐다. 코스닥은 66포인트 하락한 757.88로 8%대 폭락을 기록했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/stock-market-news" target="_blank" rel="noopener noreferrer">아시아 증시 급락…반도체주 투매에 코스피 7% 하락</a>
+        <p class="news-summary">아시아 주요 증시가 일제히 급락했다. 반도체주 투매가 집중되면서 코스피가 7%대 하락했고, 일본 닛케이도 4% 이상 떨어졌다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/headlines" target="_blank" rel="noopener noreferrer">미국 CPI 예상 상회…연준 금리 인상 기대 재점화</a>
+        <p class="news-summary">미국 소비자물가지수(CPI)가 시장 예상치를 웃돌며 미 연방준비제도의 추가 금리 인상 가능성이 다시 부각됐다. 채권 금리가 급등하며 주식시장에 압박을 가했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/latest-news" target="_blank" rel="noopener noreferrer">미국 국채 금리 급등…10년물 5% 돌파 우려 확산</a>
+        <p class="news-summary">인플레이션 지표 발표 이후 미국 국채 금리가 급등했다. 10년물 국채 금리가 5%를 돌파할 수 있다는 우려가 커지며 금융시장 전반에 긴장감이 높아지고 있다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/latest-news" target="_blank" rel="noopener noreferrer">비트코인, 미 금리 우려·달러 강세에 하락…6만 달러 선 위협</a>
+        <p class="news-summary">미국 국채 금리 급등과 달러 강세 영향으로 비트코인 가격이 하락했다. 6만 달러 지지선에 대한 투자자 불안이 고조되며 가상자산 시장도 위축됐다.</p>
+      </div>
+
+      <div class="news-item">
+        <a class="news-title" href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener noreferrer">호르무즈 해협 상선 침몰 속출…해상 물류 안전 우려 확산</a>
+        <p class="news-summary">호르무즈 해협에서 잇따라 상선 침몰 사고가 발생하며 해상 물류 안전에 대한 우려가 확산되고 있다. 중동 긴장 고조가 글로벌 물류 비용 상승 압박으로 이어질 전망이다.</p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>생성 시각: <strong>2026-10-15 22:11:43 KST</strong></p>
+  <p style="margin-top:6px;">뉴스 출처: SBS, Google 뉴스, 파이낸셜뉴스, Investing.com, 다음뉴스, 네이트뉴스 등</p>
+</footer>
+
+</body>
+</html>
