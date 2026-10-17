@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-10-17</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-card: #0f3460;
+      --accent: #e94560;
+      --accent-2: #533483;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0b0;
+      --text-muted: #6c6c80;
+      --domestic: #4fc3f7;
+      --world: #81c784;
+      --tech: #ce93d8;
+      --economy: #ffb74d;
+      --border: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--accent-2) 100%);
+      padding: 40px 16px 30px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    header .date-badge {
+      display: inline-block;
+      background: rgba(233,69,96,0.2);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      color: var(--text-secondary);
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 24px;
+    }
+    @media (max-width: 540px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .section {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .section-header {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header .icon {
+      font-size: 20px;
+    }
+    .section-header h2 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .section-header .count {
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .section--domestic .section-header { border-top: 3px solid var(--domestic); }
+    .section--domestic .section-header h2 { color: var(--domestic); }
+    .section--world .section-header { border-top: 3px solid var(--world); }
+    .section--world .section-header h2 { color: var(--world); }
+    .section--tech .section-header { border-top: 3px solid var(--tech); }
+    .section--tech .section-header h2 { color: var(--tech); }
+    .section--economy .section-header { border-top: 3px solid var(--economy); }
+    .section--economy .section-header h2 { color: var(--economy); }
+    .news-list { padding: 8px 0; }
+    .news-item {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+    .news-item a {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .news-item a:hover { color: #fff; text-decoration: underline; }
+    .news-item .summary {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .news-item .tag {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    .section--domestic .tag { background: rgba(79,195,247,0.15); color: var(--domestic); }
+    .section--world .tag { background: rgba(129,199,132,0.15); color: var(--world); }
+    .section--tech .tag { background: rgba(206,147,216,0.15); color: var(--tech); }
+    .section--economy .tag { background: rgba(255,183,77,0.15); color: var(--economy); }
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+    footer span { color: var(--text-secondary); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="date-badge">2026년 10월 17일 토요일</div>
+  <h1>📰 오늘의 주요 뉴스</h1>
+  <p>국내 · 국제 · IT/기술 · 경제/금융 뉴스 요약</p>
+</header>
+
+<div class="container">
+  <div class="grid">
+
+    <!-- 국내 뉴스 -->
+    <div class="section section--domestic">
+      <div class="section-header">
+        <span class="icon">🇰🇷</span>
+        <h2>국내 뉴스</h2>
+        <span class="count">6건</span>
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <span class="tag">정치</span>
+          <a href="https://news.daum.net/politics" target="_blank">국회 국정감사 2주차 여야 충돌 계속…이재명 대통령 재판 공방</a>
+          <div class="summary">국회 국정감사가 2주차에 접어들면서 여야 간 곳곳에서 충돌이 이어지고 있다. 이재명 대통령 재판 및 이진숙 위원 제척 문제가 주요 쟁점으로 떠올랐다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">외교/안보</span>
+          <a href="https://ytn.co.kr/" target="_blank">통상·안보 조이는 美, 대화 거부하는 北…한국 외교 사면초가</a>
+          <div class="summary">미국의 통상·안보 압박이 이어지는 가운데 북한이 대화에 응하지 않으면서 한국 외교가 사면초가에 몰렸다는 분석이 나왔다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">경제</span>
+          <a href="https://news.daum.net/economy" target="_blank">재정경제부, 20일 가상자산 과세 비공개 간담회…거래소들과 협의</a>
+          <div class="summary">재정경제부가 오는 20일 오전 서울에서 가상자산 과세 관련 비공개 간담회를 열 예정이다. 국내 주요 거래소들과 세부 과세 방안을 협의할 것으로 알려졌다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">증시</span>
+          <a href="https://news.daum.net/stock" target="_blank">코스피 5600선 추락 우려…주간 증시 변동성 확대</a>
+          <div class="summary">국내 증시가 큰 폭으로 흔들리면서 코스피가 5600선 아래로 추락할 수 있다는 우려가 커졌다. 반도체주 중심의 매도세가 지수 하락을 이끌었다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">사회</span>
+          <a href="https://imnews.imbc.com/" target="_blank">부천 공장 화재 진압 중 소방관 심정지…긴박했던 현장</a>
+          <div class="summary">경기 부천의 한 공장에서 화재가 발생해 진압 중이던 소방관이 심정지 상태에 빠졌다. 소방 당국은 신속히 대응했으나 인명 피해가 발생했다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">사건</span>
+          <a href="https://imnews.imbc.com/" target="_blank">인천 대형 복합상가 흉기 난동…20대 여성 심정지·8명 부상</a>
+          <div class="summary">인천 대형 복합 상가건물에서 50대 남성이 흉기를 휘둘러 20대 여성 1명이 심정지 상태에 빠지고 8명이 부상을 당했다. 경찰이 용의자를 제압해 현재 수사 중이다.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 국제 뉴스 -->
+    <div class="section section--world">
+      <div class="section-header">
+        <span class="icon">🌍</span>
+        <h2>국제 뉴스</h2>
+        <span class="count">6건</span>
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <span class="tag">미·러</span>
+          <a href="https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday" target="_blank">트럼프, 러시아·이란 제재 완화 행정명령 서명…EU "유감"</a>
+          <div class="summary">도널드 트럼프 미국 대통령이 러시아와 이란 제재 완화를 포함한 '2026 러시아·이란 제재법' 행정명령에 서명했다. EU 지도자들은 러시아산 디젤 제재 한시 해제 결정에 유감을 표했다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">우크라이나</span>
+          <a href="https://www.aa.com.tr/en/world/morning-briefing-oct-17-2026/4091615" target="_blank">브뤼셀 정상회의, 우크라이나 700억 유로 지원 결론 없이 종료</a>
+          <div class="summary">젤렌스키 우크라이나 대통령이 요구한 2027년 700억 유로 지원 문제가 결론 없이 끝났다. 젤렌스키는 스타링크 속도 제한으로 러시아 드론 요격에 어려움을 겪고 있다고 밝혔다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">프랑스</span>
+          <a href="https://riotimesonline.com/europe-intelligence-brief-saturday-october-17-2026" target="_blank">프랑스 대규모 시위 폭력 사태…경찰 최루탄 발사·160명 체포</a>
+          <div class="summary">프랑스 전역에서 학생 주도의 대규모 시위가 폭력 사태로 번졌다. 경찰이 최루탄을 발사하고 160명을 체포하는 등 긴장이 고조됐다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">중동</span>
+          <a href="https://www.aa.com.tr/en/world/morning-briefing-oct-17-2026/4091615" target="_blank">호르무즈 해협 통행량 분쟁 전 대비 70% 감소…후티 12건 선박 공격</a>
+          <div class="summary">호르무즈 해협 선박 통행량이 분쟁 이전 수준 대비 약 70% 감소했다고 영국 해양기관이 밝혔다. 후티 반군은 지난 주 12건의 선박 공격을 감행했다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">항공</span>
+          <a href="https://www.careerindia.com/news/school-assembly-news-headlines-today-october-17-2026-national-international-education-sport-067217.html" target="_blank">후티 사우디 공격으로 인도 항공사, 중동 노선 운항 중단</a>
+          <div class="summary">후티 반군의 사우디아라비아 공격 여파로 인도 항공사들이 일부 중동 노선 운항을 중단했다. 승객 안전을 이유로 한 임시 조치다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">무역</span>
+          <a href="https://www.freejobalert.com/articles/daily-current-affairs-17-october-2026-10467" target="_blank">WTO, 2026년 세계 교역 성장률 전망 3.9%로 상향 조정</a>
+          <div class="summary">세계무역기구(WTO)가 2026년 글로벌 무역 성장률 전망치를 3.9%로 상향했다. 미국의 제재 완화와 주요국 경기 회복세가 무역 증가를 견인하는 요인으로 분석된다.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- IT/기술 뉴스 -->
+    <div class="section section--tech">
+      <div class="section-header">
+        <span class="icon">💻</span>
+        <h2>IT / 기술 뉴스</h2>
+        <span class="count">9건</span>
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <span class="tag">AI</span>
+          <a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" target="_blank">Anthropic, 분기 매출 168억 달러 기록…IPO 검토 중</a>
+          <div class="summary">AI 기업 Anthropic이 분기 매출 168억 달러를 기록하며 급격한 성장세를 보이고 있다. 회사는 기업공개(IPO)를 저울질하고 있는 것으로 알려졌다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">규제</span>
+          <a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" target="_blank">FTC, 소비자 보호 위반 혐의로 OpenAI·Anthropic 소환장 발부</a>
+          <div class="summary">미국 연방거래위원회(FTC)가 소비자 보호법 위반 가능성을 이유로 OpenAI와 Anthropic에 소환장을 발부했다. AI 기업에 대한 규제 압박이 강화되고 있다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">법률</span>
+          <a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" target="_blank">미국 8개 주, 어린이 피해 이유로 OpenAI 집단 고소</a>
+          <div class="summary">미국 8개 주가 아동에 대한 피해를 이유로 OpenAI를 집단 고소했다. 아칸소주는 재귀적 자기 개선 AI 시스템 개발 중단을 법원에 요청했다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">Google</span>
+          <a href="https://techstartups.com/2026/10/14/top-tech-news-today-october-14-2026-apple-asml-google-openai-microsoft-nvidia-more/" target="_blank">구글, Gemini 4 Argon 모델 일반 공개 접근 시작</a>
+          <div class="summary">구글이 차세대 AI 모델 Gemini 4 Argon을 일반에 공개했다. 개발자 및 일반 사용자 모두 접근할 수 있으며, 멀티모달 기능이 크게 강화됐다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">Apple</span>
+          <a href="https://techstartups.com/2026/10/14/top-tech-news-today-october-14-2026-apple-asml-google-openai-microsoft-nvidia-more/" target="_blank">애플, 스마트홈 허브 'HomeView' 299달러에 공개</a>
+          <div class="summary">애플이 299달러 가격의 스마트홈 허브 'HomeView'를 공개했다. HomeKit 생태계를 중심으로 스마트홈 시장 점유율 확대를 노린 전략 제품으로 평가된다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">보안</span>
+          <a href="https://techstartups.com/2026/10/14/top-tech-news-today-october-14-2026-apple-asml-google-openai-microsoft-nvidia-more/" target="_blank">마이크로소프트, 1,400개 이상 취약점 패치…Windows 이미 악용 중</a>
+          <div class="summary">마이크로소프트가 1,400개 이상의 보안 취약점 패치를 릴리스했다. 이 중 이미 공격에 악용되고 있는 Windows 취약점이 포함돼 즉시 업데이트가 권고됐다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">기업</span>
+          <a href="https://techstartups.com/2026/10/13/top-tech-news-today-october-13-2026-character-ai-bankruptcy-metas-muse-wonder-amd-ai-chips-apples-smart-home-push-and-cybersecurity-threats/" target="_blank">Character.AI, 파산 신청…일부 자산 디즈니에 2,000만 달러 매각</a>
+          <div class="summary">AI 챗봇 스타트업 Character.AI가 파산을 신청하고 일부 자산을 디즈니에 2,000만 달러에 매각하기로 합의했다. AI 시장 내 경쟁 심화의 희생양이 됐다는 평가다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">Tesla</span>
+          <a href="https://www.cnbc.com/technology/" target="_blank">테슬라, SpaceX와 공동 개발 로드스터 공개…합병 추측 고조</a>
+          <div class="summary">테슬라가 스페이스X와 협력해 개발한 신형 로드스터를 공개했다. 두 회사의 긴밀한 협력이 합병 가능성에 대한 시장 추측을 자극하고 있다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">반도체</span>
+          <a href="https://techstartups.com/2026/10/14/top-tech-news-today-october-14-2026-apple-asml-google-openai-microsoft-nvidia-more/" target="_blank">ASML, 분기 매출 117억 유로 기록…일본, 뉴욕 반도체 공장에 210억 달러 투자</a>
+          <div class="summary">네덜란드 반도체 장비 기업 ASML이 분기 매출 117억 유로를 기록했다. 일본은 뉴욕에 위치한 2개 반도체 공장에 최대 210억 달러를 투자하겠다고 약속했다.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 경제/금융 뉴스 -->
+    <div class="section section--economy">
+      <div class="section-header">
+        <span class="icon">📈</span>
+        <h2>경제 / 금융 뉴스</h2>
+        <span class="count">5건</span>
+      </div>
+      <div class="news-list">
+
+        <div class="news-item">
+          <span class="tag">반도체</span>
+          <a href="https://kr.investing.com/news/stock-market-news/article-2130504" target="_blank">필라델피아 반도체지수(SOX), 2008년 이후 최장 연속 하락 기록</a>
+          <div class="summary">필라델피아 반도체지수(SOX)가 구성 종목 30개 전체 하락하며 2008년 글로벌 금융위기 이후 최장 연속 하락 기록을 세웠다. AI 투자 지속 가능성에 대한 우려가 매도세를 이끌었다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">AI주</span>
+          <a href="https://kr.investing.com/news/headlines" target="_blank">AI 투자 지속 가능성 의구심…기술주 밸류에이션 부담 가중</a>
+          <div class="summary">인공지능 투자 지속 가능성에 대한 투자자들의 의구심이 커지면서 기술주 전반의 밸류에이션 부담이 가중되고 있다. 금융 비용 상승이 겹치며 매도 압력이 확대됐다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">코스피</span>
+          <a href="https://news.daum.net/stock" target="_blank">코스피 반도체주 급락 주도…8거래일 만에 일부 반등 시도</a>
+          <div class="summary">국내 코스피 지수가 반도체주의 매도세에 급락했다. 한국경제TV에 따르면 장중 8거래일 만에 반등을 시도하는 모습도 보였으나 변동성이 크게 확대됐다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">가상자산</span>
+          <a href="https://www.wowtv.co.kr/" target="_blank">정부 가상자산 과세 속도…업계 "준비 부족" 우려 목소리</a>
+          <div class="summary">정부가 가상자산 과세 시행 일정을 예고한 가운데 업계에서는 준비가 충분하지 않다는 우려를 제기하고 있다. 20일 비공개 간담회에서 이해관계자 의견을 수렴할 예정이다.</div>
+        </div>
+
+        <div class="news-item">
+          <span class="tag">글로벌</span>
+          <a href="https://kr.investing.com/news/latest-news" target="_blank">WTO 무역 전망 상향에도 지정학 불확실성 여전…투자자 관망세</a>
+          <div class="summary">WTO가 세계 교역 성장률 전망을 3.9%로 상향했지만 중동 긴장과 미·러 제재 변수로 인한 지정학적 불확실성이 글로벌 투자 심리를 짓누르고 있다.</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>생성 시각: <span>2026-10-17 22:11 KST</span> &nbsp;|&nbsp; 자동 수집 뉴스 요약 서비스</p>
+  <p style="margin-top:6px; font-size:11px;">뉴스 출처: 다음뉴스, YTN, MBC뉴스, Euronews, AA통신, TechStartups, Investing.com, CNBC 등</p>
+</footer>
+</body>
+</html>
