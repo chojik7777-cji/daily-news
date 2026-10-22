@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-10-22 오늘의 주요 뉴스</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card: #16213e;
+      --accent: #0f3460;
+      --border: #e94560;
+      --text: #e0e0e0;
+      --muted: #a0a0b0;
+      --domestic: #4fc3f7;
+      --world: #81c784;
+      --tech: #ffb74d;
+      --economy: #ce93d8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Noto Sans KR', Arial, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      border-bottom: 2px solid var(--border);
+      padding: 2rem 1rem 1.5rem;
+      text-align: center;
+    }
+    header .date {
+      font-size: 0.95rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.03em;
+    }
+    header h1 span {
+      color: var(--border);
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+    .section {
+      background: var(--card);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .section-header .icon {
+      font-size: 1.4rem;
+    }
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .domestic .section-header { border-left: 4px solid var(--domestic); }
+    .domestic .section-header h2 { color: var(--domestic); }
+    .world .section-header { border-left: 4px solid var(--world); }
+    .world .section-header h2 { color: var(--world); }
+    .tech .section-header { border-left: 4px solid var(--tech); }
+    .tech .section-header h2 { color: var(--tech); }
+    .economy .section-header { border-left: 4px solid var(--economy); }
+    .economy .section-header h2 { color: var(--economy); }
+    ul.news-list {
+      list-style: none;
+      padding: 0.5rem 0;
+    }
+    ul.news-list li {
+      padding: 0.85rem 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    ul.news-list li:last-child { border-bottom: none; }
+    ul.news-list li a {
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text);
+      transition: color 0.2s;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    ul.news-list li a:hover { color: var(--border); text-decoration: underline; }
+    ul.news-list li .summary {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    @media (max-width: 600px) {
+      main { padding: 1rem 0.75rem; gap: 1.25rem; }
+      .section-header { padding: 0.85rem 1rem; }
+      ul.news-list li { padding: 0.75rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="date">2026년 10월 22일 목요일</p>
+    <h1>오늘의 <span>주요 뉴스</span></h1>
+  </header>
+  <main>
+
+    <!-- 국내 뉴스 -->
+    <section class="section domestic">
+      <div class="section-header">
+        <span class="icon">🇰🇷</span>
+        <h2>국내 뉴스</h2>
+      </div>
+      <ul class="news-list">
+        <li>
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008809972" target="_blank">PHP 심각한 보안 취약점 발견…정부, 기업에 보안 조치 안내</a>
+          <p class="summary">전 세계 웹사이트 70%에서 사용하는 PHP에서 심각한 보안 취약점이 발견됐다. 유럽 국가들이 정부 웹사이트 접속을 차단한 가운데, 국내 정부 당국도 기업에 보안 조치를 안내하며 대응에 나섰다.</p>
+        </li>
+        <li>
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008809972" target="_blank">북한, 대남 확성기 며칠 내 가동 대기…김여정 국경 요새화 지속</a>
+          <p class="summary">김여정 노동당 부부장이 국경선 요새화 공사를 이어가겠다고 밝히고, 대남 확성기를 며칠 내 가동 대기 상태에 두겠다고 선언하며 남북 긴장이 고조되고 있다.</p>
+        </li>
+        <li>
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008809972" target="_blank">역삼동 연쇄 방화 피의자 영장 심사…살인미수 혐의 검토</a>
+          <p class="summary">역삼동 연쇄 방화 사건 피의자 A씨에 대한 구속영장실질심사가 22일 오후 진행됐다. 경찰은 살인미수 혐의 적용을 검토 중이다.</p>
+        </li>
+        <li>
+          <a href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank">상어 '부캉이', 차단막 넘어 수로 안쪽 재출몰</a>
+          <p class="summary">수로 밖으로 나갔던 상어 '부캉이'가 차단막을 넘어 수로 안쪽에서 다시 목격됐다. 구글 뉴스 메인을 비롯한 주요 언론에서 주요 소식으로 다뤄지고 있다.</p>
+        </li>
+        <li>
+          <a href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank">여당 '소방 빨대' 발언 파장…국감 공방 이어져</a>
+          <p class="summary">여당 의원의 '소방 빨대' 발언이 논란이 되며 수습에 나섰다. 국정감사장에서 여야 간 공방이 계속되고 있다.</p>
+        </li>
+        <li>
+          <a href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank">축구 국가대표, 11월 A매치 상대 사우디·카타르로 확정</a>
+          <p class="summary">대한민국 축구 국가대표팀의 11월 A매치 상대가 사우디아라비아와 카타르로 발표됐다. 팬들의 관심이 집중되고 있다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 국제 뉴스 -->
+    <section class="section world">
+      <div class="section-header">
+        <span class="icon">🌏</span>
+        <h2>국제 뉴스</h2>
+      </div>
+      <ul class="news-list">
+        <li>
+          <a href="https://www.justsecurity.org/161692/early-edition-october-22-2026/" target="_blank">미·이스라엘, 중간선거 이후 이란 공격 준비 보도</a>
+          <p class="summary">NPR에 따르면 미국과 이스라엘이 미국 중간선거 이후를 겨냥해 이란 공격 가능성을 논의 중이다. 미 국무부는 사우디아라비아 내 비상 외교 직원 철수를 명령했다.</p>
+        </li>
+        <li>
+          <a href="https://abcnews.com/International/live-updates/iran-live-updates/?id=137370653" target="_blank">이란, 사우디 담맘 공항 공격…1명 사망·8명 부상</a>
+          <p class="summary">이란 혁명수비대가 사우디아라비아 킹파드 국제공항에 공격을 가해 1명이 사망하고 8명이 부상했다. 페르시아만 일대의 긴장이 급격히 고조되고 있다.</p>
+        </li>
+        <li>
+          <a href="https://abcnews.com/International/live-updates/iran-live-updates/?id=137370653" target="_blank">호르무즈 해협서 유조선 7척 화재…국제 유가 급등 우려</a>
+          <p class="summary">이란 국영 TV는 호르무즈 해협에서 유조선 7척이 화재로 손상됐다고 보도했다. 국제 원유 공급망에 차질이 빚어질 가능성에 전 세계 시장이 촉각을 곤두세우고 있다.</p>
+        </li>
+        <li>
+          <a href="https://www.justsecurity.org/161692/early-edition-october-22-2026/" target="_blank">러시아, 평화회담 합의 직후 키이우 공격…1명 사망</a>
+          <p class="summary">러시아가 평화 회담 합의 이후 불과 몇 시간 만에 탄도미사일과 드론으로 키이우를 공격해 1명이 사망하고 22명이 부상했다.</p>
+        </li>
+        <li>
+          <a href="https://ssbcrackexams.com/current-affairs-22-october-2026/" target="_blank">나이지리아, 에볼라 첫 확진 봉쇄 조치…아프리카 보건 비상</a>
+          <p class="summary">나이지리아에서 첫 에볼라 확진 사례가 확인되며 당국이 이동 제한 등 긴급 봉쇄 조치에 나섰다. WHO와 국제 보건기구들이 상황을 예의주시하고 있다.</p>
+        </li>
+        <li>
+          <a href="https://www.justsecurity.org/161692/early-edition-october-22-2026/" target="_blank">엘살바도르 부켈레, 아이티서 납치 기술자 구출 군사 작전 개시</a>
+          <p class="summary">나이브 부켈레 엘살바도르 대통령이 아이티 갱단에 납치된 자국 항공 기술자 4명을 구출하기 위한 군사 작전을 개시했다고 발표했다.</p>
+        </li>
+        <li>
+          <a href="https://ssbcrackexams.com/current-affairs-22-october-2026/" target="_blank">WMO "엘니뇨, 해수면 온도 역대 최고 상승 유발 가능성"</a>
+          <p class="summary">세계기상기구(WMO)가 현재의 엘니뇨 패턴이 해수면 온도를 사상 최고 수준으로 끌어올릴 수 있다고 경고했다. 기후 변화 대응 논의가 다시 주목받고 있다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- IT/기술 뉴스 -->
+    <section class="section tech">
+      <div class="section-header">
+        <span class="icon">💻</span>
+        <h2>IT / 기술 뉴스</h2>
+      </div>
+      <ul class="news-list">
+        <li>
+          <a href="https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-4dd" target="_blank">Meta Q3 매출 26% 성장 646억 달러…청소년 안전 소송 비용 98.9억 달러</a>
+          <p class="summary">Meta의 3분기 매출이 전년 대비 26% 증가한 646억 달러를 기록했다. 그러나 청소년 안전 관련 소송 비용 98.9억 달러가 반영되며 EPS는 3.83달러에 그쳤다.</p>
+        </li>
+        <li>
+          <a href="https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-4dd" target="_blank">SpaceX, 상장 후 첫 흑자 달성…주가 7.8% 급등</a>
+          <p class="summary">SpaceX가 상장 이후 처음으로 흑자를 기록하며 주가가 7.8% 급등했다. 반도체 섹터도 동반 상승해 엔비디아는 2.5% 올랐다.</p>
+        </li>
+        <li>
+          <a href="https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-4dd" target="_blank">Super Micro, 실적 전망 상향…주가 9.6% 상승</a>
+          <p class="summary">Super Micro Computer가 매출 및 마진 전망치를 예상보다 높게 제시하며 주가가 9.6% 급등했다. AI 인프라 투자 수요의 강세가 반영된 결과다.</p>
+        </li>
+        <li>
+          <a href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank">AGNTCon·MCPCon 산호세 개최…AI 에이전트 정체성 주제 집중</a>
+          <p class="summary">AI 에이전트 전문 콘퍼런스 AGNTCon과 MCPCon이 10월 22일 미국 산호세에서 개막했다. 이번 행사는 'AI 플랫폼이 발행하는 정체성'을 핵심 의제로 다룬다.</p>
+        </li>
+        <li>
+          <a href="https://hervecuviliez.substack.com/p/market-news-thursday-22-october-2026" target="_blank">구글 클라우드, 단기 매출 희생하고 DeepMind AI 칩 우선 공급</a>
+          <p class="summary">구글 클라우드 경영진이 단기 외부 매출보다 내부 DeepMind AI 연구 지원을 위한 칩 우선 공급을 선택하겠다고 밝혔다. AI 인프라 투자 경쟁이 가속화되고 있다.</p>
+        </li>
+        <li>
+          <a href="https://www.npr.org/sections/news/" target="_blank">일론 머스크, SpaceX·Tesla 합병 검토 검토 보도</a>
+          <p class="summary">NPR이 일론 머스크가 자신이 이끄는 두 회사 SpaceX와 Tesla의 합병을 검토 중이라고 보도했다. 시장은 양사의 시너지 효과와 규제 리스크를 동시에 주목하고 있다.</p>
+        </li>
+        <li>
+          <a href="https://www.npr.org/sections/news/" target="_blank">스페인 북동부, 美 기업 데이터센터 유치 격전지로 부상</a>
+          <p class="summary">가뭄이 심각한 스페인 북동부 지역이 미국 빅테크 기업들의 데이터센터 유치 경쟁 중심지로 떠올랐다. 수자원 부족 우려와 경제적 기대가 충돌하고 있다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 경제/금융 뉴스 -->
+    <section class="section economy">
+      <div class="section-header">
+        <span class="icon">📈</span>
+        <h2>경제 / 금융 뉴스</h2>
+      </div>
+      <ul class="news-list">
+        <li>
+          <a href="https://www.newspim.com/news/view/20261022000765" target="_blank">한은 금통위 기자간담회…신현송 총재 "매파적 기조 유지, 다음달 인상 촉각"</a>
+          <p class="summary">신현송 한국은행 총재가 10월 금융통화위원회 기자간담회에서 현재 금리 기조를 유지하면서도 다음 달 인상 가능성을 열어두는 발언을 했다.</p>
+        </li>
+        <li>
+          <a href="https://biz.sbs.co.kr/article/20000341486" target="_blank">코스피 장중 1%대 하락…5600선 아래로 밀려</a>
+          <p class="summary">코스피가 장중 1%대 하락하며 5600선 아래로 밀렸다. 중동 정세 불안과 외국인 매도세가 겹치며 투자 심리가 위축됐다.</p>
+        </li>
+        <li>
+          <a href="https://biz.sbs.co.kr/article/20000341486" target="_blank">서울 아파트 실거래가 1년 새 15% 급등…전세도 천정부지</a>
+          <p class="summary">서울 아파트 실거래가가 전월 대비 0.72% 상승하며 1년 사이 15%나 뛰었다. 전셋값도 동반 상승하며 주거 불안이 심화되고 있다.</p>
+        </li>
+        <li>
+          <a href="https://biz.sbs.co.kr/article/20000341486" target="_blank">재산세 500만 원 넘는 집주인 사상 최다…집값 급등 '세금 부메랑'</a>
+          <p class="summary">집값 상승으로 재산세가 500만 원을 초과하는 주택 소유자가 사상 최다를 기록했다. 고가 주택 보유자들의 세 부담이 크게 늘어났다.</p>
+        </li>
+        <li>
+          <a href="https://biz.sbs.co.kr/article/20000341486" target="_blank">국민연금 개혁…무소득자 차별 폐지, 주부·청년 667만 명 신규 편입</a>
+          <p class="summary">국민연금 제도 개혁으로 소득이 없는 주부와 청년 667만 명이 새롭게 편입될 예정이다. 그동안 무소득자에게 불리하게 작용하던 조항이 폐지된다.</p>
+        </li>
+        <li>
+          <a href="https://www.newspim.com/news/view/20261022000765" target="_blank">금감원, 하나증권 '신동국 대출' 집중 조사</a>
+          <p class="summary">금융감독원이 하나증권의 이른바 '신동국 대출' 건을 집중 조사하기로 했다. 대출 과정의 절차적 문제점 여부를 들여다보고 있다.</p>
+        </li>
+        <li>
+          <a href="https://www.newspim.com/news/view/20261022000765" target="_blank">국감서 '대출 총량규제 위헌' 공방…금융당국 "시장 안정 차원서 가능"</a>
+          <p class="summary">국정감사에서 조정훈 의원이 대출 총량규제가 위헌이라고 지적한 것에 대해 이억원 전 차관이 금융시장 안정을 위한 조치로 가능하다고 반박했다.</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <footer>
+    생성 시각: 2026-10-22 22:06 KST &nbsp;|&nbsp; 자동 생성 by News Bot
+  </footer>
+</body>
+</html>
