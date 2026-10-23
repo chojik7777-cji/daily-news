@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-10-23</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card-bg: #16213e;
+      --accent-bg: #0f3460;
+      --text: #e0e0e0;
+      --text-muted: #a0a0b0;
+      --domestic: #e94560;
+      --world: #f5a623;
+      --tech: #50fa7b;
+      --economy: #8be9fd;
+      --link: #bd93f9;
+      --border: #2a2a4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+      padding: 40px 20px 30px;
+      text-align: center;
+      border-bottom: 2px solid var(--border);
+    }
+    header .date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 5vw, 2.8rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    header h1 span {
+      color: var(--economy);
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px 16px 60px;
+    }
+    .section {
+      margin-bottom: 40px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .section-header {
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-header .icon {
+      font-size: 1.4rem;
+    }
+    .section-header h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .section-domestic .section-header { background: rgba(233,69,96,0.15); border-left: 4px solid var(--domestic); }
+    .section-domestic h2 { color: var(--domestic); }
+    .section-world .section-header { background: rgba(245,166,35,0.12); border-left: 4px solid var(--world); }
+    .section-world h2 { color: var(--world); }
+    .section-tech .section-header { background: rgba(80,250,123,0.1); border-left: 4px solid var(--tech); }
+    .section-tech h2 { color: var(--tech); }
+    .section-economy .section-header { background: rgba(139,233,253,0.1); border-left: 4px solid var(--economy); }
+    .section-economy h2 { color: var(--economy); }
+    .news-list {
+      list-style: none;
+      padding: 0;
+    }
+    .news-item {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+    .news-item a {
+      color: var(--link);
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .news-item a:hover { text-decoration: underline; color: #cfa8ff; }
+    .news-item .summary {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 600px) {
+      .news-item { padding: 14px 16px; }
+      .section-header { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date">2026년 10월 23일 금요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section section-domestic">
+    <div class="section-header">
+      <span class="icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://etoday.co.kr/news/view/2639612" target="_blank">최휘영 문체부 장관, '보은 인사' 논란에 "전문성 보고 임명" [국감]</a>
+        <p class="summary">국회 문화체육관광위원회 종합감사에서 최휘영 장관이 보은 인사 논란을 반박하며 "전문성을 기준으로 임명했다"고 발언. "대통령을 지지했다는 이유로 공직을 못 맡는 것은 납득이 안 된다"고 반박했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://etoday.co.kr/news/view/2639613" target="_blank">LH 사장 "집값 상승은 공급 부족 탓…3년 뒤 하락할 것" [국감]</a>
+        <p class="summary">LH(한국토지주택공사) 사장이 국정감사에서 최근 집값 상승의 원인을 공급 부족으로 진단하며, 3년 뒤에는 가격이 하락할 것이라고 전망했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/politics" target="_blank">이재명 대통령 "한일 첨단산업 공급망 협력 필수…경제협력 확대해야"</a>
+        <p class="summary">이재명 대통령이 한일 간 첨단산업 공급망 협력의 필요성을 강조하며, 양국의 경제협력 확대를 촉구했다. 반도체·배터리 등 첨단 분야 협력이 핵심 의제로 떠오르고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/politics" target="_blank">이재명 대통령 지지율 40%…7주 만에 40%선 회복 [한국갤럽]</a>
+        <p class="summary">한국갤럽 여론조사에서 이재명 대통령의 지지율이 40%를 기록하며 7주 만에 40%선을 회복했다. 경제·외교 분야 성과가 지지율 회복에 영향을 미친 것으로 분석된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/politics" target="_blank">국회 국정감사 종합 - 여야 부동산·선관위 개혁 등 쟁점 공방</a>
+        <p class="summary">이달 말까지 계속되는 국정감사에서 여당은 민생 정책 성과를 부각하고, 야당은 부동산 문제·선관위 개혁·제약사 의혹 등을 집중 공략하며 치열한 공방을 이어갔다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://trendk.kr/trend/news" target="_blank">중수청, 출범 16일 만에 첫 신병 확보…동남아 대마 밀수범</a>
+        <p class="summary">중대수사청이 출범 후 16일 만에 첫 신병을 확보했다. 동남아에서 대마를 밀수한 혐의로 피의자를 체포, 중수청의 첫 현장 성과로 주목받고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.sbs.co.kr/" target="_blank">경찰, '소방관 사망' 부천화재 공장 대표 입건</a>
+        <p class="summary">부천 공장 화재 진압 중 소방관이 사망한 사건과 관련해 경찰이 해당 공장 대표를 피의자로 입건했다. 안전 관리 소홀 혐의 등이 적용될 예정이다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section-world">
+    <div class="section-header">
+      <span class="icon">🌍</span>
+      <h2>국제 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">우크라이나·러시아, 평화 회담 후 수도 겨냥 대규모 공격 교환</a>
+        <p class="summary">평화 회담이 진행 중임에도 불구하고 우크라이나와 러시아가 서로의 수도를 겨냥한 대규모 공격을 교환했다. 협상 진전 여부와 민간인 피해에 국제사회의 이목이 집중되고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">캐나다 총리 마크 카니, 터키 방문…미국 의존도 줄이기 위한 새 파트너십 모색</a>
+        <p class="summary">캐나다 마크 카니 총리가 터키를 방문해 무역·안보 분야 새 파트너십 구축을 논의했다. 미국 의존도를 줄이고 다변화된 외교·경제 관계를 구축하려는 캐나다의 전략적 행보로 해석된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">호주 여성 의원, 차량 공격 의혹 사건 후 연속 위협 받아</a>
+        <p class="summary">호주에서 두 번째 여성 의원이 차량 공격 의혹 사건 발생 며칠 뒤 위협을 받은 사실이 알려졌다. 여성 정치인을 향한 잇따른 위협 사건에 호주 의회와 경찰이 긴장하고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">남아프리카 반이민 시위 중 외국인 사망…사회 긴장 고조</a>
+        <p class="summary">남아프리카에서 반이민 정서를 배경으로 한 시위 도중 외국인이 사망하는 사건이 발생했다. 높은 실업률과 이민자 증가로 인한 사회 갈등이 폭력 사태로 번졌다는 우려가 커지고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.theregister.com/" target="_blank">네덜란드 세무당국, 마이크로소프트 365 클라우드 포기…온프레미스로 전환</a>
+        <p class="summary">네덜란드 세무당국이 디지털 주권 확보를 위해 마이크로소프트 365 클라우드 서비스를 포기하고 자체 서버 기반 온프레미스 환경으로 전환하기로 결정했다. 유럽의 디지털 주권 강화 움직임의 일환으로 주목된다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section-tech">
+    <div class="section-header">
+      <span class="icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">OpenAI, Google Cloud에 AI 모델 공급 시작…3대 클라우드 모두 배포</a>
+        <p class="summary">OpenAI가 Google Cloud를 통해 자사 AI 모델과 코덱스(Codex) 코딩 도구를 제공하기로 했다. 이로써 OpenAI는 AWS, Azure, Google Cloud 등 3대 클라우드 모두에 모델을 배포하며 기업 고객 확보에 나섰다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">Nvidia, 플러그앤플레이 'Vera Rubin' 랙 발표…트럭으로 배송 가능</a>
+        <p class="summary">Nvidia가 트럭으로 배송 가능한 플러그앤플레이 방식의 'Vera Rubin' AI 컴퓨팅 랙을 발표했다. 기업이 복잡한 설치 없이 즉시 AI 인프라를 구축할 수 있도록 설계됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">Meta, 뉴멕시코 Cambridge Analytica 소송서 250억 달러 배상 명령</a>
+        <p class="summary">Meta가 뉴멕시코주 검찰이 제기한 Cambridge Analytica 관련 소송에서 250억 달러(약 34조 원) 배상 명령을 받았다. 개인정보 유출 및 데이터 오용에 대한 역대 최대 규모의 제재 중 하나다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">Intel, 지연됐던 오하이오 반도체 공장 건설 이정표 달성</a>
+        <p class="summary">인텔이 수차례 지연됐던 오하이오주 대형 반도체 공장 건설에서 주요 이정표를 달성했다. 미국 정부의 반도체 보조금 지원과 맞물려 미국 내 첨단 반도체 생산 역량 확보에 한 걸음 더 다가섰다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://techcrunch.com/" target="_blank">중국 해커들, ConnectWise 침해 후 수천 개 기업 감시…보안 경보</a>
+        <p class="summary">IT 관리 소프트웨어 기업 ConnectWise가 중국 연계 해커에 의해 침해된 후, 전 세계 수천 개 기업의 시스템이 무단 감시된 사실이 밝혀졌다. 공급망 사이버 보안 위협에 대한 경각심이 다시 높아지고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.theregister.com/" target="_blank">Google DeepMind, Gemini 4 후반 훈련 단계 진입…2026년 내 출시 전망</a>
+        <p class="summary">Google DeepMind의 차세대 AI 모델 Gemini 4가 포스트 트레이닝(후반 훈련) 단계에 진입한 것으로 알려졌다. 2026년 내 공개가 예상되며, 멀티모달 성능 혁신이 기대된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.theregister.com/" target="_blank">PHP 개발자들, 심각한 보안 취약점 수정 발표…미패치 사이트 오프라인 권고</a>
+        <p class="summary">PHP 개발팀이 심각한 보안 취약점에 대한 긴급 패치를 배포하며, 아직 업데이트를 적용하지 않은 웹사이트는 즉시 오프라인으로 전환할 것을 권고했다. 수백만 개의 웹사이트에 영향을 미칠 수 있는 중요한 업데이트다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section-economy">
+    <div class="section-header">
+      <span class="icon">📈</span>
+      <h2>경제 / 금융 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008812379" target="_blank">코스피, AI 신용 불안에 출렁이다 SK하이닉스 호재에 상승 마감 (5,550.30)</a>
+        <p class="summary">코스피가 장중 한때 4.12% 급락해 5,305.98까지 밀렸으나, SK하이닉스(+4.42%)와 삼성전자 상승 전환에 힘입어 5,550.30으로 상승 마감했다. 7월 29일(5,262.77) 이후 장중 최저 수준까지 밀린 후 반등에 성공했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">나스닥 2.6% 급락…엔비디아·마이크론·인텔 등 기술주 동반 하락</a>
+        <p class="summary">전일 미국 증시에서 AI 신용 불안이 확산되며 나스닥이 2.6% 급락했다. 엔비디아(-4.4%), 마이크론(-6.3%), 인텔(-8.0%) 등 반도체·AI 관련 기술주가 큰 폭으로 하락하며 글로벌 증시에 충격을 줬다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/" target="_blank">원/달러 환율 동향…글로벌 리스크 오프 분위기 속 변동성 확대</a>
+        <p class="summary">글로벌 증시 불안과 AI 신용 우려로 인한 리스크 오프 분위기 속에 원/달러 환율 변동성이 확대됐다. 시장 참여자들은 미국 연준의 통화정책 향방과 달러 강세 여부에 주목하고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.asiae.co.kr/" target="_blank">SK하이닉스, 장중 급락장서 4.42% 반등…HBM 수요 기대감 유지</a>
+        <p class="summary">SK하이닉스가 전반적인 시장 하락 속에서도 4.42% 오르며 코스피 반등을 이끌었다. AI 가속기용 고대역폭 메모리(HBM) 수요 증가 기대감이 여전히 주가를 지지하는 것으로 분석된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/finance" target="_blank">이재명 대통령 한일 공급망 협력 강화…반도체·배터리 산업 기회 주목</a>
+        <p class="summary">이재명 대통령의 한일 첨단산업 공급망 협력 촉구 발언에 반도체·배터리 등 관련 산업계가 주목하고 있다. 한일 협력 확대 시 국내 관련 기업들의 수혜가 기대된다는 분석이 나온다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">OpenAI·Google Cloud 계약…기업 AI 클라우드 시장 경쟁 격화</a>
+        <p class="summary">OpenAI가 Google Cloud와 계약을 체결하며 3대 클라우드 모두에 AI 서비스를 공급하게 됐다. 기업용 AI 인프라 시장 경쟁이 격화되며 클라우드 서비스 기업들의 수익 구조와 시장 점유율 변화가 예상된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news" target="_blank">글로벌 AI 투자 경계심 확산…AI 신용 버블 우려 본격 수면 위로</a>
+        <p class="summary">미국 증시의 AI 관련 기술주 대규모 하락을 계기로 AI 투자에 대한 과열 경계감이 확산되고 있다. 일부 전문가들은 AI 인프라 투자 대비 수익화가 더디다는 점을 지적하며 조정 가능성을 경고하고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <p>생성 시각: 2026-10-23 22:15 KST &nbsp;|&nbsp; 자동 수집된 뉴스 요약입니다. 각 기사 링크에서 원문을 확인하세요.</p>
+</footer>
+
+</body>
+</html>
