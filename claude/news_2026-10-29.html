@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-10-29 오늘의 주요 뉴스</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent-dom: #e94560;
+      --accent-world: #0f7ebb;
+      --accent-tech: #27ae60;
+      --accent-econ: #f39c12;
+      --text: #e0e0e0;
+      --text-muted: #a0a0b0;
+      --link: #7eb8f7;
+      --border: #2a2a4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Noto Sans KR', Arial, sans-serif;
+      line-height: 1.7;
+      padding: 0 16px 48px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 16px 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+    header .date-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    header .subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section {
+      background: var(--surface);
+      border-radius: 12px;
+      margin-bottom: 28px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 24px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .section-header .icon { font-size: 1.4rem; }
+    .section-header.dom { background: linear-gradient(90deg, #7b0023 0%, var(--surface) 100%); border-left: 4px solid var(--accent-dom); }
+    .section-header.world { background: linear-gradient(90deg, #063a5e 0%, var(--surface) 100%); border-left: 4px solid var(--accent-world); }
+    .section-header.tech { background: linear-gradient(90deg, #0b3d23 0%, var(--surface) 100%); border-left: 4px solid var(--accent-tech); }
+    .section-header.econ { background: linear-gradient(90deg, #5c3800 0%, var(--surface) 100%); border-left: 4px solid var(--accent-econ); }
+    .news-list { padding: 8px 0; }
+    .news-item {
+      display: flex;
+      gap: 14px;
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+    .news-num {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-top: 2px;
+      color: #fff;
+    }
+    .dom .news-num { background: var(--accent-dom); }
+    .world .news-num { background: var(--accent-world); }
+    .tech .news-num { background: var(--accent-tech); }
+    .econ .news-num { background: var(--accent-econ); }
+    .news-content { flex: 1; min-width: 0; }
+    .news-title a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+      word-break: break-word;
+    }
+    .news-title a:hover { text-decoration: underline; color: #aed4ff; }
+    .news-summary {
+      font-size: 0.87rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .news-item { padding: 12px 16px; }
+      .section-header { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="date-label">2026년 10월 29일 목요일</div>
+    <h1>오늘의 주요 뉴스</h1>
+    <div class="subtitle">국내 · 국제 · IT/기술 · 경제/금융</div>
+  </header>
+
+  <!-- 국내 뉴스 -->
+  <div class="section">
+    <div class="section-header dom">
+      <span class="icon">🇰🇷</span>
+      <span>국내 뉴스 (한국)</span>
+    </div>
+    <div class="news-list dom">
+      <div class="news-item">
+        <div class="news-num">1</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.sbs.co.kr/" target="_blank">갑자기 초겨울 날씨…서울 체감 '-0.5도' 뚝</a></div>
+          <div class="news-summary">전국에 갑작스러운 한파가 찾아오며 서울 체감온도가 영하권으로 떨어졌다. 기상청은 당분간 기온이 평년보다 낮을 것으로 전망했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">2</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.sbs.co.kr/" target="_blank">대법원장 국정조사 12월 초 예정…국힘 "집요 악독한 폭력"</a></div>
+          <div class="news-summary">여야는 조희대 대법원장에 대한 국정조사 일정을 12월 초로 확정했다. 국민의힘은 이를 강하게 반발하며 여당의 강행 처리를 비판했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">3</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.sbs.co.kr/" target="_blank">선관위 특검, '올공 투표지' 검증 12시간여만에 종료</a></div>
+          <div class="news-summary">선거관리위원회 특검팀이 '올공 투표지' 논란 관련 검증을 약 12시간 만에 마무리했다. 결과 발표는 추후 예정이다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">4</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.daum.net/" target="_blank">이 대통령 '외국인노동자 경제에 크게 도움 안 돼' 발언 논란</a></div>
+          <div class="news-summary">이재명 대통령의 외국인 노동자 관련 발언이 논란을 일으켰다. 전문가들은 "맥락을 고려해도 정당화되기 어렵다"고 지적했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">5</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.daum.net/economy" target="_blank">SK이노베이션, 3분기 영업익 3조7043억원…정유·윤활유 호조</a></div>
+          <div class="news-summary">SK이노베이션이 정유 및 윤활유 부문 호실적에 힘입어 3분기 영업이익 3조7043억원을 달성했다. 시장 예상치를 크게 웃도는 수치다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">6</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.daum.net/economy" target="_blank">현대차, 美 앨라배마에 6000억원 투자…HEV·EREV 현지 생산 확대</a></div>
+          <div class="news-summary">현대자동차가 미국 앨라배마 공장에 6000억원을 추가 투자해 하이브리드(HEV) 및 주행거리연장형 전기차(EREV) 생산 라인을 확대한다고 발표했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">7</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.daum.net/" target="_blank">수도권 신규택지 6곳에 7만6700호 공급…김포아라 3만7000호 최대</a></div>
+          <div class="news-summary">정부가 수도권 6개 신규 택지지구에 총 7만6700호를 공급할 계획을 발표했다. 김포아라 지구가 3만7000호로 규모가 가장 크다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">8</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://news.sbs.co.kr/" target="_blank">정부, 엘리엇 국제투자분쟁 최종 패소…1530억원 배상책임 확정</a></div>
+          <div class="news-summary">한국 정부가 미국계 헤지펀드 엘리엇과의 국제투자분쟁에서 최종 패소해 약 1530억원을 배상해야 한다는 판정이 확정됐다.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 국제 뉴스 -->
+  <div class="section">
+    <div class="section-header world">
+      <span class="icon">🌍</span>
+      <span>국제 뉴스</span>
+    </div>
+    <div class="news-list world">
+      <div class="news-item">
+        <div class="news-num">1</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://www.euronews.com/2026/10/29" target="_blank">스페인 고속열차 충돌 사고…최소 68명 사망</a></div>
+          <div class="news-summary">마드리드 남쪽에서 고속열차 두 대가 충돌해 최소 68명이 숨졌다. 올해 스페인에서 발생한 두 번째 대형 철도 사고로, 원인 규명 조사가 시작됐다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">2</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://www.euronews.com/2026/10/29" target="_blank">이스라엘 총선…네타냐후 리쿠드 소폭 우세, 과반 미달</a></div>
+          <div class="news-summary">이스라엘 총선 개표가 진행 중인 가운데 네타냐후 리쿠드당이 경쟁 정당인 아이젠코트당보다 소폭 앞서고 있으나, 연정 구성에 필요한 과반 의석에는 미달한다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">3</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://www.justsecurity.org/162389/early-edition-october-29-2026/" target="_blank">카타르, 미-이란 핵 협상 재개 중재 나서</a></div>
+          <div class="news-summary">카타르 주도의 중재단이 미국과 이란 간 핵 협상 재개를 추진하고 있다. 이란이 유엔 핵사찰단의 피폭 핵시설 방문을 허용하는 대가로 일부 미국의 제재 완화를 요구하는 것으로 알려졌다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">4</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://www.euronews.com/2026/10/29" target="_blank">러시아 드론, 우크라이나 드니프로 기차역 공격…13명 사망</a></div>
+          <div class="news-summary">러시아 드론이 우크라이나 드니프로 중앙역 승강장을 공격해 탑승 대기 중이던 시민 13명이 숨졌다. 지역 주지사가 사망자 수를 공식 발표했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">5</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://wng.org/podcasts/thursday-morning-news-october-29-2026-1793209869" target="_blank">루비오 美 국무장관, 쿠바 외교관 추방 명령</a></div>
+          <div class="news-summary">마코 루비오 미국 국무장관이 유엔 본부에서 발생한 충돌 사건과 관련해 쿠바 외교관 1명을 추방하라는 명령에 서명했다. 당사자의 이름은 공개되지 않았다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">6</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://www.euronews.com/2026/10/29" target="_blank">EU-캐나다 정상, 몬트리올서 '미래 동맹' 출범</a></div>
+          <div class="news-summary">유럽연합 정상들이 캐나다 마크 카니 총리와 몬트리올에서 회동해 '미래를 위한 동맹(Alliance for the Future)'을 공식 출범시켰다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">7</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://www.euronews.com/2026/10/29" target="_blank">홍콩 타이포 화재 참사…행정장관 사과·주택부장관 사임</a></div>
+          <div class="news-summary">홍콩 타이포 화재 참사와 관련해 홍콩 행정장관이 공식 사과했으며, 감독 소홀이 확인된 주택부장관이 사임했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">8</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://everythingbriefing.substack.com/p/campaign-speeches-alaska-and-todays" target="_blank">플라비우 볼소나루, 선거 패배 후 브라질 탈출…플로리다 도착</a></div>
+          <div class="news-summary">브라질 상원의원 플라비우 볼소나루가 선거 패배 후 "선거가 도난당했다"고 주장하며 브라질을 떠나 미국 플로리다에 도착했다.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IT/기술 뉴스 -->
+  <div class="section">
+    <div class="section-header tech">
+      <span class="icon">💻</span>
+      <span>IT / 기술 뉴스</span>
+    </div>
+    <div class="news-list tech">
+      <div class="news-item">
+        <div class="news-num">1</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://killtheai.com/news/top-10-ai-news-today-october-29-2026/" target="_blank">구글, 사이버 방어 특화 AI 'Gemini 4 Carbon' 출시</a></div>
+          <div class="news-summary">구글이 사이버 방어 전용 AI 모델 'Gemini 4 Carbon'을 발표했다. 미국 정부의 자발적 사전 출시 테스트를 거치는 동안 'Fairwind 프로그램'을 통해 검증된 사이버 방어 전문가에게만 접근이 제한된다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">2</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://killtheai.com/news/top-10-ai-news-today-october-29-2026/" target="_blank">알파벳 Q3 실적 예상 하회…주가 시간외 10% 급락</a></div>
+          <div class="news-summary">구글 모회사 알파벳의 3분기 매출이 1276억 달러로 시장 예상치 1282억 달러에 못 미쳤다. 시간외 거래에서 주가가 약 10% 폭락했으나, 구글 클라우드 매출은 307억 달러로 전년 대비 2배 이상 증가했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">3</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://riorundown.substack.com/p/ai-news-oct-29-2026-ai-infrastructure" target="_blank">마이크로소프트 Azure, 매출 48% 급증…OpenAI 상업 계약 효과</a></div>
+          <div class="news-summary">마이크로소프트의 클라우드 서비스 Azure가 전년 동기 대비 48% 성장했다. OpenAI와의 상업 계약이 3분기에만 100억 달러의 매출을 기여한 것으로 밝혀졌다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">4</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://riorundown.substack.com/p/ai-news-oct-29-2026-ai-infrastructure" target="_blank">SK하이닉스, 2029년까지 메모리 완판…장기 계약으로 공급 확정</a></div>
+          <div class="news-summary">SK하이닉스가 장기 공급 계약을 통해 2029년까지 메모리 반도체 생산 물량이 모두 판매될 것이라고 밝혔다. AI 반도체 수요 폭증이 공급 부족을 이어가고 있다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">5</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://riorundown.substack.com/p/ai-news-oct-29-2026-ai-infrastructure" target="_blank">오라클 클라우드, NVIDIA·AMD·인텔·구글 가속기 통합 출시</a></div>
+          <div class="news-summary">오라클이 자체 개발한 'Acceleron' 패브릭으로 NVIDIA, AMD, 인텔, 구글의 AI 가속기를 단일 클라우드 플랫폼에서 사용할 수 있는 서비스를 배포했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">6</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://riorundown.substack.com/p/ai-news-oct-29-2026-ai-infrastructure" target="_blank">Akamai, AI 추론 서비스·에이전트 샌드박스 베타 출시</a></div>
+          <div class="news-summary">Akamai가 관리형 AI 모델 서빙 서비스 'Akamai Inference'와 에이전트 생성 코드를 격리 실행하는 'Akamai Agent Sandbox'를 베타 출시했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">7</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/" target="_blank">Anthropic, 미공개 Claude 모델이 5개 플랫폼서 익스플로잇 체인 구축 확인</a></div>
+          <div class="news-summary">Anthropic의 Frontier Red Team이 미공개 Claude 연구 모델이 5개 플랫폼에 걸친 엔드투엔드 익스플로잇 체인을 자율적으로 구축했다는 연구 결과를 발표했다. OpenAI는 미국 중간선거 앞두고 선거 모니터링 센터를 준비 중이다.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 경제/금융 뉴스 -->
+  <div class="section">
+    <div class="section-header econ">
+      <span class="icon">📈</span>
+      <span>경제 / 금융 뉴스</span>
+    </div>
+    <div class="news-list econ">
+      <div class="news-item">
+        <div class="news-num">1</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://kr.investing.com/news/stock-market-news" target="_blank">코스피 1.24% 하락, 5937.66p 마감…6000선 반납</a></div>
+          <div class="news-summary">코스피가 전 거래일 대비 1.24% 내린 5937.66포인트에 장을 마쳤다. 6000선을 하루 만에 반납한 것으로, 외국인과 기관의 동반 매도가 하락을 이끌었다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">2</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://kr.investing.com/news/stock-market-news" target="_blank">원·달러 환율 0.9원 하락, 1336.8원 마감</a></div>
+          <div class="news-summary">원·달러 환율이 전 거래일 대비 0.9원 내린 1336.8원에 마감했다. 달러 약세와 국내 수출 호조 기대감이 환율 하락 요인으로 분석된다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">3</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://kr.investing.com/news/stock-market-news" target="_blank">미국 연준, 기준금리 동결…9월 PCE 물가 주목</a></div>
+          <div class="news-summary">미국 연방준비제도가 이번 회의에서 기준금리를 동결했다. 시장은 향후 금리 경로를 예측하기 위해 오는 9월 개인소비지출(PCE) 물가 지표 발표를 주시하고 있다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">4</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://kr.investing.com/news/assorted/article-2148256" target="_blank">삼성전자, 역대급 실적에도 주주환원 논란으로 4% 하락</a></div>
+          <div class="news-summary">삼성전자가 분기 호실적을 발표했음에도 불구하고 주주환원 방안을 둘러싼 엇갈린 전망으로 인해 주가가 약 4% 하락했다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">5</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://kr.investing.com/news/assorted/article-2148256" target="_blank">SK하이닉스, 3분기 호실적에 강세…신용등급 상향 가시권</a></div>
+          <div class="news-summary">SK하이닉스가 3분기 실적 발표 호조로 주가가 강세를 보이고 있다. 신용평가 기관들이 SK하이닉스의 신용등급 상향을 검토 중인 것으로 전해졌다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">6</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://kr.investing.com/news/transcripts/article-93CH-2148071" target="_blank">OCI Holdings, 3분기 매출 증가에도 영업이익 37% 감소</a></div>
+          <div class="news-summary">OCI Holdings가 3분기 매출 증가에도 불구하고 영업이익이 전년 동기 대비 37% 감소했다고 발표했다. 원가 상승과 태양광 사업 수익성 저하가 주요 원인으로 지목됐다.</div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-num">7</div>
+        <div class="news-content">
+          <div class="news-title"><a href="https://kr.investing.com/news/stock-market-news/article-93CH-2147988" target="_blank">프랑스 Pluxee 주가 13.5% 급락…실적 부진 여파</a></div>
+          <div class="news-summary">프랑스 복리후생 서비스 기업 Pluxee의 주가가 장중 13.5% 폭락해 €12.27에 거래됐다. 실적 부진에 따른 투자자 실망이 급락의 원인으로 분석된다.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    생성 시각: 2026-10-29 22:30 KST &nbsp;|&nbsp; 데이터 출처: Euronews, SBS, Investing.com, 다음뉴스, AI Weekly 등
+  </footer>
+</div>
+</body>
+</html>
