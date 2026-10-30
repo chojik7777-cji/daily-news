@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-10-30 오늘의 주요 뉴스</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --text-primary: #eaeaea;
+      --text-secondary: #a8b2d8;
+      --text-muted: #6b7a9a;
+      --domestic: #4fc3f7;
+      --world: #81c784;
+      --tech: #ffb74d;
+      --economy: #ce93d8;
+      --link: #7ec8e3;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header .date-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      color: var(--text-primary);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    header h1 span {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .section {
+      background: var(--surface);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.07);
+      overflow: hidden;
+    }
+
+    .section-header {
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .section-header .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .section-header .count {
+      margin-left: auto;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.06);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+    }
+
+    .domestic .section-header { background: rgba(79,195,247,0.08); }
+    .domestic .dot { background: var(--domestic); }
+    .domestic h2 { color: var(--domestic); }
+
+    .world .section-header { background: rgba(129,199,132,0.08); }
+    .world .dot { background: var(--world); }
+    .world h2 { color: var(--world); }
+
+    .tech .section-header { background: rgba(255,183,77,0.08); }
+    .tech .dot { background: var(--tech); }
+    .tech h2 { color: var(--tech); }
+
+    .economy .section-header { background: rgba(206,147,216,0.08); }
+    .economy .dot { background: var(--economy); }
+    .economy h2 { color: var(--economy); }
+
+    .news-list {
+      list-style: none;
+      padding: 0.5rem 0;
+    }
+
+    .news-item {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: background 0.15s;
+    }
+
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+
+    .news-item a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.98rem;
+      display: block;
+      margin-bottom: 0.35rem;
+      transition: color 0.15s;
+    }
+
+    .news-item a:hover { color: #fff; text-decoration: underline; }
+
+    .news-item .summary {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    footer span { color: var(--text-secondary); }
+
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .news-item { padding: 0.85rem 1rem; }
+      .section-header { padding: 0.85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-label">2026년 10월 30일 금요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section domestic">
+    <div class="section-header">
+      <div class="dot"></div>
+      <h2>🇰🇷 국내 뉴스</h2>
+      <span class="count">7건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://news.sbs.co.kr/" target="_blank">경기 버스 파업 철회 — 막판 협상 타결</a>
+        <p class="summary">경기 지역 버스 노조가 파업 직전 사측과 막판 협상을 타결. 수도권 출근길 교통 혼란을 피하게 됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.sbs.co.kr/" target="_blank">배우 최불암 별세 — 향년 87세</a>
+        <p class="summary">국민 배우 최불암 씨가 어젯밤 향년 87세로 별세. 배우 팬들과 문화계 전반에 추모 물결이 이어지고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.ytn.co.kr/" target="_blank">수도권 신규 택지 7만 6천 가구 지정</a>
+        <p class="summary">정부가 경기 6개 지역에 7만 6,700가구 규모의 신규 택지를 추가 지정. 주택 공급 확대 정책의 일환.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.ytn.co.kr/" target="_blank">삼성전자, 내년 HBM 물량 완판 발표</a>
+        <p class="summary">삼성전자가 2027년도 HBM(고대역폭 메모리) 물량이 모두 판매됐다고 공식 발표. AI 반도체 수요 급증의 영향.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.ytn.co.kr/" target="_blank">윤석열 항소심 — 검찰, 사형 구형</a>
+        <p class="summary">'내란 우두머리' 혐의 윤석열 전 대통령 항소심에서 검찰이 사형을 구형했다. 향후 재판 일정에 귀추가 주목된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.ytn.co.kr/" target="_blank">서울 체감온도 영하권 — 이른 초겨울</a>
+        <p class="summary">갑작스러운 초겨울 한파로 서울 체감온도가 영하권으로 뚝 떨어졌다. 기상청은 당분간 추위가 이어질 것으로 예보.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.ytn.co.kr/" target="_blank">빗썸 고객정보 844건 유출</a>
+        <p class="summary">국내 가상자산 거래소 빗썸이 고객 개인정보 844건이 유출됐다고 공시. 경찰이 유출 경위 조사에 착수했다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section world">
+    <div class="section-header">
+      <div class="dot"></div>
+      <h2>🌍 국제 뉴스</h2>
+      <span class="count">7건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://globalnews.ca/world/" target="_blank">스페인 고속열차 충돌 — 최소 68명 사망</a>
+        <p class="summary">스페인에서 고속열차 2대가 정면충돌해 최소 68명이 사망. 마드리드에서 대규모 항의 시위 발생.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">이란, 호르무즈 해협 유조선 7척 피격 주장</a>
+        <p class="summary">이란이 호르무즈 해협에서 유조선 7척이 피격됐다고 발표. 국제유가 급등 및 중동 전쟁 재발 우려 고조.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">이스라엘 총선 — 초반 결과 교착상태</a>
+        <p class="summary">이스라엘 총선 초반 개표 결과 여야 박빙 교착상태. 네타냐후 총리는 부정선거를 주장하며 개표 결과에 이의 제기.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">북한, 동해상 미사일 연속 발사</a>
+        <p class="summary">북한이 남북 긴장 고조 속 동해상으로 미사일을 연속 발사. 한미 당국이 긴급 대응에 나섰다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">러시아 — 아프리카 정상 회담, 관계 강화 박차</a>
+        <p class="summary">푸틴 러시아 대통령이 모스크바 정상회의에서 아프리카 지도자들을 초청, 외교·경제 협력 확대를 추진.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">중국, 군 장성 공산당 정치국 승격</a>
+        <p class="summary">중국이 군 고위 장성을 공산당 정치국 위원으로 승격. 시진핑 체제의 군 장악 강화 의도로 분석.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://globalnews.ca/world/" target="_blank">UN, 이스라엘의 가자 집단학살 지속 결론</a>
+        <p class="summary">UN 조사단이 가자 휴전 이후에도 이스라엘이 집단학살을 지속하고 있다고 결론. 국제사회 반발 고조.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section tech">
+    <div class="section-header">
+      <div class="dot"></div>
+      <h2>💻 IT/기술 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://stocktitan.net/articles/stock-market-today-live-october-30-2026" target="_blank">인텔 주가 장전 25% 폭락 — 실적 쇼크</a>
+        <p class="summary">인텔이 부진한 분기 실적을 발표한 후 주가가 장전 거래에서 25% 폭락. 기술주 전반의 투자심리를 악화시켰다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">ServiceNow 주가 27% 폭락 — AI 대체 공포</a>
+        <p class="summary">AI가 기업 소프트웨어 수요를 잠식할 것이라는 우려로 ServiceNow 주가가 사상 최악의 하루를 기록했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">Nvidia, Jensen Huang 중국 스파이 연루 의혹 부인</a>
+        <p class="summary">Nvidia가 창업자 Jensen Huang이 중국 스파이 활동에 연루됐다는 보도를 공식 부인. 미국 정부가 사실 확인에 나섰다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://tech.yahoo.com/" target="_blank">Microsoft, Windows 11 업데이트 KB5127936 배포</a>
+        <p class="summary">Microsoft가 Windows 11 누적 업데이트 KB5127936을 배포. 관리자 기능 강화 및 보안 패치가 포함됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://tech.yahoo.com/" target="_blank">Apple iOS 27.2 출시 — 150개 이상 보안 패치</a>
+        <p class="summary">Apple이 iOS 27.2를 배포. 새로운 iPhone 기능 추가와 함께 150개 이상의 보안 취약점이 수정됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">인텔, 18A 공정 기반 'Moon Lake' 저전력 칩 개발</a>
+        <p class="summary">인텔이 자사 18A 공정을 활용한 저전력 노트북 칩 'Moon Lake'를 개발 중이라고 알려졌다. 2027년 출시 목표.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section economy">
+    <div class="section-header">
+      <div class="dot"></div>
+      <h2>📈 경제/금융 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://caixabankresearch.com/en/publications/financial-markets-daily-report/30-october-2026" target="_blank">ECB 기준금리 2.50% 동결 — 12월 인상 가능성 시사</a>
+        <p class="summary">유럽중앙은행(ECB)이 기준 예금금리를 2.50%로 동결하며 12월 추가 인상 가능성을 열어뒀다. 라가르드 총재는 2027년 2월 사임 예정.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-30-083100676.html" target="_blank">미국 3분기 GDP 3.4% 성장 — AI 투자가 견인</a>
+        <p class="summary">미국 경제가 3분기에 연율 3.4%로 성장. AI 관련 투자 확대가 주요 동력으로 작용. PCE 물가는 3.6% 기록.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://bloomberg.com/news/articles/2026-10-29/stock-market-today-dow-s-p-live-updates" target="_blank">미국 증시 3대 지수 하락 — 기술주 부진</a>
+        <p class="summary">다우 0.3%, 나스닥 1.4%, S&P 500 0.3% 하락 마감. Amazon이 장전 거래에서 7% 하락하며 기술주 전반을 압박.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.sensei.news/p/morning-forecast-friday-30-october" target="_blank">브렌트유 $113 돌파 — 중동 긴장 고조</a>
+        <p class="summary">호르무즈 해협 유조선 피격 사건으로 브렌트 원유 가격이 배럴당 $113을 넘어섰다. 글로벌 에너지 공급 불안 심화.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-30-083100676.html" target="_blank">비트코인 6주 최저 — 바이낸스 해킹 조사로 입출금 중단</a>
+        <p class="summary">글로벌 최대 가상자산 거래소 바이낸스가 해킹 의심으로 모든 입출금을 일시 중단. 비트코인이 6주 만에 최저치로 하락.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://cpa.co.uk/uk-business-news-today-30-october-2026-economy-markets-insolvencies" target="_blank">영국 기업 74만 개 재정 위기 — 모기지 시장 위축</a>
+        <p class="summary">영국에서 약 73만 8천 개 기업이 심각한 재정 위기에 처한 것으로 나타났다. 모기지 승인 건수와 주택 가격 상승률도 둔화 중.</p>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <p>생성 시각: <span>2026-10-30 22:08 KST</span> &nbsp;|&nbsp; 자동 수집 뉴스 — 각 링크에서 원문을 확인하세요.</p>
+</footer>
+
+</body>
+</html>
