@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-10-31 오늘의 주요 뉴스</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1a1a2e;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid #e94560;
+    }
+
+    header .date-label {
+      font-size: 0.9rem;
+      color: #a0c4ff;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+    }
+
+    header h1 span {
+      color: #e94560;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+      gap: 2rem;
+    }
+
+    section {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border-top: 3px solid var(--accent);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    }
+
+    section.domestic  { --accent: #e94560; }
+    section.world     { --accent: #00b4d8; }
+    section.tech      { --accent: #7c3aed; }
+    section.economy   { --accent: #10b981; }
+
+    section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    section h2 .icon {
+      font-size: 1.3rem;
+    }
+
+    ul { list-style: none; }
+
+    li {
+      border-bottom: 1px solid #0f3460;
+      padding: 0.85rem 0;
+    }
+
+    li:last-child { border-bottom: none; }
+
+    li a {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #c9d9f0;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.3rem;
+      transition: color 0.2s;
+    }
+
+    li a:hover { color: var(--accent); text-decoration: underline; }
+
+    li p {
+      font-size: 0.83rem;
+      color: #8899aa;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.78rem;
+      color: #556677;
+      background: #12122a;
+      border-top: 1px solid #0f3460;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 1.5rem 1rem; }
+      main { padding: 1rem 1rem 3rem; gap: 1.5rem; }
+      section { padding: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="date-label">2026년 10월 31일 토요일</p>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="domestic">
+    <h2><span class="icon">🇰🇷</span> 국내 뉴스</h2>
+    <ul>
+      <li>
+        <a href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank">특검, 선관위 '140억 납품 비리' 수사…검증 투표지 보전 요청</a>
+        <p>선거관리위원회를 상대로 한 140억 원대 납품 비리 사건에 대해 특별검사팀이 수사에 착수했다. 특검은 검증이 완료된 투표지의 보전도 함께 요청했다.</p>
+      </li>
+      <li>
+        <a href="https://trendk.kr/trend/news" target="_blank">이재명 대통령 "다문화가정 과잉 우대, 극우 선동 빌미 될 수 있어"</a>
+        <p>이재명 대통령은 다문화가정에 대한 지나친 우대 정책이 오히려 극우 세력의 선동 빌미를 줄 수 있다고 경고하며 균형 잡힌 접근을 촉구했다.</p>
+      </li>
+      <li>
+        <a href="https://trendk.kr/trend/news" target="_blank">핼러윈 앞둔 이태원 안전관리 총력…장갑차·탐지견 투입</a>
+        <p>핼러윈 행사가 몰리는 이태원 일대에 장갑차와 탐지견이 배치되는 등 대규모 안전관리가 이뤄졌다. 경찰은 군중 밀집 사고 방지를 위한 전방위 통제에 나섰다.</p>
+      </li>
+      <li>
+        <a href="https://trendk.kr/trend/news" target="_blank">KBO 한국시리즈 일정 하루씩 순연…1차전 11월 3일 개최</a>
+        <p>우천 등 일정 조정으로 한국시리즈 전 경기 일정이 하루씩 뒤로 밀렸다. 1차전은 11월 3일에 열릴 예정이다.</p>
+      </li>
+      <li>
+        <a href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank">윤석열 공직선거법 2심 선고 11월 4일 생중계 예정</a>
+        <p>법원은 윤석열 전 대통령의 공직선거법 위반 항소심 선고 기일을 11월 4일로 확정하고 생중계를 허용했다. 국민의힘 397억 원 규모 선거 보조금 반환 여부도 판결에 달려 있다.</p>
+      </li>
+      <li>
+        <a href="https://news.daum.net/economy" target="_blank">삼성전자 3분기 잠정 영업이익 107조 원대 기록</a>
+        <p>삼성전자의 3분기 잠정 영업이익이 107조 원대를 기록하며 어닝 서프라이즈를 달성했다. HBM 메모리 수요 급증과 파운드리 수주 호조가 실적 개선을 이끌었다.</p>
+      </li>
+      <li>
+        <a href="https://trendk.kr/trend/news" target="_blank">아산 오폐수처리시설 태아 사산 사건 '범죄 혐의 없음' 종결</a>
+        <p>아산 오폐수처리시설에서 발견된 태아 사산 사건을 수사한 당국이 범죄 혐의 없음으로 종결 처리했다. 산모는 출산 사실을 인지하지 못했다고 진술했다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="world">
+    <h2><span class="icon">🌍</span> 국제 뉴스</h2>
+    <ul>
+      <li>
+        <a href="https://abcnews.com/international" target="_blank">스페인 고속열차 정면충돌…사망 68명 이상, 부상자 속출</a>
+        <p>스페인 중부에서 고속열차 2대가 충돌해 68명 이상이 숨지고 수십 명이 다쳤다. 올해 두 번째 대형 철도 사고로, 인적 과실과 선로 안전망 부실에 대한 의혹이 제기됐다. 마드리드에서는 항의 시위가 벌어졌다.</p>
+      </li>
+      <li>
+        <a href="https://abcnews.com/international" target="_blank">이스라엘 선거 결과 교착…네타냐후 블록 1위에도 과반 실패</a>
+        <p>이스라엘 총선에서 네타냐후 총리의 블록이 최다 의석을 확보했으나 연립정부 구성에 필요한 과반 의석을 얻지 못해 정치 교착 상태가 이어지고 있다.</p>
+      </li>
+      <li>
+        <a href="https://globalnews.ca/world/" target="_blank">러·우크라, 단기 휴전으로 올레슈키 인도지원 작전 진행</a>
+        <p>러시아와 우크라이나가 단기 휴전에 합의해 올레슈키 지역에 대한 인도주의 지원 물자 전달이 이뤄졌다. 다만 전반적인 전황에는 변화가 없는 상태다.</p>
+      </li>
+      <li>
+        <a href="https://globalnews.ca/world/" target="_blank">러시아 대표 독립언론 운영 종료…당국 압박이 원인</a>
+        <p>러시아의 주요 독립 언론사가 당국의 지속적인 압박을 이유로 운영을 중단한다고 선언했다. 언론 자유 단체들은 러시아 내 보도 환경 악화를 강하게 비판했다.</p>
+      </li>
+      <li>
+        <a href="https://abcnews.com/international" target="_blank">볼소나루 브라질 떠나 미국 도착…법적 압박 심화 속 출국</a>
+        <p>대선 패배 이후 내란 혐의 등으로 법적 압박을 받던 자이르 볼소나루 전 브라질 대통령이 미국으로 출국했다. 브라질 당국의 향후 대응이 주목된다.</p>
+      </li>
+      <li>
+        <a href="https://globalnews.ca/world/" target="_blank">호주 독버섯 살인마 에린 패터슨 항소 기각…종신형 확정</a>
+        <p>독버섯이 든 음식으로 가족 3명을 살해한 혐의로 기소된 에린 패터슨에 대해 호주 법원이 항소를 기각하고 종신형을 확정했다.</p>
+      </li>
+      <li>
+        <a href="https://globalnews.ca/world/" target="_blank">캐나다, EU '준회원' 합류 추진…일부 유럽국 반대</a>
+        <p>캐나다가 유럽연합(EU)의 준회원국 지위 부여를 추진 중인 것으로 알려졌다. 일부 EU 회원국이 반대 입장을 보이며 협상이 난항을 겪고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="tech">
+    <h2><span class="icon">💻</span> IT/기술 뉴스</h2>
+    <ul>
+      <li>
+        <a href="https://www.cnbc.com/technology/" target="_blank">폭스콘 "수년 내 글로벌 AI 서버 시장 50% 점유 목표"</a>
+        <p>폭스콘이 수년 안에 전 세계 AI 서버 시장의 절반을 차지하겠다는 목표를 공식 발표했다. 엔비디아 GPU 기반 서버 생산 능력 대폭 확대 계획도 함께 공개됐다.</p>
+      </li>
+      <li>
+        <a href="https://www.cnbc.com/technology/" target="_blank">마이크로소프트, AI 투자 자금 조달 위해 250억 달러 채권 발행</a>
+        <p>마이크로소프트가 인공지능 인프라 확장을 위해 250억 달러 규모의 채권 발행 계획을 발표했다. 데이터센터와 AI 연구개발 분야에 집중 투자할 예정이다.</p>
+      </li>
+      <li>
+        <a href="https://www.cnbc.com/technology/" target="_blank">ServiceNow 주가 27% 폭락…AI 대체 우려에 역대 최악 하루</a>
+        <p>ServiceNow가 하루 만에 주가 27%가 급락하며 회사 역사상 최악의 거래일을 기록했다. AI가 일부 업무 자동화 플랫폼을 대체할 수 있다는 우려가 매도세를 촉발했다.</p>
+      </li>
+      <li>
+        <a href="https://www.techmeme.com/" target="_blank">바이낸스, 63억 달러 규모 해킹 피해…FBI·비밀경호국 수사</a>
+        <p>세계 최대 암호화폐 거래소 바이낸스가 약 63억 달러 규모의 해킹 피해를 입었다. 미국 FBI와 비밀경호국(Secret Service)이 공동 수사에 착수했다.</p>
+      </li>
+      <li>
+        <a href="https://www.techmeme.com/" target="_blank">인텔 주가 25% 폭락…PC 수요 급감 충격에 월가 경고음</a>
+        <p>인텔의 주가가 하루 만에 25% 폭락했다. 예상을 훨씬 웃도는 PC 수요 감소로 매출 전망이 대폭 하향됐으며, 월가에서는 사이클 전환 가능성을 경고했다.</p>
+      </li>
+      <li>
+        <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB" target="_blank">구글, 위성 기반 AI 컴퓨팅 이정표 달성…최초 AI 응답 지구 전송</a>
+        <p>구글이 우주 기반 AI 컴퓨팅 분야의 주요 이정표를 달성했다. 위성이 AI가 생성한 응답을 처음으로 지구로 전송하는 데 성공해 우주 엣지 컴퓨팅 시대의 서막을 알렸다.</p>
+      </li>
+      <li>
+        <a href="https://www.geekwire.com/" target="_blank">마이크로소프트, 전체 인력 25%에 '자발적 퇴직' 프로그램 제안</a>
+        <p>마이크로소프트가 전체 직원 약 4분의 1에게 새로운 자발적 퇴직 프로그램을 제안했다. 일부 임원급도 대상에 포함됐으며 AI 중심 조직 재편의 일환으로 분석된다.</p>
+      </li>
+      <li>
+        <a href="https://af.net/realtime/confirmed-ai-model-releases-for-october-2026/" target="_blank">2026년 10월, 16개 AI 기업이 20개 신규 모델 출시</a>
+        <p>AI 벤치마킹 기관 BenchLM에 따르면 2026년 10월에만 16개 제공사에서 총 20개의 AI 모델이 출시됐다. AI 모델 경쟁이 전례없는 속도로 가속화되고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="economy">
+    <h2><span class="icon">📈</span> 경제/금융 뉴스</h2>
+    <ul>
+      <li>
+        <a href="https://kr.investing.com/currencies/usd-krw" target="_blank">원/달러 환율 1,333.88원…52주 최저 1,320원 근접</a>
+        <p>10월 31일 기준 원/달러 환율은 1,333.88원을 기록했다. 전일 종가(1,333.46원) 대비 소폭 상승한 수준으로, 52주 고점(1,562원)에서 크게 내려온 상태다.</p>
+      </li>
+      <li>
+        <a href="https://www.kcif.or.kr/" target="_blank">코스피, 10월 30일 급락…해외 투자자 불안 심리 확산</a>
+        <p>전날인 10월 30일 코스피 지수가 급락했다. 해외 투자기관과 외신은 반도체주 중심의 매도세와 글로벌 경기 불확실성을 원인으로 지목하며 우려의 시각을 전했다.</p>
+      </li>
+      <li>
+        <a href="https://kr.investing.com/" target="_blank">나스닥, 10월 30일 1.38% 하락…알파벳 실적 우려에 빅테크 매도</a>
+        <p>미국 나스닥 지수가 10월 30일 1.38% 하락했다. 알파벳의 3분기 실적이 기대에 미치지 못한 것이 빅테크 전반에 대한 매도세를 촉발했다. PCE 물가 지표는 양호했다.</p>
+      </li>
+      <li>
+        <a href="https://www.kcif.or.kr/" target="_blank">미 연준, 10월 FOMC 기준금리 동결…12월 추가 인상 미결정</a>
+        <p>미국 연방준비제도가 10월 FOMC에서 기준금리를 동결하기로 결정했다. 12월 추가 인상 여부는 물가 지표 추이를 지켜본 후 결정하겠다고 밝혔다.</p>
+      </li>
+      <li>
+        <a href="https://news.daum.net/economy" target="_blank">SK이노베이션, 3분기 영업이익 3조 7천억…역대 최대 기록</a>
+        <p>SK이노베이션이 3분기 매출 28조 7,738억 원, 영업이익 3조 7,043억 원을 기록하며 창사 이래 최대 분기 영업이익을 달성했다. 배터리와 석유개발 부문 호조가 견인했다.</p>
+      </li>
+      <li>
+        <a href="https://news.daum.net/economy" target="_blank">삼성전자 3분기 영업이익 107조 원대…반도체 '어닝 서프라이즈'</a>
+        <p>삼성전자의 3분기 잠정 영업이익이 107조 원대를 기록하며 시장 예상치를 크게 웃돌았다. HBM(고대역폭 메모리) 수요 급증이 반도체 부문 실적을 끌어올렸다.</p>
+      </li>
+      <li>
+        <a href="https://www.siliconreport.com/topic/artificial-intelligence" target="_blank">스페이스X, AI 칩 구매 위해 400억 달러 부채 조달 성공</a>
+        <p>스페이스X가 AI 연산 인프라 확충을 위한 400억 달러 부채 금융 조달에 성공했다. 스타링크와 AI 서비스 결합 전략의 일환으로, 엔비디아 칩 대량 도입에 사용될 예정이다.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>생성 시각: 2026-10-31 22:05 KST &nbsp;|&nbsp; 자동 생성 뉴스 요약 &nbsp;|&nbsp; 각 기사는 원문 출처로 연결됩니다.</p>
+</footer>
+
+</body>
+</html>
