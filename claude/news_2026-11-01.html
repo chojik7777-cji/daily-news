@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026년 11월 1일</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-card: #0f3460;
+      --accent: #e94560;
+      --accent2: #533483;
+      --text-primary: #eaeaea;
+      --text-secondary: #a8a8b3;
+      --text-muted: #6c6c80;
+      --border: #1e2d4a;
+      --domestic: #4ecdc4;
+      --world: #45b7d1;
+      --tech: #96ceb4;
+      --economy: #ffd93d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--accent2) 100%);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+    header .date {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      text-shadow: 0 0 20px rgba(233,69,96,0.4);
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 2rem;
+    }
+    .section {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header .icon { font-size: 1.3rem; }
+    .section-domestic .section-header { background: rgba(78,205,196,0.15); color: var(--domestic); }
+    .section-world    .section-header { background: rgba(69,183,209,0.15); color: var(--world); }
+    .section-tech     .section-header { background: rgba(150,206,180,0.15); color: var(--tech); }
+    .section-economy  .section-header { background: rgba(255,217,61,0.15);  color: var(--economy); }
+    .news-list { list-style: none; padding: 0.5rem 0; }
+    .news-item {
+      padding: 0.85rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.04); }
+    .news-item a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .news-item a:hover { color: var(--accent); }
+    .section-domestic .news-item a:hover { color: var(--domestic); }
+    .section-world    .news-item a:hover { color: var(--world); }
+    .section-tech     .news-item a:hover { color: var(--tech); }
+    .section-economy  .news-item a:hover { color: var(--economy); }
+    .news-item .summary {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+    @media (max-width: 540px) {
+      main { grid-template-columns: 1fr; padding: 1rem; }
+      header { padding: 1.5rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="date">2026년 11월 1일 일요일</div>
+    <h1>📰 오늘의 주요 뉴스</h1>
+  </header>
+
+  <main>
+    <!-- 국내 뉴스 -->
+    <section class="section section-domestic">
+      <div class="section-header">
+        <span class="icon">🇰🇷</span> 국내 뉴스
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://www.ytn.co.kr/" target="_blank">이 대통령, 내일 2027년도 예산안 시정연설 예정</a>
+          <p class="summary">대통령이 2027년도 예산안 국회 시정연설을 내일 진행할 예정으로, 내년도 재정 운용 방향을 밝힐 전망이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://news.daum.net/politics" target="_blank">820조9천억 원 예산안 국회 심사 본격화</a>
+          <p class="summary">사상 최대 규모인 내년도 820조 9천억 원 예산안에 대한 국회 심사가 본격 시작됐다. 여야는 주요 사업 심사를 두고 이견을 보이고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://news.daum.net/economy" target="_blank">삼성전자, 3분기 영업이익 107조4천억 원 잠정 공시</a>
+          <p class="summary">삼성전자가 올해 3분기 영업이익을 107조4,405억 원으로 잠정 집계했다고 공시했다. 반도체 업황 회복세가 실적을 견인했다는 분석이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://newspim.com/" target="_blank">법무장관 석달째 공석… 인사 공백 장기화 우려</a>
+          <p class="summary">법무장관 자리가 3개월 이상 공석 상태로 이어지고 있어 법무 행정 공백에 대한 우려가 커지고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://m.sedaily.com/article/20108808" target="_blank">서학개미, 10월 미국 주식 순매수 29억 달러 '연간 최대'</a>
+          <p class="summary">국내 투자자들의 10월 미국 주식 순매수 규모가 29억 달러로 올해 최대치를 기록했다. 원화 강세와 국내 증시 부진이 미국 시장 수요를 높였다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.blockmedia.co.kr/" target="_blank">금융권 해킹 피해 확산… 보안 강화 대책 촉구</a>
+          <p class="summary">최근 금융권을 대상으로 한 사이버 해킹 피해가 잇따르면서, 금융당국이 보안 점검과 대책 마련을 금융기관에 촉구하고 나섰다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://asianews.network/tag/south-korea/page/8" target="_blank">초고령사회 진입 한국, '인구부' 신설 여전히 공전</a>
+          <p class="summary">한국이 공식 초고령사회에 진입했음에도 인구 전담 부처 설립은 진전이 없어 인구 위기 대응에 공백이 우려된다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://imnews.imbc.com/" target="_blank">서울 홍대 핼러윈 마약 유포 신고, 오인 신고로 판명</a>
+          <p class="summary">핼러윈 당일 홍대 거리에서 마약을 나눠준다는 신고가 경찰에 접수됐으나, 현장 출동 결과 오인 신고로 확인됐다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 국제 뉴스 -->
+    <section class="section section-world">
+      <div class="section-header">
+        <span class="icon">🌍</span> 국제 뉴스
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://www.euronews.com/video/2026/11/01/latest-news-bulletin-november-1st-2026-midday" target="_blank">이란 혁명수비대, 호르무즈 해협 유조선 3척 화재 보고</a>
+          <p class="summary">이란 혁명수비대가 호르무즈 해협에서 유조선 3척이 화재 중이라고 발표했다. 오만은 인근 해역에서 25명을 구조했으며 협상은 계속되고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://aa.com.tr/en/world/morning-briefing-nov-1-2026/4107709" target="_blank">G20 외무장관 애틀란타 회의, 에너지 안보 논의 후 폐막</a>
+          <p class="summary">G20 외무장관 회의가 에너지 안보를 핵심 의제로 애틀란타에서 마무리됐다. 의장 성명은 "솔직한 논의"를 언급했으나 핵심 사안 합의 없이 종료됐다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://thedailyjagran.com/education/news/todays-school-assembly-news-headline-november-1-2026-check-top-national-international-and-sports-news-here-10334691" target="_blank">예멘 정부군, 후티 반군으로부터 전략 산악 지역 탈환</a>
+          <p class="summary">예멘 정부군이 후티 반군이 장악했던 전략적 요충지 산악 지대를 탈환했다고 발표했다. 이 지역은 남부 수도권 접근로를 통제하는 핵심 거점이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.euronews.com/tag/world-news" target="_blank">젤렌스키-에르도안, 새 흑해 곡물 회랑 구축 합의</a>
+          <p class="summary">우크라이나 대통령 젤렌스키가 튀르키예 에르도안 대통령과 새로운 흑해 곡물 수출 통로 개설을 위해 협력하기로 합의했다고 밝혔다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.euronews.com/tag/world-news" target="_blank">러시아, '산업시설' 겨냥 대규모 드론 공격 발표</a>
+          <p class="summary">러시아가 우크라이나 '산업시설'을 겨냥한 대규모 드론 공격을 실시했다고 보고했다. 우크라이나 당국은 방어 성공을 주장하고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.euronews.com/tag/world-news" target="_blank">프랑스 전국 시위 충돌 발생… 이탈리아도 전국 파업</a>
+          <p class="summary">프랑스 전국 시위 현장에서 경찰과의 충돌이 발생했다. 이탈리아에서도 전국 파업이 진행되며 콜로세움 인근에서 시위대와 경찰이 대치했다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://aa.com.tr/en/world/morning-briefing-nov-1-2026/4107709" target="_blank">런던 친팔레스타인 시위에서 48명 체포</a>
+          <p class="summary">영국 경찰이 금지 단체 팔레스타인 액션을 지지하는 런던 시위에서 48명을 체포했다. 영국에서 해당 단체는 불법 조직으로 지정돼 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://aa.com.tr/en/world/morning-briefing-nov-1-2026/4107709" target="_blank">캐나다 총리 카니, EU 준회원국 가입 목표 발표</a>
+          <p class="summary">캐나다 총리 카니가 2027년 6월까지 EU 준회원국 가입을 목표로 한다고 밝혔다. 이는 캐나다와 유럽 간 안보·경제 협력 강화의 일환이다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- IT/기술 뉴스 -->
+    <section class="section section-tech">
+      <div class="section-header">
+        <span class="icon">💻</span> IT / 기술 뉴스
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://www.engadget.com/" target="_blank">바이낸스, 63억 달러 해킹 사건 이후 출금 재개</a>
+          <p class="summary">역대 최대 규모인 63억 달러 암호화폐 해킹 피해를 입은 바이낸스가 출금 서비스를 재개했다. 당국은 피해 자금 회수를 위한 수사를 진행 중이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.cnbc.com/technology/" target="_blank">법원, SpaceX 데이터센터 오염 NAACP 소송 기각 요청 거부</a>
+          <p class="summary">SpaceX가 데이터센터 오염을 둘러싼 NAACP 소송을 기각해달라는 신청을 법원이 거부했다. 사건은 본안 심리로 이어질 전망이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB" target="_blank">Anthropic IPO 공모 서류 제출, 남은 핵심 과제들 주목</a>
+          <p class="summary">AI 기업 Anthropic이 기업공개(IPO) 공모 서류를 제출한 가운데 시장은 AI 안전성, 규제 대응, 수익성 확보 등 핵심 과제에 주목하고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.cnbc.com/technology/" target="_blank">구글, 첫 데이터센터 위성 'Project Suncatcher' 가동 개시</a>
+          <p class="summary">구글이 'Project Suncatcher' 프로토타입의 첫 번째 데이터센터 위성을 궤도에서 정상 가동하기 시작했다. 우주 기반 컴퓨팅 시대의 개막이라는 평가가 나온다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.engadget.com/" target="_blank">Apple, 화면 결함 iPhone Duo 교체 프로그램 발표</a>
+          <p class="summary">Apple이 화면 불량 증상을 보이는 일부 iPhone Duo 기기에 대한 무상 교체 프로그램을 공식 발표했다. 대상 기기 확인은 애플 공식 사이트에서 가능하다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB" target="_blank">Microsoft Edge, Windows 11 속도 향상 업데이트 출시</a>
+          <p class="summary">마이크로소프트가 Windows 11 사용자를 위한 Edge 브라우저 속도 향상 업데이트를 배포했다. 메모리 최적화와 탭 전환 속도 개선이 포함됐다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://git.handmade.network/ai-is-no-longer-waiting-for-your-instructions-here-s-what-changed-in-big-2026.html" target="_blank">AI, 지시를 기다리지 않는다 — 에이전틱 AI 전환점</a>
+          <p class="summary">2026년 AI는 '에이전틱' 패러다임으로 전환되며 명시적 명령 없이 스스로 계획하고 실행하는 능력을 갖추게 됐다. 이에 따른 거버넌스 논의가 가속되고 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://hpcwire.com/aiwire/editorial-calendar" target="_blank">SC26·Microsoft Ignite 등 주요 IT 행사 11월 개막 예정</a>
+          <p class="summary">슈퍼컴퓨팅 학술대회 SC26(11/15~20, 시카고), Microsoft Ignite(11/17~20, 샌프란시스코), AWS re:Invent(11/30~12/4, 라스베이거스) 등이 11월 개막한다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 경제/금융 뉴스 -->
+    <section class="section section-economy">
+      <div class="section-header">
+        <span class="icon">📈</span> 경제 / 금융 뉴스
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <a href="https://m.sedaily.com/article/20108808" target="_blank">서학개미, 10월 미국 주식 순매수 29억 달러 '올해 최대'</a>
+          <p class="summary">국내 투자자들의 10월 미국 주식 순매수 규모가 29억 달러로 올해 최대를 기록했다. 원화 강세로 환전 부담이 낮아진 영향이 컸다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://kr.investing.com/news/stock-market-news" target="_blank">원·달러 환율 1,334원대… 7월 고점 대비 221원 하락</a>
+          <p class="summary">원·달러 환율이 7월 연중 최고치 1,555.8원에서 1,334원대로 떨어졌다. 달러 약세와 수출 실적 개선이 원화 강세를 이끌었다는 분석이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://kr.investing.com/news/stock-market-news" target="_blank">코스피, 9월 말 6,838에서 5,730대로 급락</a>
+          <p class="summary">코스피 지수가 9월 말 고점 6,838에서 5,730대로 급락해 투자자 우려가 커지고 있다. 반도체·성장주 중심의 매도세가 지수를 끌어내렸다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://www.ytn.co.kr/" target="_blank">미 기준금리 동결… 월가 "12월 추가 인상 유력"</a>
+          <p class="summary">미국 연준이 기준금리를 동결했다. 월스트리트는 12월 FOMC에서 추가 인상이 이루어질 것으로 전망하며 채권 시장이 선제적으로 반응했다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://news.daum.net/economy" target="_blank">국제 유가, 호르무즈 긴장으로 고공 행진 지속</a>
+          <p class="summary">호르무즈 해협 유조선 화재 사건으로 국제 유가가 상승 압력을 받고 있다. 에너지 수입 의존도가 높은 한국 경제에도 추가 부담 요인이 될 수 있다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://kr.investing.com/news/economy" target="_blank">금융당국, 가계부채 관리 강화 방침 발표</a>
+          <p class="summary">금융당국이 가계부채 총량 관리와 DSR(총부채원리금상환비율) 규제 강화를 포함한 종합 방침을 발표했다. 은행권 대출 포트폴리오 조정이 이어질 전망이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://view.asiae.co.kr/en/article/2026090108572723352" target="_blank">이형일 경제부총리 후보자, 국회 인사청문회 준비 박차</a>
+          <p class="summary">경제부총리 겸 기획재정부 장관 후보자 이형일이 인사청문회 준비에 속도를 내고 있다. 경제 정책 방향과 재정 건전성 관리 방안이 핵심 쟁점이 될 전망이다.</p>
+        </li>
+        <li class="news-item">
+          <a href="https://kr.investing.com/news/economy" target="_blank">부동산 거래량 회복 조짐, 금리 부담에 관망세 여전</a>
+          <p class="summary">일부 지역에서 부동산 거래량 회복 조짐이 나타나고 있으나 고금리·대출 규제 부담으로 시장 전반의 관망세는 지속되고 있다.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>생성 시각: 2026-11-01 22:06 KST &nbsp;|&nbsp; 자동 수집 뉴스 요약 &nbsp;|&nbsp; News Bot</p>
+  </footer>
+</body>
+</html>
