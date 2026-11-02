@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오늘의 주요 뉴스 - 2026-11-02</title>
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --card: #0f3460;
+    --accent: #e94560;
+    --accent2: #4a9eff;
+    --accent3: #7ecb8f;
+    --accent4: #f4c430;
+    --text: #e0e0e0;
+    --text-muted: #a0a0b0;
+    --border: #2a2a4e;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .header {
+    background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+    border-bottom: 2px solid var(--accent);
+    padding: 32px 16px 24px;
+    text-align: center;
+  }
+  .header .date-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: #fff;
+  }
+  .header h1 span { color: var(--accent); }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 16px 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 28px;
+  }
+  .section {
+    background: var(--surface);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .domestic .section-icon  { background: rgba(233,69,96,0.18); }
+  .world    .section-icon  { background: rgba(74,158,255,0.18); }
+  .tech     .section-icon  { background: rgba(126,203,143,0.18); }
+  .economy  .section-icon  { background: rgba(244,196,48,0.18); }
+  .section-header h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .domestic  .section-header h2 { color: var(--accent); }
+  .world     .section-header h2 { color: var(--accent2); }
+  .tech      .section-header h2 { color: var(--accent3); }
+  .economy   .section-header h2 { color: var(--accent4); }
+  .news-list { list-style: none; padding: 12px 0; }
+  .news-item {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-item:hover { background: rgba(255,255,255,0.04); }
+  .news-title {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    line-height: 1.45;
+  }
+  .news-title:hover { text-decoration: underline; color: var(--accent2); }
+  .news-summary {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px 16px 36px;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    border-top: 1px solid var(--border);
+  }
+  @media (max-width: 600px) {
+    .container { grid-template-columns: 1fr; padding: 16px 12px 48px; }
+    .header { padding: 24px 12px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <p class="date-label">2026년 11월 02일 월요일</p>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<main class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section domestic">
+    <div class="section-header">
+      <div class="section-icon">🇰🇷</div>
+      <h2>국내 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a class="news-title" href="https://imnews.imbc.com/" target="_blank" rel="noopener">821조 역대 최대 예산안…이재명 대통령 국회 시정연설</a>
+        <p class="news-summary">이재명 대통령이 국회에서 내년도 821조 원 규모 예산안 시정연설을 했다. 국민의힘은 선심성 예산 삭감을 예고하며 첨예한 대치가 예상된다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://m.news.nate.com/view/20261102n27298" target="_blank" rel="noopener">코스피, 미국발 반도체 충격 딛고 강보합 마감</a>
+        <p class="news-summary">미국 반도체주 급락 여파로 하락 출발한 코스피가 기관 매수세에 힘입어 낙폭을 줄이고 강보합권에서 장을 마쳤다. 삼성전자·SK하이닉스도 상승세를 보였다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008825368" target="_blank" rel="noopener">배우 故 최불암 씨 영면…염수정 추기경 집전 장례미사</a>
+        <p class="news-summary">국민배우 故 최불암 씨의 장례미사가 염수정 추기경 집전으로 엄수됐다. 동료 배우들과 정·관계 인사 등 많은 조문객이 마지막 길을 배웅했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://www.ytn.co.kr/" target="_blank" rel="noopener">미 중간선거 D-2…트럼프 "민주당 의회 장악 시 거부권 적극 행사"</a>
+        <p class="news-summary">미국 중간선거가 이틀 앞으로 다가온 가운데 트럼프 대통령은 민주당이 의회를 장악할 경우 거부권을 적극 행사하겠다는 입장을 재확인했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://hankyung.com/article/2026110293821" target="_blank" rel="noopener">삼성전자·SK하이닉스, AI 수요 호조에 주가 반등</a>
+        <p class="news-summary">AI 인프라 투자 확대 기대감으로 삼성전자와 SK하이닉스가 전날 하락분을 만회하며 상승 마감했다. 기관 투자자의 순매수가 집중됐다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section world">
+    <div class="section-header">
+      <div class="section-icon">🌍</div>
+      <h2>국제 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a class="news-title" href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtdHZHZ0pMVWlnQVAB?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank" rel="noopener">미 중간선거 D-2…공화 '텃밭 사수' 안간힘, 민주 '내홍' 격화</a>
+        <p class="news-summary">11월 4일 중간선거를 앞두고 공화당과 민주당이 접전지에 총력을 기울이고 있다. 사전투표 규모는 역대 최대를 기록했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://news.daum.net/world" target="_blank" rel="noopener">네타냐후, 트럼프와 통화서 '中간선거 이후 이란 타격' 촉구</a>
+        <p class="news-summary">이스라엘 네타냐후 총리가 트럼프 대통령과 통화하며 중간선거 직후 이란 공격 재개를 촉구했다. 걸프 국가들은 확전 가능성에 극도의 우려를 표명했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://news.daum.net/world" target="_blank" rel="noopener">러시아, 키이우 탄도미사일 공격…우크라, 모스크바 드론 수백 발 반격</a>
+        <p class="news-summary">러시아가 우크라이나 수도 키이우에 두 차례 탄도미사일을 발사했고, 우크라이나도 모스크바를 향해 수백 발의 드론으로 맞대응했다. 미국 중재 3자 종전 협상도 재개됐다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://news.daum.net/global" target="_blank" rel="noopener">이란 "호르무즈 해협 유조선 2척 기뢰 폭발"…1척 화재</a>
+        <p class="news-summary">이란이 호르무즈 해협에서 유조선 2척이 기뢰에 폭발했다고 밝히며 국제 유가가 출렁였다. 예멘 후티 반군은 사우디 영공 경유 민항기 공격을 경고했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://news.daum.net/global" target="_blank" rel="noopener">가축 바이러스 '샤몬다' 세계 첫 인간 감염·사망 사례 확인</a>
+        <p class="news-summary">WHO가 가축 전염 바이러스 '샤몬다'의 세계 최초 인간 감염 및 사망 사례를 발표해 국제 보건 당국이 확산 여부를 긴급 모니터링 중이다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://news.daum.net/global" target="_blank" rel="noopener">프랑스 국채 금리 5% 돌파…24년 만에 최고 수준</a>
+        <p class="news-summary">프랑스 10년물 국채 금리가 5%를 넘어 2002년 이후 최고치를 기록했다. 재정 적자 우려가 심화되면서 유럽 채권 시장 전반에 압력이 가해졌다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section tech">
+    <div class="section-header">
+      <div class="section-icon">💻</div>
+      <h2>IT / 기술 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a class="news-title" href="https://hankyung.com/article/2026110293821" target="_blank" rel="noopener">AI 부품 장기계약 시대…삼성·SK하이닉스 수년치 물량 '완판'</a>
+        <p class="news-summary">AI 인프라 투자 확대에 힘입어 반도체 업체들이 줄 서서 5년치를 예약하는 장기계약 시대가 열렸다. 삼성전자 내년 메모리 80%가 납품처 확정, SK하이닉스는 2029년까지 사실상 완판 상태다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://m.news.nate.com/view/20261102n27637" target="_blank" rel="noopener">반도체 대형주 반등에 코스피 5800선 회복</a>
+        <p class="news-summary">전 거래일 미국발 AI 투자 부담으로 하락했던 반도체 대형주들이 저가 매수세에 힘입어 반등, 코스피가 5859.08로 마감하며 5800선을 재탈환했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://m.news.nate.com/view/20261102n27432" target="_blank" rel="noopener">반도체 수출 역대 2위…코스닥 장비株는 한 달 새 30%대 하락</a>
+        <p class="news-summary">AI 수요 확대에 힘입어 국내 반도체 수출이 역대 두 번째 규모를 기록했지만, 코스닥 반도체 장비 관련 주식은 지난 한 달 새 30% 넘게 하락해 엇갈린 흐름을 보였다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://www.sptatimeskorea.com/" target="_blank" rel="noopener">샘 올트먼 방한…삼성·SK와 'AI 협업' 논의</a>
+        <p class="news-summary">오픈AI CEO 샘 올트먼이 1박 2일 일정으로 한국을 방문해 삼성전자·SK하이닉스 경영진과 AI 공동 개발 및 칩 공급 협력 방안을 논의했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://m.news.nate.com/view/20261102n27650" target="_blank" rel="noopener">세명소프트, 41억 규모 '반도체 AI 제조안전' 국책과제 선정</a>
+        <p class="news-summary">세명소프트가 2028년까지 약 41억 원 규모의 반도체 AI 제조안전 국책과제 주관기관으로 선정됐다. AI 기반 공정 이상 탐지 기술 개발이 핵심이다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section economy">
+    <div class="section-header">
+      <div class="section-icon">📈</div>
+      <h2>경제 / 금융 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/stock-market-news/article-2153713" target="_blank" rel="noopener">트럼프, 캐나다 무역협정 '새 틀' 시사…TSX 선물 상승</a>
+        <p class="news-summary">트럼프 대통령이 캐나다와의 새로운 경제 협력 틀에 대한 진전을 언급하면서 캐나다 증시 선물이 강보합으로 출발했다. 자동차·철강 등 구체적인 관세 완화 방향이 주목된다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://kr.investing.com/news/stock-market-news/article-2153690" target="_blank" rel="noopener">HSBC, 바이어스도르프 투자의견 '매수→보유' 하향…니베아 판매 둔화</a>
+        <p class="news-summary">HSBC가 니베아 소비자 판매 둔화를 이유로 바이어스도르프의 투자의견을 '매수'에서 '보유'로 낮추고 목표주가를 €90에서 €88로 조정했다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://kr.investing.com/" target="_blank" rel="noopener">Fed 금리 동결 후 뉴욕증시 상승…AI 실적 호조 지지</a>
+        <p class="news-summary">연준이 기준금리를 동결한 가운데 AI 관련 기업들의 강한 실적이 뉴욕증시 상승을 이끌었다. 나스닥이 상대적으로 강세를 보였다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://news.daum.net/economy" target="_blank" rel="noopener">신한금융 진옥동·BNK금융 빈대인 회장 연임 확정</a>
+        <p class="news-summary">신한금융그룹 진옥동 회장과 BNK금융그룹 빈대인 회장이 각각 주주총회를 통해 연임을 확정지었다. 양사 모두 안정적 수익성 유지가 연임의 배경으로 꼽힌다.</p>
+      </li>
+      <li class="news-item">
+        <a class="news-title" href="https://m.news.nate.com/view/20261102n27298" target="_blank" rel="noopener">코스피 5859.08 마감…기관 1.2조 순매수 지지</a>
+        <p class="news-summary">코스피가 기관의 1조 2000억 원에 달하는 순매수에 힘입어 128.34포인트(2.24%) 상승한 5859.08에 마감했다. 외국인은 소폭 순매도를 기록했다.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  생성 시각: 2026-11-02 22:40 KST &nbsp;|&nbsp; 자동 수집 뉴스 요약 (각 링크를 클릭하면 원문으로 이동합니다)
+</footer>
+
+</body>
+</html>
