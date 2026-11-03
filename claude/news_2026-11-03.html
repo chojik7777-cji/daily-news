@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 주요 뉴스 - 2026년 11월 3일</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-card: #0f3460;
+            --bg-card-hover: #1a4a7a;
+            --accent: #e94560;
+            --accent-domestic: #4ecdc4;
+            --accent-world: #45b7d1;
+            --accent-tech: #96ceb4;
+            --accent-economy: #feca57;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0b0;
+            --text-title: #ffffff;
+            --border: #2a2a4a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(233,69,96,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .header-date {
+            font-size: 0.95rem;
+            color: var(--accent);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            color: var(--text-title);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .header-sub {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 16px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .section-domestic .section-icon { background: rgba(78,205,196,0.15); }
+        .section-world .section-icon { background: rgba(69,183,209,0.15); }
+        .section-tech .section-icon { background: rgba(150,206,180,0.15); }
+        .section-economy .section-icon { background: rgba(254,202,87,0.15); }
+
+        .section-domestic h2 { color: var(--accent-domestic); }
+        .section-world h2 { color: var(--accent-world); }
+        .section-tech h2 { color: var(--accent-tech); }
+        .section-economy h2 { color: var(--accent-economy); }
+
+        .section h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 14px;
+        }
+
+        .news-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-2px);
+            background: var(--bg-card);
+        }
+
+        .section-domestic .news-card:hover { border-color: var(--accent-domestic); }
+        .section-world .news-card:hover { border-color: var(--accent-world); }
+        .section-tech .news-card:hover { border-color: var(--accent-tech); }
+        .section-economy .news-card:hover { border-color: var(--accent-economy); }
+
+        .news-card a {
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            line-height: 1.4;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .section-domestic .news-card a { color: var(--accent-domestic); }
+        .section-world .news-card a { color: var(--accent-world); }
+        .section-tech .news-card a { color: var(--accent-tech); }
+        .section-economy .news-card a { color: var(--accent-economy); }
+
+        .news-card a:hover { opacity: 0.85; }
+
+        .news-summary {
+            font-size: 0.84rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 28px 16px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.82rem;
+        }
+
+        .footer span {
+            color: var(--accent);
+        }
+
+        @media (max-width: 600px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .header {
+                padding: 28px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <p class="header-date">2026년 11월 3일 화요일</p>
+    <h1>오늘의 주요 뉴스</h1>
+    <p class="header-sub">국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<div class="container">
+
+    <!-- 국내 뉴스 -->
+    <section class="section section-domestic">
+        <div class="section-header">
+            <div class="section-icon">🇰🇷</div>
+            <h2>국내 뉴스</h2>
+        </div>
+        <div class="news-grid">
+            <div class="news-card">
+                <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008827289" target="_blank">대통령 전용기 탑승자 168명 개인정보 유출</a>
+                <p class="news-summary">이재명 대통령 부부 포함 해외 순방 동행자 168명의 개인정보가 인터넷에 공개됐습니다. 청와대는 경찰 수사를 의뢰했고 외교부는 전원 여권 재발급을 진행 중입니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/politics" target="_blank">이재명 대통령, 820조 9천억 예산안 시정연설</a>
+                <p class="news-summary">이재명 대통령이 국회를 방문해 내년도 예산안 820조 9천억 원 규모에 대한 시정연설을 진행했습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/economy" target="_blank">10월 소비자물가 2.8% 상승</a>
+                <p class="news-summary">10월 물가 상승률이 전년 동월 대비 2.8% 상승한 것으로 나타났습니다. 농산물 가격 하락이 상승폭을 제한했습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/economy" target="_blank">외국인 1.3조 순매도…코스피 5600선 위태</a>
+                <p class="news-summary">외국인 투자자가 1조 3천억 원 규모의 주식을 순매도하면서 코스피가 5600선을 위협받고 코스닥도 3%대 급락했습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008828110" target="_blank">미국 중간선거 한국 시간 저녁부터 투표 시작</a>
+                <p class="news-summary">미국 중간선거 투표가 한국 시간으로 오늘 저녁부터 시작됩니다. 결과는 이르면 내일 오후쯤 나올 전망입니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/politics" target="_blank">북한, 전술탄도미사일 집속탄두 위력시험 실시</a>
+                <p class="news-summary">북한이 전술탄도미사일의 집속탄두 위력 시험을 실시한 것으로 알려졌습니다. 우리 군은 사전 발사 공지를 하지 않았다고 전했습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/politics" target="_blank">여야, 신천지 발언·조희대 국정조사 놓고 대립</a>
+                <p class="news-summary">여야가 김민석 의원의 신천지 관련 발언 논란과 조희대 전 대법원장 국정조사 문제를 둘러싸고 대립각을 세우고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 국제 뉴스 -->
+    <section class="section section-world">
+        <div class="section-header">
+            <div class="section-icon">🌍</div>
+            <h2>국제 뉴스</h2>
+        </div>
+        <div class="news-grid">
+            <div class="news-card">
+                <a href="https://www.new1cm.com/2026/11/2026-11-03.html" target="_blank">유럽 7개국 슈퍼마켓 사이버 공격 피해</a>
+                <p class="news-summary">벨기에·룩셈부르크 등 유럽 7개국 수십 곳 슈퍼마켓의 냉장·냉동고 장치가 사이버 공격을 받아 식품 안전 우려가 높아졌습니다. 제조사는 네트워크 연결을 긴급 차단했습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://www.new1cm.com/2026/11/2026-11-03.html" target="_blank">우크라이나 자포리자 인도주의 센터 폭격 26명 사망</a>
+                <p class="news-summary">러시아군 공습으로 자포리자주 코미슈바카의 인도주의 지원 센터가 폭격당해 26명이 사망하고 5명이 부상을 입었습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://www.new1cm.com/2026/11/2026-11-03.html" target="_blank">플로리다 항공기 추락 사고 부조종사 20세 확인</a>
+                <p class="news-summary">최근 발생한 플로리다 항공기 추락 사고의 부조종사가 20세 청년으로 확인됐습니다. 미국 국가교통안전위원회(NTSB)가 인적 오류와 기상 악화 여부를 조사 중입니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://www.new1cm.com/2026/11/2026-11-03.html" target="_blank">영국 모험가 칼 부시비, 28년 만에 세계 일주 완료</a>
+                <p class="news-summary">영국 모험가 칼 부시비가 무려 28년에 걸친 도보 세계 일주를 마치고 귀환했습니다. 기네스북 기록으로 등재될 예정입니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://en.wikipedia.org/wiki/2026_in_the_United_States" target="_blank">미국 중간선거 투표 돌입…의회 판도 변화 주목</a>
+                <p class="news-summary">미국 중간선거 투표가 전국적으로 시작됐습니다. 하원 전 의석과 상원 일부 의석을 놓고 민주당·공화당이 치열하게 경쟁하며 결과에 전 세계 이목이 집중됩니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT/기술 뉴스 -->
+    <section class="section section-tech">
+        <div class="section-header">
+            <div class="section-icon">💻</div>
+            <h2>IT/기술 뉴스</h2>
+        </div>
+        <div class="news-grid">
+            <div class="news-card">
+                <a href="https://zdnet.co.kr/" target="_blank">마이크론, AI 수요에 힘입어 역대 최대 실적 달성</a>
+                <p class="news-summary">마이크론이 AI 반도체 수요 급증에 힘입어 분기 역대 최대 실적을 기록했습니다. 한국·일본도 미국 AI 데이터센터 발전소 투자를 확대하고 있습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://zdnet.co.kr/" target="_blank">AMD, 피지컬 AI 기업 '월드랩스' 11조원에 인수</a>
+                <p class="news-summary">AMD가 피지컬 AI 전문 기업 월드랩스를 약 11조 원에 인수하기로 합의했습니다. AI 칩 시장 주도권 강화를 위한 전략적 인수합병입니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/ai-tech" target="_blank">오픈AI, 차세대 모델 출시 전격 취소</a>
+                <p class="news-summary">오픈AI가 차세대 모델 출시를 돌연 취소한 것으로 알려졌습니다. AI 안전 검증 강화에 따른 조치로, 테크 업계의 AI 안전 공백 문제가 다시 부각되고 있습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://www.techdaily.co.kr/" target="_blank">애플 iOS 27.2 출시…시리 AI 한국어 지원 추가</a>
+                <p class="news-summary">애플이 iOS 27.2를 배포하며 시리(Siri) AI의 한국어 지원을 공식 추가했습니다. 한국 사용자들이 한국어로 AI 기능을 이용할 수 있게 됩니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://zdnet.co.kr/" target="_blank">엔비디아, DGX 스파크 64GB 개인용 AI 슈퍼컴퓨터 출시</a>
+                <p class="news-summary">엔비디아가 64GB 통합 메모리를 탑재한 개인용 AI 슈퍼컴퓨터 'DGX 스파크'를 이달 23일 출시한다고 발표했습니다. 개인 개발자·연구자 수요를 겨냥한 제품입니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.hada.io/" target="_blank">Linux 커널 TCP 치명적 취약점 CVE-2026-98432, Ubuntu 패치 지연 논란</a>
+                <p class="news-summary">리눅스 커널 TCP 코드에서 발견된 치명적 취약점(CVE-2026-98432)에 대해 Ubuntu의 패치 배포가 늦어지고 있다는 비판이 제기됐습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 경제/금융 뉴스 -->
+    <section class="section section-economy">
+        <div class="section-header">
+            <div class="section-icon">📈</div>
+            <h2>경제/금융 뉴스</h2>
+        </div>
+        <div class="news-grid">
+            <div class="news-card">
+                <a href="https://www.tournews21.com/news/articleView.html?idxno=147390" target="_blank">원/달러 환율 1,341원대…전일 대비 소폭 하락</a>
+                <p class="news-summary">오늘 서울 외환시장에서 원/달러 환율이 1,341원대에 거래됐습니다. 전일 대비 약 2~6원 가량 하락해 원화 강세를 보였습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://www.snmnews.com/news/articleView.html?idxno=576862" target="_blank">엔화·유로화·위안화 등 6대 통화 모두 원화 대비 약세</a>
+                <p class="news-summary">엔화(849원/100엔), 유로화(약 1,500원), 위안화(201.39원) 등 주요 6개 통화 모두 원화 대비 하락했습니다. 위안화 낙폭이 가장 컸습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://www.job-post.co.kr/news/articleView.html?idxno=236099" target="_blank">코스피 5721, 코스닥 717…외국인 매도에 동반 하락</a>
+                <p class="news-summary">코스피 지수가 5721.32, 코스닥이 717.78을 기록하며 동반 하락세를 보였습니다. 외국인의 대규모 순매도가 지수 하락을 이끌었습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://ko.tradingeconomics.com" target="_blank">순금 가격 752,000원/돈…이틀 연속 상승</a>
+                <p class="news-summary">금 현물 가격이 1돈(3.75g) 기준 75만 2천 원을 기록해 이틀 연속 상승세를 이어갔습니다. 글로벌 불확실성 속 안전자산 선호 심리가 반영됐습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/economy" target="_blank">AI 데이터센터 투자 경쟁…국내 IT 서비스 기업 수익 다각화</a>
+                <p class="news-summary">국내 주요 IT 서비스 기업들이 AI 데이터센터를 새로운 수익원으로 삼으며 비즈니스 모델 다각화에 본격 나서고 있습니다.</p>
+            </div>
+            <div class="news-card">
+                <a href="https://news.daum.net/economy" target="_blank">10월 물가 2.8% 상승…농산물 하락이 상승 제한</a>
+                <p class="news-summary">10월 소비자물가지수가 전년 동월 대비 2.8% 오른 것으로 확인됐습니다. 농산물 가격 하락이 물가 상승폭을 다소 억제했습니다.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer class="footer">
+    <p>생성 시각: <span>2026-11-03 22:07 KST</span> &nbsp;|&nbsp; 자동 수집 뉴스 요약본입니다. 정확한 내용은 원문 링크에서 확인하세요.</p>
+</footer>
+
+</body>
+</html>
