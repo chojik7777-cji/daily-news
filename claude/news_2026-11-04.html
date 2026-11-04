@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026년 11월 4일</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --text: #e0e0e0;
+      --muted: #a0a0b0;
+      --domestic: #4fc3f7;
+      --world: #81c784;
+      --tech: #ffb74d;
+      --economy: #ce93d8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f3460, #16213e);
+      border-bottom: 2px solid var(--accent);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header .date {
+      color: var(--muted);
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+
+    header h1 span { color: var(--accent); }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .section {
+      background: var(--surface);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .section-header {
+      padding: 1rem 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .section-header .icon { font-size: 1.3rem; }
+
+    .section-header h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .section-domestic .section-header { border-left: 4px solid var(--domestic); }
+    .section-world .section-header    { border-left: 4px solid var(--world); }
+    .section-tech .section-header     { border-left: 4px solid var(--tech); }
+    .section-economy .section-header  { border-left: 4px solid var(--economy); }
+
+    .section-domestic h2 { color: var(--domestic); }
+    .section-world h2    { color: var(--world); }
+    .section-tech h2     { color: var(--tech); }
+    .section-economy h2  { color: var(--economy); }
+
+    .news-list { list-style: none; }
+
+    .news-item {
+      padding: 1rem 1.4rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: background 0.15s;
+    }
+
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+
+    .news-item a {
+      display: block;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #d8e4f0;
+      text-decoration: none;
+      margin-bottom: 0.3rem;
+      line-height: 1.45;
+    }
+
+    .news-item a:hover { color: #fff; text-decoration: underline; }
+
+    .news-item .summary {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .news-item { padding: 0.85rem 1rem; }
+      .section-header { padding: 0.85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date">2026년 11월 4일 수요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section section-domestic">
+    <div class="section-header">
+      <span class="icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008830116" target="_blank">윤석열 전 대통령 허위사실 공표 혐의 2심 선고</a>
+        <p class="summary">대선 후보 시절 허위사실 공표 혐의에 대한 2심 선고가 이날 오후 열렸다. 2심에서도 벌금 100만 원 이상을 받고 대법원에서 확정되면 국민의힘은 선거비용 397억 원을 반환해야 한다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/" target="_blank">국회 법사위, '조작기소 특검법' 여야 충돌로 시작부터 파행</a>
+        <p class="summary">법제사법위원회에서 '조작기소 특검법' 심사를 시작했으나 여야 충돌로 국민의힘 위원들이 퇴장하며 파행이 빚어졌다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.wikitree.co.kr/articles/1171686" target="_blank">이재명 대통령, 서울 집값 관련 보도에 "가짜뉴스" 반박</a>
+        <p class="summary">이재명 대통령이 서울 집값 관련 언론 보도에 대해 "가짜뉴스"라고 직접 발끈하며 반박했다. 대통령실이 이례적으로 특정 기사를 정면 비판한 것이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/economy" target="_blank">쿠팡Inc, 3분기 약 6천억원대 영업손실 공시</a>
+        <p class="summary">쿠팡의 모회사 쿠팡Inc가 올해 3분기 6천억 원대의 영업손실을 기록했다고 공시했다. 물류 투자 확대와 해외 사업 비용 증가가 주원인으로 분석된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://biz.sbs.co.kr/article/20000344150" target="_blank">코스피·코스닥 상승 출발 후 하락 전환… 미국 중간선거 결과 주목</a>
+        <p class="summary">코스피는 상승 출발했다가 장중 하락 전환하는 흐름을 보였다. 미국 중간선거 개표 결과에 따라 증시 방향성이 결정될 것으로 시장은 주목하고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section-world">
+    <div class="section-header">
+      <span class="icon">🌍</span>
+      <h2>국제 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.cbsnews.com/world/" target="_blank">스페인 교통장관, 고속열차 사고 6일 만에 전격 사임</a>
+        <p class="summary">치명적 고속열차 충돌 사고가 발생한 지 6일 만에 스페인 교통부 장관이 사임했다. 사고 대응 미흡에 대한 여론의 거센 비판이 사임을 이끌었다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cbsnews.com/world/" target="_blank">미국, 이란 케심 섬 제한적 군사 타격 단행</a>
+        <p class="summary">이란이 미국 항공기를 향해 사격한 뒤 미국이 호르무즈 해협의 케심 섬에 제한적 타격을 가했다고 미 고위 관리가 CBS뉴스에 밝혔다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">그린란드, 덴마크·미국과 안보 협정 승인</a>
+        <p class="summary">그린란드가 덴마크 및 미국과의 안보 협정을 승인했다. 북극해 지정학적 경쟁이 고조되는 가운데 나온 협정으로 주목을 받고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">인도네시아, 도청 의혹 수사 관련 군 2만명 수도 자카르타 배치</a>
+        <p class="summary">프라보워 수비안토 대통령 등 주요 인사를 타깃으로 한 불법 도청 의혹 수사와 관련해 인도네시아 군이 2만 명 이상의 병력을 수도에 배치했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cbsnews.com/world/" target="_blank">폴란드, 러시아 국경 대규모 보안 작전 전개</a>
+        <p class="summary">폴란드가 러시아 접경 지역에서 대규모 안보 작전을 펼쳤다. 폴란드 총리는 이 작전이 러시아의 "도발 시도"를 차단했을 가능성이 있다고 밝혔다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cbsnews.com/world/" target="_blank">러시아, 우크라이나 학교 공습으로 수십명 사망</a>
+        <p class="summary">러시아의 우크라이나 학교 타격으로 수십 명이 사망했다. 아울러 해킹된 긴급경보 앱이 가짜 화학·핵 공격 경고를 민간에 전송하는 사태도 발생했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cbsnews.com/world/" target="_blank">러셀 브랜드 성폭행 재판 배심원 평결 시작</a>
+        <p class="summary">영국 코미디언 겸 배우 러셀 브랜드의 강간 및 성폭행 혐의 재판에서 배심원단이 평결 심의에 돌입했다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section-tech">
+    <div class="section-header">
+      <span class="icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-4-2026/" target="_blank">AMD, 3분기 매출 134억 달러 기록… 전년비 45% 성장</a>
+        <p class="summary">AMD가 2026년 3분기 매출 134억 달러를 기록해 전년 대비 45% 성장했다. 데이터센터 부문은 97% 급증하며 AI 반도체 수요 호조를 입증했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-4-2026/" target="_blank">Super Micro, 분기 매출 299% 급증… AI 서버 수요 폭발</a>
+        <p class="summary">Super Micro의 1분기 매출이 199.5억 달러로 전년비 298% 급증했다. AI 서버 수요가 폭발적으로 늘어나며 데이터센터 인프라 업체가 수혜를 입고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://github.com/diclogic/ai-daily-digest/issues/203" target="_blank">Nvidia, 신규 계약에 중국 외 지역 매출 51% 이상 요건 도입</a>
+        <p class="summary">Nvidia가 고객과의 새 계약에서 서비스 매출의 51% 이상을 중국 외 지역에서 발생시킬 것을 요구한다는 보도가 나왔다. 수출 규제 대응의 일환으로 분석된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-4-2026/" target="_blank">CrowdStrike, 불량 AI 에이전트 차단용 AI 킬 스위치 출시</a>
+        <p class="summary">사이버보안 기업 CrowdStrike가 오작동하거나 악의적으로 활용될 수 있는 AI 에이전트를 차단하는 AI 킬 스위치를 출시했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-4-2026/" target="_blank">Fiserv, 'AI 전방위 도입' 전략으로 3,000명 감원</a>
+        <p class="summary">핀테크 기업 Fiserv가 AI 전면 도입을 명목으로 3,000명을 감원했다. AI가 금융 서비스 업계 인력 구조에도 본격적인 변화를 가져오고 있다는 평가다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-4-2026/" target="_blank">Apple, iOS 27.3 개발자 프리뷰… Siri AI를 전 개발자에 개방</a>
+        <p class="summary">애플이 iOS 27.3 개발자 프리뷰를 통해 App Intents API로 Siri AI를 모든 개발자에게 공개했다. 더 많은 앱이 Siri와 긴밀하게 연동될 전망이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://aiweekly.co/ai-news-today" target="_blank">OpenAI, Uber 사장 출신 임원 최고 기업 담당 임원으로 영입</a>
+        <p class="summary">OpenAI가 Uber 사장 출신 임원을 최고 기업 담당 임원(Chief Corporate Affairs Officer)으로 영입했다. 기업 사업 확대와 규제 대응 강화를 위한 포석으로 보인다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section-economy">
+    <div class="section-header">
+      <span class="icon">📈</span>
+      <h2>경제 / 금융 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://mt.co.kr/index.php/economy/2026/11/04/2026110415370078714" target="_blank">원/달러 환율 1341.5원 마감… 중간선거 앞두고 등락 반복</a>
+        <p class="summary">원/달러 환율은 1344.0원으로 출발해 1347.2원까지 올랐다가 1336.1원까지 하락한 뒤 1341.5원에 마감했다. 미 중간선거 결과를 앞두고 변동성이 컸다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://hankyung.com/article/2026110463211" target="_blank">코스피 5,683.80 마감… 외국인 2.5조 순매도에도 0.62% 상승</a>
+        <p class="summary">코스피가 전 거래일 대비 35.01포인트(0.62%) 오른 5,683.80으로 마감했다. 외국인이 약 2조5천71억원을 순매도했음에도 지수는 상승 마감했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.asiae.co.kr/" target="_blank">코스닥 1.50% 상승 714.95 마감</a>
+        <p class="summary">코스닥 지수도 1.50% 올라 714.95로 장을 마쳤다. 2차전지, 바이오, 반도체 소재 종목이 고르게 올랐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://hankyung.com/article/2026110463211" target="_blank">코스피·원달러 환율 동반 상승 이례적 흐름 지속</a>
+        <p class="summary">한국경제는 10월 말 이후 국내 증시와 원/달러 환율이 동반 상승하는 이례적 흐름이 이어지고 있다고 보도했다. 외국인의 달러선물 매수가 주요 원인으로 지목된다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/headlines" target="_blank">달러인덱스 101.539로 소폭 하락… 중간선거 결과 변수</a>
+        <p class="summary">달러인덱스는 101.539로 0.187 내렸다. 미국 중간선거에서 민주당의 의회 장악 관측이 나오면서 달러 약세 요인으로 작용했다는 분석이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://supple.kr/news/cmw1th25l123fclgj7j8ca32k" target="_blank">美 중간선거 개표 본격화… 상원 다수당 향방에 금융시장 촉각</a>
+        <p class="summary">미국 중간선거 개표가 본격화됐다. 상원 다수당 향배에 따라 향후 금리·재정 정책 방향이 달라질 수 있어 글로벌 금융시장이 결과를 주시하고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  생성 시각: 2026-11-04 22:05 KST &nbsp;|&nbsp; Powered by News Bot
+</footer>
+
+</body>
+</html>
