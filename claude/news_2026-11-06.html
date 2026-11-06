@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-11-06</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-card: #0f3460;
+      --bg-card-hover: #1a4a7a;
+      --accent-domestic: #e94560;
+      --accent-world: #f5a623;
+      --accent-tech: #4ecca3;
+      --accent-economy: #a78bfa;
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border: #1e3a5f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);
+      padding: 40px 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(78, 204, 163, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-date {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .header-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .header-subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 16px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid;
+    }
+
+    .section-header.domestic { border-color: var(--accent-domestic); }
+    .section-header.world    { border-color: var(--accent-world); }
+    .section-header.tech     { border-color: var(--accent-tech); }
+    .section-header.economy  { border-color: var(--accent-economy); }
+
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .section-icon.domestic { background: rgba(233,69,96,0.2); }
+    .section-icon.world    { background: rgba(245,166,35,0.2); }
+    .section-icon.tech     { background: rgba(78,204,163,0.2); }
+    .section-icon.economy  { background: rgba(167,139,250,0.2); }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .section-title.domestic { color: var(--accent-domestic); }
+    .section-title.world    { color: var(--accent-world); }
+    .section-title.tech     { color: var(--accent-tech); }
+    .section-title.economy  { color: var(--accent-economy); }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .news-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+      background: var(--bg-card-hover);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .news-number {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      opacity: 0.7;
+    }
+
+    .news-number.domestic { color: var(--accent-domestic); }
+    .news-number.world    { color: var(--accent-world); }
+    .news-number.tech     { color: var(--accent-tech); }
+    .news-number.economy  { color: var(--accent-economy); }
+
+    .news-title a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      line-height: 1.5;
+      display: block;
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+
+    .news-title a:hover { color: #fff; text-decoration: underline; }
+
+    .news-summary {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    .footer-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-text span {
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 600px) {
+      .header-title { font-size: 1.5rem; }
+      .news-grid { grid-template-columns: 1fr; }
+      .container { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-date">2026년 11월 06일 금요일</div>
+  <h1 class="header-title">오늘의 주요 뉴스</h1>
+  <p class="header-subtitle">국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<main class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section">
+    <div class="section-header domestic">
+      <div class="section-icon domestic">🇰🇷</div>
+      <h2 class="section-title domestic">국내 뉴스</h2>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <div class="news-number domestic">NO.1</div>
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008833920" target="_blank" rel="noopener">
+            코스피, 장 초반 8% 급락·5천 선 붕괴…역대급 패닉셀
+          </a>
+        </div>
+        <p class="news-summary">AI 데이터센터 규제 강화 우려가 겹치며 코스피가 개장 직후 8% 넘게 급락, 5천 선이 무너졌다. 간밤 미국 나스닥이 5% 넘게 하락한 여파가 국내 증시에 고스란히 반영됐다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number domestic">NO.2</div>
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008833920" target="_blank" rel="noopener">
+            민주당, '조작기소 특검법' 오늘 처리 방침…국민의힘 필리버스터 종결
+          </a>
+        </div>
+        <p class="news-summary">더불어민주당은 국민의힘의 필리버스터를 표결로 종결한 뒤 '조작기소 특검법'을 금일 본회의에서 처리할 방침이다. 국민의힘은 장외 투쟁을 예고했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number domestic">NO.3</div>
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008833920" target="_blank" rel="noopener">
+            국민의힘, 내일 경복궁역 인근 대규모 집회 예고
+          </a>
+        </div>
+        <p class="news-summary">국민의힘은 11월 7일 서울 경복궁역 인근에서 대규모 장외 집회를 개최하기로 했다. 이는 민주당의 특검법 강행 처리에 맞서는 맞불 집회다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number domestic">NO.4</div>
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008833920" target="_blank" rel="noopener">
+            전국법관대표회의, 정기회의 1주일 앞당겨 11월 30일 개최
+          </a>
+        </div>
+        <p class="news-summary">전국법관대표회의는 당초 12월 7일로 예정된 정기회의를 11월 30일로 앞당겨 열기로 했다. 조희대 대법원장에 대한 국정조사 논의가 그 배경으로 거론된다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number domestic">NO.5</div>
+        <div class="news-title">
+          <a href="https://imnews.imbc.com/" target="_blank" rel="noopener">
+            미 나스닥 AI 패닉 여파, 한국 증시 역대급 타격
+          </a>
+        </div>
+        <p class="news-summary">미국 민주당 중간선거 선전 이후 AI 데이터센터 규제 강화 우려가 고조되며 간밤 뉴욕증시 나스닥이 5% 넘게 급락, 그 여파가 국내 증시 전반을 강타했다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section">
+    <div class="section-header world">
+      <div class="section-icon world">🌍</div>
+      <h2 class="section-title world">국제 뉴스</h2>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <div class="news-number world">NO.1</div>
+        <div class="news-title">
+          <a href="https://globalnews.ca/world/" target="_blank" rel="noopener">
+            트럼프, 미국 중간선거 직전 이란 공격 감행
+          </a>
+        </div>
+        <p class="news-summary">도널드 트럼프 전 대통령이 미국 중간선거 개표 시작 직전 이란에 대한 공격을 명령한 것으로 알려졌다. 이란 본국으로의 추방도 역사적으로 매우 드문 사례라고 외신은 전했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number world">NO.2</div>
+        <div class="news-title">
+          <a href="https://abcnews.com/international" target="_blank" rel="noopener">
+            러시아·우크라이나, 공습 교환 속 재건·안보 회담 재개
+          </a>
+        </div>
+        <p class="news-summary">양측이 공습을 주고받는 가운데서도 우크라이나 전후 재건 및 안보 협력 회담이 재개됐다. 올레슈키에서는 일시적인 휴전이 이루어지기도 했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number world">NO.3</div>
+        <div class="news-title">
+          <a href="https://abcnews.com/international" target="_blank" rel="noopener">
+            프랑스, 전국 집회·총파업에 경찰 7만 명 배치
+          </a>
+        </div>
+        <p class="news-summary">프랑스 전역에서 대규모 집회 및 총파업이 예고된 가운데 당국은 7만 명의 경찰을 배치해 치안 유지에 나섰다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number world">NO.4</div>
+        <div class="news-title">
+          <a href="https://abcnews.com/international" target="_blank" rel="noopener">
+            콩고서 에볼라 치료 중인 영국인 남성, 영국으로 긴급 후송
+          </a>
+        </div>
+        <p class="news-summary">콩고민주공화국에서 에볼라 바이러스 치료를 받던 영국 남성이 영국으로 긴급 후송됐다. 보건 당국은 감염 경로 추적에 착수했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number world">NO.5</div>
+        <div class="news-title">
+          <a href="https://abcnews.com/international" target="_blank" rel="noopener">
+            러시아 선장, 발틱 해저 케이블 손상 혐의로 핀란드 법원 유죄 판결
+          </a>
+        </div>
+        <p class="news-summary">핀란드 법원이 발틱해 해저 케이블을 의도적으로 훼손한 혐의로 러시아 선박 선장과 승무원에게 유죄를 선고했다. 이는 발틱해 인프라 보안에 대한 경각심을 높이는 사건이다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number world">NO.6</div>
+        <div class="news-title">
+          <a href="https://www.nbcnews.com/world" target="_blank" rel="noopener">
+            미국, 연말까지 이스라엘 지원 40억 달러 종료 선언
+          </a>
+        </div>
+        <p class="news-summary">트럼프 행정부는 올해 말까지 이스라엘에 대한 약 40억 달러 규모의 지원을 종료하겠다고 밝혔다. 이스라엘 측은 즉각 반발 입장을 표명했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number world">NO.7</div>
+        <div class="news-title">
+          <a href="https://globalnews.ca/world/" target="_blank" rel="noopener">
+            유럽 항공 혼란…코펜하겐·더블린 등 12개 이상 편 폭탄 위협
+          </a>
+        </div>
+        <p class="news-summary">코펜하겐, 더블린, 헬싱키, 마드리드, 밀라노, 바르샤바 등 12개 이상 도시발 항공편이 폭탄 위협을 받았다. 유럽 항공 당국이 긴급 대응에 나서며 항공 혼란이 가중됐다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section">
+    <div class="section-header tech">
+      <div class="section-icon tech">💻</div>
+      <h2 class="section-title tech">IT / 기술 뉴스</h2>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <div class="news-number tech">NO.1</div>
+        <div class="news-title">
+          <a href="https://techcrunch.com/" target="_blank" rel="noopener">
+            Discord, Electron 버리고 Rust로 앱 전면 재구축…RAM 사용량 대폭 감소
+          </a>
+        </div>
+        <p class="news-summary">Discord가 데스크톱·모바일 앱을 Electron 기반에서 Rust로 완전히 재구축하고 있다. 이 전환으로 메모리 사용량이 크게 줄었다고 회사 측은 밝혔다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number tech">NO.2</div>
+        <div class="news-title">
+          <a href="https://www.theregister.com/" target="_blank" rel="noopener">
+            OpenAI AI 파이프라인, 30시간 만에 Linux 보안 취약점 948개 발견
+          </a>
+        </div>
+        <p class="news-summary">OpenAI의 AI 사이버 보안 파이프라인이 30시간 동안 약 120만 달러의 API 비용을 사용해 Linux 루트 권한 탈취 취약점 948개를 발굴했다고 보고됐다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number tech">NO.3</div>
+        <div class="news-title">
+          <a href="https://techcrunch.com/" target="_blank" rel="noopener">
+            Google, Firebase Studio 종료…Antigravity·Google AI Studio로 개발자 흡수
+          </a>
+        </div>
+        <p class="news-summary">구글이 Firebase Studio를 종료하고 Antigravity와 Google AI Studio로 대체한다. 구글은 개발자들도 이 도구로 전환하길 권장하고 있다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number tech">NO.4</div>
+        <div class="news-title">
+          <a href="https://www.theregister.com/" target="_blank" rel="noopener">
+            Anthropic, Claude Dispatch 원격 명령 실행 보안 취약점 수정 거부
+          </a>
+        </div>
+        <p class="news-summary">Anthropic이 기업 경계를 넘어 원격 명령 실행을 허용할 수 있는 Claude Dispatch의 보안 취약점 수정을 거부했다고 더 레지스터가 보도했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number tech">NO.5</div>
+        <div class="news-title">
+          <a href="https://www.engadget.com/" target="_blank" rel="noopener">
+            Apple, MacBook Neo 2 2027년 초 출시 계획 보도
+          </a>
+        </div>
+        <p class="news-summary">애플이 MacBook Neo 2를 2027년 초 출시할 계획이라는 보도가 나왔다. 차세대 칩과 디자인 개선이 포함될 것으로 업계에서는 전망하고 있다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number tech">NO.6</div>
+        <div class="news-title">
+          <a href="https://techcrunch.com/" target="_blank" rel="noopener">
+            미 중간선거 이후 AI 데이터센터 규제 갈등 본격화 예고
+          </a>
+        </div>
+        <p class="news-summary">민주당의 중간선거 선전 이후 AI 데이터센터 건립 및 운영에 대한 규제 논쟁이 본격화될 것이라고 TechCrunch가 분석했다. 이는 AI 산업 전반에 중대한 영향을 미칠 전망이다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section">
+    <div class="section-header economy">
+      <div class="section-icon economy">📈</div>
+      <h2 class="section-title economy">경제 / 금융 뉴스</h2>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <div class="news-number economy">NO.1</div>
+        <div class="news-title">
+          <a href="https://thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-06-2026" target="_blank" rel="noopener">
+            나스닥 5.5% 폭락·S&amp;P500 4.36% 하락…AI 패닉 셀오프
+          </a>
+        </div>
+        <p class="news-summary">AI 데이터센터 규제 우려로 미국 증시가 급락했다. 나스닥은 5.5% 하락해 10월 고점 대비 12%를 넘어서며 조정 국면에 진입했고, S&P500에서 약 3조 달러가 증발했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number economy">NO.2</div>
+        <div class="news-title">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008833920" target="_blank" rel="noopener">
+            한국 코스피 긴급 서킷브레이커 발동…대만·일본도 급락
+          </a>
+        </div>
+        <p class="news-summary">아시아 증시가 일제히 급락하며 한국 코스피에 긴급 서킷브레이커가 발동됐다. 대만 재무부는 국책은행에 시장 지지를 지시했고, 일본 닛케이는 6% 폭락했다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number economy">NO.3</div>
+        <div class="news-title">
+          <a href="https://www.tickmill.com/blog/daily-market-outlook-november-6-2026" target="_blank" rel="noopener">
+            일본 닛케이, 2025년 4월 이후 최대 낙폭 6% 폭락
+          </a>
+        </div>
+        <p class="news-summary">일본 닛케이 225 지수가 하루 만에 6%가량 폭락했다. 이는 2025년 4월 이후 가장 큰 하루 낙폭으로, 글로벌 AI 주식 패닉이 아시아 전역으로 확산된 여파다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number economy">NO.4</div>
+        <div class="news-title">
+          <a href="https://money.usnews.com/investing/news/articles/2026-11-06/as-tech-swoon-roils-market-us-inflation-data-on-tap" target="_blank" rel="noopener">
+            비트코인 $75,500(▼6.4%), 금 $4,045(▼1.1%)…안전자산도 혼조
+          </a>
+        </div>
+        <p class="news-summary">가상자산 비트코인은 6.4% 하락해 75,500달러 수준을 기록했다. 금은 1.1% 내린 4,045달러로 거래됐으며, 채권·달러 등 전통 안전자산으로 자금이 쏠렸다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number economy">NO.5</div>
+        <div class="news-title">
+          <a href="https://www.tickmill.com/blog/daily-market-outlook-november-6-2026" target="_blank" rel="noopener">
+            브렌트유 $99.8(▲1.6%)…유조선 공격·미-이란 불확실성에 상승
+          </a>
+        </div>
+        <p class="news-summary">브렌트유가 1.6% 오른 배럴당 99.8달러를 기록했다. 유조선 공격과 미국-이란 간 긴장 고조가 에너지 공급 불안을 자극하며 유가를 끌어올렸다.</p>
+      </div>
+
+      <div class="news-card">
+        <div class="news-number economy">NO.6</div>
+        <div class="news-title">
+          <a href="https://money.usnews.com/investing/news/articles/2026-11-06/as-tech-swoon-roils-market-us-inflation-data-on-tap" target="_blank" rel="noopener">
+            미국 10월 CPI·고용보고서 오늘 발표…시장 변동성 확대 주목
+          </a>
+        </div>
+        <p class="news-summary">미국 연방정부가 오늘 10월 소비자물가지수(CPI)와 고용보고서를 발표한다. 고용은 전월 +29K에서 +65K로 반등이 예상되며, 실업률은 4.2%로 전망된다. AI 패닉 속 인플레이션 데이터가 시장 방향을 좌우할 변수다.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-text">
+    생성 시각: <span>2026-11-06 22:11:26 KST</span> &nbsp;|&nbsp;
+    자동 뉴스 수집 시스템 &nbsp;|&nbsp;
+    각 기사 링크를 클릭하면 원문을 확인할 수 있습니다.
+  </p>
+</footer>
+
+</body>
+</html>
