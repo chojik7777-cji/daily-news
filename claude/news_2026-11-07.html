@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-11-07</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --accent2: #533483;
+      --accent3: #0f9b8e;
+      --accent4: #e8a838;
+      --text: #e0e0e0;
+      --text-muted: #a0a0b0;
+      --text-dim: #707090;
+      --border: #2a2a4a;
+      --link: #64b5f6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 60%, #1a1a2e 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 2rem 1rem 1.5rem;
+      text-align: center;
+    }
+
+    header .date-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+
+    header h1 span {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-icon {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .domestic .section-icon  { background: var(--accent); }
+    .world    .section-icon  { background: var(--accent3); }
+    .tech     .section-icon  { background: var(--accent2); }
+    .economy  .section-icon  { background: var(--accent4); }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .domestic  .section-title { color: var(--accent); }
+    .world     .section-title { color: var(--accent3); }
+    .tech      .section-title { color: #a78bfa; }
+    .economy   .section-title { color: var(--accent4); }
+
+    .news-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .news-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      transition: background 0.15s;
+    }
+
+    .domestic .news-item  { border-left-color: var(--accent); }
+    .world    .news-item  { border-left-color: var(--accent3); }
+    .tech     .news-item  { border-left-color: #a78bfa; }
+    .economy  .news-item  { border-left-color: var(--accent4); }
+
+    .news-item:hover { background: var(--card); }
+
+    .news-item a {
+      color: var(--link);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .news-item a:hover { text-decoration: underline; }
+
+    .news-summary {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 1.5rem 1rem 1.2rem; }
+      main { margin: 1rem auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-label">2026년 11월 7일 토요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section domestic">
+    <div class="section-header">
+      <div class="section-icon"></div>
+      <h2 class="section-title">🇰🇷 국내 뉴스</h2>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008834859" target="_blank">
+          입동 맞아 서울 올가을 첫 영하권 기온 기록
+        </a>
+        <p class="news-summary">입동인 오늘 강원 철원 영하 6도, 서울 영하 1도까지 떨어지며 올가을 가장 추운 날씨를 기록했다. 전국 각지에 한파 주의보가 발령됐다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://news.daum.net/politics" target="_blank">
+          여야, '조작기소 특검법' 처리 놓고 정면 충돌
+        </a>
+        <p class="news-summary">더불어민주당은 국민의힘 필리버스터를 표결로 종결한 뒤 오늘 조작기소 특검법을 처리하기로 했다. 국민의힘은 내일 경복궁역 인근에서 대규모 장외집회를 예고했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://news.daum.net/politics" target="_blank">
+          법무장관 후보자 깜짝 지명…여야 반응 엇갈려
+        </a>
+        <p class="news-summary">대통령실이 예상 밖의 인물을 법무장관 후보자로 지명하면서 여야 반응이 엇갈렸다. 야당은 즉각 반발하며 인사청문회에서 강도 높은 검증을 예고했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.hankyung.com/economy" target="_blank">
+          코스피, 나스닥 급락 여파로 장중 5,000선 붕괴
+        </a>
+        <p class="news-summary">전날 뉴욕 나스닥이 데이터센터 규제 우려로 5% 넘게 폭락하면서 코스피도 장 초반 8% 이상 급락, 5,000선이 붕괴됐다. 외국인·기관 동반 매도세가 쏟아졌다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008833920" target="_blank">
+          서울 마곡동 아파트 온수관 파열…8,965세대 난방 중단
+        </a>
+        <p class="news-summary">서울 마곡동 한 아파트 단지 지하 온수 공급관이 파열되며 8,965세대의 난방이 전면 중단됐다. 한국지역난방공사는 긴급 복구팀을 투입해 작업 중이다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008834859" target="_blank">
+          한국시리즈, 삼성 2연승…KT 1승 2패로 궁지
+        </a>
+        <p class="news-summary">프로야구 한국시리즈에서 삼성 라이온즈가 KT 위즈를 연속으로 꺾고 2연승을 기록했다. 1차전 패배를 딛고 반전에 성공한 삼성이 시리즈 주도권을 잡았다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section world">
+    <div class="section-header">
+      <div class="section-icon"></div>
+      <h2 class="section-title">🌍 국제 뉴스</h2>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a href="https://www.nbcnews.com/world" target="_blank">
+          러시아·우크라이나 상호 항공 공격…미국 특사 "협상 진전"
+        </a>
+        <p class="news-summary">러시아와 우크라이나가 대규모 드론·미사일 공격을 주고받는 가운데, 미국 특사는 협상이 생산적으로 진행되고 있다고 평가했다. 젤렌스키 대통령은 전후 안보 보장을 거듭 촉구했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">
+          유럽 항공기 연속 폭탄 위협…여러 편 긴급 착륙·수색
+        </a>
+        <p class="news-summary">유럽 주요 도시를 오가는 항공기들에 잇따라 폭탄 위협이 접수되면서 최소 세 개 편이 긴급 착륙했다. 각국 보안당국이 위협의 배후를 조사 중이다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">
+          남아공 집권 ANC, 지방선거서 대폭 지지율 하락
+        </a>
+        <p class="news-summary">남아프리카공화국 집권 아프리카민족회의(ANC)가 지방선거 초기 개표 결과 급격한 지지율 하락을 보이고 있다. 경제 침체와 전력난이 주요 원인으로 꼽힌다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.nbcnews.com/world" target="_blank">
+          교황 레오, 수술 3주 만에 중남미 순방 시작
+        </a>
+        <p class="news-summary">교황 레오가 수술 약 3주 만에 중남미 공식 순방을 시작했다. 이번 순방은 복음화와 사회적 불평등 문제에 집중될 예정이다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.nbcnews.com/world" target="_blank">
+          호날두, 국제대회 공식 은퇴 선언
+        </a>
+        <p class="news-summary">축구 슈퍼스타 크리스티아누 호날두가 국제대회 은퇴를 공식 선언했다. 이로써 포르투갈 역사상 최다 득점자의 대표팀 시대가 공식 막을 내렸다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.nbcnews.com/world" target="_blank">
+          케냐 종말론 교단 지도자, 징역 200년 선고
+        </a>
+        <p class="news-summary">케냐 법원이 수백 명의 신도를 굶겨 사망케 한 종말론 교단 지도자에게 징역 200년을 선고했다. 이 사건은 케냐 역사상 최악의 집단 종교 범죄 중 하나로 기록됐다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section tech">
+    <div class="section-header">
+      <div class="section-icon"></div>
+      <h2 class="section-title">💻 IT / 기술 뉴스</h2>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">
+          미 중간선거 후 AI 주식 급락…엔비디아·퀄컴 직격
+        </a>
+        <p class="news-summary">미국 중간선거 결과 여파로 나스닥이 급락하면서 AI 관련주가 직격탄을 맞았다. 엔비디아와 퀄컴이 큰 폭으로 하락하며 나스닥이 2025년 4월 이후 최악의 하루를 기록했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">
+          OpenAI, 데이터센터 정책 제안서 공개…자원 소비 논란 대응
+        </a>
+        <p class="news-summary">유권자들의 데이터센터 자원 소비 반발이 거세지자 OpenAI가 새로운 데이터센터 정책 제안서를 발표했다. 에너지 효율과 지역 사회 협력 방안이 담겼다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.cnbc.com/technology/" target="_blank">
+          민주당 의회 장악…암호화폐 업계 규제 강화 우려
+        </a>
+        <p class="news-summary">미국 민주당이 중간선거에서 의회를 장악하면서 암호화폐 업계가 규제 강화를 우려하고 있다. 의회 내 친(親)암호화폐 세력이 약화될 것이라는 전망이 나온다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.itpro.com/news" target="_blank">
+          바이낸스, 사상 최대 규모 해킹 피해 확인
+        </a>
+        <p class="news-summary">세계 최대 암호화폐 거래소 바이낸스가 사상 최대 규모의 해킹 피해를 입었다고 ITPro가 보도했다. 거래소 측은 피해 복구와 보안 강화에 나서고 있다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.itpro.com/news" target="_blank">
+          "클라우드 제공업체 전환, 수주~수개월 소요"…기업 이탈 장벽 여전
+        </a>
+        <p class="news-summary">대부분의 기업이 클라우드 제공업체를 쉽게 바꾸지 못한다는 조사 결과가 나왔다. 데이터 마이그레이션에 수주에서 수개월이 걸려 사실상 공급업체 종속이 심각한 것으로 나타났다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.theregister.com/" target="_blank">
+          유럽, 미국 빅테크 의존 탈피 가속…네덜란드 정부 온프레미스 전환
+        </a>
+        <p class="news-summary">유럽 각국 정부가 미국 기술 기업 의존도를 줄이기 위한 디지털 주권 정책을 강화하고 있다. 네덜란드 정부는 주요 시스템을 온프레미스 소프트웨어로 전환하기로 했다.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section economy">
+    <div class="section-header">
+      <div class="section-icon"></div>
+      <h2 class="section-title">📈 경제 / 금융 뉴스</h2>
+    </div>
+    <div class="news-list">
+
+      <div class="news-item">
+        <a href="https://finimize.com/content/your-daily-brief-for-november-7th-2026" target="_blank">
+          나스닥 100, 주간 3.4% 하락…10월 고점 대비 15% 조정
+        </a>
+        <p class="news-summary">나스닥 100은 목요일 4~6% 급락 후 금요일 1.1% 반등했으나 주간 기준 3.4% 하락을 기록했다. 10월 고점 대비 15% 하락하며 조정 국면에 진입했다는 평가가 나온다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.riotimesonline.com/global-economy-briefing-november-7-2026/" target="_blank">
+          미국 10월 고용 165,000건 추가…달러·국채금리 동반 상승
+        </a>
+        <p class="news-summary">미국 노동부가 발표한 10월 고용 지표에서 165,000개의 일자리가 추가됐다. 예상치를 웃돈 결과에 달러 인덱스가 102.3으로 오르고 10년물 국채금리는 4.867%까지 상승했다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://eurasiabusinessnews.com/2026/11/07/stock-market-today-ai-stocks-rebound-after-brutal-nasdaq-selloff/" target="_blank">
+          AI 주식 금요일 반등…S&amp;P 500 0.3%↑, 다우 0.5%↓
+        </a>
+        <p class="news-summary">전날 폭락했던 AI 관련주가 금요일 소폭 반등했다. S&P 500은 0.3% 상승, 나스닥은 1.1% 반등했으나 다우존스는 0.5% 하락하며 엇갈린 흐름을 보였다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://hervecuviliez.substack.com/p/market-news-saturday-7-november-2026" target="_blank">
+          일본 닛케이, 미국 쇼크 여파로 6% 급락
+        </a>
+        <p class="news-summary">미국발 기술주 충격이 아시아로 번지며 일본 닛케이 225 지수가 금요일 6% 급락했다. 대만·홍콩 증시도 동반 하락하며 아시아 금융 시장이 출렁였다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://www.marketalleys.com/post/marketalleys-daily-brief-2026-11-07" target="_blank">
+          브라질 중앙은행, 5연속 금리인하 후 동결 결정
+        </a>
+        <p class="news-summary">브라질 중앙은행이 다섯 차례 연속 금리인하 후 처음으로 금리를 동결했다. 만장일치로 결정된 이번 동결은 인플레이션 재점화 우려가 반영된 것으로 분석된다.</p>
+      </div>
+
+      <div class="news-item">
+        <a href="https://seekingalpha.com/article/4964576-the-1-minute-market-report-november-7-2026" target="_blank">
+          AI 메가 펀딩 라운드, 1.25조 달러 가치로 110억 달러 모금 중
+        </a>
+        <p class="news-summary">AI 대형 기업이 기업가치 1.25조 달러로 110억 달러의 자금 조달을 진행 중이다. 목표였던 1.4조 달러 가치에서 하향 조정됐지만 여전히 사상 최대 규모 중 하나다.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  생성 시각: 2026-11-07 (KST) &nbsp;|&nbsp; 자동 수집 뉴스 요약 &nbsp;|&nbsp; 각 항목의 링크를 클릭하면 원문 기사를 확인할 수 있습니다
+</footer>
+
+</body>
+</html>
