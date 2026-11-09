@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-11-09</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card-bg: #16213e;
+      --accent: #0f3460;
+      --accent2: #533483;
+      --text: #e0e0e0;
+      --text-sub: #b0b0c0;
+      --link: #7ec8e3;
+      --link-hover: #a9d8e8;
+      --border: #2a2a4a;
+      --tag-domestic: #e94560;
+      --tag-world: #0f7ea5;
+      --tag-tech: #533483;
+      --tag-economy: #1a7a4a;
+      --header-gradient: linear-gradient(135deg, #0f3460, #533483);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--header-gradient);
+      padding: 2.5rem 1rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent2);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    header .date-label {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header.domestic { background: linear-gradient(90deg, rgba(233,69,96,0.2), transparent); }
+    .section-header.world    { background: linear-gradient(90deg, rgba(15,126,165,0.2), transparent); }
+    .section-header.tech     { background: linear-gradient(90deg, rgba(83,52,131,0.2), transparent); }
+    .section-header.economy  { background: linear-gradient(90deg, rgba(26,122,74,0.2), transparent); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #fff;
+    }
+    .tag.domestic { background: var(--tag-domestic); }
+    .tag.world    { background: var(--tag-world); }
+    .tag.tech     { background: var(--tag-tech); }
+    .tag.economy  { background: var(--tag-economy); }
+
+    .section-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .news-list { padding: 0.5rem 0; }
+
+    .news-item {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .news-item:last-child { border-bottom: none; }
+
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+
+    .news-title a {
+      color: var(--link);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: color 0.15s;
+    }
+
+    .news-title a:hover { color: var(--link-hover); text-decoration: underline; }
+
+    .news-summary {
+      margin-top: 0.35rem;
+      font-size: 0.875rem;
+      color: var(--text-sub);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--text-sub);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .section-header { padding: 0.75rem 1rem; }
+      .news-item { padding: 0.85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="date-label">2026년 11월 09일 월요일</p>
+  <h1>오늘의 주요 뉴스</h1>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section">
+    <div class="section-header domestic">
+      <span class="tag domestic">국내</span>
+      <h2>국내 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008837116" target="_blank">법무부 장관 후보자 공소 취소 논란</a></div>
+        <div class="news-summary">이용철 후보자는 이재명 대통령 형사사건의 공소 취소 가능성에 대해 "오로지 진상 규명에 집중하는 것이 맞고, 나머지 일은 법과 원칙에 따라 하는 것이 바람직하다"는 입장을 밝혔습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.daum.net/" target="_blank">여야 충돌 격화 — '조작기소특검법' 쟁점</a></div>
+        <div class="news-summary">국민의힘은 이재명 대통령 탄핵 가능성까지 거론하며 공세 수위를 높였고, 민주당은 특검법을 왜곡해 탄핵을 선동하고 있다고 비난했습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.24news.kr/news/articleView.html?idxno=312479" target="_blank">청해부대 75명 추가 파병 추진 — 호르무즈 대비</a></div>
+        <div class="news-summary">정부가 청해부대 75명 추가 파병을 추진한다는 보도가 나왔습니다. 호르무즈 해협 군사작전 대비를 위한 조치로, 정치권 내 논란이 이어지고 있습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.daum.net/" target="_blank">민주당 신천지 의혹, 김민석 의원 사과에도 파장 지속</a></div>
+        <div class="news-summary">김민석 의원이 사과했음에도 민주당 신천지 연루 의혹이 가라앉지 않고 있으며, 박선원 조사보고 무산 사태가 겹쳐 당 내부에 긴장감이 감돌고 있습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.24news.kr/news/articleView.html?idxno=312479" target="_blank">육사 충청 32사단 인근 이전 검토 — 3군 사관학교 존치 가닥</a></div>
+        <div class="news-summary">국방부가 육군사관학교를 충청 지역 32사단 인근으로 이전하는 방안을 검토 중이며, 3군 사관학교는 현 위치에 존치하는 방향으로 가닥이 잡혔습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.daum.net/" target="_blank">선관위 특검, 투표지 계수기 담합 정황 포착 — 업체 압수수색</a></div>
+        <div class="news-summary">선거관리위원회를 대상으로 한 특검이 투표지 계수기 납품 과정의 담합 정황을 포착하고 관련 업체에 대해 압수수색을 진행했습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.24news.kr/news/articleView.html?idxno=312479" target="_blank">대전 스토킹 살인범 권종필 신상 공개</a></div>
+        <div class="news-summary">대전경찰청은 스토킹 피해 신고를 한 전 연인을 살해한 43세 권종필의 신상정보를 공개했습니다. 경찰은 재발 방지와 국민 알권리 보장 차원에서 공개를 결정했습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008837116" target="_blank">엔비디아 젠슨황, 중국 첩자 의심 여성과 불륜 시인 — 미 의회 조사 예고</a></div>
+        <div class="news-summary">엔비디아 CEO 젠슨황이 미국 정보기관이 중국 스파이로 의심하는 여성 기업인과의 불륜 관계를 시인한 것으로 알려졌습니다. 미 의회는 초당적 조사를 예고했습니다.</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section">
+    <div class="section-header world">
+      <span class="tag world">국제</span>
+      <h2>국제 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <div class="news-title"><a href="https://abcnews.com/international" target="_blank">폴란드 크라쿠프 총기 난사 — 사망 6명, 테러 가능성 조사</a></div>
+        <div class="news-summary">폴란드 크라쿠프에서 총기 난사 사건이 발생해 최소 6명이 숨졌습니다. 당국은 테러 행위로 의심하고 조사 중이며, 용의자 자택에서 가족으로 추정되는 시신 3구가 추가로 발견됐습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://abcnews.com/international" target="_blank">이스라엘, 헤르조그 대통령 에이젠코트에게 연립정부 구성 기회 부여</a></div>
+        <div class="news-summary">이스라엘 헤르조그 대통령이 가디 에이젠코트에게 연립정부 구성 기회를 첫 번째로 부여했습니다. 에이젠코트는 28일 이내에 연립 구성을 완료해야 합니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.stuff.co.nz/world-news" target="_blank">일본 중부 강진 — 최소 22명 부상</a></div>
+        <div class="news-summary">일본 중부 지역에 강진이 발생해 최소 22명이 부상을 입었습니다. 현지 당국은 추가 여진에 대비해 주민 대피령을 발령하고 피해 규모를 파악 중입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://abcnews.com/international" target="_blank">대만, 중국 선거 개입 의혹 공산당 지도자 구금</a></div>
+        <div class="news-summary">대만 당국이 중국의 자금 지원을 받아 선거에 개입한 혐의로 현지 공산당 지도자를 구금했습니다. 대만-중국 간 긴장이 고조되는 가운데 나온 조치입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.euronews.com/tag/world-news" target="_blank">COP31 기후회의 개막 — 국제사회 탄소 감축 목표 논의</a></div>
+        <div class="news-summary">제31차 유엔기후변화협약 당사국총회(COP31)가 개막했습니다. 각국 대표단은 2030년 탄소 감축 목표와 개발도상국 기후기금 지원 방안을 집중 논의할 예정입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://abcnews.com/international" target="_blank">러시아, 우크라이나 남부 구조대 공격 — 민간인 피해</a></div>
+        <div class="news-summary">러시아가 우크라이나 남부의 미사일 피격 현장에서 구조 활동 중인 긴급 대응팀을 추가 공격했습니다. 국제사회는 전쟁 범죄라며 강력히 규탄하고 있습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://abcnews.com/international" target="_blank">예멘, 수도 인근 공습으로 25명 사망</a></div>
+        <div class="news-summary">후티 측 관리에 따르면 예멘 수도 사나 인근에서 발생한 공습으로 최소 25명이 사망했습니다. 중동 지역의 불안이 계속되는 가운데 인도적 위기도 심화되고 있습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.euronews.com/tag/world-news" target="_blank">유럽 항공기 허위 폭탄 위협 사태 — 각국 정부 비상 대비 촉구</a></div>
+        <div class="news-summary">유럽 전역의 항공편을 대상으로 허위 폭탄 위협이 잇달아 발생했습니다. 여러 유럽 정부는 가정용 비상 물자를 비축하도록 국민에게 촉구하며 경계 태세를 강화했습니다.</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section">
+    <div class="section-header tech">
+      <span class="tag tech">IT/기술</span>
+      <h2>IT · 기술 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <div class="news-title"><a href="https://techcrunch.com/category/artificial-intelligence" target="_blank">엔비디아 젠슨황 CEO, 중국 스파이 의혹 불거진 여성과 관계 시인</a></div>
+        <div class="news-summary">뉴욕타임스 보도 이후 독립적인 조사가 진행 중입니다. 예일대 제프리 소넨펠드 교수는 젠슨황의 CEO직 유지 가능성을 "50대 50"으로 평가했습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.theinformation.com/" target="_blank">앤트로픽, 다음 주 IPO 로드쇼 진행 예정</a></div>
+        <div class="news-summary">AI 스타트업 앤트로픽이 AI 관련 기술주 변동성 속에서도 IPO 로드쇼를 강행할 계획인 것으로 알려졌습니다. 시장의 높은 관심이 집중되고 있습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.bloomberg.com/ai" target="_blank">앤트로픽, AI 데이터센터 전력 공급 34억 달러 계약 체결</a></div>
+        <div class="news-summary">블룸버그에 따르면 앤트로픽이 AI 데이터센터 전력 공급을 위한 약 34억 달러 규모의 계약을 체결했습니다. 급증하는 AI 연산 수요에 대응하기 위한 대규모 인프라 투자입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://techcrunch.com/" target="_blank">아마존, 데이터센터 부지 협상 시 NDA 폐지</a></div>
+        <div class="news-summary">아마존이 지방 정부와의 데이터센터 부지 협상 과정에서 비밀유지협약(NDA) 사용을 중단하기로 했습니다. 마이크로소프트가 먼저 유사 조치를 취한 뒤 뒤따른 결정입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.theinformation.com/" target="_blank">마이크로소프트, 50억 달러 규모 데이터센터 투자 지연</a></div>
+        <div class="news-summary">마이크로소프트가 50억 달러 규모의 데이터센터 투자 계획을 연기했습니다. 뉴욕부터 샌프란시스코까지 수백 건의 모라토리엄이 제정되며 지역 사회 반발이 거세지고 있습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://techcrunch.com/" target="_blank">팔로알토 네트웍스, AI 에이전트 보안 스타트업 Clutch 5억 달러에 인수 협상</a></div>
+        <div class="news-summary">사이버보안 기업 팔로알토 네트웍스가 AI 에이전트 보안 스타트업 Clutch를 약 5억 달러에 인수하는 협상을 진행 중입니다. AI 보안 시장을 선점하려는 전략의 일환입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.bloomberg.com/ai" target="_blank">2026 세계 AI 컨퍼런스 상하이 개막</a></div>
+        <div class="news-summary">2026년 세계 인공지능 컨퍼런스(WAIC)가 상하이에서 개막했습니다. 글로벌 AI 기업과 연구기관들이 대거 참가해 최신 기술 동향과 거버넌스 의제를 논의합니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://www.bloomberg.com/ai" target="_blank">도이치텔레콤, 엔비디아 최신 칩 도입해 독일 AI 인프라 확충</a></div>
+        <div class="news-summary">도이치텔레콤이 엔비디아의 최신 AI 가속기를 도입하여 독일 내 AI 인프라를 대폭 강화한다고 발표했습니다. 유럽 AI 주권 확보를 위한 투자 경쟁이 가속화되고 있습니다.</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section">
+    <div class="section-header economy">
+      <span class="tag economy">경제/금융</span>
+      <h2>경제 · 금융 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008837868" target="_blank">코스피 0.8% 하락 — 외국인 연속 매도에 반등 무산</a></div>
+        <div class="news-summary">지난주에 이어 오늘도 외국인 투자자들이 국내 주식을 대거 매도하며 코스피가 0.8% 하락했습니다. 미국 중간선거 충격 이후 반등에 성공한 일본·대만 증시와 대조적인 흐름입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008837868" target="_blank">코스피 장중 5000선 아래 붕괴 — 9개월 만의 최저치</a></div>
+        <div class="news-summary">코스피가 장중 약 6% 급락하며 9개월 만에 5000포인트 아래로 내려갔습니다. 글로벌 불확실성이 커진 가운데 대형주를 중심으로 매물이 쏟아졌습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008837868" target="_blank">국민연금 등 연기금, 2870억 원 순매수</a></div>
+        <div class="news-summary">국민연금을 포함한 연기금이 지난 6일 2870억 원어치를 순매수했습니다. 지수 하단을 지지하는 역할을 했으나, 외국인 매도세를 막기에는 역부족이었다는 평가입니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://kr.investing.com/news/stock-market-news" target="_blank">씨티, 미국 주식 비중 하향 · 유럽 상향 조정</a></div>
+        <div class="news-summary">씨티 전략가들이 AI 관련 변동성을 이유로 미국 주식 비중을 낮추고 유럽 주식을 상향 조정했습니다. 고평가 우려가 커지는 미국 기술주에서 자금이 이동할 가능성이 주목받고 있습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://kr.investing.com/news" target="_blank">미국 중간선거 충격 여파 — 아시아 증시 희비 엇갈려</a></div>
+        <div class="news-summary">지난주 미국 중간선거 결과 충격으로 급락했던 일본과 대만 증시가 오늘 반등에 성공했습니다. 반면 한국 증시는 추가적인 외국인 이탈로 약세를 면치 못했습니다.</div>
+      </li>
+      <li class="news-item">
+        <div class="news-title"><a href="https://kr.investing.com/news/stock-market-news" target="_blank">환율 불안 · 원화 약세 지속</a></div>
+        <div class="news-summary">외국인 주식 매도와 맞물려 원화 가치도 하락세를 이어갔습니다. 달러 대비 원화 환율이 고점을 지속하며 수입 물가 상승 우려가 커지고 있습니다.</div>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>생성 시각: 2026-11-09 22:08 KST &nbsp;|&nbsp; 자동 수집 뉴스 요약 (News Bot)</p>
+</footer>
+
+</body>
+</html>
