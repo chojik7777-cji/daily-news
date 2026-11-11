@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-11-11</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card-bg: #16213e;
+      --accent: #0f3460;
+      --border: #0f3460;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0b0;
+      --text-muted: #707090;
+      --domestic: #e94560;
+      --world: #533483;
+      --tech: #05948a;
+      --economy: #e8871e;
+      --link: #64b5f6;
+      --link-hover: #90caf9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+      padding: 2rem 1rem 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid var(--border);
+    }
+    header .date-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.25rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    header .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+    .section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .domestic .section-icon { background: rgba(233,69,96,0.2); color: var(--domestic); }
+    .world .section-icon { background: rgba(83,52,131,0.3); color: #9d78e8; }
+    .tech .section-icon { background: rgba(5,148,138,0.2); color: var(--tech); }
+    .economy .section-icon { background: rgba(232,135,30,0.2); color: var(--economy); }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .domestic .section-title { color: var(--domestic); }
+    .world .section-title { color: #9d78e8; }
+    .tech .section-title { color: var(--tech); }
+    .economy .section-title { color: var(--economy); }
+    .news-list { padding: 0.5rem 0; }
+    .news-item {
+      padding: 0.85rem 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+    .news-item a {
+      display: block;
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      line-height: 1.4;
+    }
+    .news-item a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+    .news-item .summary {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+    @media (max-width: 600px) {
+      main { margin: 1rem auto; gap: 1rem; }
+      .section-header { padding: 0.85rem 1rem; }
+      .news-item { padding: 0.75rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-badge">2026년 11월 11일 수요일</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p class="subtitle">국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section domestic">
+    <div class="section-header">
+      <div class="section-icon">🇰🇷</div>
+      <h2 class="section-title">국내 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://news.daum.net/" target="_blank">성남 분당 시내버스 32대 연쇄 추돌… 57명 부상</a>
+        <p class="summary">성남 분당에서 시내버스가 32대 차량을 연쇄 추돌해 57명이 다쳤다. 운전자는 브레이크 고장을 주장하고 있으며, 경찰이 정확한 사고 원인을 조사 중이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/" target="_blank">서울 성범죄 피해자 살해 50대 남성 긴급체포</a>
+        <p class="summary">새벽 서울에서 성범죄 피해자를 살해한 50대 남성이 경찰에 긴급체포됐다. 경찰은 범행 동기와 경위를 수사 중이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://supple.kr/news/cmwbuz9wqbtp0al9pq05f1emo" target="_blank">주사형 비만치료제 해외 직구 허용… 12일부터 3개월분 반입 가능</a>
+        <p class="summary">식약처와 관세청이 마운자로 등 주사형 비만치료제의 해외 자가치료용 직구를 허용하기로 했다. 11월 12일부터 최대 3개월분까지 국내 반입이 가능해진다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/" target="_blank">한덕수 전 총리 구속 기간 만료… 대법원 심리 19일 예정</a>
+        <p class="summary">한덕수 전 국무총리의 구속 기간 만료를 앞두고 대법원이 오는 19일 심리를 열기로 했다. 국민의힘은 청와대 앞 집회를 이틀 연속 이어가고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/" target="_blank">홈플러스 노조, 체불임금 해결·전기 공급 재개 요구… 공적자금 투입 촉구</a>
+        <p class="summary">홈플러스 노조가 체불임금 문제와 일부 점포 전기 공급 차단 사태에 대응해 정부에 공적자금 투입을 요청했다. 임금 체불 해결과 정상 운영 재개를 촉구했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/" target="_blank">프로야구 한국시리즈, 삼성 3승으로 우세</a>
+        <p class="summary">프로야구 한국시리즈에서 삼성 라이온즈가 3승을 먼저 기록하며 우승에 한 발 다가섰다. 팬들의 관심이 집중되고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section world">
+    <div class="section-header">
+      <div class="section-icon">🌍</div>
+      <h2 class="section-title">국제 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">미국 중재 러시아-우크라이나 평화협상, 아부다비서 재개</a>
+        <p class="summary">미국 중재로 러시아-우크라이나 평화협상이 아부다비에서 재개됐다. 트럼프 대통령은 "전쟁이 곧 끝날 수 있다"고 언급하며 협상 진전에 대한 기대감을 나타냈다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">미군, 이란 위협 대응… 항공기·공중급유기 독일로 이동</a>
+        <p class="summary">미국이 이란의 위협에 대응해 영국 주둔 군용 항공기와 공중급유기를 독일로 이동하기 시작했다. 이란의 육상 수출을 제한하는 태스크포스도 구성 중이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">미얀마 군부, 반군 주요 저항 거점 점령… 군사 충돌 격화</a>
+        <p class="summary">미얀마 군부가 저항 세력의 핵심 본부와 거점을 장악했다고 국영 언론이 보도했다. 미얀마 내전이 새로운 국면을 맞으며 국제사회의 우려가 높아지고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">보츠와나, 드 비어스 지분 30%로 확대 추진</a>
+        <p class="summary">보츠와나 정부가 세계 최대 다이아몬드 기업 드 비어스의 지분을 30%로 늘리는 협상을 진행 중이다. 천연자원에 대한 국가 통제권 강화 움직임의 일환이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">영국 배우 러셀 브랜드, 강간·성폭행 혐의로 10년 6개월 선고</a>
+        <p class="summary">영국 법원이 코미디언 겸 배우 러셀 브랜드에게 강간 및 성폭행 혐의로 10년 6개월의 징역형을 선고했다. 오랜 법적 공방 끝에 내려진 판결이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">캄보디아 스쿨버스 추락·불가리아 고속도로 연쇄 충돌 인명 피해</a>
+        <p class="summary">캄보디아에서 스쿨버스가 연못에 추락해 여학생 5명이 사망했다. 불가리아에서도 안개 속 고속도로 연쇄 추돌로 최소 12명이 숨지는 사고가 발생했다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section tech">
+    <div class="section-header">
+      <div class="section-icon">💻</div>
+      <h2 class="section-title">IT / 기술 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" target="_blank">AMD, Zen 6 기반 Epyc Venice 서버 칩 아키텍처 발표</a>
+        <p class="summary">AMD가 차세대 Zen 6 아키텍처를 탑재한 Epyc Venice 서버용 프로세서를 발표했다. 3년 만에 복귀하는 Epyc X 시리즈로, 데이터센터 시장 경쟁이 한층 치열해질 전망이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" target="_blank">스페이스X, Starlink Mini 2 소형 위성 안테나 출시</a>
+        <p class="summary">스페이스X가 휴대성을 대폭 개선한 Starlink Mini 2 접시형 안테나를 출시했다. 이전 모델보다 작고 가벼워 이동 중이나 험지에서의 인터넷 연결에 최적화됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" target="_blank">Google·Adobe, Google Drive 내 앱 통합 협력 발표</a>
+        <p class="summary">Google과 Adobe가 협력해 Google Drive에 Adobe 앱을 통합한다고 발표했다. Gemini AI가 함께 적용되어 클라우드 기반 문서 편집 및 디자인 작업이 더욱 편리해질 예정이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.theregister.com/" target="_blank">프랑스, 슈퍼마켓 해킹 사태 배후로 이란 지목</a>
+        <p class="summary">프랑스 당국이 최근 발생한 대형 슈퍼마켓 체인 해킹 사태의 배후로 이란을 지목했다. 주요 소매 유통망 마비로 큰 혼란이 초래됐으며 사이버 보안 강화 논의가 활발해지고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" target="_blank">Seagate FireCuda Forge 하이브리드 드라이브 출시</a>
+        <p class="summary">Seagate가 SSD와 HDD의 장점을 결합한 FireCuda Forge 하이브리드 드라이브를 공개했다. 고용량과 빠른 속도를 동시에 원하는 게이머·크리에이터를 겨냥한 제품이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" target="_blank">Google Gemini, 최신 업데이트로 멀티모달 기능 대폭 강화</a>
+        <p class="summary">Google이 Gemini AI 모델의 최신 업데이트를 배포했다. 이미지·음성·텍스트를 동시에 처리하는 멀티모달 성능이 향상되어 다양한 Google 서비스와 더욱 긴밀하게 통합된다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section economy">
+    <div class="section-header">
+      <div class="section-icon">📈</div>
+      <h2 class="section-title">경제 / 금융 뉴스</h2>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-144434892.html" target="_blank">미국 10월 CPI 0.4% 상승… 예상치 웃돌며 금리 인상 우려 고조</a>
+        <p class="summary">미국 10월 소비자물가지수(CPI)가 전월 대비 0.4% 상승해 시장 예상치(0.3%)를 초과했다. 근원 CPI도 0.3%로 예상(0.2%)을 넘어, 12월 연준 추가 금리 인상 가능성이 높아졌다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://cnbc.com/2026/11/10/stock-market-today-live-updates.html" target="_blank">S&P 500 약 1% 하락… 50bp 금리 인상 베팅 급증</a>
+        <p class="summary">예상을 웃도는 인플레이션 지표 발표 직후 S&P 500이 장중 약 1% 하락했다. 연준이 12월에 50bp를 인상할 것이라는 베팅이 전날 0%에서 15%로 급등했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html" target="_blank">반도체 주가 하락… 시가총액 5조 달러 증발 위기</a>
+        <p class="summary">엔비디아 주가 급락을 비롯해 반도체 섹터 전반이 흔들리며 관련 기업들의 시가총액이 5조 달러 가까이 감소한 것으로 나타났다. 금리 인상 우려가 성장주에 직격탄을 날렸다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-144434892.html" target="_blank">CoreWeave, 3분기 실적 예상 상회… 주가 13% 급등</a>
+        <p class="summary">클라우드 AI 인프라 기업 CoreWeave가 3분기 매출에서 애널리스트 예상을 크게 웃도는 실적을 발표했다. 발표 직후 주가가 13% 이상 급등하며 시장의 주목을 받았다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html" target="_blank">아시아 증시, 뉴욕 하락 여파로 약세 출발 예상</a>
+        <p class="summary">전날 뉴욕 증시 하락에 따른 여파로 아시아 증시가 약세로 출발할 것으로 전망됐다. 인플레이션 재점화 우려가 글로벌 증시 전반에 하방 압력을 가하고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-144434892.html" target="_blank">Anthropic, IPO 로드쇼 돌입… 대형 AI 기업 첫 상장 주목</a>
+        <p class="summary">AI 스타트업 Anthropic이 기업공개(IPO) 로드쇼를 시작하고 업데이트된 증권신고서를 제출했다. 주요 AI 기업의 첫 상장 사례로 투자자들의 큰 관심을 끌고 있다.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>생성 시각: 2026-11-11 22:08 KST &nbsp;|&nbsp; 자동 수집 뉴스 요약본입니다. 원문 링크를 통해 상세 내용을 확인하세요.</p>
+</footer>
+
+</body>
+</html>
