@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-11-12 오늘의 주요 뉴스</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card-bg: #16213e;
+      --accent: #0f3460;
+      --border: #0f3460;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0b0;
+      --text-title: #ffffff;
+      --tag-domestic: #e94560;
+      --tag-world: #533483;
+      --tag-tech: #0f9b8e;
+      --tag-economy: #e8871e;
+      --link: #58a6ff;
+      --link-hover: #79c0ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid var(--border);
+    }
+    header .date-badge {
+      display: inline-block;
+      background: var(--tag-domestic);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: var(--text-title);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    header p.subtitle {
+      color: var(--text-secondary);
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 60px;
+      display: grid;
+      gap: 28px;
+    }
+    .section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .section-icon.domestic  { background: rgba(233,69,96,0.2);  color: var(--tag-domestic); }
+    .section-icon.world     { background: rgba(83,52,131,0.3);  color: #a07fdc; }
+    .section-icon.tech      { background: rgba(15,155,142,0.2); color: var(--tag-tech); }
+    .section-icon.economy   { background: rgba(232,135,30,0.2); color: var(--tag-economy); }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-title);
+    }
+    .section-count {
+      margin-left: auto;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      background: rgba(255,255,255,0.05);
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+    .news-list { padding: 8px 0; }
+    .news-item {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: rgba(255,255,255,0.03); }
+    .news-item a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.97rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .news-item a:hover { color: var(--link-hover); text-decoration: underline; }
+    .news-summary {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      line-height: 1.55;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+    }
+    footer strong { color: var(--text-primary); }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .news-item { padding: 12px 14px; }
+      main { padding: 20px 10px 48px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="date-badge">2026년 11월 12일 목요일</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p class="subtitle">국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-icon domestic">🇰🇷</div>
+      <span class="section-title">국내 뉴스</span>
+      <span class="section-count">7건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://news.daum.net/" target="_blank">코스피 5342.73으로 하락 마감… 외국인 매물에 코스닥도 700선 붕괴</a>
+        <p class="news-summary">한국거래소에 따르면 코스피는 전 거래일 대비 32.63포인트(0.61%) 내린 5342.73에 장을 마감했다. 코스닥도 외국인 매도세에 700선 아래로 밀렸으며, 반도체 대형주 위주로 차익실현 매물이 집중됐다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://imnews.imbc.com/" target="_blank">이재명 대통령, 충청권 메가프로젝트 착공 현장 방문</a>
+        <p class="news-summary">이재명 대통령이 충청권 광역교통망 등 메가프로젝트 착공식에 참석해 균형 발전 의지를 강조했다. 여야는 대형 국책사업 추진 방식을 두고 국회에서 공방을 벌였다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/" target="_blank">한덕수 전 총리 석방 가능성… 여야 공방 가열</a>
+        <p class="news-summary">한덕수 전 국무총리의 구속 적부 심사 결과를 앞두고 여야 간 정치적 갈등이 고조됐다. 야당은 사법 처리의 정당성을 주장하고, 여당 측은 과도한 정치적 수사라고 반박했다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/" target="_blank">인천 송도 어린이집 방화·자해 60대 남성 긴급 체포</a>
+        <p class="news-summary">60대 남성이 인천 송도 소재 어린이집에 불을 지르고 현장에서 자해를 시도해 경찰에 긴급 체포됐다. 소방당국이 신속히 출동해 큰 인명 피해는 발생하지 않았으나 건물 일부가 소손됐다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/" target="_blank">성북구 10대 살해 사건 수사 본격화… 경찰 용의자 추적</a>
+        <p class="news-summary">서울 성북구에서 발생한 10대 사망 사건과 관련해 경찰이 용의자 특정 작업에 돌입했다. 주변 CCTV 분석과 목격자 진술 확보가 이뤄지고 있으며 사건 경위가 조사 중이다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/" target="_blank">한국 야구 대표팀, APBC 첫 경기 호주에 역전패</a>
+        <p class="news-summary">아시아-태평양 야구선수권(APBC) 첫 경기에서 한국 대표팀이 호주에 역전패를 당하며 출발이 삐걱거렸다. 선발 투수가 초반 집중 견제를 받으며 실점했고, 타선도 적시타 부재로 반격에 실패했다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/" target="_blank">해외 처방 비만치료제 개인 반입 허용… 오남용 우려 확산</a>
+        <p class="news-summary">식품의약품안전처가 해외에서 처방받은 비만치료제의 개인 반입을 제한적으로 허용하면서, 의료계와 약학계에서 무분별한 사용에 따른 부작용 우려를 제기하고 있다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-icon world">🌍</div>
+      <span class="section-title">국제 뉴스</span>
+      <span class="section-count">7건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://abcnews.go.com/international" target="_blank">러시아-우크라이나 평화 협상 종료… 포로 교환 합의 가능성 주목</a>
+        <p class="news-summary">양국 간 협상이 주요 현안에서 돌파구 없이 종료됐으나, 일부 채널을 통해 포로 맞교환 합의에 도달했다는 소식이 전해졌다. 국제사회는 협상 재개 여부를 주시하고 있다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://abcnews.go.com/international" target="_blank">독일, 훈련용 중국산 드론 사용 전면 중단 결정</a>
+        <p class="news-summary">독일 국방부가 군사 훈련에 사용하던 중국산 드론을 모두 퇴출하기로 했다. 사이버 보안 취약점과 데이터 유출 가능성을 이유로 들었으며, 유럽 내 국방 공급망 재편 논의에 가속이 붙을 것으로 보인다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://abcnews.go.com/international" target="_blank">스페인, 조기선거 앞두고 전국적 주거난 항의 시위</a>
+        <p class="news-summary">집값·임대료 급등에 항의하는 대규모 시위가 마드리드, 바르셀로나 등 스페인 주요 도시에서 동시에 열렸다. 주거난은 임박한 조기 총선의 최대 쟁점으로 부상했다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://abcnews.go.com/international" target="_blank">이탈리아 학교 300곳, 폭탄 협박 소동으로 일제 대피</a>
+        <p class="news-summary">이탈리아 전역 약 300개 학교에 폭발물 설치 협박 이메일이 동시에 발송돼 학생과 교직원이 긴급 대피했다. 경찰 수색 결과 실제 폭발물은 발견되지 않았으며 당국이 발신자 추적에 나섰다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://abcnews.go.com/international" target="_blank">브라질, 선거 기간 법원 명령 위반 Facebook에 130만 달러 벌금</a>
+        <p class="news-summary">브라질 고등선거법원이 2026년 총선 기간 중 가짜 뉴스 삭제 명령을 이행하지 않았다는 이유로 Meta(Facebook)에 약 130만 달러의 과태료를 부과했다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://abcnews.go.com/international" target="_blank">중국 베이징 지하 교회 목사, 당국에 체포</a>
+        <p class="news-summary">중국 당국이 베이징의 미등록 지하 교회 담임 목사를 체포한 것으로 알려졌다. 목사 아내가 SNS를 통해 체포 사실을 공개하며 국제 종교자유 단체들의 항의가 이어지고 있다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://abcnews.go.com/international" target="_blank">COP31, 터키 주도 제로 폐기물 결의 추진… 각국 이견 속 협상 중</a>
+        <p class="news-summary">아제르바이잔에서 열린 COP31에서 터키가 플라스틱·음식물 쓰레기를 획기적으로 줄이는 국제 제로 폐기물 계획을 제안했다. 선진국과 개발도상국 사이 비용 분담 방식을 놓고 협상이 계속되고 있다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-icon tech">💻</div>
+      <span class="section-title">IT / 기술 뉴스</span>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://investing.com/news/stock-market-news/why-is-intel-stock-rallying-today-93CH-5019493" target="_blank">인텔 주가 7.5% 급등… CoreWeave AI 호실적이 반도체 섹터 견인</a>
+        <p class="news-summary">AI 클라우드 기업 CoreWeave의 강력한 분기 실적 발표 후 AI 인프라 투자 기대감이 되살아나면서 인텔 주가가 7.5% 올랐다. 나스닥은 1.6%, S&P 500은 1.0% 상승하며 반도체 중심의 반등이 연출됐다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://tech.yahoo.com/" target="_blank">앤트로픽, 나스닥 상장 추진… 공모가 범위 70~78달러, 기업가치 1.4조 달러</a>
+        <p class="news-summary">AI 기업 앤트로픽이 오는 19일 나스닥 상장을 목표로 주당 70~78달러의 공모가 희망 범위를 제시했다. 상단 기준 기업가치는 약 1조 4000억 달러이며, 흑자 전환 시점은 2030년으로 예상된다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://tech.yahoo.com/" target="_blank">비트코인 코어, 채굴 관련 고위험 취약점 포함 3개 보안 패치 공개</a>
+        <p class="news-summary">비트코인 코어 개발팀이 채굴 소프트웨어에서 발견된 고위험 취약점을 포함해 총 3개 보안 패치를 발표했다. 노드 운영자 및 채굴 풀 관리자에게는 즉시 업데이트가 권고됐다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://tech.yahoo.com/" target="_blank">구글, AI 기능 비활성화 학교에 검색 접근 제한… 교육계 반발</a>
+        <p class="news-summary">구글이 AI 보조 기능을 차단한 학교 계정에 대해 일부 검색 기능 접근을 제한하는 정책을 도입할 예정이라고 밝혀 교육계의 강한 반발을 사고 있다. 디지털 교육의 AI 의존도 심화 우려도 함께 제기됐다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://tech.yahoo.com/" target="_blank">삼성전자, 반도체 중고 장비 한국나노기술원에 이전… 연구 역량 강화</a>
+        <p class="news-summary">삼성전자가 반도체 공정에 사용하던 중고 장비를 한국나노기술원(KANC)에 이전하기로 했다. 이번 조치로 국내 나노·반도체 연구 인프라가 대폭 강화될 것으로 기대된다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://tech.yahoo.com/" target="_blank">AI 인프라 투자 붐 지속… 데이터센터 전력 수요 급증 경고</a>
+        <p class="news-summary">전 세계적인 AI 모델 학습 및 추론 수요 급증으로 데이터센터 전력 소비가 가파르게 늘고 있다. 국제에너지기구(IEA)는 2027년까지 AI 데이터센터 전력 수요가 현재의 두 배를 넘을 수 있다고 경고했다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-icon economy">📈</div>
+      <span class="section-title">경제 / 금융 뉴스</span>
+      <span class="section-count">8건</span>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://www.hankyung.com/article/202611123237i" target="_blank">코스피, 기관 차익실현에 상승 탄력 둔화… 반도체주 약세</a>
+        <p class="news-summary">전날 5375.36으로 이틀 연속 상승했던 코스피가 12일 기관의 차익실현 매물로 상승 탄력이 꺾였다. 네이버 주가가 오전 중 급락하는 등 대형 IT주도 약세를 보였다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.hankyung.com/article/202611123237i" target="_blank">공정위, 국고채 담합 금융기관 15곳에 역대 최대 1.6조 과징금 부과</a>
+        <p class="news-summary">공정거래위원회가 국고채 입찰 과정에서 가격을 담합한 혐의를 받는 증권사·은행 15개 기관에 총 1조 6000억 원의 과징금을 부과하기로 결정했다. 역대 금융 담합 사건 최대 규모로, 해당 기관들은 행정 소송을 예고했다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.hankyung.com/article/202611123237i" target="_blank">11월 초순 수출, 반도체 호조로 전년 대비 2배 이상 급증</a>
+        <p class="news-summary">관세청이 발표한 11월 1~10일 수출액이 반도체 고단가 수혜로 작년 같은 기간 대비 두 배 이상 증가했다. 올해 연간 누적 수출액은 사상 첫 1조 달러 달성을 목전에 두고 있다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.hankyung.com/article/202611123237i" target="_blank">미국발 금리 상승 압력… 한국은행 추가 인하 여력 축소 우려</a>
+        <p class="news-summary">미국 연방준비제도의 고금리 장기화 가능성이 다시 거론되면서 한국은행의 기준금리 인하 여력이 줄어들 수 있다는 우려가 커지고 있다. 고용 회복이 더딘 취약계층의 금융 부담도 함께 커질 전망이다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.hankyung.com/article/202611123237i" target="_blank">지난달 은행 가계대출 5조 원 증가… 증가폭 전월보다 확대</a>
+        <p class="news-summary">한국은행이 발표한 금융기관 가중평균금리 통계에 따르면 지난달 국내 은행의 가계대출이 5조 원 증가했다. 주택담보대출 수요 지속과 전세 자금 대출 증가가 주된 요인으로 꼽힌다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.hankyung.com/article/202611123237i" target="_blank">금융당국, 프리랜서·건설 노동자 대안신용평가 체계 도입 추진</a>
+        <p class="news-summary">금융위원회와 고용노동부가 근로이력 데이터를 기반으로 프리랜서, 건설 현장 노동자, 플랫폼 종사자의 금융 접근성을 높이는 대안신용평가 체계 마련에 착수했다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.topstarnews.net/news/articleView.html?idxno=16274969" target="_blank">금 한 돈 시세 2.71% 하락… 순금 1g 17만 150원</a>
+        <p class="news-summary">한국거래소 발표 기준 순금 1g 종가가 전 거래일 대비 2.71% 떨어진 17만 150원을 기록했다. 달러 강세와 위험자산 선호 심리가 금값 약세를 견인했다는 분석이다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.hankyung.com/article/202611123237i" target="_blank">의무공개매수제도 도입 임박… 일반주주 보호 강화 목소리 고조</a>
+        <p class="news-summary">기업 인수·합병 시 소수 주주도 지배주주와 같은 조건으로 주식을 매도할 수 있는 의무공개매수제도 도입을 앞두고 주주 권익 보호 강화 방안에 대한 논의가 활발해지고 있다.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>오늘의 주요 뉴스</strong> &mdash; 2026년 11월 12일<br>
+  생성 시각: 2026-11-12 22:10:00 KST &nbsp;|&nbsp; 자동 수집·생성된 뉴스 요약입니다.
+</footer>
+</body>
+</html>
