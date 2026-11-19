@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-11-19</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --accent2: #533483;
+      --text: #eaeaea;
+      --text-muted: #a8a8b3;
+      --domestic: #4fc3f7;
+      --world: #a5d6a7;
+      --tech: #ce93d8;
+      --economy: #ffcc80;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.7;
+      padding: 0 0 60px;
+    }
+    header {
+      background: linear-gradient(135deg, #0f3460, #533483);
+      padding: 48px 24px 36px;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+    header .date {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+    header h1 span { color: var(--accent); }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 0;
+    }
+    .section {
+      margin-bottom: 48px;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card);
+    }
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .section.domestic .section-icon { background: rgba(79,195,247,0.2); }
+    .section.world .section-icon { background: rgba(165,214,167,0.2); }
+    .section.tech .section-icon { background: rgba(206,147,216,0.2); }
+    .section.economy .section-icon { background: rgba(255,204,128,0.2); }
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .section.domestic .section-title { color: var(--domestic); }
+    .section.world .section-title { color: var(--world); }
+    .section.tech .section-title { color: var(--tech); }
+    .section.economy .section-title { color: var(--economy); }
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .news-item {
+      background: var(--surface);
+      border: 1px solid #1e2a45;
+      border-radius: 10px;
+      padding: 18px 20px;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .news-item:hover {
+      transform: translateY(-2px);
+      border-color: var(--card);
+    }
+    .news-item a {
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .section.domestic .news-item a { color: var(--domestic); }
+    .section.world .news-item a { color: var(--world); }
+    .section.tech .news-item a { color: var(--tech); }
+    .section.economy .news-item a { color: var(--economy); }
+    .news-item a:hover { text-decoration: underline; }
+    .news-item .summary {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    footer {
+      text-align: center;
+      padding: 32px 20px 0;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      border-top: 1px solid #1e2a45;
+      margin-top: 20px;
+    }
+    footer .generated {
+      margin-top: 6px;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .news-item { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date">2026년 11월 19일 목요일</div>
+  <h1>오늘의 <span>주요 뉴스</span></h1>
+</header>
+
+<div class="container">
+
+  <!-- 국내 뉴스 -->
+  <section class="section domestic">
+    <div class="section-header">
+      <div class="section-icon">🇰🇷</div>
+      <h2 class="section-title">국내 뉴스</h2>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008853573" target="_blank">2027학년도 수능 시행 — 부정행위 적발 22건</a>
+        <p class="summary">교육부는 오늘 오전 전국 수능 고사장에 긴급 재난 문자를 일제히 발송해 반입 금지 스마트폰 22개를 적발했다고 밝혔습니다. 시험은 전국 1,247개 고사장에서 정상 진행 중입니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.ytn.co.kr/" target="_blank">리트 만점자 이진우 씨, AI 부정행위 공개 검증 불참 · 실종신고</a>
+        <p class="summary">법학적성시험(LEET) 만점으로 AI 부정행위 의혹을 받아온 이진우 씨가 오늘 예정된 공개 검증 방송에 나타나지 않았습니다. 경찰은 실종신고를 받고 소재 파악에 나섰습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://imnews.imbc.com/" target="_blank">대법원, 한덕수 전 총리 내란 혐의 사건 오후 선고</a>
+        <p class="summary">12·3 비상계엄의 내란 여부를 판단하는 첫 대법원 판결이 오늘 오후 4시 생중계됩니다. 한덕수 전 총리의 내란 중요임무종사 혐의에 대한 최종 선고로 주목받고 있습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.google.com/home?hl=ko&gl=KR&ceid=KR%3Ako" target="_blank">한중 정상회담 — FTA 서비스·투자 협상 실질 합의</a>
+        <p class="summary">한중 정상이 FTA 서비스·투자 후속 협상에 실질적으로 합의하면서 한한령(한류 콘텐츠 제한) 해제 가능성에 시장의 관심이 쏠리고 있습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/" target="_blank">삼성전자, 이르면 20일 정기 사장단 인사 단행 예정</a>
+        <p class="summary">삼성전자가 이르면 20일 정기 사장단 인사를 진행할 것으로 알려졌습니다. 반도체 사업 경쟁력 회복과 조직 쇄신에 초점을 맞출 것으로 전망됩니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/economy" target="_blank">코스피, 수능일 1시간 늦은 개장 — 장중 5000선 반납</a>
+        <p class="summary">수능일 특례로 코스피가 1시간 늦게 개장한 가운데 반도체주 약세 여파로 장중 5000선을 내줬습니다. 외국인 순매도와 원/달러 환율 하락이 맞물린 모습입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section world">
+    <div class="section-header">
+      <div class="section-icon">🌐</div>
+      <h2 class="section-title">국제 뉴스</h2>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://everythingbriefing.substack.com/p/house-elections-summits-and-history" target="_blank">사상 첫 미·중·러 정상회담, 중국 선전 개최</a>
+        <p class="summary">트럼프 대통령·시진핑 주석·푸틴 대통령이 중국 선전에서 사상 첫 3자 정상회담을 갖고 있습니다. 우크라이나 종전, 이란 핵, 핵군축이 주요 의제로 알려졌습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://openchronicle.org/2026/11/19/global-news-brief-key-developments-around-the-world-november-19-2026/" target="_blank">이란, 쿠웨이트·바레인 공습 — 미 해군 호위 재개</a>
+        <p class="summary">이란이 쿠웨이트와 바레인에 추가 공격을 가했으며, 미국이 대이란 봉쇄 속 유조선 운항을 재개하기 위해 해군 호위를 투입 중입니다. 사우디 리야드에서도 미사일 잔해 피해가 보고됐습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.10things.news/p/10-things-global-news-19th-november-cbc" target="_blank">우크라이나, 케르치 대교 3차 공습 — EU €450억 대출 제안</a>
+        <p class="summary">우크라이나군이 나흘 만에 세 번째 케르치 대교 공격을 감행했습니다. EU는 우크라이나 전후 복구를 지원하기 위해 450억 유로 규모의 차관 패키지를 제안했습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://zackeiseman.substack.com/p/icymi-on-november-19th-2026" target="_blank">ICJ, 미얀마 로힝야 학살 "집단살해 의도 있었다" 판결</a>
+        <p class="summary">국제사법재판소(ICJ)는 2017년 미얀마 군의 로힝야 학살에 집단살해 의도가 있었다고 판결했습니다. 국제사회의 추가 제재와 책임 추궁 논의가 본격화될 전망입니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.npr.org/sections/news/" target="_blank">덴마크 의회, 그린란드·미국 북극 안보 협정 비준</a>
+        <p class="summary">덴마크 의회가 미국 및 그린란드와 북극·북대서양 안보 강화 협정을 비준했습니다. 협정은 미군의 그린란드 주둔 확대와 공동 순찰을 포함합니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.usnews.com/news/world" target="_blank">에티오피아·에리트레아 국경 긴장 고조 — 전쟁 위기 경고</a>
+        <p class="summary">에티오피아와 에리트레아 양국이 국경 지대에 병력을 대규모 집결시키고 있어 국제사회가 무력 충돌 가능성에 우려를 표명하고 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section tech">
+    <div class="section-header">
+      <div class="section-icon">💻</div>
+      <h2 class="section-title">IT / 기술 뉴스</h2>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://aitoolsrecap.com/Blog/ai-news-november-19-2026" target="_blank">앤트로픽, 나스닥 상장 — 공모가 $83, 기업가치 약 1.5조 달러</a>
+        <p class="summary">AI 기업 앤트로픽이 오늘 나스닥(티커: ANT)에 상장했습니다. 공모가는 희망가(70~78달러)를 넘어선 83달러로 역대 최대 규모 IPO 중 하나로 기록됐습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-19-2026/" target="_blank">엔비디아, 대중 고급 AI 칩 수출 중단 — 이사회 "황젠슨 복귀 없다"</a>
+        <p class="summary">엔비디아가 미국 정부의 일부 허가에도 불구하고 대중국 고급 AI 칩 수출을 자체 중단했습니다. 이사회 의장은 황젠슨 전 CEO의 복귀 계획이 없다고 선을 그었습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://aienews.org/digest/2026-11-19/" target="_blank">구글, Gemini 4 Neon 출시 — Carbon 대비 3배 빠르고 60% 저렴</a>
+        <p class="summary">구글이 최신 AI 모델 Gemini 4 Neon을 공개했습니다. 전작 Carbon 대비 처리 속도 3배, 비용 60% 절감을 달성했다고 발표했으며, 미국·일본·한국 등 6개국에서 무료 제공됩니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://currentlogic.substack.com/p/the-morning-brief-november-19-2026" target="_blank">팔로알토, Applied Compute 45억 달러에 인수 — PANW 주가 급등</a>
+        <p class="summary">사이버보안 기업 팔로알토 네트웍스가 Applied Compute를 45억 달러에 인수한다고 발표했습니다. FY2027 1분기 매출도 전년 대비 39% 증가하며 주가가 급등했습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://samonai.substack.com/p/ai-brief-november-19-2026" target="_blank">씨티·PNC, AI 뱅킹 에이전트 위험 경고 — "고객 책임" 명시</a>
+        <p class="summary">씨티은행과 PNC가 AI 뱅킹 에이전트의 위험성을 공식 경고했습니다. 양사는 AI 에이전트가 수행한 거래에 대한 법적 책임이 고객에게 귀속됨을 약관에 명시했습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://github.com/diclogic/ai-daily-digest/issues/218" target="_blank">백악관, 사이버범죄 대응 '위협 차단 센터(TDC)' 출범</a>
+        <p class="summary">미 백악관이 주요 사이버위협에 대응하기 위한 위협 차단 센터(Threat Disruption Center)를 공식 출범시켰습니다. FBI·NSA·CISA 등 여러 기관이 공조하는 통합 조직으로 운영됩니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section economy">
+    <div class="section-header">
+      <div class="section-icon">📈</div>
+      <h2 class="section-title">경제 / 금융 뉴스</h2>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <a href="https://supple.kr/news/cmwn9fnxe66kvkwp8aga25x2w" target="_blank">앤트로픽 IPO 성적표 주목 — 역대 최대 규모 기술주 상장</a>
+        <p class="summary">앤트로픽이 나스닥 상장 첫날 $83 공모가로 출발해 시장의 이목을 끌고 있습니다. 상장 첫날 반짝 상승 후 하락 패턴이 반복되는 최근 IPO 흐름 속에서 지속 상승 여부가 관건입니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/economy" target="_blank">코스피 5000선 공방 — 반도체·하이닉스 급락</a>
+        <p class="summary">코스피가 수능일 특례 개장 후 장중 5000선을 내줬습니다. SK하이닉스가 7.89% 급락하는 등 반도체 주요 종목이 하락세를 주도했으며, 삼성전자도 20만 원선을 다시 내줬습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://kr.investing.com/news/economy" target="_blank">한국투자증권, 6500억 원 규모 주주배정 유상증자 결정</a>
+        <p class="summary">한국투자증권이 6,500억 원 규모의 주주배정 유상증자를 결의했습니다. 조달 자금은 자기자본 확충과 대출·투자 여력 강화에 사용될 예정입니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://supple.kr/news/cmwmycwml688k3msxgkr4fpg8" target="_blank">미국 30년물 국채 금리 5.35% 돌파 — 18년 만의 최고치</a>
+        <p class="summary">미국 30년 만기 국채 금리가 5.35%를 넘어 2008년 이후 최고 수준을 기록했습니다. 연준 인사들의 추가 금리 인상 가능성 발언이 채권 시장 압력을 높였습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.daum.net/worldeconomy" target="_blank">미·중·러 정상회담 여파 — 원·달러 환율 하락세</a>
+        <p class="summary">미·중·러 정상회담 개최 소식과 한중 FTA 협상 타결 기대감이 겹치며 원/달러 환율이 하락세를 보이고 있습니다. 수출업체들의 선제적 달러 매도세도 환율 하방 압력에 기여했습니다.</p>
+      </div>
+      <div class="news-item">
+        <a href="https://news.jkn.co.kr/" target="_blank">보스턴 연은 총재 "추가 금리 인상 필요할 수 있다" 발언</a>
+        <p class="summary">수전 콜린스 보스턴 연방준비은행 총재가 물가 목표치 달성을 위해 추가 금리 인상이 필요할 수 있다고 밝혔습니다. 시장에서는 12월 FOMC에서의 동결 여부에 촉각을 곤두세우고 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>수집 카테고리: 국내 · 국제 · IT/기술 · 경제/금융 &nbsp;|&nbsp; 각 항목 클릭 시 원문 페이지로 이동합니다.</p>
+  <p class="generated">생성 시각: 2026-11-19 22:06 KST &nbsp;|&nbsp; Powered by Claude News Bot</p>
+</footer>
+
+</body>
+</html>
