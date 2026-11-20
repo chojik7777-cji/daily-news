@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-11-20</title>
+  <style>
+    :root {
+      --bg-main: #1a1a2e;
+      --bg-card: #16213e;
+      --bg-section: #0f3460;
+      --accent-domestic: #e94560;
+      --accent-world: #533483;
+      --accent-tech: #0f7173;
+      --accent-economy: #e2a63e;
+      --text-primary: #eaeaea;
+      --text-secondary: #a8a8c0;
+      --text-link: #7ec8e3;
+      --text-link-hover: #b3e5fc;
+      --border: #2a2a4a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      border-bottom: 2px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header .date-label {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: 0.03em;
+    }
+
+    header .subtitle {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .section {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .section-header {
+      padding: 1.1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-header .icon {
+      font-size: 1.3rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .section-header .count {
+      margin-left: auto;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      background: rgba(255,255,255,0.05);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+    }
+
+    .section-domestic .section-header { background: rgba(233,69,96,0.18); border-left: 4px solid var(--accent-domestic); }
+    .section-world    .section-header { background: rgba(83,52,131,0.18); border-left: 4px solid var(--accent-world); }
+    .section-tech     .section-header { background: rgba(15,113,115,0.18); border-left: 4px solid var(--accent-tech); }
+    .section-economy  .section-header { background: rgba(226,166,62,0.18); border-left: 4px solid var(--accent-economy); }
+
+    .news-list {
+      list-style: none;
+      padding: 0.5rem 0;
+    }
+
+    .news-item {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-item:hover {
+      background: rgba(255,255,255,0.03);
+    }
+
+    .news-item a {
+      color: var(--text-link);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.3rem;
+      line-height: 1.5;
+      transition: color 0.15s;
+    }
+
+    .news-item a:hover {
+      color: var(--text-link-hover);
+      text-decoration: underline;
+    }
+
+    .news-item .summary {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 2.5rem;
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+    }
+
+    footer strong {
+      color: var(--text-primary);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .section-header h2 { font-size: 1rem; }
+      .news-item { padding: 0.85rem 1rem; }
+      .section-header { padding: 0.9rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="date-label">2026년 11월 20일 금요일</p>
+  <h1>오늘의 주요 뉴스</h1>
+  <p class="subtitle">국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section section-domestic">
+    <div class="section-header">
+      <span class="icon">🇰🇷</span>
+      <h2>국내 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://www.24news.kr/news/articleView.html?idxno=313441" target="_blank">이재명 대통령, AI 활용 수능 부정 대응… 국가시험 제도 전면 개편 지시</a>
+        <p class="summary">이재명 대통령이 AI·첨단 장비를 이용한 시험 부정행위에 대응하기 위해 국가시험 제도를 전면 개편하라고 지시했다. 교육부는 올해 수능 부정행위가 111건으로, 전날보다 13건 늘었다고 발표했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.hankookilbo.com/" target="_blank">대법원, 한덕수 전 총리 선고일 구속 만료 하루 전으로 확정</a>
+        <p class="summary">대법원이 한덕수 전 국무총리 사건의 선고 기일을 구속 만료 하루 전으로 지정해 법조계의 이목이 집중되고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://imnews.imbc.com/" target="_blank">민주당, 조희대 대법원장 탄핵 당론 확정… 연내 처리 추진</a>
+        <p class="summary">더불어민주당이 조희대 대법원장 탄핵을 당론으로 확정하고 연내 처리를 추진하기로 하면서 여야 간 정면충돌이 예고됐다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/economy" target="_blank">민주유공자법, 여당 주도로 국회 본회의 통과</a>
+        <p class="summary">민주유공자 예우에 관한 법률이 여당 주도로 국회 본회의를 통과했다. 야당은 절차상 문제를 제기하며 반발하고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://news.daum.net/economy" target="_blank">한·중 FTA 후속 협상 타결… 엔터·화장품주 이틀째 강세</a>
+        <p class="summary">한·중 FTA 서비스·투자 분야 후속 협상이 타결되면서 한한령 해제 기대감이 커졌다. 이에 엔터테인먼트주와 화장품주가 이틀 연속 강세를 보였다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://imnews.imbc.com/" target="_blank">서울 지하철 노조, 준법투쟁 돌입… 출근길 혼잡 예고</a>
+        <p class="summary">서울 지하철 노동조합이 20일 오전부터 인력 감축 철회·안전 인력 충원을 요구하며 준법투쟁에 돌입했다. 출근 시간대 운행 지연이 예상됐다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section-world">
+    <div class="section-header">
+      <span class="icon">🌐</span>
+      <h2>국제 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://english.dainikjagranmpcg.com/international/world-news-roundup-trump-putin-xi-peace-declaration-ukraine-security-demand-and/article-45235" target="_blank">트럼프·푸틴·시진핑, 중국 선전서 3자 회담 후 평화 선언 발표</a>
+        <p class="summary">트럼프 미국 대통령, 푸틴 러시아 대통령, 시진핑 중국 주석이 선전에서 90분간 3자 회담을 가진 뒤 공동 평화 선언을 발표했다. 우크라이나 종전 협상의 분수령이 될 전망이다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://english.dainikjagranmpcg.com/international/world-news-roundup-trump-putin-xi-peace-declaration-ukraine-security-demand-and/article-45235" target="_blank">젤렌스키, "국제 안보 보장 강화 필요"… 협상 조건 제시</a>
+        <p class="summary">볼로디미르 젤렌스키 우크라이나 대통령은 3자 평화 선언과 별개로 더 강력한 국제 안보 보장이 뒷받침돼야 한다고 주장하며 협상 조건을 밝혔다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">EU-영국 정상회담 개최… 브렉시트 이후 최대 협력 의제 논의</a>
+        <p class="summary">유럽연합(EU)과 영국이 브렉시트 이후 최대 규모의 정상회담을 열어 무역, 안보, 이민 등 주요 협력 의제를 논의했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">인도·일본, 대테러 협력 및 첨단 기술 공동 개발 협약 체결</a>
+        <p class="summary">인도와 일본이 대테러 협력 강화와 AI·반도체 등 첨단 기술 공동 개발을 위한 협약을 체결했다고 양국 정부가 발표했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://abcnews.com/international" target="_blank">사이클론 아크반, 인도 오디샤 강타… 철도 운행 중단·대규모 대피</a>
+        <p class="summary">강력한 사이클론 아크반이 인도 오디샤주를 강타해 철도 운행이 대규모 차질을 빚고 주민 수만 명이 대피했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.24news.kr/news/articleView.html?idxno=313441" target="_blank">한국, 10년 만에 첫 콜레라 확진 사례 확인</a>
+        <p class="summary">질병관리청은 2016년 이후 약 10년 만에 국내 첫 콜레라 확진 사례를 확인했다고 발표했다. 역학 조사가 진행 중이다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section-tech">
+    <div class="section-header">
+      <span class="icon">💻</span>
+      <h2>IT / 기술 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://aiweekly.co/" target="_blank">Anthropic, 나스닥 상장 첫날 1,000억 달러 이상 조달… 역대 최대 IPO</a>
+        <p class="summary">AI 스타트업 Anthropic이 11월 19일 나스닥에 상장해 1,000억 달러 이상을 조달하며 역대 최대 규모의 IPO 중 하나로 기록됐다. 그러나 다음날 AI 버블 우려로 주가는 6% 하락했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/ai-artificial-intelligence/" target="_blank">AI 버블 우려에 엔비디아·AMD도 동반 하락… 아시아 기술주 약세</a>
+        <p class="summary">Anthropic 상장 이후 AI 버블 우려가 확산되면서 엔비디아와 AMD도 하락세를 보였다. 아시아 기술주 역시 동반 약세를 나타냈다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday" target="_blank">유럽 집행위, AI 지원 사이버 공격으로 서비스 중단 확인</a>
+        <p class="summary">유럽연합 집행위원회가 AI를 활용한 사이버 공격으로 서비스가 중단됐음을 공식 확인했다. 미국 국가정보국장(DNI)도 AI로 발견된 PHP 취약점과 연관된 NSA 해킹 사례를 발표했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://theconversation.com/ai-helps-uncover-critical-flaw-in-ubiquitous-internet-software-296930" target="_blank">AI가 Oracle JVM Base64 라이브러리 치명적 취약점 발견… CISA 경보</a>
+        <p class="summary">AI 도구를 활용한 연구에서 Oracle 자바 가상머신(JVM) Base64 디코딩 라이브러리의 치명적 취약점이 발견됐다. 미국 CISA는 즉시 보안 경보를 발령했다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://www.cnbc.com/ai-artificial-intelligence/" target="_blank">미 상무부, 중국 기업에 AI 칩 87만9천 개 판매 승인</a>
+        <p class="summary">미국 상무부가 중국 기업들에 대해 AI 반도체 87만9천 개 이상의 판매를 승인했다는 사실이 의회에서 공개됐다. 대중 반도체 규제 정책의 실효성에 의문이 제기되고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://aiweekly.co/" target="_blank">美 연준 설문: AI, 가장 많이 언급된 금융 리스크… 87%로 역대 최고</a>
+        <p class="summary">미국 연방준비제도(Fed) 설문에서 AI를 최대 위험 요소로 꼽은 응답이 87%에 달해 역대 최고치를 기록했다. 지난해 50%에서 급증한 수치다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section-economy">
+    <div class="section-header">
+      <span class="icon">📈</span>
+      <h2>경제 / 금융 뉴스</h2>
+      <span class="count">6건</span>
+    </div>
+    <ul class="news-list">
+      <li class="news-item">
+        <a href="https://seoul.co.kr/news/economy/2026/11/20/20261120500275" target="_blank">코스피 5.21% 폭락 마감… 4,869.96, 10개월 만에 최저</a>
+        <p class="summary">20일 코스피는 전일 대비 267.93포인트(5.21%) 급락한 4,869.96으로 마감했다. 이는 10개월 만의 최저치로, 미국 AI 관련주 약세와 대중국 반도체 규제 우려가 주요 원인으로 꼽힌다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news/article-93CH-2185000" target="_blank">코스닥 5.71% 급락… 매도 사이드카 발동</a>
+        <p class="summary">코스닥 지수도 5.71% 급락하며 매도 사이드카가 발동됐다. 반도체·IT 중심의 외국인·기관 동반 순매도세가 하락을 이끌었다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news/article-93CH-2185000" target="_blank">삼성전자 -7.01%·SK하이닉스 -5.92%… 반도체株 직격탄</a>
+        <p class="summary">삼성전자와 SK하이닉스가 각각 7.01%, 5.92% 급락하며 반도체 업종이 시장 하락을 주도했다. 미국의 대중 반도체 수출 규제 강화 우려가 투자 심리를 위축시켰다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news/article-93CH-2184998" target="_blank">외국인, 10월 국내 주식 약 26조 원 순매도… 두 달 연속</a>
+        <p class="summary">외국인 투자자들이 10월 국내 주식을 약 26조 원어치 순매도하면서 두 달 연속 순매도를 기록했다. 고환율과 글로벌 긴축 기조가 외국인 이탈을 가속화하고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news/article-93CH-2184998" target="_blank">나스닥 1.3%·S&amp;P 500 0.5% 하락… 기술주 중심 약세</a>
+        <p class="summary">미국 증시도 기술주 중심의 약세를 보이며 나스닥 1.3%, S&amp;P 500 0.5% 하락했다. AI 버블 우려와 고금리 장기화 가능성이 투자 심리에 부담을 주고 있다.</p>
+      </li>
+      <li class="news-item">
+        <a href="https://kr.investing.com/news/stock-market-news/article-93CH-2184999" target="_blank">인튜이트 개장 전 10.5% 급락… Credit Karma 성장 전망 하향</a>
+        <p class="summary">인튜이트(Intuit)가 실적 전망치를 웃돌았음에도 불구하고 Credit Karma의 성장률 전망을 낮추면서 개장 전 거래에서 10.5% 급락했다.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>생성 시각: <strong>2026-11-20 22:06:28 KST</strong></p>
+  <p style="margin-top:0.4rem;">자동 수집 뉴스 — 각 뉴스는 원문 출처로 연결됩니다.</p>
+</footer>
+
+</body>
+</html>
