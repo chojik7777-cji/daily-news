@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 주요 뉴스 - 2026-11-22</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --card: #0f3460;
+      --accent: #e94560;
+      --accent2: #533483;
+      --text: #eaeaea;
+      --muted: #a0aec0;
+      --domestic: #4fc3f7;
+      --world: #81c784;
+      --tech: #ffb74d;
+      --economy: #ce93d8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Noto Sans KR', Arial, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f3460 0%, #533483 50%, #e94560 100%);
+      padding: 40px 20px 32px;
+      text-align: center;
+    }
+
+    header .date-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 0.85rem;
+      color: #fff;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    header h1 {
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.75);
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--card);
+    }
+
+    .section-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .section-count {
+      margin-left: auto;
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: var(--surface);
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+
+    .news-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    @media (min-width: 700px) {
+      .news-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 1000px) {
+      .news-grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    .news-card {
+      background: var(--surface);
+      border: 1px solid var(--card);
+      border-radius: 12px;
+      padding: 18px;
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .news-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .news-card a:hover .card-title {
+      text-decoration: underline;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .card-summary {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* Section accent colors */
+    .section-domestic .section-icon { background: rgba(79,195,247,0.2); }
+    .section-domestic .section-title { color: var(--domestic); }
+    .section-domestic .news-card { border-left: 3px solid var(--domestic); }
+    .section-domestic .card-tag { background: rgba(79,195,247,0.15); color: var(--domestic); }
+    .section-domestic .news-card:hover { border-color: var(--domestic); }
+
+    .section-world .section-icon { background: rgba(129,199,132,0.2); }
+    .section-world .section-title { color: var(--world); }
+    .section-world .news-card { border-left: 3px solid var(--world); }
+    .section-world .card-tag { background: rgba(129,199,132,0.15); color: var(--world); }
+    .section-world .news-card:hover { border-color: var(--world); }
+
+    .section-tech .section-icon { background: rgba(255,183,77,0.2); }
+    .section-tech .section-title { color: var(--tech); }
+    .section-tech .news-card { border-left: 3px solid var(--tech); }
+    .section-tech .card-tag { background: rgba(255,183,77,0.15); color: var(--tech); }
+    .section-tech .news-card:hover { border-color: var(--tech); }
+
+    .section-economy .section-icon { background: rgba(206,147,216,0.2); }
+    .section-economy .section-title { color: var(--economy); }
+    .section-economy .news-card { border-left: 3px solid var(--economy); }
+    .section-economy .card-tag { background: rgba(206,147,216,0.15); color: var(--economy); }
+    .section-economy .news-card:hover { border-color: var(--economy); }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--card);
+      text-align: center;
+      padding: 24px 16px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    footer strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="date-badge">2026년 11월 22일 일요일</div>
+  <h1>오늘의 주요 뉴스</h1>
+  <p>국내 · 국제 · IT/기술 · 경제/금융</p>
+</header>
+
+<main>
+
+  <!-- 국내 뉴스 -->
+  <section class="section section-domestic">
+    <div class="section-header">
+      <div class="section-icon">🇰🇷</div>
+      <span class="section-title">국내 뉴스</span>
+      <span class="section-count">5건</span>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <a href="https://trendk.kr/trend/news" target="_blank" rel="noopener">
+          <span class="card-tag">교육</span>
+          <div class="card-title">수능 부정행위 신고 포상금 건당 최소 1억 원 추진</div>
+          <div class="card-summary">이재명 대통령이 수능 부정행위 신고 포상금을 건당 최소 1억 원으로 하고 부정행위자 수만큼 가산하겠다고 밝혔다. 한덕수 총리는 시험장 와이파이·블루투스 신호 분석 방안을 제시했으며, 수험생단체는 방지책의 실효성에 의문을 제기하며 교육부 장관 사퇴를 촉구했다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://news.daum.net/economy" target="_blank" rel="noopener">
+          <span class="card-tag">교통</span>
+          <div class="card-title">경부선 열차 탈선 — 내일 첫차부터 정상 운행 재개</div>
+          <div class="card-summary">탈선으로 운행이 중단됐던 경부선 일반열차가 다음 날(23일) 첫차부터 정상 운행을 재개한다고 발표됐다. 한겨레에 따르면 복구 작업이 밤새 진행됐다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://trendk.kr/trend/news" target="_blank" rel="noopener">
+          <span class="card-tag">날씨</span>
+          <div class="card-title">주말 영하권 강추위 — 낮에도 겨울 바람</div>
+          <div class="card-summary">연합뉴스는 이번 주말 전국에 영하권 강추위가 찾아온다는 기상청 예보를 전했다. 낮에도 차가운 겨울 바람이 이어질 것으로 보여 외출 시 방한 준비가 필요하다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://trendk.kr/trend/news" target="_blank" rel="noopener">
+          <span class="card-tag">사회</span>
+          <div class="card-title">숨진 리트 만점자 마지막 행적 — AI 부정행위 의혹도</div>
+          <div class="card-summary">리트 만점자가 사망한 사건과 관련해 "탈출하게 도와달라"는 마지막 행적이 보도되고 있다. AI를 활용한 부정행위 의혹도 함께 불거져 사건의 전모에 관심이 모이고 있다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://trendk.kr/trend/news" target="_blank" rel="noopener">
+          <span class="card-tag">경제</span>
+          <div class="card-title">한국 수출 78년 만에 1조 달러 돌파</div>
+          <div class="card-summary">한국이 건국 이래 78년 만에 처음으로 연간 수출 1조 달러를 넘어서는 금자탑을 세웠다. 반도체·자동차·석유화학 등 주력 수출 품목의 호조가 이어진 결과로 풀이된다.</div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 국제 뉴스 -->
+  <section class="section section-world">
+    <div class="section-header">
+      <div class="section-icon">🌍</div>
+      <span class="section-title">국제 뉴스</span>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <a href="https://aa.com.tr/en/anadolu-post/morning-briefing-nov-22-2026/4133301" target="_blank" rel="noopener">
+          <span class="card-tag">우크라이나</span>
+          <div class="card-title">러시아 드론, 키이우 지역 건물 강타 — 14명 실종</div>
+          <div class="card-summary">러시아 드론이 키이우 지역 건물을 직격해 최소 14명이 실종됐다고 젤렌스키 대통령이 밝혔다. 로이터는 겨울이 다가오면서 키이우를 비롯한 도시에서 창문 교체 업체가 부족하다는 현장 소식도 전했다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://aa.com.tr/en/anadolu-post/morning-briefing-nov-22-2026/4133301" target="_blank" rel="noopener">
+          <span class="card-tag">발트해</span>
+          <div class="card-title">러시아 화물선, 핀란드 근해서 계속 불타</div>
+          <div class="card-summary">러시아 화물선 한 척이 공격을 받아 핀란드 근해에서 화재 중이다. 로이터에 따르면 선박은 여전히 불타고 있으며 발트해 항로에 긴장이 고조되고 있다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://aa.com.tr/en/anadolu-post/morning-briefing-nov-22-2026/4133301" target="_blank" rel="noopener">
+          <span class="card-tag">중동</span>
+          <div class="card-title">트럼프, 이란과 영구 합의 추진 의사 밝혀</div>
+          <div class="card-summary">도널드 트럼프 미국 대통령이 이란과 영구적인 합의를 이끌어낼 의향이 있다고 선언했다. 한편 이란 혁명수비대는 바레인에 있는 미국 패트리어트 레이더 2기를 파괴했다고 주장했으며, 바레인은 위협 경보 수위를 높였다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://aa.com.tr/en/anadolu-post/morning-briefing-nov-22-2026/4133301" target="_blank" rel="noopener">
+          <span class="card-tag">레바논</span>
+          <div class="card-title">UNIFIL, 남부 레바논 진지를 레바논군에 인계 시작</div>
+          <div class="card-summary">유엔 평화유지군(UNIFIL)이 임무 종료를 앞두고 남부 레바논 주요 진지를 레바논 정규군에 넘기기 시작했다. 이는 역내 군사 재편에 중요한 전환점이 될 것으로 보인다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://aa.com.tr/en/anadolu-post/morning-briefing-nov-22-2026/4133301" target="_blank" rel="noopener">
+          <span class="card-tag">이라크</span>
+          <div class="card-title">하르타 발전소 화재 — 최소 4명 사망·35명 부상</div>
+          <div class="card-summary">이라크 하르타 발전소에서 화재가 발생해 최소 4명이 사망하고 35명이 부상을 입었다. 아나돌루 통신이 현장 상황을 긴급 보도했다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.usnews.com/news/world" target="_blank" rel="noopener">
+          <span class="card-tag">부고</span>
+          <div class="card-title">파올로 불가리 89세로 타계 — 명품 주얼리 왕조의 주역</div>
+          <div class="card-summary">가족 경영 주얼리 브랜드 불가리(BVLGARI)를 세계적 명품으로 성장시킨 파올로 불가리가 89세를 일기로 타계했다. US뉴스는 그의 타계가 패션·명품 업계에 큰 손실이라고 전했다.</div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IT/기술 뉴스 -->
+  <section class="section section-tech">
+    <div class="section-header">
+      <div class="section-icon">💻</div>
+      <span class="section-title">IT / 기술 뉴스</span>
+      <span class="section-count">8건</span>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <a href="https://www.epifive.com/news/live/2026-11-21" target="_blank" rel="noopener">
+          <span class="card-tag">보안</span>
+          <div class="card-title">벨 캐나다, AI 기반 공격자에 기업 고객 데이터 탈취 피해</div>
+          <div class="card-summary">캐나다 최대 통신사 벨 캐나다가 11월 17일 에이전틱 AI 위협 행위자의 침해로 기업 고객 기록이 유출됐음을 확인했다. 통신 회선 주문용 시스템이 공격 경로로 활용됐다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.epifive.com/news/live/2026-11-21" target="_blank" rel="noopener">
+          <span class="card-tag">보안</span>
+          <div class="card-title">NGINX 치명적 결함 'nginx2root' 발견 — 무인증 코드 실행 가능</div>
+          <div class="card-summary">보안 연구자들이 NGINX의 치명적 취약점 2개를 연쇄 활용해 비인증 공격자가 웹 서버에서 코드를 실행하고 리눅스 커널 버그와 결합해 root 권한까지 획득할 수 있음을 시연했다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.epifive.com/news/live/2026-11-21" target="_blank" rel="noopener">
+          <span class="card-tag">보안</span>
+          <div class="card-title">GnuPG, GPGME 치명적 메모리 버그 경보 — 악의적 OpenPGP 키로 트리거</div>
+          <div class="card-summary">GnuPG 프로젝트가 GPGME 라이브러리에서 발견된 치명적 메모리 취약점에 대한 보안 권고를 발표했다. 악의적으로 조작된 OpenPGP 키만으로도 취약점이 활성화될 수 있어 긴급 패치가 권고된다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://aitoolsrecap.com/Blog/ai-news-november-22-2026" target="_blank" rel="noopener">
+          <span class="card-tag">AI</span>
+          <div class="card-title">OpenAI 모델, AMD GPU 회로 코드 재작성 — PPA 최대 14% 개선</div>
+          <div class="card-summary">OpenAI는 자사 AI 모델이 AMD GPU의 회로 설계 코드를 재작성해 전력·성능·면적(PPA) 측면에서 최대 14% 개선을 달성했다고 밝혔다. 일부 최적화는 이미 실제 칩에 반영됐다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://tomshardware.com/tech-industry/supercomputers/this-week-on-toms-hardware-premium-21-november-2026-amd-nvidia-and-more-show-off-the-future-of-high-performance-computing-at-sc26" target="_blank" rel="noopener">
+          <span class="card-tag">HPC</span>
+          <div class="card-title">SC26 — AMD·엔비디아, 에이전틱 AI용 CPU 미래를 놓고 경쟁</div>
+          <div class="card-summary">슈퍼컴퓨팅 콘퍼런스 SC26에서 AMD와 엔비디아가 에이전틱 AI 및 FP64 에뮬레이션 성능을 주제로 치열한 기술 경쟁을 벌였다. 톰스하드웨어는 양사가 고성능 컴퓨팅의 미래를 제시했다고 평가했다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://aitoolsrecap.com/Blog/ai-news-november-22-2026" target="_blank" rel="noopener">
+          <span class="card-tag">AI</span>
+          <div class="card-title">Anthropic IPO 완료 보도 — 대형 AI 기업 상장 현실화</div>
+          <div class="card-summary">AI 뉴스 집계 사이트들이 Anthropic의 IPO가 최종 완료됐다고 보도했다. 사실 여부는 추가 확인이 필요하지만, 실현될 경우 AI 산업의 대형 이정표가 될 것으로 전망된다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.epifive.com/news/live/2026-11-21" target="_blank" rel="noopener">
+          <span class="card-tag">M&A</span>
+          <div class="card-title">Bending Spoons, Mailchimp 36.8억 달러에 인수</div>
+          <div class="card-summary">이탈리아 소프트웨어 기업 Bending Spoons가 이메일 마케팅 플랫폼 Mailchimp를 36억 8천만 달러에 인수했다. Bending Spoons는 Evernote 등을 인수하며 B2B SaaS 포트폴리오를 확장하고 있다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.epifive.com/news/live/2026-11-21" target="_blank" rel="noopener">
+          <span class="card-tag">M&A</span>
+          <div class="card-title">구글, 시애틀 AI 스케줄링 스타트업 Howie 인수</div>
+          <div class="card-summary">구글이 시애틀에 본사를 둔 AI 기반 스케줄링 스타트업 Howie를 인수했다. 구글은 Workspace 생산성 도구에 에이전틱 AI 기능을 강화하려는 전략의 일환으로 풀이된다.</div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 경제/금융 뉴스 -->
+  <section class="section section-economy">
+    <div class="section-header">
+      <div class="section-icon">📈</div>
+      <span class="section-title">경제 / 금융 뉴스</span>
+      <span class="section-count">6건</span>
+    </div>
+    <div class="news-grid">
+
+      <div class="news-card">
+        <a href="https://newspim.com/news/view/20261122000083" target="_blank" rel="noopener">
+          <span class="card-tag">금융일정</span>
+          <div class="card-title">이번 주 금융 일정(11.23~27) — 가상자산·핀테크 관련 행사 집중</div>
+          <div class="card-summary">23일 금융당국이 자금세탁방지의 날 행사를 열고, 24일 금융위가 가상자산·핀테크·보험 제도 일정을 소화한다. 27일엔 금융행정 쇄신방안 발표와 지역재투자 결과 공개가 예정돼 있다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://news.jkn.co.kr/" target="_blank" rel="noopener">
+          <span class="card-tag">증시</span>
+          <div class="card-title">코스피 4%대 급락 — 5,500선 붕괴, SK하이닉스 7% 하락</div>
+          <div class="card-summary">AI 산업 수익성 의구심과 외국인의 대규모 매도세, 미국 국채 금리 상승이 겹치면서 코스피가 4%대 급락해 장중 5,500선이 무너졌다. SK하이닉스는 장중 7%까지 떨어졌다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://kr.investing.com/news/economy" target="_blank" rel="noopener">
+          <span class="card-tag">한국은행</span>
+          <div class="card-title">한국은행, 2026년 11월 소비자동향 조사 결과 발표 예정</div>
+          <div class="card-summary">한국은행이 이번 주 2026년 11월 소비자동향 조사 결과를 발표할 예정이다. 최근 급락한 증시와 맞물려 소비 심리 변화에 시장의 관심이 집중될 전망이다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.forvismazars.com/uk/en/insights/latest-economic-market-and-investment-news/imf-raises-global-growth-projections" target="_blank" rel="noopener">
+          <span class="card-tag">G7</span>
+          <div class="card-title">G7 재무장관, 호르무즈 해협 장기 폐쇄 경제 위험 논의</div>
+          <div class="card-summary">G7 재무장관들이 호르무즈 해협의 장기 폐쇄로 인한 경제적 파장을 논의하기 위해 긴급 회의를 개최했다. 에너지 가격 급등과 글로벌 공급망 혼란 우려가 고조되고 있다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.forvismazars.com/uk/en/insights/latest-economic-market-and-investment-news/imf-raises-global-growth-projections" target="_blank" rel="noopener">
+          <span class="card-tag">UNCTAD</span>
+          <div class="card-title">UNCTAD, 글로벌 성장률 1.5%로 하향 조정</div>
+          <div class="card-summary">유엔무역개발회의(UNCTAD)가 글로벌 무역 둔화를 이유로 올해 세계 경제성장률 전망치를 1.5%로 대폭 하향 조정했다. 지정학적 리스크와 금리 환경도 주요 하방 요인으로 꼽혔다.</div>
+        </a>
+      </div>
+
+      <div class="news-card">
+        <a href="https://www.rttnews.com/3317807/world-market-trends.aspx?type=ts" target="_blank" rel="noopener">
+          <span class="card-tag">채권</span>
+          <div class="card-title">글로벌 채권 금리 급등 — 안전자산 선호 속 시장 변동성 확대</div>
+          <div class="card-summary">글로벌 채권 시장에서 금리 급등(채권 가격 하락)이 경제 충격을 주고 있는 한편, 금융 부문 우려와 경기 둔화 연착륙 기대감에 일부 투자자들이 국채로 대피하는 엇갈린 흐름도 나타나고 있다.</div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>오늘의 주요 뉴스</strong> — 자동 생성<br>
+  생성 시각: <span id="genTime"></span>
+  <script>
+    const d = new Date();
+    const opt = { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit',
+                  hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+    document.getElementById('genTime').textContent = d.toLocaleString('ko-KR', opt) + ' KST';
+  </script>
+</footer>
+
+</body>
+</html>
